@@ -2,7 +2,9 @@
 
 
 
-This is the code for evaluating personal profile extraction based on LLMs and countermeasures. Please see the manuscript [here](https://arxiv.org/abs/2408.07291). 
+This is the code for evaluating personal profile extraction based on LLMs and countermeasures. Please see our USENIX Security'25 paper [here](https://arxiv.org/abs/2408.07291). 
+
+Note: the up-to-date artifact of our paper is [here](https://zenodo.org/records/14737200).
 
 ## Data
 
@@ -45,12 +47,10 @@ The log files can be seen in ./log/ and the experimental results can be seen in 
 If you use this code, please cite the following paper:
 
 ```
-@misc{liu2024extraction,
+@inproceedings{liu2025llminfoextraction,
       title={Evaluating Large Language Model based Personal Information Extraction and Countermeasures}, 
       author={Yupei Liu and Yuqi Jia and Jinyuan Jia and Neil Zhenqiang Gong},
-      year={2024},
-      eprint={2408.07291},
-      archivePrefix={arXiv},
-      primaryClass={cs.CR}
+      booktitle={USENIX Security Symposium},
+      year={2025}
 }
 ```
