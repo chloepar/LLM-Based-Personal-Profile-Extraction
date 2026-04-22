@@ -118,7 +118,7 @@ def get_pilot_configs():
 # EXTRACTION EXECUTION
 # ============================================================================
 
-def build_command(config, task_config_path, model_config_path, verbose=1):
+def build_command(config, task_config_path, model_config_path, verbose=1, max_profiles=0, inter_profile_delay=0):
     """Build main.py command for a config"""
     cmd = [
         'python3', 'main.py',
@@ -130,14 +130,16 @@ def build_command(config, task_config_path, model_config_path, verbose=1):
         '--icl_num', str(config['icl_num']),
         '--adaptive_attack', config['adaptive_attack'],
         '--verbose', str(verbose),
-        '--redundant_info_filtering', 'True'
+        '--redundant_info_filtering', 'True',
+        '--max_profiles', str(max_profiles),
+        '--inter_profile_delay', str(inter_profile_delay),
     ]
     return cmd
 
 
-def run_extraction(config, task_config_path, model_config_path, verbose=1):
+def run_extraction(config, task_config_path, model_config_path, verbose=1, max_profiles=0, inter_profile_delay=0):
     """Execute single extraction config"""
-    cmd = build_command(config, task_config_path, model_config_path, verbose)
+    cmd = build_command(config, task_config_path, model_config_path, verbose, max_profiles, inter_profile_delay)
     
     print(f"\n{'='*70}")
     print(f"Config: defense={config['defense']}, prompt={config['prompt_type']}, "
@@ -160,7 +162,7 @@ def run_extraction(config, task_config_path, model_config_path, verbose=1):
         return False
 
 
-def run_extraction_batch(configs, task_config_path, model_config_path, verbose=1, resume=False):
+def run_extraction_batch(configs, task_config_path, model_config_path, verbose=1, resume=False, max_profiles=0, inter_profile_delay=0):
     """Run batch with checkpoint support"""
     checkpoint_path = './extraction_checkpoint.json'
     
@@ -187,7 +189,7 @@ def run_extraction_batch(configs, task_config_path, model_config_path, verbose=1
         print(f"\n[{i}/{total}] Running: defense={config['defense']}, prompt={config['prompt_type']}, icl={config['icl_num']}")
         
         try:
-            success = run_extraction(config, task_config_path, model_config_path, verbose)
+            success = run_extraction(config, task_config_path, model_config_path, verbose, max_profiles, inter_profile_delay)
             if success:
                 results['successful'] += 1
                 results['configs'].append({**config, 'status': 'success'})
@@ -199,7 +201,8 @@ def run_extraction_batch(configs, task_config_path, model_config_path, verbose=1
             break
         
         # Save checkpoint after each config
-        checkpoint['completed'].add(tuple(config.values()))
+        completed_keys.add(config_to_key(config))
+        checkpoint['completed'] = completed_keys
         checkpoint['results'] = results['configs']
         save_checkpoint(checkpoint, checkpoint_path)
     
@@ -271,12 +274,18 @@ def main():
                     help='Print commands without executing')
     parser.add_argument('--resume', action='store_true',
                     help='Resume from checkpoint')
+    parser.add_argument('--max_profiles', type=int, default=0,
+                       help='Max senators to process per config (0 = all 100)')
+    parser.add_argument('--inter_profile_delay', type=float, default=0,
+                       help='Extra seconds to sleep between profiles (helps with rate limits)')
+    parser.add_argument('--prompt_filter', default='',
+                       help='Only run configs with this prompt type (e.g. direct, pseudocode, contextual, persona)')
 
     args = parser.parse_args()
-    
+
     # Print matrix info
     print_matrix_info()
-    
+
     # Select configs based on mode
     if args.mode == 'matrix':
         configs = generate_all_configs()
@@ -290,6 +299,10 @@ def main():
     elif args.mode == 'demo':
         configs = [get_pilot_configs()[0]]
         print(f"Mode: DEMO - {len(configs)} configuration (first only)")
+
+    if args.prompt_filter:
+        configs = [c for c in configs if c['prompt_type'] == args.prompt_filter]
+        print(f"Filtered to prompt_type='{args.prompt_filter}': {len(configs)} configurations")
     
     print(f"\nConfigs to run:")
     for i, cfg in enumerate(configs, 1):
@@ -302,7 +315,7 @@ def main():
         print("PRINT-ONLY MODE - No execution")
         print("="*70)
         for i, config in enumerate(configs, 1):
-            cmd = build_command(config, args.task_config, args.model_config, args.verbose)
+            cmd = build_command(config, args.task_config, args.model_config, args.verbose, args.max_profiles, args.inter_profile_delay)
             print(f"\n[{i}] {' '.join(cmd)}")
         return
     
@@ -315,7 +328,7 @@ def main():
     
     # Run batch
     print(f"\nStarting extraction batch at {datetime.now().isoformat()}")
-    results = run_extraction_batch(configs, args.task_config, args.model_config, args.verbose, resume=args.resume)
+    results = run_extraction_batch(configs, args.task_config, args.model_config, args.verbose, resume=args.resume, max_profiles=args.max_profiles, inter_profile_delay=args.inter_profile_delay)
     
     # Save results
     results['timestamp'] = datetime.now().isoformat()

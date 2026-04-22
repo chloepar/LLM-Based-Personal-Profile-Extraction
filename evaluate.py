@@ -23,13 +23,20 @@ def main(args):
 
     all_raw_responses = raw_responses_npz['res'].item()
     all_labels = raw_responses_npz['label'].item()
-    total_num = len(all_raw_responses['email'])
     info_cats = open_txt('./data/system_prompts/info_category.txt') if defense.defense in ('no', 'pi_ci_id', 'pi_ci', 'pi_id') else ['email']
+    first_cat = info_cats[0] if info_cats else next(iter(all_raw_responses))
+    total_num = len(all_raw_responses[first_cat])
     evaluator = PIE.create_evaluator(model_config["model_info"]["provider"], info_cats, metric_2=args.m2)
 
     for i in range(total_num):
         if len(info_cats) > 1 and 'flan' not in model_config['model_info']['name']:
             _, curr_label = task_manager[i]
+            if 'education' in curr_label and isinstance(curr_label['education'], list):
+                curr_label['education'] = ", ".join(
+                    f"{e.get('degree', '')} from {e.get('institution', '')}".strip()
+                    + (f" in {e.get('year')}" if e.get('year') else "")
+                    for e in curr_label['education']
+                )
         else:
             try:
                 curr_label = dict(zip(info_cats, [all_labels[info_cat][i] for info_cat in info_cats]))

@@ -3,7 +3,7 @@
 ## Project Overview
 Extending the PIE (LLM-Based Personal Information Extraction) framework to evaluate information extraction and defense mechanisms on U.S. Senator profiles in HTML format.
 
-**Status**: ✅ **PHASE 1 COMPLETE** - Data preparation and setup done
+**Status**: 🔄 **PHASE 2 IN PROGRESS** - Groq integration complete, extraction orchestration running
 
 ---
 
@@ -95,6 +95,66 @@ Extending the PIE (LLM-Based Personal Information Extraction) framework to evalu
 
 ---
 
+## Phase 2: Groq Integration & Extraction Setup 🔄
+
+### ✅ Step 7: Implement Groq LLaMA Model Provider
+- **File Created**: [LLMPersonalInfoExtraction/models/Groq.py](LLMPersonalInfoExtraction/models/Groq.py)
+- **Model**: llama-3.1-8b-instant (Groq)
+- **Features**:
+  - Implements Model interface
+  - Temperature: 0.1 (low randomness for deterministic extraction)
+  - Max tokens: 150
+  - Seed: 100 (reproducible results)
+  - Integrated with GroqClient API
+- **Config File**: [configs/model_configs/groq_config.json](configs/model_configs/groq_config.json)
+- **Factory Registration**: Updated [LLMPersonalInfoExtraction/models/__init__.py](LLMPersonalInfoExtraction/models/__init__.py)
+- **Status**: ✅ Verified working
+
+### ✅ Step 8: Fix Schema Mismatches
+- **Issue**: Framework expected `name` field in labels
+- **Fix**: Augmented all 100 senator records with `name` field extracted from senator_id
+  - Example: `"Adam_Schiff_CA"` → `{"name": "Adam Schiff", ...}`
+- **File Updated**: `./data/senator/labels.json`
+- **System Prompts**: Updated `./data/system_prompts/info_category.txt` with senator-specific fields (lowercase):
+  ```
+  name
+  birthdate
+  gender
+  race_ethnicity
+  committee_roles
+  religion
+  education
+  ```
+- **Status**: ✅ Complete
+
+### 🔄 Step 9: Create Extraction Orchestration Script
+- **File Created**: [run_senator_extraction.py](run_senator_extraction.py)
+- **Features**:
+  - **Extraction Matrix**: 80 total configurations
+    - Defenses: 5 (no, mask, replace_at_dot, pi_ci, hyperlink)
+    - Prompt Types: 4 (direct, pseudocode, contextual, persona)
+    - ICL Settings: 2 (0 zero-shot, 5 few-shot)
+    - Adaptive Attack: 2 (no, yes)
+  - **Execution Modes**:
+    - `--mode demo`: 1 config (quick test)
+    - `--mode pilot`: 10 configs (comprehensive baseline)
+    - `--mode priority`: 7 prioritized configs
+    - `--mode matrix`: All 80 configs
+  - **Checkpoint/Resume Support**:
+    - `extraction_checkpoint.json`: Tracks completed configs (batch level)
+    - `.checkpoint.npz`: Per-config profile progress (within each result dir)
+    - `--resume` flag resumes from last checkpoint
+  - **Model**: Groq llama-3.1-8b-instant (with `--model_name` auto-configured)
+- **Usage**:
+  ```bash
+  python3 run_senator_extraction.py --mode pilot
+  python3 run_senator_extraction.py --mode pilot --resume  # Resume after interruption
+  python3 run_senator_extraction.py --mode pilot --print_only  # Dry run
+  ```
+- **Status**: 🔄 Running (10 pilot configs in progress)
+
+---
+
 ## Directory Structure
 
 ```
@@ -109,11 +169,23 @@ LLM-Based-Personal-Profile-Extraction/
 │       ├── Alex_Padilla_CA.html
 │       ├── Amy_Klobuchar_MN.html
 │       └── Andy_Kim_NJ.html
-├── configs/task_configs/
-│   └── senator.json                (task configuration)
+├── configs/
+│   ├── model_configs/
+│   │   └── groq_config.json        (Groq llama-3.1-8b-instant config)
+│   └── task_configs/
+│       └── senator.json            (task configuration)
+├── LLMPersonalInfoExtraction/models/
+│   ├── Groq.py                     (Groq provider implementation)
+│   └── __init__.py                 (factory registration)
+├── data/system_prompts/
+│   ├── info_category.txt           (senator extraction fields)
+│   ├── direct.txt                  (direct prompt template)
+│   └── [other prompt types]        (pseudocode, contextual, persona)
 ├── convert_senate_csv_to_json.py   (CSV → JSON converter)
 ├── setup_senator_icl_split.py      (ICL split setup script)
-└── verify_senator_setup.py         (verification script)
+├── verify_senator_setup.py         (verification script)
+├── verify_groq_integration.py      (Groq integration test)
+└── run_senator_extraction.py       (batch orchestration & checkpoint)
 ```
 
 ---
@@ -193,18 +265,20 @@ python main.py --task_config_path ./configs/task_configs/senator.json \
 
 ---
 
-## Phase 4: Testing & Evaluation (NEXT)
+## Phase 3: Testing & Evaluation (NEXT)
 
 ### Planned Experiments
 
 | # | Experiment | Defense | Adaptive Attack | LLM Models | Status |
 |---|------------|---------|-----------------|-----------|--------|
-| 1 | Baseline Extraction | None | No | GPT-4 | ⏳ Pending |
-| 2 | Mask Defense | Mask | No | GPT-4 | ⏳ Pending |
-| 3 | Prompt Injection Defense | pi_ci | No | GPT-4 | ⏳ Pending |
-| 4 | Adaptive Attack vs pi_ci | pi_ci | Yes | GPT-4 | ⏳ Pending |
-| 5 | Multi-Model Comparison | None | No | GPT-4, Gemini, LLaMA | ⏳ Pending |
-| 6 | Defense Comparison | All defenses | No | GPT-4 | ⏳ Pending |
+| 1 | Baseline Extraction (zero-shot) | None | No | Groq LLaMA | 🔄 Running |
+| 2 | Baseline Extraction (few-shot) | None | No | Groq LLaMA | ⏳ Pilot |
+| 3 | Mask Defense | Mask | No | Groq LLaMA | ⏳ Pilot |
+| 4 | Symbol Replacement | replace_at_dot | No | Groq LLaMA | ⏳ Pilot |
+| 5 | Prompt Injection Defense | pi_ci | No | Groq LLaMA | ⏳ Pilot |
+| 6 | Hyperlink Defense | hyperlink | No | Groq LLaMA | ⏳ Pilot |
+| 7 | Adaptive Attack vs pi_ci | pi_ci | Yes | Groq LLaMA | ⏳ Pilot |
+| 8 | Full Matrix | All (80 configs) | Mixed | Groq LLaMA | ⏳ Planned |
 
 ### Expected Metrics
 - **Accuracy**: Percentage of correctly extracted fields
@@ -303,5 +377,24 @@ python main.py --task_config_path ./configs/task_configs/senator.json \
 
 ---
 
-**Last Updated**: April 21, 2026
-**Status**: ✅ Phase 1 Complete - Ready for Phase 2 Testing
+## Checkpoint & Resume Mechanism
+
+**Two-Level Checkpointing**:
+1. **Batch Level** (`extraction_checkpoint.json`):
+   - Tracks which of the 10/7/80 configs have completed
+   - Saved after each config finishes
+   - Allows skipping completed configs on resume
+   
+2. **Config Level** (`.checkpoint.npz` in result dir):
+   - Tracks profile progress within a single config (0-94 of 95 profiles)
+   - Saved after each profile processes
+   - Allows resuming mid-config without reprocessing earlier profiles
+
+**Delete to Reset**:
+- Delete `extraction_checkpoint.json` → restart entire batch from config 1
+- Delete `.checkpoint.npz` in result dir → restart that config from profile 0
+
+---
+
+**Last Updated**: April 22, 2026
+**Status**: 🔄 Phase 2 In Progress - Groq integration complete, pilot extraction running

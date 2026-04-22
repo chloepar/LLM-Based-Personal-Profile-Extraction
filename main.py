@@ -28,6 +28,10 @@ if __name__ == '__main__':
     parser.add_argument('--adaptive_attack', default='no', type=str)
     parser.add_argument('--verbose', default=1, type=int)
     parser.add_argument('--redundant_info_filtering', default='True', type=str)
+    parser.add_argument('--max_profiles', default=0, type=int,
+                        help='Max number of profiles to process (0 = all)')
+    parser.add_argument('--inter_profile_delay', default=0, type=float,
+                        help='Extra seconds to sleep between profiles (helps with rate limits)')
     args = parser.parse_args()
 
     task_config = open_config(config_path=args.task_config_path)
@@ -81,7 +85,8 @@ if __name__ == '__main__':
         all_raw_responses = dict(zip(info_cats, [[] for _ in range(len(info_cats))]))
         all_labels = dict(zip(info_cats, [[] for _ in range(len(info_cats))]))
 
-    for i in range(start_idx, len(task_manager)):
+    profile_limit = args.max_profiles if args.max_profiles > 0 else len(task_manager)
+    for i in range(start_idx, min(profile_limit, len(task_manager))):
         raw_list, curr_label = task_manager[i]
 
         # Flatten structured fields to strings for evaluator compatibility
@@ -159,7 +164,10 @@ if __name__ == '__main__':
             _ = evaluator.update(raw_response, curr_label, info_cat, defense, verbose=args.verbose)
             cnt = (cnt + 1) % 2
         if args.verbose > 0:  print('\n----------------\n')
-        
+
+        if args.inter_profile_delay > 0:
+            time.sleep(args.inter_profile_delay)
+
         # Save checkpoint every 10 profiles for resume safety
         if (i + 1) % 10 == 0 or i == len(task_manager) - 1:
             # Flag any invalid responses before saving

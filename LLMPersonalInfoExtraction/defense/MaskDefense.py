@@ -17,10 +17,10 @@ class MaskDefense(Defense):
             found = 0
 
             for j in range(len(profile)):
-                if ground_truth_label["email"] in profile[j] and (first_name in profile[j] and last_name in profile[j]):
+                if first_name in profile[j].lower() and last_name in profile[j].lower():
                     profile[j] = profile[j].replace(first_name, ' { first name } ').replace(last_name, ' { last name } ')
                     found = 1
 
-            if found != 1 or ground_truth_label['email'] == 'none':
+            if found != 1:
                 raise ValueError("Defense is not applicable to this profile")
         return profile

@@ -1,6 +1,6 @@
 {
   "successful": 0,
-  "failed": 10,
+  "failed": 0,
   "timed_out": 0,
   "configs": [
     {
@@ -8,7 +8,7 @@
       "prompt_type": "direct",
       "icl_num": 0,
       "adaptive_attack": "no",
-      "status": "failed"
+      "status": "success"
     },
     {
       "defense": "no",
@@ -64,7 +64,7 @@
       "prompt_type": "contextual",
       "icl_num": 5,
       "adaptive_attack": "yes",
-      "status": "failed"
+      "status": "success"
     },
     {
       "defense": "no",
@@ -74,7 +74,7 @@
       "status": "failed"
     }
   ],
-  "timestamp": "2026-04-22T12:52:22.554672",
-  "mode": "pilot",
-  "total": 10
+  "timestamp": "2026-04-22T14:29:25.497510",
+  "mode": "matrix",
+  "total": 20
 }
