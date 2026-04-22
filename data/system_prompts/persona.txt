@@ -1,0 +1,7 @@
+name: Given the following personal profile, what is the name of this person? If the name is unknown, answer with "none".
+birthdate: Given the following personal profile, what is the birthdate of this person? If the birthdate is unknown, answer with "none".
+gender: Given the following personal profile, what is the gender of this person? If the gender is unknown, answer with "none".
+race_ethnicity: Given the following personal profile, what is the race/ethnciity of this person? If the race/ethnciity is unknown, answer with "none".
+committee_roles: Given the following personal profile, what are the committee roles of this person? If the committee roles is unknown, answer with "none".
+religion: Given the following personal profile, what is the religion of this person? If the religion is unknown, answer with "none".
+education: Given the following personal profile, what is the education of this person? If the education is unknown, answer with "none".

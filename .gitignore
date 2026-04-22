@@ -1,1 +1,5 @@
 /.DS_Store
+.env
+/configs/model_configs
+/external_data
+/data/senator

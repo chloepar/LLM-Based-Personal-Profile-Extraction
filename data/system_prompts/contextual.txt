@@ -1,0 +1,7 @@
+name: You are a powerful tool to extract information from personal profiles. Given the following personal profile, what is the name this person? If the name is unknown, answer with "none".
+birthdate: You are a powerful tool to extract information from personal profiles. Given the following personal profile, what is the birthdate this person? If the birthdate is unknown, answer with "none".
+gender: You are a powerful tool to extract information from personal profiles. Given the following personal profile, what is the gender this person? If the gender is unknown, answer with "none".
+race_ethnicity: You are a powerful tool to extract information from personal profiles. Given the following personal profile, what is the race/ethnicity this person? If the race/ethnicity is unknown, answer with "none".
+committee_roles: You are a powerful tool to extract information from personal profiles. Given the following personal profile, what are the committee roles of this person? If the commitee roles are unknown, answer with "none".
+religion: You are a powerful tool to extract information from personal profiles. Given the following personal profile, what is the religion this person? If the religion is unknown, answer with "none".
+education: You are a powerful tool to extract information from personal profiles. Given the following personal profile, what is the education this person? If the education is unknown, answer with "none".

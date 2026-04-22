@@ -5,6 +5,7 @@ from .Gemini import Gemini
 from .Llama import Llama
 from .Flan import Flan
 from .Internlm import Internlm
+from .Groq import Groq
 
 
 def create_model(config):
@@ -23,6 +24,8 @@ def create_model(config):
         model = Flan(config)
     elif provider == 'internlm':
         model = Internlm(config)
+    elif provider == 'groq':
+        model = Groq(config)
     else:
         raise ValueError(f"ERROR: Unknown provider {provider}")
     return model

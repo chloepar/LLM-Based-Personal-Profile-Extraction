@@ -1,0 +1,13 @@
+{
+    "task_info":{
+        "task":"info_extraction",
+        "type":"text_generation"
+    },
+    "dataset_info":{
+        "dataset":"senator",
+        "path":"./data/senator",
+        "label_path":"./data/senator/labels.json",
+        "icl_path":"./data/senator",
+        "icl_label_path":"./data/senator/labels.json"
+    }
+}

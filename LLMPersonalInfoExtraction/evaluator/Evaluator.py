@@ -41,8 +41,7 @@ class Evaluator:
         # Pre-process the response and labels
         # This is critical for evaluation on phone number
         processed_response = self.__preprocess_response(info_cat, response, curr_label['name'].lower())
-        processed_label = self.__preprocess_label(info_cat, curr_label[info_cat].lower(), curr_label['name'].lower())
-        
+        processed_label = self.__preprocess_label(info_cat, (curr_label[info_cat] or '').lower(), curr_label['name'].lower())           
         
         if verbose > 0:
             print(f'* pred : {processed_response}')
@@ -137,7 +136,7 @@ class Evaluator:
         return r
     
     def __get_rouge_1(self, r, other):
-        if r != '':
+        if r != '' and other != '':
             rouge = Rouge()
             return rouge.get_scores(r, other)[0]['rouge-1']['f']
         return 0

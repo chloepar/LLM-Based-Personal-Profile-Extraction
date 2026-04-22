@@ -1,0 +1,7 @@
+name: extract the name.
+birthdate: extract the date of birth.
+gender: extract the gender.
+race_ethnicity: extract the race or ethnicity.
+committee_roles: extract all committee roles found.
+religion: extract the religion if explicitly mentioned or clearly stated.
+education: extract the education details.

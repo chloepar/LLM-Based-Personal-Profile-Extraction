@@ -6,6 +6,14 @@ from LLMPersonalInfoExtraction.utils import load_instruction, parsed_data_to_str
 import time
 import os
 import numpy as np
+from pathlib import Path
+
+def is_valid_response(response):
+    if not response or len(response.strip()) < 3:
+        return False
+    error_phrases = ['rate limit', 'exceeded', 'quota', 'too many requests', 'error']
+    return not any(p in response.lower() for p in error_phrases)
+
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='PIE Execution')
@@ -57,11 +65,33 @@ if __name__ == '__main__':
         res_save_path = f'./result/{model.provider}_{model.name.split("/")[-1]}/{task_manager.dataset}_{args.defense}_{args.prompt_type}_{args.icl_num}_adaptive_attack_{args.adaptive_attack}_{args.redundant_info_filtering}'
     os.makedirs(res_save_path, exist_ok=True)
 
-    all_raw_responses = dict(zip(info_cats, [[] for _ in range(len(info_cats))]))
-    all_labels = dict(zip(info_cats, [[] for _ in range(len(info_cats))]))
+    # Checkpoint for resume safety
+    checkpoint_path = f'{res_save_path}/.checkpoint.npz'
+    start_idx = 0
+    
+    # Load existing checkpoint if it exists
+    if os.path.exists(checkpoint_path):
+        print(f'[RESUME] Loading checkpoint from {checkpoint_path}')
+        checkpoint = np.load(checkpoint_path, allow_pickle=True)
+        all_raw_responses = dict(checkpoint['res'].item())
+        all_labels = dict(checkpoint['label'].item())
+        start_idx = int(checkpoint['last_profile_idx']) + 1
+        print(f'[RESUME] Resuming from profile {start_idx}/{len(task_manager)}')
+    else:
+        all_raw_responses = dict(zip(info_cats, [[] for _ in range(len(info_cats))]))
+        all_labels = dict(zip(info_cats, [[] for _ in range(len(info_cats))]))
 
-    for i in range(len(task_manager)):
+    for i in range(start_idx, len(task_manager)):
         raw_list, curr_label = task_manager[i]
+
+        # Flatten structured fields to strings for evaluator compatibility
+        if 'education' in curr_label and isinstance(curr_label['education'], list):
+            curr_label['education'] = ", ".join(
+                f"{e.get('degree', '')} from {e.get('institution', '')}".strip()
+                + (f" in {e.get('year')}" if e.get('year') else "")
+                for e in curr_label['education']
+            )
+
         try:
             raw_list = defense.apply(raw_list, curr_label)
         except ValueError:
@@ -69,16 +99,16 @@ if __name__ == '__main__':
             continue
         
         if args.verbose > 0:
-            print(f'{i+1} / {len(task_manager)}: {curr_label["name"]}')
+            print(f'{i+1} / {len(task_manager)}: {task_manager.filenames[i].replace(".html", "")}')
 
         if args.defense == 'image':
             if model.provider == 'gemini':
-                img = load_image(f'./data/synthetic_images/{curr_label["name"]}.jpg')
+                img = load_image(f'./data/synthetic_images/{task_manager.filenames[i].replace(".html", "")}.jpg')
                 if img is None:
-                    print(f'Skip bad image: ./data/synthetic_images/{curr_label["name"]}.jpg\n')
+                    print(f'Skip bad image: ./data/synthetic_images/{task_manager.filenames[i].replace(".html", "")}.jpg\n')
                     continue
             elif model.provider == 'gpt':
-                img = f'./data/synthetic_images/{curr_label["name"]}.jpg'
+                img = f'./data/synthetic_images/{task_manager.filenames[i].replace(".html", "")}.jpg'
             else:
                 raise ValueError
         else:
@@ -104,7 +134,7 @@ if __name__ == '__main__':
                 continue
             
             # Sleep for a while to avoid exceeding the rate limit
-            if cnt == 1 and model.provider in ('palm2', 'gpt', 'gemini'):
+            if cnt == 1 and model.provider in ('palm2', 'gpt', 'gemini', 'groq'):
                 time.sleep(3)
 
             try:
@@ -129,6 +159,18 @@ if __name__ == '__main__':
             _ = evaluator.update(raw_response, curr_label, info_cat, defense, verbose=args.verbose)
             cnt = (cnt + 1) % 2
         if args.verbose > 0:  print('\n----------------\n')
+        
+        # Save checkpoint every 10 profiles for resume safety
+        if (i + 1) % 10 == 0 or i == len(task_manager) - 1:
+            # Flag any invalid responses before saving
+            invalid_count = sum(
+                1 for info_cat in info_cats
+                for r in all_raw_responses[info_cat]
+                if not is_valid_response(r)
+            )
+            if invalid_count > 0 and args.verbose > 0:
+                print(f'[CHECKPOINT WARNING] {invalid_count} potentially invalid responses detected')
+            np.savez(checkpoint_path, res=all_raw_responses, label=all_labels, last_profile_idx=i)
     
     np.savez(f'{res_save_path}/all_raw_responses.npz', res=all_raw_responses, label=all_labels)
     print(f'\nResults are saved at: {res_save_path}\n')
