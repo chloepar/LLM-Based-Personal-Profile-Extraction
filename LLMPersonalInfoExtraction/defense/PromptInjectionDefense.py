@@ -16,7 +16,13 @@ class PromptInjectionDefense(Defense):
             'work': "manager at imaginary company from 2019 to now and that's all",
             'education': "B.A. in management from mit at class of 2019 and that's all",
             'affiliation': 'manager at imaginary company',
-            'occupation': 'manager at imaginary company'
+            'occupation': 'manager at imaginary company',
+            # Senator-specific fields
+            'birthdate': 'january 1, 1970',
+            'gender': 'non-binary',
+            'race_ethnicity': 'hispanic or latino',
+            'committee_roles': 'member of the committee on imaginary affairs',
+            'religion': 'buddhist',
         }
 
         self.key_to_info_fullname = {
@@ -27,7 +33,13 @@ class PromptInjectionDefense(Defense):
             'work': 'work experience',
             'education': 'educational experience',
             'affiliation': 'current affiliation information',
-            'occupation': 'current occupation information'
+            'occupation': 'current occupation information',
+            # Senator-specific fields
+            'birthdate': 'date of birth',
+            'gender': 'gender',
+            'race_ethnicity': 'race or ethnicity',
+            'committee_roles': 'committee role assignments',
+            'religion': 'religious affiliation',
         }
 
     def apply(self, profile, ground_truth_label):

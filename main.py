@@ -41,7 +41,7 @@ if __name__ == '__main__':
 
     model_config = open_config(config_path=args.model_config_path)
     model_config['model_info']['name'] = args.model_name
-    if 'palm' in args.model_config_path or 'gemini' in args.model_config_path or 'gpt' in args.model_config_path:
+    if 'palm' in args.model_config_path or 'gemini' in args.model_config_path or 'gpt' in args.model_config_path or 'groq' in args.model_config_path:
         assert (0 <= args.api_key_pos < len(model_config["api_key_info"]["api_keys"]))
         model_config["api_key_info"]["api_key_use"] = args.api_key_pos
         print(f'API KEY POS = {model_config["api_key_info"]["api_key_use"]}')
@@ -61,7 +61,7 @@ if __name__ == '__main__':
 
     need_adaptive_attack = (args.defense in ('pi_ci', 'pi_id', 'pi_ci_id', 'no'))
     if not need_adaptive_attack:  args.adaptive_attack = 'no'
-    email_only = defense.defense not in ['no', 'pi_ci', 'pi_id', 'pi_ci_id', 'image']
+    email_only = defense.defense not in ['no', 'pi_ci', 'pi_id', 'pi_ci_id', 'image'] and 'email' in info_cats
     
     if args.redundant_info_filtering == 'True':
         res_save_path = f'./result/{model.provider}_{model.name.split("/")[-1]}/{task_manager.dataset}_{args.defense}_{args.prompt_type}_{args.icl_num}_adaptive_attack_{args.adaptive_attack}'
@@ -138,10 +138,6 @@ if __name__ == '__main__':
             if email_only and info_cat != 'email':
                 continue
             
-            # Sleep for a while to avoid exceeding the rate limit
-            if cnt == 1 and model.provider in ('palm2', 'gpt', 'gemini', 'groq'):
-                time.sleep(3)
-
             try:
                 raw_response = attacker.query(
                     instruction, 

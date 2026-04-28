@@ -1,6 +1,6 @@
 {
-  "successful": 0,
-  "failed": 0,
+  "successful": 10,
+  "failed": 8,
   "timed_out": 0,
   "configs": [
     {
@@ -72,9 +72,324 @@
       "icl_num": 5,
       "adaptive_attack": "no",
       "status": "failed"
+    },
+    {
+      "defense": "no",
+      "prompt_type": "direct",
+      "icl_num": 0,
+      "adaptive_attack": "yes",
+      "status": "success"
+    },
+    {
+      "defense": "mask",
+      "prompt_type": "direct",
+      "icl_num": 5,
+      "adaptive_attack": "yes",
+      "status": "success"
+    },
+    {
+      "defense": "mask",
+      "prompt_type": "direct",
+      "icl_num": 0,
+      "adaptive_attack": "yes",
+      "status": "success"
+    },
+    {
+      "defense": "mask",
+      "prompt_type": "direct",
+      "icl_num": 0,
+      "adaptive_attack": "no",
+      "status": "success"
+    },
+    {
+      "defense": "replace_at_dot",
+      "prompt_type": "direct",
+      "icl_num": 0,
+      "adaptive_attack": "yes",
+      "status": "failed"
+    },
+    {
+      "defense": "replace_at_dot",
+      "prompt_type": "direct",
+      "icl_num": 0,
+      "adaptive_attack": "no",
+      "status": "failed"
+    },
+    {
+      "defense": "replace_at_dot",
+      "prompt_type": "direct",
+      "icl_num": 5,
+      "adaptive_attack": "yes",
+      "status": "failed"
+    },
+    {
+      "defense": "pi_ci",
+      "prompt_type": "direct",
+      "icl_num": 0,
+      "adaptive_attack": "no",
+      "status": "failed"
+    },
+    {
+      "defense": "hyperlink",
+      "prompt_type": "direct",
+      "icl_num": 0,
+      "adaptive_attack": "no",
+      "status": "failed"
+    },
+    {
+      "defense": "hyperlink",
+      "prompt_type": "direct",
+      "icl_num": 0,
+      "adaptive_attack": "yes",
+      "status": "failed"
+    },
+    {
+      "defense": "hyperlink",
+      "prompt_type": "direct",
+      "icl_num": 5,
+      "adaptive_attack": "yes",
+      "status": "failed"
+    },
+    {
+      "defense": "pi_ci",
+      "prompt_type": "direct",
+      "icl_num": 0,
+      "adaptive_attack": "yes",
+      "status": "failed"
+    },
+    {
+      "defense": "pi_ci",
+      "prompt_type": "direct",
+      "icl_num": 5,
+      "adaptive_attack": "yes",
+      "status": "failed"
+    },
+    {
+      "defense": "no",
+      "prompt_type": "direct",
+      "icl_num": 5,
+      "adaptive_attack": "yes",
+      "status": "success"
+    },
+    {
+      "defense": "mask",
+      "prompt_type": "direct",
+      "icl_num": 5,
+      "adaptive_attack": "no",
+      "status": "success"
+    },
+    {
+      "defense": "replace_at_dot",
+      "prompt_type": "direct",
+      "icl_num": 0,
+      "adaptive_attack": "yes",
+      "status": "success"
+    },
+    {
+      "defense": "replace_at_dot",
+      "prompt_type": "direct",
+      "icl_num": 0,
+      "adaptive_attack": "no",
+      "status": "success"
+    },
+    {
+      "defense": "replace_at_dot",
+      "prompt_type": "direct",
+      "icl_num": 5,
+      "adaptive_attack": "no",
+      "status": "success"
+    },
+    {
+      "defense": "replace_at_dot",
+      "prompt_type": "direct",
+      "icl_num": 5,
+      "adaptive_attack": "yes",
+      "status": "success"
+    },
+    {
+      "defense": "pi_ci",
+      "prompt_type": "direct",
+      "icl_num": 0,
+      "adaptive_attack": "yes",
+      "status": "success"
+    },
+    {
+      "defense": "pi_ci",
+      "prompt_type": "direct",
+      "icl_num": 0,
+      "adaptive_attack": "no",
+      "status": "success"
+    },
+    {
+      "defense": "hyperlink",
+      "prompt_type": "direct",
+      "icl_num": 0,
+      "adaptive_attack": "no",
+      "status": "success"
+    },
+    {
+      "defense": "hyperlink",
+      "prompt_type": "direct",
+      "icl_num": 0,
+      "adaptive_attack": "yes",
+      "status": "success"
+    },
+    {
+      "defense": "hyperlink",
+      "prompt_type": "direct",
+      "icl_num": 5,
+      "adaptive_attack": "no",
+      "status": "success"
+    },
+    {
+      "defense": "hyperlink",
+      "prompt_type": "direct",
+      "icl_num": 5,
+      "adaptive_attack": "yes",
+      "status": "success"
+    },
+    {
+      "defense": "no",
+      "prompt_type": "pseudocode",
+      "icl_num": 0,
+      "adaptive_attack": "no",
+      "status": "success"
+    },
+    {
+      "defense": "no",
+      "prompt_type": "pseudocode",
+      "icl_num": 0,
+      "adaptive_attack": "yes",
+      "status": "success"
+    },
+    {
+      "defense": "mask",
+      "prompt_type": "pseudocode",
+      "icl_num": 0,
+      "adaptive_attack": "no",
+      "status": "success"
+    },
+    {
+      "defense": "mask",
+      "prompt_type": "pseudocode",
+      "icl_num": 0,
+      "adaptive_attack": "yes",
+      "status": "success"
+    },
+    {
+      "defense": "mask",
+      "prompt_type": "pseudocode",
+      "icl_num": 5,
+      "adaptive_attack": "no",
+      "status": "failed"
+    },
+    {
+      "defense": "no",
+      "prompt_type": "pseudocode",
+      "icl_num": 5,
+      "adaptive_attack": "yes",
+      "status": "failed"
+    },
+    {
+      "defense": "no",
+      "prompt_type": "pseudocode",
+      "icl_num": 5,
+      "adaptive_attack": "no",
+      "status": "failed"
+    },
+    {
+      "defense": "mask",
+      "prompt_type": "pseudocode",
+      "icl_num": 5,
+      "adaptive_attack": "yes",
+      "status": "failed"
+    },
+    {
+      "defense": "replace_at_dot",
+      "prompt_type": "pseudocode",
+      "icl_num": 0,
+      "adaptive_attack": "no",
+      "status": "success"
+    },
+    {
+      "defense": "replace_at_dot",
+      "prompt_type": "pseudocode",
+      "icl_num": 0,
+      "adaptive_attack": "yes",
+      "status": "success"
+    },
+    {
+      "defense": "replace_at_dot",
+      "prompt_type": "pseudocode",
+      "icl_num": 5,
+      "adaptive_attack": "no",
+      "status": "success"
+    },
+    {
+      "defense": "replace_at_dot",
+      "prompt_type": "pseudocode",
+      "icl_num": 5,
+      "adaptive_attack": "yes",
+      "status": "success"
+    },
+    {
+      "defense": "pi_ci",
+      "prompt_type": "pseudocode",
+      "icl_num": 0,
+      "adaptive_attack": "no",
+      "status": "failed"
+    },
+    {
+      "defense": "pi_ci",
+      "prompt_type": "pseudocode",
+      "icl_num": 0,
+      "adaptive_attack": "yes",
+      "status": "failed"
+    },
+    {
+      "defense": "pi_ci",
+      "prompt_type": "pseudocode",
+      "icl_num": 5,
+      "adaptive_attack": "no",
+      "status": "failed"
+    },
+    {
+      "defense": "pi_ci",
+      "prompt_type": "pseudocode",
+      "icl_num": 5,
+      "adaptive_attack": "yes",
+      "status": "failed"
+    },
+    {
+      "defense": "hyperlink",
+      "prompt_type": "pseudocode",
+      "icl_num": 0,
+      "adaptive_attack": "no",
+      "status": "success"
+    },
+    {
+      "defense": "hyperlink",
+      "prompt_type": "pseudocode",
+      "icl_num": 0,
+      "adaptive_attack": "yes",
+      "status": "success"
+    },
+    {
+      "defense": "hyperlink",
+      "prompt_type": "pseudocode",
+      "icl_num": 5,
+      "adaptive_attack": "no",
+      "status": "success"
+    },
+    {
+      "defense": "hyperlink",
+      "prompt_type": "pseudocode",
+      "icl_num": 5,
+      "adaptive_attack": "yes",
+      "status": "success"
     }
   ],
-  "timestamp": "2026-04-22T14:29:25.497510",
+  "timestamp": "2026-04-28T06:34:01.681267",
   "mode": "matrix",
   "total": 20
 }

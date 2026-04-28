@@ -8,6 +8,8 @@ class SymbolReplacementDefense(Defense):
 
     def apply(self, profile, ground_truth_label):
         if type(profile) == str:
+            if "email" not in ground_truth_label:
+                raise ValueError("Defense is not applicable to this profile")
             found = 0
             if ground_truth_label['email'] in profile:
                 found = 1

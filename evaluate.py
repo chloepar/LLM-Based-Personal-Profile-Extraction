@@ -23,7 +23,8 @@ def main(args):
 
     all_raw_responses = raw_responses_npz['res'].item()
     all_labels = raw_responses_npz['label'].item()
-    info_cats = open_txt('./data/system_prompts/info_category.txt') if defense.defense in ('no', 'pi_ci_id', 'pi_ci', 'pi_id') else ['email']
+    all_info_cats = open_txt('./data/system_prompts/info_category.txt')
+    info_cats = all_info_cats if defense.defense in ('no', 'pi_ci_id', 'pi_ci', 'pi_id') else (['email'] if 'email' in all_raw_responses else all_info_cats)
     first_cat = info_cats[0] if info_cats else next(iter(all_raw_responses))
     total_num = len(all_raw_responses[first_cat])
     evaluator = PIE.create_evaluator(model_config["model_info"]["provider"], info_cats, metric_2=args.m2)

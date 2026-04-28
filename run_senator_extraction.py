@@ -19,6 +19,7 @@ import subprocess
 import sys
 import time
 import json
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime
 from pathlib import Path
 
@@ -118,7 +119,7 @@ def get_pilot_configs():
 # EXTRACTION EXECUTION
 # ============================================================================
 
-def build_command(config, task_config_path, model_config_path, verbose=1, max_profiles=0, inter_profile_delay=0):
+def build_command(config, task_config_path, model_config_path, verbose=1, max_profiles=0, inter_profile_delay=0, api_key_pos=0):
     """Build main.py command for a config"""
     cmd = [
         'python3', 'main.py',
@@ -133,13 +134,14 @@ def build_command(config, task_config_path, model_config_path, verbose=1, max_pr
         '--redundant_info_filtering', 'True',
         '--max_profiles', str(max_profiles),
         '--inter_profile_delay', str(inter_profile_delay),
+        '--api_key_pos', str(api_key_pos),
     ]
     return cmd
 
 
-def run_extraction(config, task_config_path, model_config_path, verbose=1, max_profiles=0, inter_profile_delay=0):
+def run_extraction(config, task_config_path, model_config_path, verbose=1, max_profiles=0, inter_profile_delay=0, api_key_pos=0):
     """Execute single extraction config"""
-    cmd = build_command(config, task_config_path, model_config_path, verbose, max_profiles, inter_profile_delay)
+    cmd = build_command(config, task_config_path, model_config_path, verbose, max_profiles, inter_profile_delay, api_key_pos)
     
     print(f"\n{'='*70}")
     print(f"Config: defense={config['defense']}, prompt={config['prompt_type']}, "
@@ -162,10 +164,10 @@ def run_extraction(config, task_config_path, model_config_path, verbose=1, max_p
         return False
 
 
-def run_extraction_batch(configs, task_config_path, model_config_path, verbose=1, resume=False, max_profiles=0, inter_profile_delay=0):
-    """Run batch with checkpoint support"""
+def run_extraction_batch(configs, task_config_path, model_config_path, verbose=1, resume=False, max_profiles=0, inter_profile_delay=0, parallel=1):
+    """Run batch with checkpoint support. parallel=N runs N configs concurrently, each on a different API key."""
     checkpoint_path = './extraction_checkpoint.json'
-    
+
     if resume:
         checkpoint = load_checkpoint(checkpoint_path)
         completed_keys = {tuple(k) for k in checkpoint['completed']}
@@ -174,39 +176,36 @@ def run_extraction_batch(configs, task_config_path, model_config_path, verbose=1
         checkpoint = {'completed': set(), 'results': []}
         completed_keys = set()
         results = {'successful': 0, 'failed': 0, 'timed_out': 0, 'configs': []}
-    
+
+    pending = [(i, c) for i, c in enumerate(configs, 1) if config_to_key(c) not in completed_keys]
+    skipped = len(configs) - len(pending)
     total = len(configs)
-    skipped = 0
-    
-    for i, config in enumerate(configs, 1):
-        key = config_to_key(config)
-        
-        if key in completed_keys:
-            print(f"[{i}/{total}] SKIPPED (already completed): {config['defense']}")
-            skipped += 1
-            continue
-        
-        print(f"\n[{i}/{total}] Running: defense={config['defense']}, prompt={config['prompt_type']}, icl={config['icl_num']}")
-        
-        try:
-            success = run_extraction(config, task_config_path, model_config_path, verbose, max_profiles, inter_profile_delay)
-            if success:
-                results['successful'] += 1
-                results['configs'].append({**config, 'status': 'success'})
-            else:
-                results['failed'] += 1
-                results['configs'].append({**config, 'status': 'failed'})
-        except KeyboardInterrupt:
-            print("\n✗ Batch interrupted - checkpoint saved")
-            break
-        
-        # Save checkpoint after each config
-        completed_keys.add(config_to_key(config))
-        checkpoint['completed'] = completed_keys
-        checkpoint['results'] = results['configs']
-        save_checkpoint(checkpoint, checkpoint_path)
-    
-    print(f"\n✓ Checkpoint: {len(completed_keys) + (len(results['configs']) - len(checkpoint['results']))} completed, {skipped} skipped")
+    print(f"\nSkipping {skipped} already-completed configs, {len(pending)} remaining.")
+
+    def _run(i, config, api_key_pos):
+        print(f"\n[{i}/{total}] Starting (key={api_key_pos}): defense={config['defense']}, prompt={config['prompt_type']}, icl={config['icl_num']}, adaptive={config['adaptive_attack']}")
+        return config, run_extraction(config, task_config_path, model_config_path, verbose, max_profiles, inter_profile_delay, api_key_pos)
+
+    try:
+        with ThreadPoolExecutor(max_workers=parallel) as executor:
+            futures = {
+                executor.submit(_run, i, config, idx % parallel): config
+                for idx, (i, config) in enumerate(pending)
+            }
+            for future in as_completed(futures):
+                config, success = future.result()
+                completed_keys.add(config_to_key(config))
+                status = 'success' if success else 'failed'
+                results['successful' if success else 'failed'] += 1
+                results['configs'].append({**config, 'status': status})
+                checkpoint['completed'] = completed_keys
+                checkpoint['results'] = results['configs']
+                save_checkpoint(checkpoint, checkpoint_path)
+                print(f"{'✓' if success else '✗'} Finished: defense={config['defense']}, prompt={config['prompt_type']}, icl={config['icl_num']}, adaptive={config['adaptive_attack']} → {status}")
+    except KeyboardInterrupt:
+        print("\n✗ Batch interrupted - checkpoint saved")
+
+    print(f"\n✓ {len(completed_keys)} completed, {skipped} skipped")
     return results
 
 
@@ -280,6 +279,12 @@ def main():
                        help='Extra seconds to sleep between profiles (helps with rate limits)')
     parser.add_argument('--prompt_filter', default='',
                        help='Only run configs with this prompt type (e.g. direct, pseudocode, contextual, persona)')
+    parser.add_argument('--adaptive_filter', default='',
+                       help='Only run configs with this adaptive_attack value (no or yes)')
+    parser.add_argument('--defense_filter', default='',
+                       help='Only run configs with this defense (e.g. no, mask, pi_ci, replace_at_dot, hyperlink)')
+    parser.add_argument('--parallel', type=int, default=1,
+                       help='Number of configs to run concurrently (use one per API key, e.g. 4)')
 
     args = parser.parse_args()
 
@@ -303,6 +308,14 @@ def main():
     if args.prompt_filter:
         configs = [c for c in configs if c['prompt_type'] == args.prompt_filter]
         print(f"Filtered to prompt_type='{args.prompt_filter}': {len(configs)} configurations")
+
+    if args.adaptive_filter:
+        configs = [c for c in configs if c['adaptive_attack'] == args.adaptive_filter]
+        print(f"Filtered to adaptive_attack='{args.adaptive_filter}': {len(configs)} configurations")
+
+    if args.defense_filter:
+        configs = [c for c in configs if c['defense'] == args.defense_filter]
+        print(f"Filtered to defense='{args.defense_filter}': {len(configs)} configurations")
     
     print(f"\nConfigs to run:")
     for i, cfg in enumerate(configs, 1):
@@ -328,7 +341,7 @@ def main():
     
     # Run batch
     print(f"\nStarting extraction batch at {datetime.now().isoformat()}")
-    results = run_extraction_batch(configs, args.task_config, args.model_config, args.verbose, resume=args.resume, max_profiles=args.max_profiles, inter_profile_delay=args.inter_profile_delay)
+    results = run_extraction_batch(configs, args.task_config, args.model_config, args.verbose, resume=args.resume, max_profiles=args.max_profiles, inter_profile_delay=args.inter_profile_delay, parallel=args.parallel)
     
     # Save results
     results['timestamp'] = datetime.now().isoformat()

@@ -6,6 +6,8 @@ class HyperLinkDefense(Defense):
 
     def apply(self, profile, ground_truth_label):
         if type(profile) == list:
+            if "email" not in ground_truth_label:
+                raise ValueError("Defense is not applicable to this profile")
             found = 0
             for j in range(len(profile)):
                 if ground_truth_label["email"] in profile[j]:

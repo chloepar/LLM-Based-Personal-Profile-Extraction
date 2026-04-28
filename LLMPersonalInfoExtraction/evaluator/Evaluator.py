@@ -58,7 +58,7 @@ class Evaluator:
         # and the GT label is also 0.8. However, by human inspection, we know that this response is
         # highly affected by the PI instead of the true information. 
         # According to the empirical observation, the threshold of 0.8 is appropriate. 
-        if 'pi' in defense.defense:
+        if 'pi' in defense.defense and info_cat in defense.key_to_injected_data:
             pi_check = self.__check_hit(self.__preprocess_label(info_cat, defense.key_to_injected_data[info_cat].lower(),  defense.key_to_injected_data['name'].lower()), processed_response, current_metric)
             if pi_check >= current_hit:
                 current_hit = 0

@@ -10,15 +10,22 @@ from .Model import Model
 class Groq(Model):
     def __init__(self, config):
         super().__init__(config)
-        api_keys = config["api_key_info"]["api_keys"]
-        api_pos = int(config["api_key_info"]["api_key_use"])
-        assert (0 <= api_pos < len(api_keys)), "Please enter a valid API key to use"
-        self.api_key = api_keys[api_pos]
-        self.set_API_key()
+        self.api_keys = config["api_key_info"]["api_keys"]
+        assert len(self.api_keys) > 0, "Please provide at least one API key"
+        self.api_key_index = int(config["api_key_info"]["api_key_use"])
         self.max_output_tokens = int(config["params"]["max_output_tokens"])
+        self.client = GroqClient(api_key=self.api_keys[self.api_key_index])
+
+    def _rotate_key(self):
+        """Switch to the next API key, returns True if we wrapped around (all keys tried)."""
+        next_index = (self.api_key_index + 1) % len(self.api_keys)
+        wrapped = next_index <= self.api_key_index and next_index == 0
+        self.api_key_index = next_index
+        self.client = GroqClient(api_key=self.api_keys[self.api_key_index])
+        return wrapped
 
     def set_API_key(self):
-        self.client = GroqClient(api_key=self.api_key)
+        self.client = GroqClient(api_key=self.api_keys[self.api_key_index])
 
     def _parse_wait_seconds(self, error_msg):
         """Parse the suggested retry delay from a Groq rate limit error message."""
@@ -40,7 +47,10 @@ class Groq(Model):
         if len(msg) > max_chars:
             msg = msg[:max_chars]
 
-        for attempt in range(4):
+        keys_tried = 0
+        max_attempts = len(self.api_keys) * 4
+
+        for attempt in range(max_attempts):
             try:
                 completion = self.client.chat.completions.create(
                     model=self.name,
@@ -50,8 +60,16 @@ class Groq(Model):
                 )
                 return completion.choices[0].message.content
             except RateLimitError as e:
-                wait = self._parse_wait_seconds(str(e))
-                print(f"[Groq] Rate limit hit. Waiting {wait:.0f}s then retrying (attempt {attempt + 1}/4)...")
-                time.sleep(wait)
+                keys_tried += 1
+                if keys_tried < len(self.api_keys):
+                    self._rotate_key()
+                    print(f"[Groq] Rate limit hit. Rotating to key {self.api_key_index + 1}/{len(self.api_keys)}...")
+                else:
+                    # All keys exhausted — wait for the slowest key's suggested time
+                    wait = self._parse_wait_seconds(str(e))
+                    print(f"[Groq] All {len(self.api_keys)} key(s) rate limited. Waiting {wait:.0f}s then retrying (round {attempt // len(self.api_keys) + 1})...")
+                    time.sleep(wait)
+                    keys_tried = 0
+                    self._rotate_key()
 
-        raise RuntimeError("Groq rate limit exceeded after 4 retries")
+        raise RuntimeError("Groq rate limit exceeded after all retries")
