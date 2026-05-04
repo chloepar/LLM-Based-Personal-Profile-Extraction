@@ -1,118 +1,52 @@
 {
   "completed": [
     [
+      "pi_ci",
+      "direct",
+      0,
+      "yes"
+    ],
+    [
       "mask",
       "direct",
       5,
       "no"
     ],
     [
-      "hyperlink",
-      "pseudocode",
-      0,
-      "yes"
-    ],
-    [
-      "replace_at_dot",
+      "mask",
       "direct",
       0,
-      "no"
-    ],
-    [
-      "replace_at_dot",
-      "direct",
-      5,
-      "yes"
-    ],
-    [
-      "replace_at_dot",
-      "pseudocode",
-      5,
       "no"
     ],
     [
       "no",
       "pseudocode",
       0,
-      "yes"
-    ],
-    [
-      "mask",
-      "contextual",
-      5,
-      "yes"
+      "no"
     ],
     [
       "mask",
       "pseudocode",
-      5,
+      0,
       "no"
     ],
     [
-      "hyperlink",
+      "no",
       "direct",
       5,
       "no"
     ],
     [
       "no",
-      "pseudocode",
-      5,
-      "yes"
-    ],
-    [
-      "mask",
-      "direct",
-      5,
-      "yes"
-    ],
-    [
-      "mask",
       "direct",
       0,
       "no"
     ],
     [
-      "replace_at_dot",
+      "pi_ci",
       "direct",
-      0,
-      "yes"
-    ],
-    [
-      "replace_at_dot",
-      "pseudocode",
-      0,
-      "no"
-    ],
-    [
-      "replace_at_dot",
-      "pseudocode",
-      5,
-      "yes"
-    ],
-    [
-      "mask",
-      "pseudocode",
-      5,
-      "yes"
-    ],
-    [
-      "hyperlink",
-      "direct",
-      5,
-      "yes"
-    ],
-    [
-      "hyperlink",
-      "pseudocode",
       5,
       "no"
-    ],
-    [
-      "mask",
-      "direct",
-      0,
-      "yes"
     ],
     [
       "no",
@@ -124,73 +58,25 @@
       "no",
       "direct",
       0,
+      "yes"
+    ],
+    [
+      "pi_ci",
+      "direct",
+      0,
       "no"
     ],
     [
       "no",
       "pseudocode",
-      5,
-      "no"
-    ],
-    [
-      "replace_at_dot",
-      "pseudocode",
       0,
       "yes"
     ],
     [
-      "hyperlink",
-      "direct",
-      0,
-      "no"
-    ],
-    [
-      "hyperlink",
+      "pi_ci",
       "pseudocode",
       0,
       "no"
-    ],
-    [
-      "mask",
-      "pseudocode",
-      0,
-      "no"
-    ],
-    [
-      "hyperlink",
-      "pseudocode",
-      5,
-      "yes"
-    ],
-    [
-      "replace_at_dot",
-      "direct",
-      5,
-      "no"
-    ],
-    [
-      "no",
-      "direct",
-      0,
-      "yes"
-    ],
-    [
-      "no",
-      "pseudocode",
-      0,
-      "no"
-    ],
-    [
-      "hyperlink",
-      "direct",
-      0,
-      "yes"
-    ],
-    [
-      "mask",
-      "pseudocode",
-      0,
-      "yes"
     ]
   ],
   "results": [
@@ -204,156 +90,9 @@
     {
       "defense": "no",
       "prompt_type": "direct",
-      "icl_num": 5,
-      "adaptive_attack": "no",
-      "status": "failed"
-    },
-    {
-      "defense": "no",
-      "prompt_type": "pseudocode",
-      "icl_num": 5,
-      "adaptive_attack": "no",
-      "status": "failed"
-    },
-    {
-      "defense": "mask",
-      "prompt_type": "direct",
-      "icl_num": 5,
-      "adaptive_attack": "no",
-      "status": "failed"
-    },
-    {
-      "defense": "replace_at_dot",
-      "prompt_type": "direct",
-      "icl_num": 5,
-      "adaptive_attack": "no",
-      "status": "failed"
-    },
-    {
-      "defense": "pi_ci",
-      "prompt_type": "direct",
-      "icl_num": 5,
-      "adaptive_attack": "no",
-      "status": "failed"
-    },
-    {
-      "defense": "hyperlink",
-      "prompt_type": "direct",
-      "icl_num": 5,
-      "adaptive_attack": "no",
-      "status": "failed"
-    },
-    {
-      "defense": "pi_ci",
-      "prompt_type": "pseudocode",
-      "icl_num": 5,
-      "adaptive_attack": "yes",
-      "status": "failed"
-    },
-    {
-      "defense": "mask",
-      "prompt_type": "contextual",
-      "icl_num": 5,
-      "adaptive_attack": "yes",
-      "status": "success"
-    },
-    {
-      "defense": "no",
-      "prompt_type": "persona",
-      "icl_num": 5,
-      "adaptive_attack": "no",
-      "status": "failed"
-    },
-    {
-      "defense": "no",
-      "prompt_type": "direct",
       "icl_num": 0,
       "adaptive_attack": "yes",
       "status": "success"
-    },
-    {
-      "defense": "mask",
-      "prompt_type": "direct",
-      "icl_num": 5,
-      "adaptive_attack": "yes",
-      "status": "success"
-    },
-    {
-      "defense": "mask",
-      "prompt_type": "direct",
-      "icl_num": 0,
-      "adaptive_attack": "yes",
-      "status": "success"
-    },
-    {
-      "defense": "mask",
-      "prompt_type": "direct",
-      "icl_num": 0,
-      "adaptive_attack": "no",
-      "status": "success"
-    },
-    {
-      "defense": "replace_at_dot",
-      "prompt_type": "direct",
-      "icl_num": 0,
-      "adaptive_attack": "yes",
-      "status": "failed"
-    },
-    {
-      "defense": "replace_at_dot",
-      "prompt_type": "direct",
-      "icl_num": 0,
-      "adaptive_attack": "no",
-      "status": "failed"
-    },
-    {
-      "defense": "replace_at_dot",
-      "prompt_type": "direct",
-      "icl_num": 5,
-      "adaptive_attack": "yes",
-      "status": "failed"
-    },
-    {
-      "defense": "pi_ci",
-      "prompt_type": "direct",
-      "icl_num": 0,
-      "adaptive_attack": "no",
-      "status": "failed"
-    },
-    {
-      "defense": "hyperlink",
-      "prompt_type": "direct",
-      "icl_num": 0,
-      "adaptive_attack": "no",
-      "status": "failed"
-    },
-    {
-      "defense": "hyperlink",
-      "prompt_type": "direct",
-      "icl_num": 0,
-      "adaptive_attack": "yes",
-      "status": "failed"
-    },
-    {
-      "defense": "hyperlink",
-      "prompt_type": "direct",
-      "icl_num": 5,
-      "adaptive_attack": "yes",
-      "status": "failed"
-    },
-    {
-      "defense": "pi_ci",
-      "prompt_type": "direct",
-      "icl_num": 0,
-      "adaptive_attack": "yes",
-      "status": "failed"
-    },
-    {
-      "defense": "pi_ci",
-      "prompt_type": "direct",
-      "icl_num": 5,
-      "adaptive_attack": "yes",
-      "status": "failed"
     },
     {
       "defense": "no",
@@ -363,41 +102,6 @@
       "status": "success"
     },
     {
-      "defense": "mask",
-      "prompt_type": "direct",
-      "icl_num": 5,
-      "adaptive_attack": "no",
-      "status": "success"
-    },
-    {
-      "defense": "replace_at_dot",
-      "prompt_type": "direct",
-      "icl_num": 0,
-      "adaptive_attack": "yes",
-      "status": "success"
-    },
-    {
-      "defense": "replace_at_dot",
-      "prompt_type": "direct",
-      "icl_num": 0,
-      "adaptive_attack": "no",
-      "status": "success"
-    },
-    {
-      "defense": "replace_at_dot",
-      "prompt_type": "direct",
-      "icl_num": 5,
-      "adaptive_attack": "no",
-      "status": "success"
-    },
-    {
-      "defense": "replace_at_dot",
-      "prompt_type": "direct",
-      "icl_num": 5,
-      "adaptive_attack": "yes",
-      "status": "success"
-    },
-    {
       "defense": "pi_ci",
       "prompt_type": "direct",
       "icl_num": 0,
@@ -409,34 +113,6 @@
       "prompt_type": "direct",
       "icl_num": 0,
       "adaptive_attack": "no",
-      "status": "success"
-    },
-    {
-      "defense": "hyperlink",
-      "prompt_type": "direct",
-      "icl_num": 0,
-      "adaptive_attack": "no",
-      "status": "success"
-    },
-    {
-      "defense": "hyperlink",
-      "prompt_type": "direct",
-      "icl_num": 0,
-      "adaptive_attack": "yes",
-      "status": "success"
-    },
-    {
-      "defense": "hyperlink",
-      "prompt_type": "direct",
-      "icl_num": 5,
-      "adaptive_attack": "no",
-      "status": "success"
-    },
-    {
-      "defense": "hyperlink",
-      "prompt_type": "direct",
-      "icl_num": 5,
-      "adaptive_attack": "yes",
       "status": "success"
     },
     {
@@ -461,124 +137,54 @@
       "status": "success"
     },
     {
-      "defense": "mask",
+      "defense": "pi_ci",
       "prompt_type": "pseudocode",
       "icl_num": 0,
-      "adaptive_attack": "yes",
+      "adaptive_attack": "no",
       "status": "success"
     },
     {
-      "defense": "mask",
-      "prompt_type": "pseudocode",
-      "icl_num": 5,
+      "defense": "pi_ci",
+      "prompt_type": "direct",
+      "icl_num": 0,
       "adaptive_attack": "no",
-      "status": "failed"
+      "status": "success"
     },
     {
       "defense": "no",
-      "prompt_type": "pseudocode",
-      "icl_num": 5,
-      "adaptive_attack": "yes",
-      "status": "failed"
-    },
-    {
-      "defense": "no",
-      "prompt_type": "pseudocode",
+      "prompt_type": "direct",
       "icl_num": 5,
       "adaptive_attack": "no",
-      "status": "failed"
+      "status": "success"
+    },
+    {
+      "defense": "pi_ci",
+      "prompt_type": "direct",
+      "icl_num": 5,
+      "adaptive_attack": "no",
+      "status": "success"
     },
     {
       "defense": "mask",
-      "prompt_type": "pseudocode",
-      "icl_num": 5,
-      "adaptive_attack": "yes",
-      "status": "failed"
-    },
-    {
-      "defense": "replace_at_dot",
-      "prompt_type": "pseudocode",
+      "prompt_type": "direct",
       "icl_num": 0,
       "adaptive_attack": "no",
       "status": "success"
     },
     {
-      "defense": "replace_at_dot",
-      "prompt_type": "pseudocode",
-      "icl_num": 0,
-      "adaptive_attack": "yes",
-      "status": "success"
-    },
-    {
-      "defense": "replace_at_dot",
-      "prompt_type": "pseudocode",
+      "defense": "mask",
+      "prompt_type": "direct",
       "icl_num": 5,
       "adaptive_attack": "no",
-      "status": "success"
-    },
-    {
-      "defense": "replace_at_dot",
-      "prompt_type": "pseudocode",
-      "icl_num": 5,
-      "adaptive_attack": "yes",
       "status": "success"
     },
     {
       "defense": "pi_ci",
-      "prompt_type": "pseudocode",
+      "prompt_type": "direct",
       "icl_num": 0,
-      "adaptive_attack": "no",
-      "status": "failed"
-    },
-    {
-      "defense": "pi_ci",
-      "prompt_type": "pseudocode",
-      "icl_num": 0,
-      "adaptive_attack": "yes",
-      "status": "failed"
-    },
-    {
-      "defense": "pi_ci",
-      "prompt_type": "pseudocode",
-      "icl_num": 5,
-      "adaptive_attack": "no",
-      "status": "failed"
-    },
-    {
-      "defense": "pi_ci",
-      "prompt_type": "pseudocode",
-      "icl_num": 5,
-      "adaptive_attack": "yes",
-      "status": "failed"
-    },
-    {
-      "defense": "hyperlink",
-      "prompt_type": "pseudocode",
-      "icl_num": 0,
-      "adaptive_attack": "no",
-      "status": "success"
-    },
-    {
-      "defense": "hyperlink",
-      "prompt_type": "pseudocode",
-      "icl_num": 0,
-      "adaptive_attack": "yes",
-      "status": "success"
-    },
-    {
-      "defense": "hyperlink",
-      "prompt_type": "pseudocode",
-      "icl_num": 5,
-      "adaptive_attack": "no",
-      "status": "success"
-    },
-    {
-      "defense": "hyperlink",
-      "prompt_type": "pseudocode",
-      "icl_num": 5,
       "adaptive_attack": "yes",
       "status": "success"
     }
   ],
-  "timestamp": "2026-04-28T06:34:01.680713"
+  "timestamp": "2026-05-03T17:51:52.473631"
 }

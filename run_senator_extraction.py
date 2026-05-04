@@ -306,7 +306,8 @@ def main():
         print(f"Mode: DEMO - {len(configs)} configuration (first only)")
 
     if args.prompt_filter:
-        configs = [c for c in configs if c['prompt_type'] == args.prompt_filter]
+        allowed = [p.strip() for p in args.prompt_filter.split(',')]
+        configs = [c for c in configs if c['prompt_type'] in allowed]
         print(f"Filtered to prompt_type='{args.prompt_filter}': {len(configs)} configurations")
 
     if args.adaptive_filter:
@@ -314,7 +315,8 @@ def main():
         print(f"Filtered to adaptive_attack='{args.adaptive_filter}': {len(configs)} configurations")
 
     if args.defense_filter:
-        configs = [c for c in configs if c['defense'] == args.defense_filter]
+        allowed = [d.strip() for d in args.defense_filter.split(',')]
+        configs = [c for c in configs if c['defense'] in allowed]
         print(f"Filtered to defense='{args.defense_filter}': {len(configs)} configurations")
     
     print(f"\nConfigs to run:")
