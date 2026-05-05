@@ -20,6 +20,11 @@ class ICLManager:
     def __getitem__(self, idx):
         return self.icl_data[self.icl_names[idx]], self.icl_labels[self.icl_names[idx]]
     
+    # Wikipedia-scraped profiles can be 5-11K chars each; cap ICL snippets so
+    # 5 examples don't overflow a typical API context window before the test
+    # profile is appended.
+    _MAX_ICL_CHARS = 2000
+
     def __prepare_icl_eamples(self):
         """
         Prepare the HTML profiles and the labels for the ICL data
@@ -40,4 +45,5 @@ class ICLManager:
             parser = get_parser(self.dataset, include_link=False)
             parser.feed(raw)
             parsed_data = parsed_data_to_string(self.dataset, parser.data)
-            self.icl_data[name] = parsed_data.replace('href\n#\n', '')
+            parsed_data = parsed_data.replace('href\n#\n', '')
+            self.icl_data[name] = parsed_data[:self._MAX_ICL_CHARS]

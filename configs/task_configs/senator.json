@@ -7,7 +7,7 @@
         "dataset":"senator",
         "path":"./data/senator",
         "label_path":"./data/senator/labels.json",
-        "icl_path":"./data/senator",
+        "icl_path":"./data/senator/icl",
         "icl_label_path":"./data/senator/labels.json"
     }
 }

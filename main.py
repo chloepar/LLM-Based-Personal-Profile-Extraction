@@ -11,7 +11,8 @@ from pathlib import Path
 def is_valid_response(response):
     if not response or len(response.strip()) < 3:
         return False
-    error_phrases = ['rate limit', 'exceeded', 'quota', 'too many requests', 'error']
+    # Match only API-level failure messages, not content that happens to contain these words.
+    error_phrases = ['rate limit exceeded', 'quota exceeded', 'too many requests', 'api error']
     return not any(p in response.lower() for p in error_phrases)
 
 
