@@ -283,6 +283,8 @@ def main():
                        help='Only run configs with this adaptive_attack value (no or yes)')
     parser.add_argument('--defense_filter', default='',
                        help='Only run configs with this defense (e.g. no, mask, pi_ci, replace_at_dot, hyperlink)')
+    parser.add_argument('--icl_filter', type=int, default=-1,
+                       help='Only run configs with this icl_num (e.g. 0 or 5)')
     parser.add_argument('--parallel', type=int, default=1,
                        help='Number of configs to run concurrently (use one per API key, e.g. 4)')
 
@@ -318,6 +320,10 @@ def main():
         allowed = [d.strip() for d in args.defense_filter.split(',')]
         configs = [c for c in configs if c['defense'] in allowed]
         print(f"Filtered to defense='{args.defense_filter}': {len(configs)} configurations")
+
+    if args.icl_filter >= 0:
+        configs = [c for c in configs if c['icl_num'] == args.icl_filter]
+        print(f"Filtered to icl_num={args.icl_filter}: {len(configs)} configurations")
     
     print(f"\nConfigs to run:")
     for i, cfg in enumerate(configs, 1):

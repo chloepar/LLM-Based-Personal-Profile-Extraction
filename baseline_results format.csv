@@ -1,0 +1,17 @@
+attribute,regex,keyword,spacy,bert,,,
+name,50%,50%,68%,67%,,,
+birthdate,0%,0%,0%,0%,,,
+gender,85%,85%,85%,85%,,,
+race_ethnicity,8%,8%,8%,8%,,,
+committee_roles,14%,14%,14%,14%,,,
+religion,9%,9%,9%,9%,,,
+education,23%,19%,26%,24%,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+attribute,name,birthdate,gender,race_ ethnicity,committee_roles,religion,education
+regex,50%,0%,85%,8%,14%,9%,23%
+keyword,50%,0%,85%,8%,14%,9%,19%
+spacy,68%,0%,85%,8%,14%,9%,26%
+bert,67%,0%,85%,8%,14%,9%,24%
+,,,,,,,
