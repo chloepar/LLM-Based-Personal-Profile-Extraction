@@ -1,0 +1,2042 @@
+{
+  "Adam_Schiff_CA": {
+    "name": "Adam Schiff",
+    "birthdate": "6/22/60",
+    "gender": "Male",
+    "race_ethnicity": "White",
+    "committee_roles": "Senate Committee on Agriculture, Nutrition, and Forestry|Commodities, Derivatives, Risk Management, and Trade|Conservation, Forestry, Natural Resources, and Biotechnology|Senate Committee on Environment and Public Works|Clean Air, Climate, and Nuclear Innovation and Safety|Fisheries, Wildlife, and Water (Ranking Member)|Transportation and Infrastructure|Senate Committee on Small Business and Entrepreneurship|Senate Committee on the Judiciary|Antitrust, Competition Policy, and Consumer Rights|Intellectual Property (Ranking Member)|Privacy, Technology, and the Law|the Constitution",
+    "religion": "Jewish",
+    "education": [
+      {
+        "degree": "BA",
+        "institution": "stanford university",
+        "year": null
+      },
+      {
+        "degree": "JD",
+        "institution": "harvard university",
+        "year": null
+      }
+    ]
+  },
+  "Alan_Armstrong_OK": {
+    "name": "Alan Armstrong",
+    "birthdate": "7/17/46",
+    "gender": "Male",
+    "race_ethnicity": "White",
+    "committee_roles": "Health, Education, Labor, and Pensions Committee|Indian Affairs Committee",
+    "religion": "Protestant",
+    "education": [
+      {
+        "degree": "BS",
+        "institution": "university oklahoma",
+        "year": null
+      }
+    ]
+  },
+  "Alex_Padilla_CA": {
+    "name": "Alex Padilla",
+    "birthdate": "3/22/73",
+    "gender": "Male",
+    "race_ethnicity": "Hispanic",
+    "committee_roles": "Senate Committee on Energy and Natural Resources|Energy|Public Lands, Forests, and Mining|Water and Power|Senate Committee on Environment and Public Works|Clean Air, Climate, and Nuclear Innovation and Safety|Fisheries, Wildlife, and Water|Transportation and Infrastructure|Senate Committee on Rules and Administration (Ranking Member)|Senate Committee on the Budget|Senate Committee on the Judiciary|Federal Courts, Oversight, Agency Action, and Federal Rights|Border Security and Immigration (Ranking Member)|Privacy, Technology, and the Law|the Constitution|Joint Committee on Printing|Joint Committee of Congress on the Library",
+    "religion": "Catholic",
+    "education": [
+      {
+        "degree": "BS",
+        "institution": "massachusetts institute technology",
+        "year": null
+      }
+    ]
+  },
+  "Amy_Klobuchar_MN": {
+    "name": "Amy Klobuchar",
+    "birthdate": "5/25/60",
+    "gender": "Female",
+    "race_ethnicity": "White",
+    "committee_roles": "Senate Committee on Agriculture, Nutrition, and Forestry (Ranking Member)|Commodities, Derivatives, Risk Management, and Trade (Ex Officio)|Conservation, Forestry, Natural Resources, and Biotechnology (Ex Officio)|Food and Nutrition, Specialty Crops, Organics, and Research (Ex Officio)|Livestock, Dairy, Poultry, and Food Safety (Ex Officio)|Rural Development, Energy, and Credit (Ex Officio)|Senate Committee on Commerce, Science, and Transportation|Telecommunications and Media|Consumer Protection, Technology, and Data Privacy|Surface Transportation, Freight, Pipelines, and Safety|Senate Committee on Rules and Administration|Senate Committee on the Judiciary|Antitrust, Competition Policy, and Consumer Rights|Crime and Counterterrorism|Border Security and Immigration|Privacy, Technology, and the Law (Ranking Member)|Joint Committee of Congress on the Library|Joint Economic Committee",
+    "religion": "Congregationalist",
+    "education": [
+      {
+        "degree": "BA",
+        "institution": "yale university",
+        "year": null
+      },
+      {
+        "degree": "JD",
+        "institution": "university chicago",
+        "year": null
+      }
+    ]
+  },
+  "Andy_Kim_NJ": {
+    "name": "Andy Kim",
+    "birthdate": "7/12/82",
+    "gender": "Male",
+    "race_ethnicity": "Asian American",
+    "committee_roles": "Senate Committee on Banking, Housing, and Urban Affairs|Financial Institutions and Consumer Protection|National Security and International Trade and Finance (Ranking Member)|Securities, Insurance, and Investment|Senate Committee on Commerce, Science, and Transportation|Aviation, Space, and Innovation|Telecommunications and Media|Surface Transportation, Freight, Pipelines, and Safety|Senate Committee on Health, Education, Labor, and Pensions|Education and the American Family|Primary Health and Retirement Security|Senate Committee on Homeland Security and Governmental Affairs|Permanent Subcommittee on Investigations|Disaster Management, District of Columbia, and Census (Ranking Member)|Senate Special Committee on Aging",
+    "religion": "Presbyterian",
+    "education": [
+      {
+        "degree": null,
+        "institution": "deep springs college",
+        "year": null
+      },
+      {
+        "degree": "BA",
+        "institution": "university chicago",
+        "year": null
+      },
+      {
+        "degree": null,
+        "institution": "magdalen college oxford",
+        "year": null
+      }
+    ]
+  },
+  "Angela_Alsobrooks_MD": {
+    "name": "Angela Alsobrooks",
+    "birthdate": "2/23/71",
+    "gender": "Female",
+    "race_ethnicity": "Black",
+    "committee_roles": "Senate Committee on Banking, Housing, and Urban Affairs|Financial Institutions and Consumer Protection|Housing, Transportation, and Community Development|Securities, Insurance, and Investment|Senate Committee on Environment and Public Works|Fisheries, Wildlife, and Water|Transportation and Infrastructure (Ranking Member)|Senate Committee on Health, Education, Labor, and Pensions|Education and the American Family|Employment and Workplace Safety|Senate Special Committee on Aging",
+    "religion": "Baptist",
+    "education": [
+      {
+        "degree": "BA",
+        "institution": "duke university",
+        "year": null
+      },
+      {
+        "degree": "JD",
+        "institution": "university maryland baltimore",
+        "year": null
+      }
+    ]
+  },
+  "Angus_King_ME": {
+    "name": "Angus King",
+    "birthdate": "3/31/44",
+    "gender": "Male",
+    "race_ethnicity": "White",
+    "committee_roles": "Senate Committee on Armed Services|Airland|Seapower|Strategic Forces (Ranking Member)|Senate Committee on Energy and Natural Resources|Energy|National Parks (Ranking Member)|Public Lands, Forests, and Mining|Senate Committee on Veterans' Affairs|Senate Select Committee on Intelligence",
+    "religion": "Episcopalian",
+    "education": [
+      {
+        "degree": "BA",
+        "institution": "dartmouth college",
+        "year": null
+      },
+      {
+        "degree": "JD",
+        "institution": "university virginia",
+        "year": null
+      }
+    ]
+  },
+  "Ashley_Moody_FL": {
+    "name": "Ashley Moody",
+    "birthdate": "3/28/75",
+    "gender": "Female",
+    "race_ethnicity": "White",
+    "committee_roles": "Senate Committee on Health, Education, Labor, and Pensions|Education and the American Family|Primary Health and Retirement Security|Senate Committee on Homeland Security and Governmental Affairs|Disaster Management, District of Columbia, and Census|Border Management, Federal Workforce, and Regulatory Affairs|Senate Committee on the Judiciary|Antitrust, Competition Policy, and Consumer Rights|Border Security and Immigration|Intellectual Property|Privacy, Technology, and the Law|Joint Economic Committee|Senate Special Committee on Aging",
+    "religion": null,
+    "education": [
+      {
+        "degree": "BS",
+        "institution": "university florida",
+        "year": null
+      },
+      {
+        "degree": "MS",
+        "institution": "university florida",
+        "year": null
+      },
+      {
+        "degree": "JD",
+        "institution": "university florida",
+        "year": null
+      },
+      {
+        "degree": null,
+        "institution": "stetson university",
+        "year": null
+      }
+    ]
+  },
+  "Ben_Ray_Lujan_NM": {
+    "name": "Ben Ray Lujan",
+    "birthdate": "6/7/72",
+    "gender": "Male",
+    "race_ethnicity": "Hispanic",
+    "committee_roles": "Senate Committee on Agriculture, Nutrition, and Forestry|Conservation, Forestry, Natural Resources, and Biotechnology|Food and Nutrition, Specialty Crops, Organics, and Research (Ranking Member)|Rural Development, Energy, and Credit|Senate Committee on Commerce, Science, and Transportation|Telecommunications and Media (Ranking Member)|Consumer Protection, Technology, and Data Privacy|Surface Transportation, Freight, Pipelines, and Safety|Senate Committee on Finance|Energy, Natural Resources, and Infrastructure|Health Care|Taxation and IRS Oversight|Senate Committee on Indian Affairs|Senate Committee on the Budget|United States Senate Caucus on International Narcotics Control",
+    "religion": "Catholic",
+    "education": [
+      {
+        "degree": null,
+        "institution": "new mexico highlands university",
+        "year": null
+      }
+    ]
+  },
+  "Bernie_Moreno_OH": {
+    "name": "Bernie Moreno",
+    "birthdate": "2/14/67",
+    "gender": "Male",
+    "race_ethnicity": "Hispanic",
+    "committee_roles": "Senate Committee on Banking, Housing, and Urban Affairs|Housing, Transportation, and Community Development|Securities, Insurance, and Investment|Senate Committee on Commerce, Science, and Transportation|Telecommunications and Media|Coast Guard, Maritime, and Fisheries|Science, Manufacturing, and Competitiveness|Surface Transportation, Freight, Pipelines, and Safety|Senate Committee on Homeland Security and Governmental Affairs|Permanent Subcommittee on Investigations|Border Management, Federal Workforce, and Regulatory Affairs|Senate Committee on the Budget|United States Senate Caucus on International Narcotics Control|Digital Assets",
+    "religion": "Catholic",
+    "education": [
+      {
+        "degree": null,
+        "institution": "university michigan",
+        "year": null
+      }
+    ]
+  },
+  "Bernie_Sanders_VT": {
+    "name": "Bernie Sanders",
+    "birthdate": "9/8/41",
+    "gender": "Male",
+    "race_ethnicity": "White",
+    "committee_roles": "Senate Committee on Environment and Public Works|Chemical Safety, Waste Management, Environmental Justice, and Regulatory Oversight|Clean Air, Climate, and Nuclear Innovation and Safety|Fisheries, Wildlife, and Water|Senate Committee on Finance|Health Care|Social Security, Pensions, and Family Policy (Ranking Member)|Taxation and IRS Oversight|Senate Committee on Health, Education, Labor, and Pensions (Ranking Member)|Education and the American Family (Ex Officio)|Employment and Workplace Safety (Ex Officio)|Primary Health and Retirement Security (Ex Officio)|Senate Committee on the Budget|Senate Committee on Veterans' Affairs",
+    "religion": "Jewish",
+    "education": [
+      {
+        "degree": null,
+        "institution": "brooklyn college",
+        "year": null
+      },
+      {
+        "degree": "BA",
+        "institution": "university chicago",
+        "year": null
+      }
+    ]
+  },
+  "Bill_Cassidy_LA": {
+    "name": "Bill Cassidy",
+    "birthdate": "9/28/57",
+    "gender": "Male",
+    "race_ethnicity": "White",
+    "committee_roles": "Senate Committee on Energy and Natural Resources|Energy|National Parks|Water and Power|Senate Committee on Finance|Fiscal Responsibility and Economic Growth|Health Care|Taxation and IRS Oversight|Senate Committee on Health, Education, Labor, and Pensions (Chairman)|Education and the American Family (Ex Officio)|Employment and Workplace Safety (Ex Officio)|Primary Health and Retirement Security (Ex Officio)|Senate Committee on Veterans' Affairs",
+    "religion": "Protestant unspecified",
+    "education": [
+      {
+        "degree": "BS",
+        "institution": "louisiana state university",
+        "year": null
+      },
+      {
+        "degree": "MD",
+        "institution": "louisiana state university",
+        "year": null
+      }
+    ]
+  },
+  "Bill_Hagerty_TN": {
+    "name": "Bill Hagerty",
+    "birthdate": "8/14/59",
+    "gender": "Male",
+    "race_ethnicity": "White",
+    "committee_roles": "Senate Committee on Appropriations|Commerce, Justice, Science, and Related Agencies|Energy and Water Development|Financial Services and General Government (Chairman)|Department of Homeland Security|Military Construction, Veterans Affairs, and Related Agencies|State, Foreign Operations, and Related Programs|Senate Committee on Banking, Housing, and Urban Affairs|Financial Institutions and Consumer Protection|National Security and International Trade and Finance (Chairman)|Senate Committee on Foreign Relations|Multilateral International Development, Multilateral Institutions, and International Economic, Energy, and Environmental Policy|State Department and USAID Management, International Operations, and Bilateral International Development (Chairman)|Western Hemisphere, Transnational Crime, Civilian Security, Democracy, Human Rights, and Global Women's Issues|Senate Committee on Rules and Administration|Joint Committee on Printing|Digital Assets",
+    "religion": "Episcopalian",
+    "education": [
+      {
+        "degree": "BA",
+        "institution": "vanderbilt university",
+        "year": null
+      },
+      {
+        "degree": "JD",
+        "institution": "vanderbilt university",
+        "year": null
+      }
+    ]
+  },
+  "Brian_Schatz_HI": {
+    "name": "Brian Schatz",
+    "birthdate": "10/20/72",
+    "gender": "Male",
+    "race_ethnicity": "White",
+    "committee_roles": "Senate Committee on Appropriations|Commerce, Justice, Science, and Related Agencies|Department of Defense|Departments of Labor, Health and Human Services, and Education, and Related Agencies|Military Construction, Veterans Affairs, and Related Agencies|State, Foreign Operations, and Related Programs (Ranking Member)|Transportation, Housing and Urban Development, and Related Agencies|Senate Committee on Commerce, Science, and Transportation|Telecommunications and Media|Consumer Protection, Technology, and Data Privacy|Coast Guard, Maritime, and Fisheries|Surface Transportation, Freight, Pipelines, and Safety|Senate Committee on Foreign Relations|East Asia, the Pacific, and International Cybersecurity Policy|Europe and Regional Security Cooperation|Multilateral International Development, Multilateral Institutions, and International Economic, Energy, and Environmental Policy|Senate Committee on Indian Affairs (Vice Chairman)|Senate Select Committee on Ethics",
+    "religion": "Jewish",
+    "education": [
+      {
+        "degree": "BA",
+        "institution": "pomona college",
+        "year": null
+      }
+    ]
+  },
+  "Catherine_Cortez_Masto_NV": {
+    "name": "Catherine Cortez Masto",
+    "birthdate": "3/29/64",
+    "gender": "Female",
+    "race_ethnicity": "Hispanic",
+    "committee_roles": "Senate Committee on Banking, Housing, and Urban Affairs|Financial Institutions and Consumer Protection (Ranking Member)|National Security and International Trade and Finance|Securities, Insurance, and Investment|Senate Committee on Energy and Natural Resources|Energy|Public Lands, Forests, and Mining (Ranking Member)|Water and Power|Senate Committee on Finance|Health Care|International Trade, Customs, and Global Competitiveness|Social Security, Pensions, and Family Policy|Senate Committee on Indian Affairs",
+    "religion": "Catholic",
+    "education": [
+      {
+        "degree": "BS",
+        "institution": "university nevada reno",
+        "year": null
+      },
+      {
+        "degree": "JD",
+        "institution": "gonzaga university",
+        "year": null
+      }
+    ]
+  },
+  "Chris_Coons_DE": {
+    "name": "Chris Coons",
+    "birthdate": "9/9/63",
+    "gender": "Male",
+    "race_ethnicity": "White",
+    "committee_roles": "Senate Committee on Appropriations|Commerce, Justice, Science, and Related Agencies|Department of Defense (Ranking Member)|Energy and Water Development|Financial Services and General Government|State, Foreign Operations, and Related Programs|Transportation, Housing and Urban Development, and Related Agencies|Senate Committee on Foreign Relations|Africa and Global Health Policy|East Asia, the Pacific, and International Cybersecurity Policy (Ranking Member)|Multilateral International Development, Multilateral Institutions, and International Economic, Energy, and Environmental Policy|State Department and USAID Management, International Operations, and Bilateral International Development|Senate Committee on Small Business and Entrepreneurship|Senate Committee on the Judiciary|Crime and Counterterrorism|Border Security and Immigration|Intellectual Property|Privacy, Technology, and the Law|Senate Select Committee on Ethics (Vice Chairman)",
+    "religion": "Presbyterian",
+    "education": [
+      {
+        "degree": "BA",
+        "institution": "amherst college",
+        "year": null
+      },
+      {
+        "degree": "JD",
+        "institution": "yale university",
+        "year": null
+      }
+    ]
+  },
+  "Chris_Murphy_CT": {
+    "name": "Chris Murphy",
+    "birthdate": "8/3/73",
+    "gender": "Male",
+    "race_ethnicity": "White",
+    "committee_roles": "Senate Committee on Appropriations|Department of Defense|Department of Homeland Security (Ranking Member)|Departments of Labor, Health and Human Services, and Education, and Related Agencies|State, Foreign Operations, and Related Programs|Transportation, Housing and Urban Development, and Related Agencies|Senate Committee on Foreign Relations|Europe and Regional Security Cooperation (Ranking Member)|Near East, South Asia, Central Asia, and Counterterrorism|Western Hemisphere, Transnational Crime, Civilian Security, Democracy, Human Rights, and Global Women's Issues|Senate Committee on Health, Education, Labor, and Pensions|Employment and Workplace Safety|Primary Health and Retirement Security",
+    "religion": "Protestant unspecified",
+    "education": [
+      {
+        "degree": "BA",
+        "institution": "williams college",
+        "year": null
+      },
+      {
+        "degree": "JD",
+        "institution": "university connecticut",
+        "year": null
+      }
+    ]
+  },
+  "Chris_Van_Hollen_MD": {
+    "name": "Chris Van Hollen",
+    "birthdate": "1/10/59",
+    "gender": "Male",
+    "race_ethnicity": "White",
+    "committee_roles": "Senate Committee on Appropriations|Commerce, Justice, Science, and Related Agencies (Ranking Member)|Financial Services and General Government|Department of Homeland Security|Department of Interior, Environment, and Related Agencies|Transportation, Housing and Urban Development, and Related Agencies|Senate Committee on Banking, Housing, and Urban Affairs|Housing, Transportation, and Community Development|National Security and International Trade and Finance|Senate Committee on Foreign Relations|Africa and Global Health Policy|East Asia, the Pacific, and International Cybersecurity Policy|State Department and USAID Management, International Operations, and Bilateral International Development (Ranking Member)|Senate Committee on the Budget|Digital Assets",
+    "religion": "Episcopalian",
+    "education": [
+      {
+        "degree": "BA",
+        "institution": "swarthmore college",
+        "year": null
+      },
+      {
+        "degree": null,
+        "institution": "harvard university",
+        "year": null
+      },
+      {
+        "degree": "JD",
+        "institution": "georgetown university",
+        "year": null
+      }
+    ]
+  },
+  "Chuck_Grassley_IA": {
+    "name": "Chuck Grassley",
+    "birthdate": "9/17/33",
+    "gender": "Male",
+    "race_ethnicity": "White",
+    "committee_roles": "Senate Committee on Agriculture, Nutrition, and Forestry|Commodities, Derivatives, Risk Management, and Trade|Food and Nutrition, Specialty Crops, Organics, and Research|Rural Development, Energy, and Credit|Senate Committee on Finance|International Trade, Customs, and Global Competitiveness|Social Security, Pensions, and Family Policy (Chairman)|Taxation and IRS Oversight|Senate Committee on the Budget|Senate Committee on the Judiciary (Chairman)|Joint Committee on Taxation|United States Senate Caucus on International Narcotics Control",
+    "religion": "Baptist",
+    "education": [
+      {
+        "degree": "BA",
+        "institution": "university northern iowa",
+        "year": null
+      },
+      {
+        "degree": "MA",
+        "institution": "university northern iowa",
+        "year": null
+      },
+      {
+        "degree": null,
+        "institution": "university iowa",
+        "year": null
+      }
+    ]
+  },
+  "Chuck_Schumer_NY": {
+    "name": "Chuck Schumer",
+    "birthdate": "11/23/50",
+    "gender": "Male",
+    "race_ethnicity": "White",
+    "committee_roles": "Senate Committee on Rules and Administration|Senate Select Committee on Intelligence (Ex Officio)",
+    "religion": "Jewish",
+    "education": [
+      {
+        "degree": "BA",
+        "institution": "harvard university",
+        "year": null
+      },
+      {
+        "degree": "JD",
+        "institution": "harvard university",
+        "year": null
+      }
+    ]
+  },
+  "Cindy_Hyde-Smith_MS": {
+    "name": "Cindy Hyde-Smith",
+    "birthdate": "5/10/59",
+    "gender": "Female",
+    "race_ethnicity": "White",
+    "committee_roles": "Senate Committee on Agriculture, Nutrition, and Forestry|Commodities, Derivatives, Risk Management, and Trade (Chairman)|Conservation, Forestry, Natural Resources, and Biotechnology|Livestock, Dairy, Poultry, and Food Safety|Senate Committee on Appropriations|Agriculture, Rural Development, Food and Drug Administration, and Related Agencies|Energy and Water Development|Department of Homeland Security|Departments of Labor, Health and Human Services, and Education, and Related Agencies|Military Construction, Veterans Affairs, and Related Agencies|Transportation, Housing and Urban Development, and Related Agencies (Chairman)|Senate Committee on Energy and Natural Resources|Energy|Public Lands, Forests, and Mining|Senate Committee on Rules and Administration|Joint Committee of Congress on the Library",
+    "religion": "Baptist",
+    "education": [
+      {
+        "degree": null,
+        "institution": "copiah\u2013lincoln community college",
+        "year": null
+      },
+      {
+        "degree": "BA",
+        "institution": "university southern mississippi",
+        "year": null
+      }
+    ]
+  },
+  "Cory_Booker_NJ": {
+    "name": "Cory Booker",
+    "birthdate": "4/27/69",
+    "gender": "Male",
+    "race_ethnicity": "Black",
+    "committee_roles": "Senate Committee on Agriculture, Nutrition, and Forestry|Commodities, Derivatives, Risk Management, and Trade (Ranking Member)|Food and Nutrition, Specialty Crops, Organics, and Research|Livestock, Dairy, Poultry, and Food Safety|Senate Committee on Foreign Relations|Africa and Global Health Policy (Ranking Member)|Europe and Regional Security Cooperation|Near East, South Asia, Central Asia, and Counterterrorism|Senate Committee on Small Business and Entrepreneurship|Senate Committee on the Judiciary|Antitrust, Competition Policy, and Consumer Rights (Ranking Member)|Crime and Counterterrorism|Border Security and Immigration|the Constitution",
+    "religion": "Baptist",
+    "education": [
+      {
+        "degree": "BA",
+        "institution": "stanford university",
+        "year": null
+      },
+      {
+        "degree": "MA",
+        "institution": "stanford university",
+        "year": null
+      },
+      {
+        "degree": "MA",
+        "institution": "queen's college oxford",
+        "year": null
+      },
+      {
+        "degree": "JD",
+        "institution": "yale university",
+        "year": null
+      }
+    ]
+  },
+  "Cynthia_Lummis_WY": {
+    "name": "Cynthia Lummis",
+    "birthdate": "9/10/54",
+    "gender": "Female",
+    "race_ethnicity": "White",
+    "committee_roles": "Senate Committee on Banking, Housing, and Urban Affairs|Financial Institutions and Consumer Protection|Securities, Insurance, and Investment|Senate Committee on Commerce, Science, and Transportation|Telecommunications and Media|Consumer Protection, Technology, and Data Privacy|Science, Manufacturing, and Competitiveness|Senate Committee on Environment and Public Works|Clean Air, Climate, and Nuclear Innovation and Safety (Chairman)|Fisheries, Wildlife, and Water|Transportation and Infrastructure|Digital Assets (Chairman)",
+    "religion": "Lutheran",
+    "education": [
+      {
+        "degree": "BS",
+        "institution": "university wyoming",
+        "year": null
+      },
+      {
+        "degree": "JD",
+        "institution": "university wyoming",
+        "year": null
+      }
+    ]
+  },
+  "Dan_Sullivan_AK": {
+    "name": "Dan Sullivan",
+    "birthdate": "11/13/64",
+    "gender": "Male",
+    "race_ethnicity": "White",
+    "committee_roles": "Senate Committee on Armed Services|Airland|Readiness and Management Support (Chairman)|Seapower|Senate Committee on Commerce, Science, and Transportation|Telecommunications and Media|Coast Guard, Maritime, and Fisheries (Chairman)|Surface Transportation, Freight, Pipelines, and Safety|Senate Committee on Environment and Public Works|Chemical Safety, Waste Management, Environmental Justice, and Regulatory Oversight|Fisheries, Wildlife, and Water|Transportation and Infrastructure|Senate Committee on Veterans' Affairs",
+    "religion": "Catholic",
+    "education": [
+      {
+        "degree": "BA",
+        "institution": "harvard university",
+        "year": null
+      },
+      {
+        "degree": null,
+        "institution": "georgetown universitymsjd",
+        "year": null
+      }
+    ]
+  },
+  "Dave_McCormick_PA": {
+    "name": "Dave McCormick",
+    "birthdate": "8/17/65",
+    "gender": "Male",
+    "race_ethnicity": "White",
+    "committee_roles": "Senate Committee on Banking, Housing, and Urban Affairs|Housing, Transportation, and Community Development|National Security and International Trade and Finance|Senate Committee on Energy and Natural Resources|Energy (Chairman)|Water and Power|Senate Committee on Foreign Relations|East Asia, the Pacific, and International Cybersecurity Policy|Multilateral International Development, Multilateral Institutions, and International Economic, Energy, and Environmental Policy|Near East, South Asia, Central Asia, and Counterterrorism (Chairman)|Joint Economic Committee|Senate Special Committee on Aging|Digital Assets",
+    "religion": "Presbyterian",
+    "education": [
+      {
+        "degree": "BS",
+        "institution": "united states military academy",
+        "year": null
+      },
+      {
+        "degree": "MA",
+        "institution": "princeton university",
+        "year": null
+      },
+      {
+        "degree": "PHD",
+        "institution": "princeton university",
+        "year": null
+      }
+    ]
+  },
+  "Deb_Fischer_NE": {
+    "name": "Deb Fischer",
+    "birthdate": "3/1/51",
+    "gender": "Female",
+    "race_ethnicity": "White",
+    "committee_roles": "Senate Committee on Agriculture, Nutrition, and Forestry|Livestock, Dairy, Poultry, and Food Safety|Rural Development, Energy, and Credit|Senate Committee on Appropriations|Agriculture, Rural Development, Food and Drug Administration, and Related Agencies|Commerce, Justice, Science, and Related Agencies|Financial Services and General Government|Department of Interior, Environment, and Related Agencies|Legislative Branch|Military Construction, Veterans Affairs, and Related Agencies|Senate Committee on Armed Services|Airland|Readiness and Management Support|Strategic Forces (Chairman)|Senate Committee on Commerce, Science, and Transportation|Telecommunications and Media (Chairman)|Consumer Protection, Technology, and Data Privacy|Surface Transportation, Freight, Pipelines, and Safety|Senate Committee on Rules and Administration|Joint Committee on Printing|Joint Committee of Congress on the Library|Senate Select Committee on Ethics",
+    "religion": "Presbyterian",
+    "education": [
+      {
+        "degree": "BS",
+        "institution": "university nebraska\u2013lincoln",
+        "year": null
+      }
+    ]
+  },
+  "Dick_Durbin_IL": {
+    "name": "Dick Durbin",
+    "birthdate": "11/21/44",
+    "gender": "Male",
+    "race_ethnicity": "White",
+    "committee_roles": "Senate Committee on Agriculture, Nutrition, and Forestry|Commodities, Derivatives, Risk Management, and Trade|Livestock, Dairy, Poultry, and Food Safety|Senate Committee on Appropriations|Department of Defense|Energy and Water Development|Financial Services and General Government|Departments of Labor, Health and Human Services, and Education, and Related Agencies|State, Foreign Operations, and Related Programs|Transportation, Housing and Urban Development, and Related Agencies|Senate Committee on the Judiciary (Ranking Member)|Crime and Counterterrorism (Ranking Member)",
+    "religion": "Catholic",
+    "education": [
+      {
+        "degree": "BS",
+        "institution": "georgetown university",
+        "year": null
+      },
+      {
+        "degree": "JD",
+        "institution": "georgetown university",
+        "year": null
+      }
+    ]
+  },
+  "Ed_Markey_MA": {
+    "name": "Ed Markey",
+    "birthdate": "7/11/46",
+    "gender": "Male",
+    "race_ethnicity": "White",
+    "committee_roles": "Senate Committee on Commerce, Science, and Transportation|Telecommunications and Media|Consumer Protection, Technology, and Data Privacy|Surface Transportation, Freight, Pipelines, and Safety|Senate Committee on Environment and Public Works|Chemical Safety, Waste Management, Environmental Justice, and Regulatory Oversight|Clean Air, Climate, and Nuclear Innovation and Safety|Transportation and Infrastructure|Senate Committee on Health, Education, Labor, and Pensions|Education and the American Family|Primary Health and Retirement Security (Ranking Member)|Senate Committee on Small Business and Entrepreneurship (Ranking Member)",
+    "religion": "Catholic",
+    "education": [
+      {
+        "degree": "BA",
+        "institution": "boston college",
+        "year": null
+      },
+      {
+        "degree": "JD",
+        "institution": "boston college",
+        "year": null
+      }
+    ]
+  },
+  "Elissa_Slotkin_MI": {
+    "name": "Elissa Slotkin",
+    "birthdate": "7/10/76",
+    "gender": "Female",
+    "race_ethnicity": "White",
+    "committee_roles": "Senate Committee on Agriculture, Nutrition, and Forestry|Commodities, Derivatives, Risk Management, and Trade|Livestock, Dairy, Poultry, and Food Safety (Ranking Member)|Senate Committee on Armed Services|Airland|Cybersecurity|Emerging Threats and Capabilities (Ranking Member)|Senate Committee on Homeland Security and Governmental Affairs|Disaster Management, District of Columbia, and Census|Border Management, Federal Workforce, and Regulatory Affairs|Senate Committee on Veterans' Affairs",
+    "religion": "Jewish",
+    "education": [
+      {
+        "degree": "BA",
+        "institution": "cornell university",
+        "year": null
+      },
+      {
+        "degree": null,
+        "institution": "columbia university",
+        "year": null
+      }
+    ]
+  },
+  "Elizabeth_Warren_MA": {
+    "name": "Elizabeth Warren",
+    "birthdate": "6/22/49",
+    "gender": "Female",
+    "race_ethnicity": "White",
+    "committee_roles": "Senate Committee on Armed Services|Personnel (Ranking Member)|Readiness and Management Support|Strategic Forces|Senate Committee on Banking, Housing, and Urban Affairs (Ranking Member)|Economic Policy (Ex Officio)|Financial Institutions and Consumer Protection (Ex Officio)|Housing, Transportation, and Community Development (Ex Officio)|National Security and International Trade and Finance (Ex Officio)|Securities, Insurance, and Investment (Ex Officio)|Senate Committee on Finance|Health Care|International Trade, Customs, and Global Competitiveness|Taxation and IRS Oversight|Senate Special Committee on Aging|Digital Assets (Ex Officio)",
+    "religion": "Methodist",
+    "education": [
+      {
+        "degree": null,
+        "institution": "george washington university",
+        "year": null
+      },
+      {
+        "degree": "BS",
+        "institution": "university houston",
+        "year": null
+      },
+      {
+        "degree": "JD",
+        "institution": "rutgers university",
+        "year": null
+      }
+    ]
+  },
+  "Eric_Schmitt_MO": {
+    "name": "Eric Schmitt",
+    "birthdate": "6/20/75",
+    "gender": "Male",
+    "race_ethnicity": "White",
+    "committee_roles": "Senate Committee on Armed Services|Airland|Cybersecurity|Emerging Threats and Capabilities|Readiness and Management Support|Senate Committee on Commerce, Science, and Transportation|Aviation, Space, and Innovation|Telecommunications and Media|Science, Manufacturing, and Competitiveness|Surface Transportation, Freight, Pipelines, and Safety|Senate Committee on the Judiciary|Antitrust, Competition Policy, and Consumer Rights|Federal Courts, Oversight, Agency Action, and Federal Rights|Intellectual Property|the Constitution (Chairman)|Joint Economic Committee (Vice Chairman)",
+    "religion": "Catholic",
+    "education": [
+      {
+        "degree": "BA",
+        "institution": "truman state university",
+        "year": null
+      },
+      {
+        "degree": "JD",
+        "institution": "saint louis university",
+        "year": null
+      }
+    ]
+  },
+  "Gary_Peters_MI": {
+    "name": "Gary Peters",
+    "birthdate": "12/1/58",
+    "gender": "Male",
+    "race_ethnicity": "White",
+    "committee_roles": "Senate Committee on Appropriations|Agriculture, Rural Development, Food and Drug Administration, and Related Agencies|Commerce, Justice, Science, and Related Agencies|Energy and Water Development|Department of Homeland Security|Military Construction, Veterans Affairs, and Related Agencies|Senate Committee on Armed Services|Airland|Cybersecurity|Emerging Threats and Capabilities|Senate Committee on Commerce, Science, and Transportation|Telecommunications and Media|Coast Guard, Maritime, and Fisheries|Science, Manufacturing, and Competitiveness|Surface Transportation, Freight, Pipelines, and Safety (Ranking Member)|Senate Committee on Homeland Security and Governmental Affairs (Ranking Member)|Permanent Subcommittee on Investigations (Ex Officio)|Disaster Management, District of Columbia, and Census (Ex Officio)|Border Management, Federal Workforce, and Regulatory Affairs (Ex Officio)",
+    "religion": "Episcopalian",
+    "education": [
+      {
+        "degree": "BA",
+        "institution": "alma college",
+        "year": null
+      },
+      {
+        "degree": "MBA",
+        "institution": "university detroit mercy",
+        "year": null
+      },
+      {
+        "degree": null,
+        "institution": "wayne state universityjdma",
+        "year": null
+      },
+      {
+        "degree": "MA",
+        "institution": "michigan state university",
+        "year": null
+      }
+    ]
+  },
+  "Jack_Reed_RI": {
+    "name": "Jack Reed",
+    "birthdate": "11/12/49",
+    "gender": "Male",
+    "race_ethnicity": "White",
+    "committee_roles": "Senate Committee on Appropriations|Commerce, Justice, Science, and Related Agencies|Department of Defense|Financial Services and General Government (Ranking Member)|Departments of Labor, Health and Human Services, and Education, and Related Agencies|Military Construction, Veterans Affairs, and Related Agencies|Transportation, Housing and Urban Development, and Related Agencies|Senate Committee on Armed Services (Ranking Member)|Airland (Ex Officio)|Cybersecurity (Ex Officio)|Emerging Threats and Capabilities (Ex Officio)|Personnel (Ex Officio)|Readiness and Management Support (Ex Officio)|Seapower (Ex Officio)|Strategic Forces (Ex Officio)|Senate Committee on Banking, Housing, and Urban Affairs|Economic Policy|Financial Institutions and Consumer Protection|Securities, Insurance, and Investment|Senate Select Committee on Intelligence (Ex Officio)",
+    "religion": "Catholic",
+    "education": [
+      {
+        "degree": "BS",
+        "institution": "united states military academy",
+        "year": null
+      },
+      {
+        "degree": null,
+        "institution": "harvard universitymppjd",
+        "year": null
+      }
+    ]
+  },
+  "Jacky_Rosen_NV": {
+    "name": "Jacky Rosen",
+    "birthdate": "8/2/57",
+    "gender": "Female",
+    "race_ethnicity": "White",
+    "committee_roles": "Senate Committee on Armed Services|Cybersecurity (Ranking Member)|Emerging Threats and Capabilities|Strategic Forces|Senate Committee on Commerce, Science, and Transportation|Aviation, Space, and Innovation|Telecommunications and Media|Science, Manufacturing, and Competitiveness|Senate Committee on Foreign Relations|Multilateral International Development, Multilateral Institutions, and International Economic, Energy, and Environmental Policy|Near East, South Asia, Central Asia, and Counterterrorism (Ranking Member)|Western Hemisphere, Transnational Crime, Civilian Security, Democracy, Human Rights, and Global Women's Issues|Senate Committee on Small Business and Entrepreneurship",
+    "religion": "Jewish",
+    "education": [
+      {
+        "degree": "BA",
+        "institution": "university minnesota",
+        "year": null
+      },
+      {
+        "degree": null,
+        "institution": "clark county community college",
+        "year": null
+      }
+    ]
+  },
+  "James_Lankford_OK": {
+    "name": "James Lankford",
+    "birthdate": "3/4/68",
+    "gender": "Male",
+    "race_ethnicity": "White",
+    "committee_roles": "Senate Committee on Finance|Energy, Natural Resources, and Infrastructure (Chairman)|Health Care|Taxation and IRS Oversight|Senate Committee on Homeland Security and Governmental Affairs|Permanent Subcommittee on Investigations|Border Management, Federal Workforce, and Regulatory Affairs (Chairman)|Senate Select Committee on Ethics (Chairman)|Senate Select Committee on Intelligence",
+    "religion": "Baptist",
+    "education": [
+      {
+        "degree": "BS",
+        "institution": "university texas austin",
+        "year": null
+      },
+      {
+        "degree": null,
+        "institution": "southwestern baptist theological seminary",
+        "year": null
+      }
+    ]
+  },
+  "Jeanne_Shaheen_NH": {
+    "name": "Jeanne Shaheen",
+    "birthdate": "1/28/47",
+    "gender": "Female",
+    "race_ethnicity": "White",
+    "committee_roles": "Senate Committee on Appropriations|Agriculture, Rural Development, Food and Drug Administration, and Related Agencies (Ranking Member)|Commerce, Justice, Science, and Related Agencies|Department of Defense|Department of Homeland Security|Departments of Labor, Health and Human Services, and Education, and Related Agencies|State, Foreign Operations, and Related Programs|Senate Committee on Armed Services|Emerging Threats and Capabilities|Readiness and Management Support|Seapower|Senate Committee on Foreign Relations (Ranking Member)|Africa and Global Health Policy (Ex Officio)|East Asia, the Pacific, and International Cybersecurity Policy (Ex Officio)|Europe and Regional Security Cooperation (Ex Officio)|Multilateral International Development, Multilateral Institutions, and International Economic, Energy, and Environmental Policy (Ex Officio)|Near East, South Asia, Central Asia, and Counterterrorism (Ex Officio)|State Department and USAID Management, International Operations, and Bilateral International Development (Ex Officio)|Western Hemisphere, Transnational Crime, Civilian Security, Democracy, Human Rights, and Global Women's Issues (Ex Officio)|Senate Committee on Small Business and Entrepreneurship|Senate Select Committee on Ethics|Commission on Security and Cooperation in Europe",
+    "religion": "Protestant unspecified",
+    "education": [
+      {
+        "degree": "BA",
+        "institution": "shippensburg university",
+        "year": null
+      },
+      {
+        "degree": null,
+        "institution": "university mississippi",
+        "year": null
+      }
+    ]
+  },
+  "Jeff_Merkley_OR": {
+    "name": "Jeff Merkley",
+    "birthdate": "10/24/56",
+    "gender": "Male",
+    "race_ethnicity": "White",
+    "committee_roles": "Senate Committee on Appropriations|Agriculture, Rural Development, Food and Drug Administration, and Related Agencies|Commerce, Justice, Science, and Related Agencies|Energy and Water Development|Department of Interior, Environment, and Related Agencies (Ranking Member)|Departments of Labor, Health and Human Services, and Education, and Related Agencies|State, Foreign Operations, and Related Programs|Senate Committee on Environment and Public Works|Chemical Safety, Waste Management, Environmental Justice, and Regulatory Oversight (Ranking Member)|Clean Air, Climate, and Nuclear Innovation and Safety|Transportation and Infrastructure|Senate Committee on Foreign Relations|Africa and Global Health Policy|East Asia, the Pacific, and International Cybersecurity Policy|Western Hemisphere, Transnational Crime, Civilian Security, Democracy, Human Rights, and Global Women's Issues|Senate Committee on Rules and Administration|Senate Committee on the Budget (Ranking Member)|Joint Committee on Printing",
+    "religion": "Lutheran",
+    "education": [
+      {
+        "degree": "BA",
+        "institution": "stanford university",
+        "year": null
+      },
+      {
+        "degree": null,
+        "institution": "princeton university",
+        "year": null
+      }
+    ]
+  },
+  "Jerry_Moran_KS": {
+    "name": "Jerry Moran",
+    "birthdate": "5/29/54",
+    "gender": "Male",
+    "race_ethnicity": "White",
+    "committee_roles": "Senate Committee on Agriculture, Nutrition, and Forestry|Commodities, Derivatives, Risk Management, and Trade|Rural Development, Energy, and Credit|Senate Committee on Appropriations|Agriculture, Rural Development, Food and Drug Administration, and Related Agencies|Commerce, Justice, Science, and Related Agencies (Chairman)|Department of Defense|Departments of Labor, Health and Human Services, and Education, and Related Agencies|State, Foreign Operations, and Related Programs|Transportation, Housing and Urban Development, and Related Agencies|Senate Committee on Commerce, Science, and Transportation|Aviation, Space, and Innovation (Chairman)|Telecommunications and Media|Consumer Protection, Technology, and Data Privacy|Senate Committee on Indian Affairs|Senate Committee on Veterans' Affairs (Chairman)|Senate Select Committee on Intelligence",
+    "religion": "Protestant unspecified",
+    "education": [
+      {
+        "degree": null,
+        "institution": "fort hays state university",
+        "year": null
+      },
+      {
+        "degree": "BS",
+        "institution": "university kansas",
+        "year": null
+      },
+      {
+        "degree": "JD",
+        "institution": "university kansas",
+        "year": null
+      }
+    ]
+  },
+  "Jim_Banks_IN": {
+    "name": "Jim Banks",
+    "birthdate": "7/16/79",
+    "gender": "Male",
+    "race_ethnicity": "White",
+    "committee_roles": "Senate Committee on Armed Services|Personnel|Seapower|Strategic Forces|Senate Committee on Banking, Housing, and Urban Affairs|Economic Policy|National Security and International Trade and Finance|Securities, Insurance, and Investment|Senate Committee on Health, Education, Labor, and Pensions|Education and the American Family|Employment and Workplace Safety|Primary Health and Retirement Security|Senate Committee on Veterans' Affairs",
+    "religion": "Protestant unspecified",
+    "education": [
+      {
+        "degree": "BA",
+        "institution": "indiana university bloomington",
+        "year": null
+      },
+      {
+        "degree": "MBA",
+        "institution": "grace college seminary",
+        "year": null
+      }
+    ]
+  },
+  "Jim_Justice_WV": {
+    "name": "Jim Justice",
+    "birthdate": "4/27/51",
+    "gender": "Male",
+    "race_ethnicity": "White",
+    "committee_roles": "Senate Committee on Agriculture, Nutrition, and Forestry|Conservation, Forestry, Natural Resources, and Biotechnology|Food and Nutrition, Specialty Crops, Organics, and Research|Livestock, Dairy, Poultry, and Food Safety|Senate Committee on Energy and Natural Resources|Energy|Public Lands, Forests, and Mining|Water and Power|Senate Committee on Small Business and Entrepreneurship|Senate Special Committee on Aging",
+    "religion": "Baptist",
+    "education": [
+      {
+        "degree": null,
+        "institution": "university tennessee",
+        "year": null
+      },
+      {
+        "degree": "BA",
+        "institution": "marshall university",
+        "year": null
+      },
+      {
+        "degree": "MBA",
+        "institution": "marshall university",
+        "year": null
+      }
+    ]
+  },
+  "Jim_Risch_ID": {
+    "name": "Jim Risch",
+    "birthdate": "5/3/43",
+    "gender": "Male",
+    "race_ethnicity": "White",
+    "committee_roles": "Senate Committee on Energy and Natural Resources|Energy|Public Lands, Forests, and Mining|Water and Power|Senate Committee on Foreign Relations (Chairman)|Africa and Global Health Policy (Ex Officio)|East Asia, the Pacific, and International Cybersecurity Policy (Ex Officio)|Europe and Regional Security Cooperation (Ex Officio)|Multilateral International Development, Multilateral Institutions, and International Economic, Energy, and Environmental Policy (Ex Officio)|Near East, South Asia, Central Asia, and Counterterrorism (Ex Officio)|State Department and USAID Management, International Operations, and Bilateral International Development (Ex Officio)|Western Hemisphere, Transnational Crime, Civilian Security, Democracy, Human Rights, and Global Women's Issues (Ex Officio)|Senate Committee on Small Business and Entrepreneurship|Senate Select Committee on Ethics|Senate Select Committee on Intelligence|United States Senate Caucus on International Narcotics Control",
+    "religion": "Catholic",
+    "education": [
+      {
+        "degree": null,
+        "institution": "university wisconsin milwaukee",
+        "year": null
+      },
+      {
+        "degree": "BS",
+        "institution": "university idaho",
+        "year": null
+      },
+      {
+        "degree": "JD",
+        "institution": "university idaho",
+        "year": null
+      }
+    ]
+  },
+  "John_Barrasso_WY": {
+    "name": "John Barrasso",
+    "birthdate": "7/21/52",
+    "gender": "Male",
+    "race_ethnicity": "White",
+    "committee_roles": "Senate Committee on Energy and Natural Resources|Energy|National Parks|Public Lands, Forests, and Mining (Chairman)|Senate Committee on Finance|Energy, Natural Resources, and Infrastructure|Health Care|Taxation and IRS Oversight (Chairman)|Senate Committee on Foreign Relations|Africa and Global Health Policy|Europe and Regional Security Cooperation|Multilateral International Development, Multilateral Institutions, and International Economic, Energy, and Environmental Policy|State Department and USAID Management, International Operations, and Bilateral International Development",
+    "religion": "Presbyterian",
+    "education": [
+      {
+        "degree": null,
+        "institution": "rensselaer polytechnic institute",
+        "year": null
+      },
+      {
+        "degree": "BS",
+        "institution": "georgetown university",
+        "year": null
+      },
+      {
+        "degree": "MD",
+        "institution": "georgetown university",
+        "year": null
+      }
+    ]
+  },
+  "John_Boozman_AR": {
+    "name": "John Boozman",
+    "birthdate": "12/10/50",
+    "gender": "Male",
+    "race_ethnicity": "White",
+    "committee_roles": "Senate Committee on Agriculture, Nutrition, and Forestry (Chairman)|Commodities, Derivatives, Risk Management, and Trade (Ex Officio)|Conservation, Forestry, Natural Resources, and Biotechnology (Ex Officio)|Food and Nutrition, Specialty Crops, Organics, and Research (Ex Officio)|Livestock, Dairy, Poultry, and Food Safety (Ex Officio)|Rural Development, Energy, and Credit (Ex Officio)|Senate Committee on Appropriations|Department of Defense|Financial Services and General Government|Departments of Labor, Health and Human Services, and Education, and Related Agencies|Military Construction, Veterans Affairs, and Related Agencies (Chairman)|State, Foreign Operations, and Related Programs|Transportation, Housing and Urban Development, and Related Agencies|Senate Committee on Environment and Public Works|Clean Air, Climate, and Nuclear Innovation and Safety|Fisheries, Wildlife, and Water|Transportation and Infrastructure|Senate Committee on Rules and Administration|Senate Committee on Veterans' Affairs|Commission on Security and Cooperation in Europe",
+    "religion": "Baptist",
+    "education": [
+      {
+        "degree": null,
+        "institution": "university arkansas",
+        "year": null
+      },
+      {
+        "degree": null,
+        "institution": "southern college optometry",
+        "year": null
+      }
+    ]
+  },
+  "John_Cornyn_TX": {
+    "name": "John Cornyn",
+    "birthdate": "2/2/52",
+    "gender": "Male",
+    "race_ethnicity": "White",
+    "committee_roles": "Senate Committee on Finance|Energy, Natural Resources, and Infrastructure|International Trade, Customs, and Global Competitiveness (Chairman)|Taxation and IRS Oversight|Senate Committee on Foreign Relations|Africa and Global Health Policy|East Asia, the Pacific, and International Cybersecurity Policy|Western Hemisphere, Transnational Crime, Civilian Security, Democracy, Human Rights, and Global Women's Issues|Senate Committee on the Budget|Senate Committee on the Judiciary|Crime and Counterterrorism|Border Security and Immigration (Chairman)|Privacy, Technology, and the Law|the Constitution|Joint Committee on Taxation|Senate Select Committee on Intelligence|United States Senate Caucus on International Narcotics Control (Chairman)",
+    "religion": "Nondenominational",
+    "education": [
+      {
+        "degree": "BA",
+        "institution": "trinity university",
+        "year": null
+      },
+      {
+        "degree": "JD",
+        "institution": "st mary's university",
+        "year": null
+      },
+      {
+        "degree": null,
+        "institution": "university virginia",
+        "year": null
+      }
+    ]
+  },
+  "John_Curtis_UT": {
+    "name": "John Curtis",
+    "birthdate": "5/10/60",
+    "gender": "Male",
+    "race_ethnicity": "White",
+    "committee_roles": "Senate Committee on Commerce, Science, and Transportation|Telecommunications and Media|Consumer Protection, Technology, and Data Privacy|Coast Guard, Maritime, and Fisheries|Senate Committee on Environment and Public Works|Chemical Safety, Waste Management, Environmental Justice, and Regulatory Oversight (Chairman)|Clean Air, Climate, and Nuclear Innovation and Safety|Transportation and Infrastructure|Senate Committee on Foreign Relations|East Asia, the Pacific, and International Cybersecurity Policy|Europe and Regional Security Cooperation|Western Hemisphere, Transnational Crime, Civilian Security, Democracy, Human Rights, and Global Women's Issues (Chairman)|Senate Committee on Small Business and Entrepreneurship",
+    "religion": "Mormon",
+    "education": [
+      {
+        "degree": "BS",
+        "institution": "brigham young university",
+        "year": null
+      }
+    ]
+  },
+  "John_Fetterman_PA": {
+    "name": "John Fetterman",
+    "birthdate": "8/15/69",
+    "gender": "Male",
+    "race_ethnicity": "White",
+    "committee_roles": "Senate Committee on Agriculture, Nutrition, and Forestry|Commodities, Derivatives, Risk Management, and Trade|Food and Nutrition, Specialty Crops, Organics, and Research|Senate Committee on Commerce, Science, and Transportation|Aviation, Space, and Innovation|Telecommunications and Media|Senate Committee on Homeland Security and Governmental Affairs|Permanent Subcommittee on Investigations|Border Management, Federal Workforce, and Regulatory Affairs (Ranking Member)|Commission on Security and Cooperation in Europe",
+    "religion": "Don't know/refused",
+    "education": [
+      {
+        "degree": "BA",
+        "institution": "albright college",
+        "year": null
+      },
+      {
+        "degree": "MBA",
+        "institution": "university connecticut",
+        "year": null
+      },
+      {
+        "degree": null,
+        "institution": "harvard universitympp",
+        "year": null
+      }
+    ]
+  },
+  "John_Hickenlooper_CO": {
+    "name": "John Hickenlooper",
+    "birthdate": "2/7/52",
+    "gender": "Male",
+    "race_ethnicity": "White",
+    "committee_roles": "Senate Committee on Commerce, Science, and Transportation|Aviation, Space, and Innovation|Telecommunications and Media|Consumer Protection, Technology, and Data Privacy (Ranking Member)|Science, Manufacturing, and Competitiveness|Senate Committee on Energy and Natural Resources|Energy|Public Lands, Forests, and Mining|Water and Power|Senate Committee on Health, Education, Labor, and Pensions|Employment and Workplace Safety (Ranking Member)|Primary Health and Retirement Security|Senate Committee on Small Business and Entrepreneurship",
+    "religion": "Episcopalian",
+    "education": [
+      {
+        "degree": "BA",
+        "institution": "wesleyan university",
+        "year": null
+      },
+      {
+        "degree": "MS",
+        "institution": "wesleyan university",
+        "year": null
+      }
+    ]
+  },
+  "John_Hoeven_ND": {
+    "name": "John Hoeven",
+    "birthdate": "3/13/57",
+    "gender": "Male",
+    "race_ethnicity": "White",
+    "committee_roles": "Senate Committee on Agriculture, Nutrition, and Forestry|Conservation, Forestry, Natural Resources, and Biotechnology|Food and Nutrition, Specialty Crops, Organics, and Research|Livestock, Dairy, Poultry, and Food Safety (Chairman)|Senate Committee on Appropriations|Agriculture, Rural Development, Food and Drug Administration, and Related Agencies (Chairman)|Department of Defense|Energy and Water Development|Department of Interior, Environment, and Related Agencies|Military Construction, Veterans Affairs, and Related Agencies|Transportation, Housing and Urban Development, and Related Agencies|Senate Committee on Energy and Natural Resources|Energy|Water and Power (Chairman)|Senate Committee on Indian Affairs",
+    "religion": "Catholic",
+    "education": [
+      {
+        "degree": "BA",
+        "institution": "dartmouth college",
+        "year": null
+      },
+      {
+        "degree": "MBA",
+        "institution": "northwestern university",
+        "year": null
+      }
+    ]
+  },
+  "John_Kennedy_LA": {
+    "name": "John Kennedy",
+    "birthdate": "5/29/17",
+    "gender": "Male",
+    "race_ethnicity": "White",
+    "committee_roles": "Senate Committee on Appropriations|Commerce, Justice, Science, and Related Agencies|Department of Defense|Energy and Water Development (Chairman)|Department of Homeland Security|Departments of Labor, Health and Human Services, and Education, and Related Agencies|Transportation, Housing and Urban Development, and Related Agencies|Senate Committee on Banking, Housing, and Urban Affairs|Economic Policy (Chairman)|Financial Institutions and Consumer Protection|Securities, Insurance, and Investment|Senate Committee on the Budget|Senate Committee on the Judiciary|Federal Courts, Oversight, Agency Action, and Federal Rights|Border Security and Immigration|Privacy, Technology, and the Law|the Constitution",
+    "religion": "Methodist",
+    "education": [
+      {
+        "degree": null,
+        "institution": "harvard university",
+        "year": null
+      }
+    ]
+  },
+  "John_Thune_SD": {
+    "name": "John Thune",
+    "birthdate": "1/7/61",
+    "gender": "Male",
+    "race_ethnicity": "White",
+    "committee_roles": "Senate Committee on Agriculture, Nutrition, and Forestry|Commodities, Derivatives, Risk Management, and Trade|Conservation, Forestry, Natural Resources, and Biotechnology|Livestock, Dairy, Poultry, and Food Safety|Senate Committee on Commerce, Science, and Transportation|Aviation, Space, and Innovation|Telecommunications and Media|Consumer Protection, Technology, and Data Privacy|Surface Transportation, Freight, Pipelines, and Safety|Senate Committee on Finance|Health Care|International Trade, Customs, and Global Competitiveness|Taxation and IRS Oversight|Senate Select Committee on Intelligence (Ex Officio)",
+    "religion": "Protestant unspecified",
+    "education": [
+      {
+        "degree": "BA",
+        "institution": "biola university",
+        "year": null
+      },
+      {
+        "degree": "MBA",
+        "institution": "university south dakota",
+        "year": null
+      }
+    ]
+  },
+  "Jon_Husted_OH": {
+    "name": "Jon Husted",
+    "birthdate": "8/25/67",
+    "gender": "Male",
+    "race_ethnicity": "White",
+    "committee_roles": "Senate Committee on Environment and Public Works|Chemical Safety, Waste Management, Environmental Justice, and Regulatory Oversight|Clean Air, Climate, and Nuclear Innovation and Safety|Fisheries, Wildlife, and Water|Senate Committee on Health, Education, Labor, and Pensions|Education and the American Family|Employment and Workplace Safety|Primary Health and Retirement Security|Senate Committee on Small Business and Entrepreneurship|Senate Special Committee on Aging",
+    "religion": null,
+    "education": [
+      {
+        "degree": "BA",
+        "institution": "university dayton",
+        "year": null
+      },
+      {
+        "degree": "MA",
+        "institution": "university dayton",
+        "year": null
+      }
+    ]
+  },
+  "Jon_Ossoff_GA": {
+    "name": "Jon Ossoff",
+    "birthdate": "2/16/87",
+    "gender": "Male",
+    "race_ethnicity": "White",
+    "committee_roles": "Senate Committee on Appropriations|Agriculture, Rural Development, Food and Drug Administration, and Related Agencies|Energy and Water Development|Department of Interior, Environment, and Related Agencies|Legislative Branch|Military Construction, Veterans Affairs, and Related Agencies (Ranking Member)|Senate Committee on Rules and Administration|Senate Select Committee on Intelligence",
+    "religion": "Jewish",
+    "education": [
+      {
+        "degree": "BS",
+        "institution": "georgetown university",
+        "year": null
+      },
+      {
+        "degree": "MS",
+        "institution": "london school economics",
+        "year": null
+      }
+    ]
+  },
+  "Joni_Ernst_IA": {
+    "name": "Joni Ernst",
+    "birthdate": "7/1/70",
+    "gender": "Female",
+    "race_ethnicity": "White",
+    "committee_roles": "Senate Committee on Agriculture, Nutrition, and Forestry|Conservation, Forestry, Natural Resources, and Biotechnology|Livestock, Dairy, Poultry, and Food Safety|Rural Development, Energy, and Credit (Chairman)|Senate Committee on Armed Services|Cybersecurity|Emerging Threats and Capabilities (Chairman)|Personnel|Senate Committee on Homeland Security and Governmental Affairs|Disaster Management, District of Columbia, and Census|Border Management, Federal Workforce, and Regulatory Affairs|Senate Committee on Small Business and Entrepreneurship (Chairman)",
+    "religion": "Lutheran",
+    "education": [
+      {
+        "degree": "BA",
+        "institution": "iowa state university",
+        "year": null
+      },
+      {
+        "degree": null,
+        "institution": "columbus state universitympa",
+        "year": null
+      }
+    ]
+  },
+  "Josh_Hawley_MO": {
+    "name": "Josh Hawley",
+    "birthdate": "12/31/79",
+    "gender": "Male",
+    "race_ethnicity": "White",
+    "committee_roles": "Senate Committee on Health, Education, Labor, and Pensions|Employment and Workplace Safety|Primary Health and Retirement Security|Senate Committee on Homeland Security and Governmental Affairs|Permanent Subcommittee on Investigations|Disaster Management, District of Columbia, and Census (Chairman)|Senate Committee on Small Business and Entrepreneurship|Senate Committee on the Judiciary|Antitrust, Competition Policy, and Consumer Rights|Crime and Counterterrorism (Chairman)|Privacy, Technology, and the Law|the Constitution",
+    "religion": "Protestant unspecified",
+    "education": [
+      {
+        "degree": "BA",
+        "institution": "stanford university",
+        "year": null
+      },
+      {
+        "degree": "JD",
+        "institution": "yale university",
+        "year": null
+      }
+    ]
+  },
+  "Katie_Britt_AL": {
+    "name": "Katie Britt",
+    "birthdate": "2/2/82",
+    "gender": "Female",
+    "race_ethnicity": "White",
+    "committee_roles": "Senate Committee on Appropriations|Commerce, Justice, Science, and Related Agencies|Energy and Water Development|Department of Homeland Security (Chairman)|Departments of Labor, Health and Human Services, and Education, and Related Agencies|State, Foreign Operations, and Related Programs|Transportation, Housing and Urban Development, and Related Agencies|Senate Committee on Banking, Housing, and Urban Affairs|Financial Institutions and Consumer Protection|Housing, Transportation, and Community Development (Chairman)|Securities, Insurance, and Investment|Senate Committee on Rules and Administration|Senate Committee on the Judiciary|Antitrust, Competition Policy, and Consumer Rights|Crime and Counterterrorism|Border Security and Immigration|Intellectual Property|Commission on Security and Cooperation in Europe",
+    "religion": "Methodist",
+    "education": [
+      {
+        "degree": "BS",
+        "institution": "university alabama",
+        "year": null
+      },
+      {
+        "degree": "JD",
+        "institution": "university alabama",
+        "year": null
+      }
+    ]
+  },
+  "Kevin_Cramer_ND": {
+    "name": "Kevin Cramer",
+    "birthdate": "1/21/61",
+    "gender": "Male",
+    "race_ethnicity": "White",
+    "committee_roles": "Senate Committee on Armed Services|Airland (Chairman)|Emerging Threats and Capabilities|Readiness and Management Support|Strategic Forces|Senate Committee on Banking, Housing, and Urban Affairs|Financial Institutions and Consumer Protection|Housing, Transportation, and Community Development|Securities, Insurance, and Investment|Senate Committee on Environment and Public Works|Clean Air, Climate, and Nuclear Innovation and Safety|Fisheries, Wildlife, and Water|Transportation and Infrastructure (Chairman)|Senate Committee on Veterans' Affairs",
+    "religion": "Protestant unspecified",
+    "education": [
+      {
+        "degree": "BA",
+        "institution": "concordia college",
+        "year": null
+      },
+      {
+        "degree": "MA",
+        "institution": "university mary",
+        "year": null
+      }
+    ]
+  },
+  "Kirsten_Gillibrand_NY": {
+    "name": "Kirsten Gillibrand",
+    "birthdate": "12/9/66",
+    "gender": "Female",
+    "race_ethnicity": "White",
+    "committee_roles": "Senate Committee on Appropriations|Agriculture, Rural Development, Food and Drug Administration, and Related Agencies|Commerce, Justice, Science, and Related Agencies|Department of Interior, Environment, and Related Agencies|Military Construction, Veterans Affairs, and Related Agencies|Transportation, Housing and Urban Development, and Related Agencies (Ranking Member)|Senate Committee on Armed Services|Cybersecurity|Emerging Threats and Capabilities|Strategic Forces|Senate Select Committee on Intelligence|Senate Special Committee on Aging (Ranking Member)",
+    "religion": "Catholic",
+    "education": [
+      {
+        "degree": "BA",
+        "institution": "dartmouth college",
+        "year": null
+      },
+      {
+        "degree": "JD",
+        "institution": "university california los angeles",
+        "year": null
+      }
+    ]
+  },
+  "Lindsey_Graham_SC": {
+    "name": "Lindsey Graham",
+    "birthdate": "7/9/55",
+    "gender": "Male",
+    "race_ethnicity": "White",
+    "committee_roles": "Senate Committee on Appropriations|Commerce, Justice, Science, and Related Agencies|Department of Defense|Energy and Water Development|Departments of Labor, Health and Human Services, and Education, and Related Agencies|State, Foreign Operations, and Related Programs (Chairman)|Transportation, Housing and Urban Development, and Related Agencies|Senate Committee on Environment and Public Works|Chemical Safety, Waste Management, Environmental Justice, and Regulatory Oversight|Clean Air, Climate, and Nuclear Innovation and Safety|Transportation and Infrastructure|Senate Committee on the Budget (Chairman)|Senate Committee on the Judiciary|Crime and Counterterrorism|Federal Courts, Oversight, Agency Action, and Federal Rights|Border Security and Immigration|Privacy, Technology, and the Law",
+    "religion": "Baptist",
+    "education": [
+      {
+        "degree": "BA",
+        "institution": "university south carolina",
+        "year": null
+      },
+      {
+        "degree": "JD",
+        "institution": "university south carolina",
+        "year": null
+      }
+    ]
+  },
+  "Lisa_Blunt_Rochester_DE": {
+    "name": "Lisa Blunt Rochester",
+    "birthdate": "2/10/62",
+    "gender": "Female",
+    "race_ethnicity": "Black",
+    "committee_roles": "Senate Committee on Banking, Housing, and Urban Affairs|Economic Policy|Housing, Transportation, and Community Development|Securities, Insurance, and Investment|Senate Committee on Commerce, Science, and Transportation|Telecommunications and Media|Consumer Protection, Technology, and Data Privacy|Coast Guard, Maritime, and Fisheries (Ranking Member)|Science, Manufacturing, and Competitiveness|Senate Committee on Environment and Public Works|Chemical Safety, Waste Management, Environmental Justice, and Regulatory Oversight|Clean Air, Climate, and Nuclear Innovation and Safety|Transportation and Infrastructure|Senate Committee on Health, Education, Labor, and Pensions|Education and the American Family (Ranking Member)|Primary Health and Retirement Security",
+    "religion": "Protestant unspecified",
+    "education": [
+      {
+        "degree": null,
+        "institution": "villanova university",
+        "year": null
+      },
+      {
+        "degree": "BA",
+        "institution": "fairleigh dickinson university",
+        "year": null
+      },
+      {
+        "degree": "MA",
+        "institution": "university delaware",
+        "year": null
+      }
+    ]
+  },
+  "Lisa_Murkowski_AK": {
+    "name": "Lisa Murkowski",
+    "birthdate": "5/22/57",
+    "gender": "Female",
+    "race_ethnicity": "White",
+    "committee_roles": "Senate Committee on Appropriations|Commerce, Justice, Science, and Related Agencies|Department of Defense|Energy and Water Development|Department of Homeland Security|Department of Interior, Environment, and Related Agencies (Chairman)|Military Construction, Veterans Affairs, and Related Agencies|Senate Committee on Energy and Natural Resources|National Parks|Public Lands, Forests, and Mining|Senate Committee on Health, Education, Labor, and Pensions|Education and the American Family|Primary Health and Retirement Security|Senate Committee on Indian Affairs (Chairman)",
+    "religion": "Catholic",
+    "education": [
+      {
+        "degree": "BA",
+        "institution": "georgetown university",
+        "year": null
+      },
+      {
+        "degree": "JD",
+        "institution": "willamette university",
+        "year": null
+      }
+    ]
+  },
+  "Maggie_Hassan_NH": {
+    "name": "Maggie Hassan",
+    "birthdate": "2/27/58",
+    "gender": "Female",
+    "race_ethnicity": "White",
+    "committee_roles": "Senate Committee on Finance|Energy, Natural Resources, and Infrastructure|Health Care (Ranking Member)|Taxation and IRS Oversight|Senate Committee on Health, Education, Labor, and Pensions|Employment and Workplace Safety|Primary Health and Retirement Security|Senate Committee on Homeland Security and Governmental Affairs|Permanent Subcommittee on Investigations|Border Management, Federal Workforce, and Regulatory Affairs|Senate Committee on Veterans' Affairs|Joint Economic Committee (Ranking Member)",
+    "religion": "Congregationalist",
+    "education": [
+      {
+        "degree": "BA",
+        "institution": "brown university",
+        "year": null
+      },
+      {
+        "degree": "JD",
+        "institution": "northeastern university",
+        "year": null
+      }
+    ]
+  },
+  "Maria_Cantwell_WA": {
+    "name": "Maria Cantwell",
+    "birthdate": "10/13/58",
+    "gender": "Female",
+    "race_ethnicity": "White",
+    "committee_roles": "Senate Committee on Commerce, Science, and Transportation (Ranking Member)|Aviation, Space, and Innovation (Ex Officio)|Telecommunications and Media (Ex Officio)|Consumer Protection, Technology, and Data Privacy (Ex Officio)|Coast Guard, Maritime, and Fisheries (Ex Officio)|Science, Manufacturing, and Competitiveness (Ex Officio)|Surface Transportation, Freight, Pipelines, and Safety (Ex Officio)|Senate Committee on Energy and Natural Resources|Senate Committee on Finance|Energy, Natural Resources, and Infrastructure (Ranking Member)|Senate Committee on Indian Affairs|Senate Committee on Small Business and Entrepreneurship|Joint Committee on Taxation",
+    "religion": "Catholic",
+    "education": [
+      {
+        "degree": "BA",
+        "institution": "miami university",
+        "year": null
+      }
+    ]
+  },
+  "Mark_Kelly_AZ": {
+    "name": "Mark Kelly",
+    "birthdate": "2/21/64",
+    "gender": "Male",
+    "race_ethnicity": "White",
+    "committee_roles": "Senate Committee on Armed Services|Airland (Ranking Member)|Emerging Threats and Capabilities|Strategic Forces|Senate Committee on Environment and Public Works|Clean Air, Climate, and Nuclear Innovation and Safety (Ranking Member)|Fisheries, Wildlife, and Water|Transportation and Infrastructure|Joint Economic Committee|Senate Select Committee on Intelligence|Senate Special Committee on Aging",
+    "religion": "Catholic",
+    "education": [
+      {
+        "degree": "BS",
+        "institution": "united states merchant marine academy",
+        "year": null
+      },
+      {
+        "degree": "MS",
+        "institution": "naval postgraduate school",
+        "year": null
+      }
+    ]
+  },
+  "Mark_Warner_VA": {
+    "name": "Mark Warner",
+    "birthdate": "12/15/54",
+    "gender": "Male",
+    "race_ethnicity": "White",
+    "committee_roles": "Senate Committee on Banking, Housing, and Urban Affairs|Financial Institutions and Consumer Protection|Securities, Insurance, and Investment (Ranking Member)|Senate Committee on Finance|Health Care|International Trade, Customs, and Global Competitiveness|Taxation and IRS Oversight|Senate Committee on Rules and Administration|Senate Committee on the Budget|Senate Select Committee on Intelligence (Vice Chairman)|Digital Assets",
+    "religion": "Presbyterian",
+    "education": [
+      {
+        "degree": "BA",
+        "institution": "george washington university",
+        "year": null
+      },
+      {
+        "degree": "JD",
+        "institution": "harvard university",
+        "year": null
+      }
+    ]
+  },
+  "Marsha_Blackburn_TN": {
+    "name": "Marsha Blackburn",
+    "birthdate": "6/6/52",
+    "gender": "Female",
+    "race_ethnicity": "White",
+    "committee_roles": "Senate Committee on Commerce, Science, and Transportation|Telecommunications and Media|Consumer Protection, Technology, and Data Privacy (Chairman)|Science, Manufacturing, and Competitiveness|Senate Committee on Finance|Health Care|Social Security, Pensions, and Family Policy|Taxation and IRS Oversight|Senate Committee on the Judiciary|Crime and Counterterrorism|Intellectual Property|Privacy, Technology, and the Law (Chairman)|the Constitution|Senate Committee on Veterans' Affairs|Joint Economic Committee",
+    "religion": "Presbyterian",
+    "education": [
+      {
+        "degree": "BS",
+        "institution": "mississippi state university",
+        "year": null
+      }
+    ]
+  },
+  "Martin_Heinrich_NM": {
+    "name": "Martin Heinrich",
+    "birthdate": "10/17/71",
+    "gender": "Male",
+    "race_ethnicity": "White",
+    "committee_roles": "Senate Committee on Appropriations|Agriculture, Rural Development, Food and Drug Administration, and Related Agencies|Energy and Water Development|Department of Interior, Environment, and Related Agencies|Legislative Branch (Ranking Member)|Military Construction, Veterans Affairs, and Related Agencies|Senate Committee on Energy and Natural Resources (Ranking Member)|Energy (Ex Officio)|National Parks (Ex Officio)|Public Lands, Forests, and Mining (Ex Officio)|Water and Power (Ex Officio)|Joint Economic Committee|Senate Select Committee on Intelligence",
+    "religion": "Lutheran",
+    "education": [
+      {
+        "degree": "BS",
+        "institution": "university missouri",
+        "year": null
+      },
+      {
+        "degree": null,
+        "institution": "university new mexico",
+        "year": null
+      }
+    ]
+  },
+  "Mazie_Hirono_HI": {
+    "name": "Mazie Hirono",
+    "birthdate": "11/3/47",
+    "gender": "Female",
+    "race_ethnicity": "Asian American",
+    "committee_roles": "Senate Committee on Armed Services|Personnel|Readiness and Management Support (Ranking Member)|Seapower|Senate Committee on Energy and Natural Resources|Energy|National Parks|Public Lands, Forests, and Mining|Senate Committee on Small Business and Entrepreneurship|Senate Committee on the Judiciary|Federal Courts, Oversight, Agency Action, and Federal Rights|Border Security and Immigration|Intellectual Property|the Constitution|Senate Committee on Veterans' Affairs",
+    "religion": "Buddhist",
+    "education": [
+      {
+        "degree": "BA",
+        "institution": "university hawai\u02bbi m\u0101noa",
+        "year": null
+      },
+      {
+        "degree": "JD",
+        "institution": "georgetown university",
+        "year": null
+      }
+    ]
+  },
+  "Michael_Bennet_CO": {
+    "name": "Michael Bennet",
+    "birthdate": "11/28/64",
+    "gender": "Male",
+    "race_ethnicity": "White",
+    "committee_roles": "Senate Committee on Agriculture, Nutrition, and Forestry|Conservation, Forestry, Natural Resources, and Biotechnology (Ranking Member)|Rural Development, Energy, and Credit|Senate Committee on Finance|Energy, Natural Resources, and Infrastructure|International Trade, Customs, and Global Competitiveness|Taxation and IRS Oversight (Ranking Member)|Senate Committee on Rules and Administration|Senate Select Committee on Intelligence",
+    "religion": "Don't know/refused",
+    "education": [
+      {
+        "degree": "BA",
+        "institution": "wesleyan university",
+        "year": null
+      },
+      {
+        "degree": "JD",
+        "institution": "yale university",
+        "year": null
+      }
+    ]
+  },
+  "Mike_Crapo_ID": {
+    "name": "Mike Crapo",
+    "birthdate": "5/20/51",
+    "gender": "Male",
+    "race_ethnicity": "White",
+    "committee_roles": "Senate Committee on Banking, Housing, and Urban Affairs|Financial Institutions and Consumer Protection|Housing, Transportation, and Community Development|Securities, Insurance, and Investment|Senate Committee on Finance (Chairman)|Energy, Natural Resources, and Infrastructure (Ex Officio)|Fiscal Responsibility and Economic Growth (Ex Officio)|Health Care (Ex Officio)|International Trade, Customs, and Global Competitiveness (Ex Officio)|Social Security, Pensions, and Family Policy (Ex Officio)|Taxation and IRS Oversight (Ex Officio)|Senate Committee on the Budget|Joint Committee on Taxation (Chairman)",
+    "religion": "Mormon",
+    "education": [
+      {
+        "degree": "BA",
+        "institution": "brigham young university",
+        "year": null
+      },
+      {
+        "degree": "JD",
+        "institution": "harvard university",
+        "year": null
+      }
+    ]
+  },
+  "Mike_Lee_UT": {
+    "name": "Mike Lee",
+    "birthdate": "6/4/71",
+    "gender": "Male",
+    "race_ethnicity": "White",
+    "committee_roles": "Senate Committee on Energy and Natural Resources (Chairman)|Energy (Ex Officio)|National Parks (Ex Officio)|Public Lands, Forests, and Mining (Ex Officio)|Water and Power (Ex Officio)|Senate Committee on Foreign Relations|East Asia, the Pacific, and International Cybersecurity Policy|Multilateral International Development, Multilateral Institutions, and International Economic, Energy, and Environmental Policy (Chairman)|Near East, South Asia, Central Asia, and Counterterrorism|Senate Committee on the Budget|Senate Committee on the Judiciary|Antitrust, Competition Policy, and Consumer Rights (Chairman)|Federal Courts, Oversight, Agency Action, and Federal Rights|Intellectual Property|the Constitution",
+    "religion": "Mormon",
+    "education": [
+      {
+        "degree": "BA",
+        "institution": "brigham young university",
+        "year": null
+      },
+      {
+        "degree": "JD",
+        "institution": "brigham young university",
+        "year": null
+      }
+    ]
+  },
+  "Mike_Rounds_SD": {
+    "name": "Mike Rounds",
+    "birthdate": "10/24/54",
+    "gender": "Male",
+    "race_ethnicity": "White",
+    "committee_roles": "Senate Committee on Appropriations|Agriculture, Rural Development, Food and Drug Administration, and Related Agencies|Energy and Water Development|Department of Interior, Environment, and Related Agencies|Departments of Labor, Health and Human Services, and Education, and Related Agencies|Legislative Branch|Military Construction, Veterans Affairs, and Related Agencies|Senate Committee on Armed Services|Cybersecurity (Chairman)|Emerging Threats and Capabilities|Strategic Forces|Senate Committee on Banking, Housing, and Urban Affairs|Economic Policy|Housing, Transportation, and Community Development|Securities, Insurance, and Investment (Chairman)|Senate Committee on Indian Affairs|Senate Select Committee on Intelligence|Commission on Security and Cooperation in Europe",
+    "religion": "Catholic",
+    "education": [
+      {
+        "degree": "BS",
+        "institution": "south dakota state university",
+        "year": null
+      }
+    ]
+  },
+  "Mitch_McConnell_KY": {
+    "name": "Mitch McConnell",
+    "birthdate": "2/20/42",
+    "gender": "Male",
+    "race_ethnicity": "White",
+    "committee_roles": "Senate Committee on Agriculture, Nutrition, and Forestry|Commodities, Derivatives, Risk Management, and Trade|Food and Nutrition, Specialty Crops, Organics, and Research (Chairman)|Rural Development, Energy, and Credit|Senate Committee on Appropriations|Agriculture, Rural Development, Food and Drug Administration, and Related Agencies|Department of Defense (Chairman)|Energy and Water Development|Department of Interior, Environment, and Related Agencies|Military Construction, Veterans Affairs, and Related Agencies|State, Foreign Operations, and Related Programs|Senate Committee on Rules and Administration (Chairman)|Joint Committee on Printing (Chairman)|Joint Committee of Congress on the Library (Vice Chairman)",
+    "religion": "Baptist",
+    "education": [
+      {
+        "degree": "BA",
+        "institution": "university louisville",
+        "year": null
+      },
+      {
+        "degree": "JD",
+        "institution": "university kentucky",
+        "year": null
+      }
+    ]
+  },
+  "Patty_Murray_WA": {
+    "name": "Patty Murray",
+    "birthdate": "10/11/50",
+    "gender": "Female",
+    "race_ethnicity": "White",
+    "committee_roles": "Senate Committee on Appropriations (Ranking Member)|Agriculture, Rural Development, Food and Drug Administration, and Related Agencies (Ex Officio)|Commerce, Justice, Science, and Related Agencies (Ex Officio)|Department of Defense|Energy and Water Development (Ranking Member)|Financial Services and General Government (Ex Officio)|Department of Homeland Security|Department of Interior, Environment, and Related Agencies (Ex Officio)|Departments of Labor, Health and Human Services, and Education, and Related Agencies|Legislative Branch (Ex Officio)|Military Construction, Veterans Affairs, and Related Agencies|State, Foreign Operations, and Related Programs (Ex Officio)|Transportation, Housing and Urban Development, and Related Agencies|Senate Committee on Health, Education, Labor, and Pensions|Education and the American Family|Primary Health and Retirement Security|Senate Committee on the Budget|Senate Committee on Veterans' Affairs",
+    "religion": "Catholic",
+    "education": [
+      {
+        "degree": "BA",
+        "institution": "washington state university",
+        "year": null
+      }
+    ]
+  },
+  "Pete_Ricketts_NE": {
+    "name": "Pete Ricketts",
+    "birthdate": "8/19/64",
+    "gender": "Male",
+    "race_ethnicity": "White",
+    "committee_roles": "Senate Committee on Banking, Housing, and Urban Affairs|Economic Policy|Financial Institutions and Consumer Protection|National Security and International Trade and Finance|Senate Committee on Environment and Public Works|Clean Air, Climate, and Nuclear Innovation and Safety|Fisheries, Wildlife, and Water (Chairman)|Transportation and Infrastructure|Senate Committee on Foreign Relations|East Asia, the Pacific, and International Cybersecurity Policy (Chairman)|Europe and Regional Security Cooperation|State Department and USAID Management, International Operations, and Bilateral International Development|Senate Committee on the Budget",
+    "religion": "Catholic",
+    "education": [
+      {
+        "degree": "BA",
+        "institution": "university chicago",
+        "year": null
+      },
+      {
+        "degree": "MBA",
+        "institution": "university chicago",
+        "year": null
+      }
+    ]
+  },
+  "Peter_Welch_VT": {
+    "name": "Peter Welch",
+    "birthdate": "5/2/47",
+    "gender": "Male",
+    "race_ethnicity": "White",
+    "committee_roles": "Senate Committee on Agriculture, Nutrition, and Forestry|Conservation, Forestry, Natural Resources, and Biotechnology|Livestock, Dairy, Poultry, and Food Safety|Rural Development, Energy, and Credit (Ranking Member)|Senate Committee on Finance|Energy, Natural Resources, and Infrastructure|Health Care|Senate Committee on Rules and Administration|Senate Committee on the Judiciary|Antitrust, Competition Policy, and Consumer Rights|Federal Courts, Oversight, Agency Action, and Federal Rights|Intellectual Property|the Constitution (Ranking Member)",
+    "religion": "Catholic",
+    "education": [
+      {
+        "degree": "BA",
+        "institution": "college holy cross",
+        "year": null
+      },
+      {
+        "degree": "JD",
+        "institution": "university california berkeley",
+        "year": null
+      }
+    ]
+  },
+  "Rand_Paul_KY": {
+    "name": "Rand Paul",
+    "birthdate": "1/7/63",
+    "gender": "Male",
+    "race_ethnicity": "White",
+    "committee_roles": "Senate Committee on Foreign Relations|Africa and Global Health Policy|Europe and Regional Security Cooperation|Multilateral International Development, Multilateral Institutions, and International Economic, Energy, and Environmental Policy|State Department and USAID Management, International Operations, and Bilateral International Development|Senate Committee on Health, Education, Labor, and Pensions|Education and the American Family|Primary Health and Retirement Security|Senate Committee on Homeland Security and Governmental Affairs (Chairman)|Permanent Subcommittee on Investigations (Ex Officio)|Disaster Management, District of Columbia, and Census (Ex Officio)|Border Management, Federal Workforce, and Regulatory Affairs (Ex Officio)|Senate Committee on Small Business and Entrepreneurship",
+    "religion": "Presbyterian",
+    "education": [
+      {
+        "degree": null,
+        "institution": "baylor university",
+        "year": null
+      },
+      {
+        "degree": "MD",
+        "institution": "duke university",
+        "year": null
+      }
+    ]
+  },
+  "Raphael_Warnock_GA": {
+    "name": "Raphael Warnock",
+    "birthdate": "7/23/69",
+    "gender": "Male",
+    "race_ethnicity": "Black",
+    "committee_roles": "Senate Committee on Agriculture, Nutrition, and Forestry|Conservation, Forestry, Natural Resources, and Biotechnology|Food and Nutrition, Specialty Crops, Organics, and Research|Rural Development, Energy, and Credit|Senate Committee on Banking, Housing, and Urban Affairs|Economic Policy (Ranking Member)|Financial Institutions and Consumer Protection|Securities, Insurance, and Investment|Senate Committee on Finance|Health Care|International Trade, Customs, and Global Competitiveness (Ranking Member)|Taxation and IRS Oversight|Senate Special Committee on Aging",
+    "religion": "Baptist",
+    "education": [
+      {
+        "degree": "BA",
+        "institution": "morehouse college",
+        "year": null
+      },
+      {
+        "degree": "PHD",
+        "institution": "union theological seminary",
+        "year": null
+      }
+    ]
+  },
+  "Richard_Blumenthal_CT": {
+    "name": "Richard Blumenthal",
+    "birthdate": "2/13/46",
+    "gender": "Male",
+    "race_ethnicity": "White",
+    "committee_roles": "Senate Committee on Armed Services|Airland|Personnel|Seapower|Senate Committee on Homeland Security and Governmental Affairs|Permanent Subcommittee on Investigations (Ranking Member)|Disaster Management, District of Columbia, and Census|Senate Committee on the Judiciary|Antitrust, Competition Policy, and Consumer Rights|Crime and Counterterrorism|Federal Courts, Oversight, Agency Action, and Federal Rights|Privacy, Technology, and the Law|Senate Committee on Veterans' Affairs (Ranking Member)|United States Senate Caucus on International Narcotics Control",
+    "religion": "Jewish",
+    "education": [
+      {
+        "degree": "BA",
+        "institution": "harvard university",
+        "year": null
+      },
+      {
+        "degree": null,
+        "institution": "trinity college cambridge",
+        "year": null
+      },
+      {
+        "degree": "JD",
+        "institution": "yale university",
+        "year": null
+      }
+    ]
+  },
+  "Rick_Scott_FL": {
+    "name": "Rick Scott",
+    "birthdate": "12/1/52",
+    "gender": "Male",
+    "race_ethnicity": "White",
+    "committee_roles": "Senate Committee on Armed Services|Personnel|Readiness and Management Support|Seapower (Chairman)|Senate Committee on Foreign Relations|Near East, South Asia, Central Asia, and Counterterrorism|State Department and USAID Management, International Operations, and Bilateral International Development|Western Hemisphere, Transnational Crime, Civilian Security, Democracy, Human Rights, and Global Women's Issues|Senate Committee on Homeland Security and Governmental Affairs|Permanent Subcommittee on Investigations|Disaster Management, District of Columbia, and Census|Senate Committee on the Budget|Senate Special Committee on Aging (Chairman)",
+    "religion": "Protestant unspecified",
+    "education": [
+      {
+        "degree": null,
+        "institution": "university missouri\u2013kansas citybba",
+        "year": null
+      },
+      {
+        "degree": "JD",
+        "institution": "southern methodist university",
+        "year": null
+      }
+    ]
+  },
+  "Roger_Marshall_KS": {
+    "name": "Roger Marshall",
+    "birthdate": "8/9/60",
+    "gender": "Male",
+    "race_ethnicity": "White",
+    "committee_roles": "Senate Committee on Agriculture, Nutrition, and Forestry|Conservation, Forestry, Natural Resources, and Biotechnology (Chairman)|Food and Nutrition, Specialty Crops, Organics, and Research|Senate Committee on Finance|Energy, Natural Resources, and Infrastructure|Health Care|International Trade, Customs, and Global Competitiveness|Senate Committee on Health, Education, Labor, and Pensions|Employment and Workplace Safety|Primary Health and Retirement Security (Chairman)|Senate Committee on the Budget",
+    "religion": "Nondenominational",
+    "education": [
+      {
+        "degree": null,
+        "institution": "butler community college",
+        "year": null
+      },
+      {
+        "degree": "BS",
+        "institution": "kansas state university",
+        "year": null
+      },
+      {
+        "degree": "MD",
+        "institution": "university kansas",
+        "year": null
+      }
+    ]
+  },
+  "Roger_Wicker_MS": {
+    "name": "Roger Wicker",
+    "birthdate": "7/5/51",
+    "gender": "Male",
+    "race_ethnicity": "White",
+    "committee_roles": "Senate Committee on Armed Services (Chairman)|Airland (Ex Officio)|Cybersecurity (Ex Officio)|Emerging Threats and Capabilities (Ex Officio)|Personnel (Ex Officio)|Readiness and Management Support (Ex Officio)|Seapower (Ex Officio)|Strategic Forces (Ex Officio)|Senate Committee on Commerce, Science, and Transportation|Telecommunications and Media|Coast Guard, Maritime, and Fisheries|Surface Transportation, Freight, Pipelines, and Safety|Senate Committee on Environment and Public Works|Chemical Safety, Waste Management, Environmental Justice, and Regulatory Oversight|Clean Air, Climate, and Nuclear Innovation and Safety|Transportation and Infrastructure|Senate Committee on Rules and Administration|Senate Select Committee on Intelligence (Ex Officio)|Commission on Security and Cooperation in Europe (Cochairman)",
+    "religion": "Baptist",
+    "education": [
+      {
+        "degree": "BA",
+        "institution": "university mississippi",
+        "year": null
+      },
+      {
+        "degree": "JD",
+        "institution": "university mississippi",
+        "year": null
+      }
+    ]
+  },
+  "Ron_Johnson_WI": {
+    "name": "Ron Johnson",
+    "birthdate": "4/8/55",
+    "gender": "Male",
+    "race_ethnicity": "White",
+    "committee_roles": "Senate Committee on Finance|Fiscal Responsibility and Economic Growth (Chairman)|Health Care|Taxation and IRS Oversight|Senate Committee on Homeland Security and Governmental Affairs|Permanent Subcommittee on Investigations (Chairman)|Border Management, Federal Workforce, and Regulatory Affairs|Senate Committee on the Budget|Senate Special Committee on Aging",
+    "religion": "Lutheran",
+    "education": [
+      {
+        "degree": "BS",
+        "institution": "university minnesota",
+        "year": null
+      }
+    ]
+  },
+  "Ron_Wyden_OR": {
+    "name": "Ron Wyden",
+    "birthdate": "5/3/49",
+    "gender": "Male",
+    "race_ethnicity": "White",
+    "committee_roles": "Senate Committee on Energy and Natural Resources|Energy|Public Lands, Forests, and Mining|Water and Power (Ranking Member)|Senate Committee on Finance (Ranking Member)|Energy, Natural Resources, and Infrastructure (Ex Officio)|Fiscal Responsibility and Economic Growth (Ex Officio)|Health Care (Ex Officio)|International Trade, Customs, and Global Competitiveness (Ex Officio)|Social Security, Pensions, and Family Policy (Ex Officio)|Taxation and IRS Oversight (Ex Officio)|Senate Committee on the Budget|Joint Committee on Taxation|Senate Select Committee on Intelligence",
+    "religion": "Jewish",
+    "education": [
+      {
+        "degree": null,
+        "institution": "university california santa barbara",
+        "year": null
+      },
+      {
+        "degree": "BA",
+        "institution": "stanford university",
+        "year": null
+      },
+      {
+        "degree": "JD",
+        "institution": "university oregon",
+        "year": null
+      }
+    ]
+  },
+  "Ruben_Gallego_AZ": {
+    "name": "Ruben Gallego",
+    "birthdate": "11/20/79",
+    "gender": "Male",
+    "race_ethnicity": "Hispanic",
+    "committee_roles": "Senate Committee on Banking, Housing, and Urban Affairs|Financial Institutions and Consumer Protection|Housing, Transportation, and Community Development|Senate Committee on Energy and Natural Resources|Energy (Ranking Member)|National Parks|Water and Power|Senate Committee on Homeland Security and Governmental Affairs|Border Management, Federal Workforce, and Regulatory Affairs|Senate Committee on Veterans' Affairs|Commission on Security and Cooperation in Europe|Digital Assets (Ranking Member)",
+    "religion": "Catholic",
+    "education": [
+      {
+        "degree": null,
+        "institution": "harvard university",
+        "year": null
+      }
+    ]
+  },
+  "Sheldon_Whitehouse_RI": {
+    "name": "Sheldon Whitehouse",
+    "birthdate": "10/20/55",
+    "gender": "Male",
+    "race_ethnicity": "White",
+    "committee_roles": "Senate Committee on Environment and Public Works (Ranking Member)|Chemical Safety, Waste Management, Environmental Justice, and Regulatory Oversight (Ex Officio)|Clean Air, Climate, and Nuclear Innovation and Safety (Ex Officio)|Fisheries, Wildlife, and Water (Ex Officio)|Transportation and Infrastructure (Ex Officio)|Senate Committee on Finance|Health Care|International Trade, Customs, and Global Competitiveness|Taxation and IRS Oversight|Senate Committee on the Budget|Senate Committee on the Judiciary|Federal Courts, Oversight, Agency Action, and Federal Rights (Ranking Member)|Border Security and Immigration|Intellectual Property|the Constitution|United States Senate Caucus on International Narcotics Control (Chairman)|Commission on Security and Cooperation in Europe",
+    "religion": "Episcopalian",
+    "education": [
+      {
+        "degree": "BA",
+        "institution": "yale university",
+        "year": null
+      },
+      {
+        "degree": "JD",
+        "institution": "university virginia",
+        "year": null
+      }
+    ]
+  },
+  "Shelley_Moore_Capito_WV": {
+    "name": "Shelley Moore Capito",
+    "birthdate": "11/26/53",
+    "gender": "Female",
+    "race_ethnicity": "White",
+    "committee_roles": "Senate Committee on Appropriations|Commerce, Justice, Science, and Related Agencies|Department of Defense|Department of Homeland Security|Department of Interior, Environment, and Related Agencies|Departments of Labor, Health and Human Services, and Education, and Related Agencies (Chairman)|Transportation, Housing and Urban Development, and Related Agencies|Senate Committee on Commerce, Science, and Transportation|Aviation, Space, and Innovation|Telecommunications and Media|Consumer Protection, Technology, and Data Privacy|Surface Transportation, Freight, Pipelines, and Safety|Senate Committee on Environment and Public Works (Chairman)|Chemical Safety, Waste Management, Environmental Justice, and Regulatory Oversight (Ex Officio)|Clean Air, Climate, and Nuclear Innovation and Safety (Ex Officio)|Fisheries, Wildlife, and Water (Ex Officio)|Transportation and Infrastructure (Ex Officio)|Senate Committee on Rules and Administration",
+    "religion": "Presbyterian",
+    "education": [
+      {
+        "degree": "BA",
+        "institution": "duke university",
+        "year": null
+      },
+      {
+        "degree": null,
+        "institution": "university virginia",
+        "year": null
+      }
+    ]
+  },
+  "Steve_Daines_MT": {
+    "name": "Steve Daines",
+    "birthdate": "8/20/62",
+    "gender": "Male",
+    "race_ethnicity": "White",
+    "committee_roles": "Senate Committee on Energy and Natural Resources|National Parks (Chairman)|Public Lands, Forests, and Mining|Water and Power|Senate Committee on Finance|Energy, Natural Resources, and Infrastructure|Health Care|International Trade, Customs, and Global Competitiveness|Senate Committee on Foreign Relations|Africa and Global Health Policy|Europe and Regional Security Cooperation (Chairman)|Near East, South Asia, Central Asia, and Counterterrorism|Senate Committee on Indian Affairs",
+    "religion": "Presbyterian",
+    "education": [
+      {
+        "degree": "BS",
+        "institution": "montana state university",
+        "year": null
+      }
+    ]
+  },
+  "Susan_Collins_ME": {
+    "name": "Susan Collins",
+    "birthdate": "12/7/52",
+    "gender": "Female",
+    "race_ethnicity": "White",
+    "committee_roles": "Senate Committee on Appropriations (Chairman)|Agriculture, Rural Development, Food and Drug Administration, and Related Agencies|Commerce, Justice, Science, and Related Agencies|Department of Defense|Energy and Water Development (Ex Officio)|Financial Services and General Government|Department of Homeland Security (Ex Officio)|Department of Interior, Environment, and Related Agencies (Ex Officio)|Departments of Labor, Health and Human Services, and Education, and Related Agencies (Ex Officio)|Legislative Branch (Ex Officio)|Military Construction, Veterans Affairs, and Related Agencies|State, Foreign Operations, and Related Programs (Ex Officio)|Transportation, Housing and Urban Development, and Related Agencies|Senate Committee on Health, Education, Labor, and Pensions|Primary Health and Retirement Security|Senate Select Committee on Intelligence",
+    "religion": "Catholic",
+    "education": [
+      {
+        "degree": "BA",
+        "institution": "st lawrence university",
+        "year": null
+      }
+    ]
+  },
+  "Tammy_Baldwin_WI": {
+    "name": "Tammy Baldwin",
+    "birthdate": "2/11/62",
+    "gender": "Female",
+    "race_ethnicity": "White",
+    "committee_roles": "Senate Committee on Appropriations|Agriculture, Rural Development, Food and Drug Administration, and Related Agencies|Department of Defense|Energy and Water Development|Department of Interior, Environment, and Related Agencies|Departments of Labor, Health and Human Services, and Education, and Related Agencies (Ranking Member)|Military Construction, Veterans Affairs, and Related Agencies|Senate Committee on Commerce, Science, and Transportation|Telecommunications and Media|Consumer Protection, Technology, and Data Privacy|Coast Guard, Maritime, and Fisheries|Science, Manufacturing, and Competitiveness (Ranking Member)|Senate Committee on Health, Education, Labor, and Pensions|Employment and Workplace Safety|Primary Health and Retirement Security",
+    "religion": "Don't know/refused",
+    "education": [
+      {
+        "degree": "BA",
+        "institution": "smith college",
+        "year": null
+      },
+      {
+        "degree": "JD",
+        "institution": "university wisconsin\u2013madison",
+        "year": null
+      }
+    ]
+  },
+  "Tammy_Duckworth_IL": {
+    "name": "Tammy Duckworth",
+    "birthdate": "3/12/68",
+    "gender": "Female",
+    "race_ethnicity": "Asian American",
+    "committee_roles": "Senate Committee on Armed Services|Airland|Personnel|Readiness and Management Support|Senate Committee on Commerce, Science, and Transportation|Aviation, Space, and Innovation (Ranking Member)|Telecommunications and Media|Surface Transportation, Freight, Pipelines, and Safety|Senate Committee on Foreign Relations|Europe and Regional Security Cooperation|Multilateral International Development, Multilateral Institutions, and International Economic, Energy, and Environmental Policy (Ranking Member)|State Department and USAID Management, International Operations, and Bilateral International Development|Senate Committee on Veterans' Affairs",
+    "religion": "Don't know/refused",
+    "education": [
+      {
+        "degree": "BA",
+        "institution": "university hawai\u02bbi m\u0101noa",
+        "year": null
+      },
+      {
+        "degree": null,
+        "institution": "george washington universitymia",
+        "year": null
+      },
+      {
+        "degree": null,
+        "institution": "northern illinois university",
+        "year": null
+      },
+      {
+        "degree": "PHD",
+        "institution": "capella university",
+        "year": null
+      }
+    ]
+  },
+  "Ted_Budd_NC": {
+    "name": "Ted Budd",
+    "birthdate": "10/21/71",
+    "gender": "Male",
+    "race_ethnicity": "White",
+    "committee_roles": "Senate Committee on Armed Services|Airland|Cybersecurity|Emerging Threats and Capabilities|Personnel|Senate Committee on Commerce, Science, and Transportation|Aviation, Space, and Innovation|Telecommunications and Media|Science, Manufacturing, and Competitiveness (Chairman)|Senate Committee on Small Business and Entrepreneurship|Joint Economic Committee|Senate Select Committee on Intelligence",
+    "religion": "Nondenominational",
+    "education": [
+      {
+        "degree": "BS",
+        "institution": "appalachian state university",
+        "year": null
+      },
+      {
+        "degree": null,
+        "institution": "dallas theological seminarythm",
+        "year": null
+      },
+      {
+        "degree": "MBA",
+        "institution": "wake forest university",
+        "year": null
+      }
+    ]
+  },
+  "Ted_Cruz_TX": {
+    "name": "Ted Cruz",
+    "birthdate": "12/22/70",
+    "gender": "Male",
+    "race_ethnicity": "Hispanic",
+    "committee_roles": "Senate Committee on Commerce, Science, and Transportation (Chairman)|Aviation, Space, and Innovation (Ex Officio)|Telecommunications and Media (Ex Officio)|Consumer Protection, Technology, and Data Privacy (Ex Officio)|Coast Guard, Maritime, and Fisheries (Ex Officio)|Science, Manufacturing, and Competitiveness (Ex Officio)|Surface Transportation, Freight, Pipelines, and Safety (Ex Officio)|Senate Committee on Foreign Relations|Africa and Global Health Policy (Chairman)|Near East, South Asia, Central Asia, and Counterterrorism|Western Hemisphere, Transnational Crime, Civilian Security, Democracy, Human Rights, and Global Women's Issues|Senate Committee on Rules and Administration|Senate Committee on the Judiciary|Crime and Counterterrorism|Federal Courts, Oversight, Agency Action, and Federal Rights (Chairman)|Border Security and Immigration|the Constitution",
+    "religion": "Baptist",
+    "education": [
+      {
+        "degree": "BA",
+        "institution": "princeton university",
+        "year": null
+      },
+      {
+        "degree": "JD",
+        "institution": "harvard university",
+        "year": null
+      }
+    ]
+  },
+  "Thom_Tillis_NC": {
+    "name": "Thom Tillis",
+    "birthdate": "8/30/60",
+    "gender": "Male",
+    "race_ethnicity": "White",
+    "committee_roles": "Senate Committee on Banking, Housing, and Urban Affairs|Economic Policy|Financial Institutions and Consumer Protection (Chairman)|Senate Committee on Finance|Health Care|International Trade, Customs, and Global Competitiveness|Taxation and IRS Oversight|Senate Committee on the Judiciary|Antitrust, Competition Policy, and Consumer Rights|Federal Courts, Oversight, Agency Action, and Federal Rights|Border Security and Immigration|Intellectual Property (Chairman)|Senate Committee on Veterans' Affairs|Commission on Security and Cooperation in Europe|Digital Assets",
+    "religion": "Catholic",
+    "education": [
+      {
+        "degree": null,
+        "institution": "chattanooga state community college",
+        "year": null
+      },
+      {
+        "degree": "BS",
+        "institution": "university maryland university college",
+        "year": null
+      }
+    ]
+  },
+  "Tim_Kaine_VA": {
+    "name": "Tim Kaine",
+    "birthdate": "2/26/58",
+    "gender": "Male",
+    "race_ethnicity": "White",
+    "committee_roles": "Senate Committee on Armed Services|Emerging Threats and Capabilities|Readiness and Management Support|Seapower (Ranking Member)|Senate Committee on Foreign Relations|Near East, South Asia, Central Asia, and Counterterrorism|State Department and USAID Management, International Operations, and Bilateral International Development|Western Hemisphere, Transnational Crime, Civilian Security, Democracy, Human Rights, and Global Women's Issues (Ranking Member)|Senate Committee on Health, Education, Labor, and Pensions|Education and the American Family|Employment and Workplace Safety|Senate Committee on the Budget",
+    "religion": "Catholic",
+    "education": [
+      {
+        "degree": "BA",
+        "institution": "university missouri",
+        "year": null
+      },
+      {
+        "degree": "JD",
+        "institution": "harvard university",
+        "year": null
+      }
+    ]
+  },
+  "Tim_Scott_SC": {
+    "name": "Tim Scott",
+    "birthdate": "9/19/65",
+    "gender": "Male",
+    "race_ethnicity": "Black",
+    "committee_roles": "Senate Committee on Banking, Housing, and Urban Affairs (Chairman)|Economic Policy (Ex Officio)|Financial Institutions and Consumer Protection (Ex Officio)|Housing, Transportation, and Community Development (Ex Officio)|National Security and International Trade and Finance (Ex Officio)|Securities, Insurance, and Investment (Ex Officio)|Senate Committee on Finance|Energy, Natural Resources, and Infrastructure|Health Care|International Trade, Customs, and Global Competitiveness|Senate Committee on Health, Education, Labor, and Pensions|Education and the American Family|Employment and Workplace Safety|Senate Committee on Small Business and Entrepreneurship|Digital Assets (Ex Officio)",
+    "religion": "Protestant unspecified",
+    "education": [
+      {
+        "degree": "BS",
+        "institution": "charleston southern university",
+        "year": null
+      }
+    ]
+  },
+  "Tim_Sheehy_MT": {
+    "name": "Tim Sheehy",
+    "birthdate": "11/18/85",
+    "gender": "Male",
+    "race_ethnicity": "White",
+    "committee_roles": "Senate Committee on Armed Services|Emerging Threats and Capabilities|Readiness and Management Support|Seapower|Senate Committee on Commerce, Science, and Transportation|Aviation, Space, and Innovation|Telecommunications and Media|Coast Guard, Maritime, and Fisheries|Senate Committee on Veterans' Affairs",
+    "religion": "Lutheran",
+    "education": [
+      {
+        "degree": "BS",
+        "institution": "united states naval academy",
+        "year": null
+      }
+    ]
+  },
+  "Tina_Smith_MN": {
+    "name": "Tina Smith",
+    "birthdate": "3/4/58",
+    "gender": "Female",
+    "race_ethnicity": "White",
+    "committee_roles": "Senate Committee on Agriculture, Nutrition, and Forestry|Food and Nutrition, Specialty Crops, Organics, and Research|Livestock, Dairy, Poultry, and Food Safety|Rural Development, Energy, and Credit|Senate Committee on Banking, Housing, and Urban Affairs|Economic Policy|Housing, Transportation, and Community Development (Ranking Member)|Senate Committee on Finance|Fiscal Responsibility and Economic Growth (Ranking Member)|Health Care|International Trade, Customs, and Global Competitiveness|Senate Committee on Indian Affairs|Digital Assets",
+    "religion": "Presbyterian",
+    "education": [
+      {
+        "degree": "BA",
+        "institution": "stanford university",
+        "year": null
+      },
+      {
+        "degree": "MBA",
+        "institution": "dartmouth college",
+        "year": null
+      }
+    ]
+  },
+  "Todd_Young_IN": {
+    "name": "Todd Young",
+    "birthdate": "8/24/72",
+    "gender": "Male",
+    "race_ethnicity": "White",
+    "committee_roles": "Senate Committee on Commerce, Science, and Transportation|Telecommunications and Media|Consumer Protection, Technology, and Data Privacy|Science, Manufacturing, and Competitiveness|Surface Transportation, Freight, Pipelines, and Safety (Chairman)|Senate Committee on Finance|Health Care (Chairman)|International Trade, Customs, and Global Competitiveness|Social Security, Pensions, and Family Policy|Senate Committee on Small Business and Entrepreneurship|Senate Select Committee on Intelligence",
+    "religion": "Protestant unspecified",
+    "education": [
+      {
+        "degree": "BS",
+        "institution": "united states naval academy",
+        "year": null
+      },
+      {
+        "degree": "MBA",
+        "institution": "university chicago",
+        "year": null
+      },
+      {
+        "degree": "MA",
+        "institution": "university london",
+        "year": null
+      },
+      {
+        "degree": "JD",
+        "institution": "indiana university indianapolis",
+        "year": null
+      }
+    ]
+  },
+  "Tom_Cotton_AR": {
+    "name": "Tom Cotton",
+    "birthdate": "5/13/77",
+    "gender": "Male",
+    "race_ethnicity": "White",
+    "committee_roles": "Senate Committee on Armed Services|Airland|Cybersecurity|Emerging Threats and Capabilities|Strategic Forces|Senate Committee on Energy and Natural Resources|Energy|Public Lands, Forests, and Mining|Joint Economic Committee|Senate Select Committee on Intelligence (Chairman)",
+    "religion": "Methodist",
+    "education": [
+      {
+        "degree": "BA",
+        "institution": "harvard university",
+        "year": null
+      },
+      {
+        "degree": "JD",
+        "institution": "harvard university",
+        "year": null
+      },
+      {
+        "degree": null,
+        "institution": "claremont graduate university",
+        "year": null
+      }
+    ]
+  },
+  "Tommy_Tuberville_AL": {
+    "name": "Tommy Tuberville",
+    "birthdate": "9/18/54",
+    "gender": "Male",
+    "race_ethnicity": "White",
+    "committee_roles": "Senate Committee on Agriculture, Nutrition, and Forestry|Commodities, Derivatives, Risk Management, and Trade|Food and Nutrition, Specialty Crops, Organics, and Research|Rural Development, Energy, and Credit|Senate Committee on Armed Services|Personnel (Chairman)|Seapower|Strategic Forces|Senate Committee on Health, Education, Labor, and Pensions|Education and the American Family (Chairman)|Employment and Workplace Safety|Senate Committee on Veterans' Affairs|Senate Special Committee on Aging",
+    "religion": "Restorationist",
+    "education": [
+      {
+        "degree": "BS",
+        "institution": "southern arkansas university",
+        "year": null
+      }
+    ]
+  }
+}

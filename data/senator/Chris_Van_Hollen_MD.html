@@ -1,0 +1,2824 @@
+<!DOCTYPE html>
+<html lang="en" class='no-js template--block_editor'>
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+      <meta name="page-title" content="About Chris">
+      <title>About Chris | U.S. Senator Chris Van Hollen</title>
+      <link rel="canonical" href="https://www.vanhollen.senate.gov/about/about-chris">
+
+      <link rel="shortcut icon" href="/assets/images/favicon.ico">
+      <link href="/assets/images/favicon.ico" rel="Icon" type="image/x-icon"/>
+      <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
+      <link rel="manifest" href="/assets/images/site.webmanifest">
+      <link rel="mask-icon" href="/assets/images/safari-pinned-tab.svg" color="#cccccc">
+      <meta name="apple-mobile-web-app-title" content=" Chris Van Hollen">
+      <meta name="application-name" content=" Chris Van Hollen">
+      <meta name="msapplication-TileColor" content="#ffffff">
+      <meta name="msapplication-config" content="/assets/images/browserconfig.xml">
+      <meta name="theme-color" content="#ffffff">
+      <meta name="google-site-verification" content="16hXhRmzoT9TNlaQxPtiQuI8rnxp2fu8lOm261oN5Ag">
+
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+
+<meta name="twitter:title" content="About Chris | U.S. Senator Chris Van Hollen of Maryland">
+
+<meta property="twitter:image" content="https://www.vanhollen.senate.gov/assets/images/sharelogo.jpg"/>
+
+<meta name="twitter:description" content="The Official U.S. Senate website of Senator Chris Van Hollen of Maryland"/>
+
+
+<meta property="og:url" content="https://www.vanhollen.senate.gov/about/about-chris"/>
+
+<meta property="og:title" content="About Chris | U.S. Senator Chris Van Hollen of Maryland"/>
+
+<meta property="og:image" content="https://www.vanhollen.senate.gov/assets/images/sharelogo.jpg"/>
+
+<meta property="og:description" content="The Official U.S. Senate website of Senator Chris Van Hollen of Maryland"/>
+
+      
+
+
+<script>
+  if (!application) var application = {};
+  application = {
+    "config": {
+      "tinymce": {
+        "plugins": {
+          "selectvideo": {
+            "player": "jwplayer", // should be set to "legacy" or "jwplayer" currently
+            "youtube": true, // set to true to write the youtube tags for youtube videos
+            "width": "100%", // set width and height on the containing element
+            "height": "100%",
+            "tracking": true
+          }
+        }
+      }
+    },
+    "fn": { // deprecated mootools 1.2 stuff that we'll probably still use once we upgrade fully to 1.3
+      "defined": function (obj) {
+        return (obj != undefined);
+      },
+      "check": function (obj) {
+        return !!(obj || obj === 0);
+      }
+    },
+    "form": {
+      "processed": "null",
+    },
+    "friendly_urls": false,
+    "siteroot": "https://www.vanhollen.senate.gov/",
+    "theme": "",
+    "webroot": "https://www.vanhollen.senate.gov/",
+    "assetWebroot": "https://www.vanhollen.senate.gov/",
+  };
+</script>
+
+    
+      <link rel="stylesheet" type="text/css" href="https://www.vanhollen.senate.gov/styles/common.css?1775168854"/>
+
+      <script src="https://www.vanhollen.senate.gov/scripts/global.js?1775168854"></script>
+      <script src="https://www.vanhollen.senate.gov/scripts/gsap.js?1775168854"></script>
+
+      <script>
+        $.ajaxSetup({ cache: true });
+        function getScripts(scripts, callback) {
+          var progress = 0;
+          scripts.forEach(function(script) {
+              $.getScript(script, function () {
+                  if (++progress == scripts.length && typeof callback == 'function') callback();
+              });
+          });
+        }
+      </script>
+
+      <script>
+        var initForm = function() {
+          getScripts(['https://www.vanhollen.senate.gov/scripts/mootools.min.js?1775168854'], function() {
+            getScripts(['https://www.vanhollen.senate.gov/scripts/form/Forms_Builder.js?1775168854'], function() {
+              creativengine_forms_builder.init();
+
+              // fix for bootstrap tooltip hide/mootools hide collision
+              $$('form input,form select,form textarea, input, .nav-tabs li a').each(function (item) {
+                if (typeof item.hide == 'function') {
+                  item.hide = null;
+                }
+              });
+
+              Element.implement({
+                'slide': function (how, mode) {
+                  return this;
+                }
+              });
+            })
+          })
+        }
+      </script>
+
+
+      <script type="text/javascript">
+        var gRecaptchaReady = function () {
+          let textarea = document.getElementById("g-recaptcha-response");
+          if (!textarea)
+            return;
+          textarea.setAttribute("aria-hidden", "true");
+          textarea.setAttribute("aria-label", "do not use");
+          textarea.setAttribute("aria-readonly", "true");
+        }
+
+        window.getStuckHeaderHeight = function () {
+          var siteHeader = document.querySelector('.SiteHeader');
+          var siteHeaderHeight = (siteHeader)
+            ? siteHeader.offsetHeight
+            : 0;
+          var mobileHeader = document.querySelector('.MobileHeader');
+          var mobileHeaderHeight = (mobileHeader)
+            ? mobileHeader.offsetHeight
+            : 0;
+
+          // Returns the height of either desktop or mobile header because the hidden header will return 0
+          return siteHeaderHeight + mobileHeaderHeight;
+        }
+
+        window.requestAnimationFrame = window.requestAnimationFrame.bind(window);
+        //gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
+
+        window.refreshScrollTriggers = () => {
+          if (typeof ScrollTrigger !== 'undefined') {
+            ScrollTrigger.getAll().forEach(t => t.refresh());
+          }
+        };
+        window.killScrollTriggers = () => {
+          if (typeof ScrollTrigger !== 'undefined') {
+            ScrollTrigger.getAll().forEach(t => t.kill());
+          }
+        };
+      </script>
+
+      
+      
+      <script>
+        window.top['site_path'] = "771001B3-A6B3-2B09-6BEE-20F472470943";
+        window.top['SAM_META'] = {
+          jquery: "",
+          bootstrap: {
+            major: ""
+          }
+        };
+      </script>
+      
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+      <link rel="stylesheet" href="https://www.vanhollen.senate.gov/assets/styles/font-awesome.min.css"/>
+
+  </head>
+
+  
+
+  <body data-transition="wrapper"
+    class="body--internal noFooterMargin body--block_editor hasAlert" id="about">
+    <!-- in sen-n -->
+    <!--stopindex-->
+          <div class="SiteLayout d-flex flex-column">
+          <div class="SiteLayout__alert">
+            <a href="#aria-skip-nav" class="SkipNav sr-only sr-only-focusable">Skip to content</a>
+
+<div class="NewsAlert NewsAlert--hasContent">
+  <div class="NewsAlert__container NewsAlert__container--absolute container">
+    <div class="NewsAlert__iconContainer">
+        <div id="news-alert-dots" class="NewsAlert__dots">
+            <div id="news-alert-dot-0" class="NewsAlert__dot selected"></div>
+            <div id="news-alert-dot-1" class="NewsAlert__dot"></div>
+            <div id="news-alert-dot-2" class="NewsAlert__dot"></div>
+        </div>
+        <div class="NewsAlert__icon" aria-hidden="true">
+          <svg class="NewsAlert__iconShape" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+            <path d="M50,5A45,45,0,1,0,95,50,45,45,0,0,0,50,5Zm4.3,70H45.7V66.4h8.6Zm3.17-43.6L54.25,61.9H45.75L42.53,31.4V25H57.47Z"/>
+          </svg>
+          <svg class="NewsAlert__iconProgressContainer" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="margin: auto; background: none; display: block; shape-rendering: auto;" width="201px" height="201px" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
+            <circle class="NewsAlert__iconProgress" cx="50" cy="50" stroke-width="5" r="46"></circle>
+          </svg>
+        </div>
+    </div>
+  </div>
+
+    <div id="news-alert-carousel" class="NewsAlert__linkContainer splide">
+      <div class="splide__track">
+        <ul class="splide__list">
+            <li class="splide__slide">
+              <a class="NewsAlert__link w-100 h-100" href="https://www.vanhollen.senate.gov/share-how-president-trumps-executive-orders-are-impacting-you-or-your-family">
+                <div class="NewsAlert__container container h-100">
+                  <div class="NewsAlert__row row no-gutters h-100">
+                    <div class="NewsAlert__content col d-none d-md-block">
+                      <span class="NewsAlert__contentLabel">
+                        <span class="sr-only">News</span> Alert:</span>
+                      Share how President Trump’s Executive Orders are impacting you or your family
+                    </div>
+
+                    <div class="NewsAlert__content col d-md-none">
+                      <span class="NewsAlert__contentLabel">
+                        <span class="sr-only">News</span> Alert:</span>
+                      Share how President Trump’s Executive Orders are impacting y...
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="splide__slide">
+              <a class="NewsAlert__link w-100 h-100" href="https://www.vanhollen.senate.gov/constituent-services/resources-for-marylanders-affected-by-trump-admin-policies">
+                <div class="NewsAlert__container container h-100">
+                  <div class="NewsAlert__row row no-gutters h-100">
+                    <div class="NewsAlert__content col d-none d-md-block">
+                      <span class="NewsAlert__contentLabel">
+                        <span class="sr-only">News</span> Alert:</span>
+                      Resources for Marylanders Affected by Trump Admin Policies
+                    </div>
+
+                    <div class="NewsAlert__content col d-md-none">
+                      <span class="NewsAlert__contentLabel">
+                        <span class="sr-only">News</span> Alert:</span>
+                      Resources for Marylanders Affected by Trump Admin Policies
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="splide__slide">
+              <a class="NewsAlert__link w-100 h-100" href="https://www.vanhollen.senate.gov/about/issues/trumps-one-big-beautiful-betrayal">
+                <div class="NewsAlert__container container h-100">
+                  <div class="NewsAlert__row row no-gutters h-100">
+                    <div class="NewsAlert__content col d-none d-md-block">
+                      <span class="NewsAlert__contentLabel">
+                        <span class="sr-only">News</span> Alert:</span>
+                      Fact Sheet on Trump’s One Big Beautiful Betrayal
+                    </div>
+
+                    <div class="NewsAlert__content col d-md-none">
+                      <span class="NewsAlert__contentLabel">
+                        <span class="sr-only">News</span> Alert:</span>
+                      Fact Sheet on Trump’s One Big Beautiful Betrayal
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+        </ul>
+      </div>
+    </div>
+
+    <script>
+      if (typeof initializeNewsAlert !== 'function') {
+        function initializeNewsAlert(containerQuery) {
+          var container = document.querySelector(containerQuery);
+          var splideContainer = container.querySelector('#news-alert-carousel');
+          var newsAlertSplide = new Splide(splideContainer, {
+            type: 'loop', // 'loop' or 'fade'
+            // rewind: true,  Combine with type: 'fade' to make last slide loop to first
+            direction: 'ttb', // 'ttb', 'ltr', 'rtl'
+            waitForTransition: false,
+            width: '100%',
+            height: '95px',
+            autoPlay: false,
+            drag: false,
+            arrows: false,
+            pagination: false,
+            speed: 1000,
+            breakpoints: {
+              500: {
+                height: '115px'
+              }
+            }
+          }).mount();
+
+          var slideDuration = 7; // in seconds
+          var newsAlertProgressAnimation = gsap.timeline({
+            scrollTrigger: {
+              trigger: ".NewsAlert",
+              start: "top top",
+              end: "bottom top",
+              toggleActions: "play pause resume none"
+            }
+          });
+
+          var newsAlertProgressElement = container.querySelector('.NewsAlert__iconProgress');
+          newsAlertProgressAnimation
+            .to(newsAlertProgressElement, {
+              opacity: 1,
+              duration: 1
+            })
+            .from(newsAlertProgressElement, {
+              strokeDashoffset: 0,
+              ease: 'none',
+              duration: slideDuration,
+              onComplete: function () {
+                if ($('.NewsAlert').find('#news-alert-carousel').length) {
+                  // Go to next slide
+                  newsAlertSplide.go('+1')
+                } else {
+                  newsAlertProgressAnimation.pause(0);
+                }
+              }
+            }, "<")
+            .to(newsAlertProgressElement, {
+              opacity: 0,
+              duration: 0.1
+            }, "-=0.1");
+
+          // Make dots interactive
+          $('.NewsAlert__dot').each(function (index, dot) {
+            $(dot).click(function () {
+              newsAlertSplide.go(index)
+            })
+          });
+
+          // Trigger alert icon animation restart on slide change
+          newsAlertSplide.on('move.newsAlert', function () {
+            newsAlertProgressAnimation.restart();
+            $('.NewsAlert__dot').removeClass('selected');
+            $('#news-alert-dot-' + newsAlertSplide.index).addClass('selected');
+          });
+
+          window.destroyNewsAlertSplide = function () {
+            newsAlertSplide.destroy(true);
+          }
+
+          setTimeout(function () {
+            newsAlertProgressAnimation.play(0);
+          }, 1000);
+        }
+      }
+
+      if (typeof Splide === 'undefined') {
+        getScripts(['https://www.vanhollen.senate.gov/scripts/splide/splide.min.js?1775168854'], function () {
+          initializeNewsAlert('.NewsAlert')
+        });
+      } else {
+        initializeNewsAlert('.NewsAlert')
+      }
+    </script>
+</div>
+
+            
+          </div>
+
+        <div class="SiteLayout__container d-flex flex-column flex-grow-1">
+            <div class="SiteLayout__navigation">
+                <div class="SiteLayout__siteHeader">
+<div class="SiteHeader">
+  <div class="SiteHeader__background"></div>
+
+  <div  class="SiteHeader__layout">
+    
+  <div class="SiteHeader__backgroundShadow"></div>
+    
+    <div  class="SiteHeader__main">
+      <div class="SiteHeader__logoContainer js-siteLogo">
+        <a class="SiteHeader__logoLink"
+          href="/"
+          aria-label="U.S. Senator Chris Van Hollen Logo goes to Home Page">
+          <div class="SiteHeader__logo">
+<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 316">
+
+  <path class="stateicon" fill="#008e7f" d="m643.54,312.17l-.24-.33-.33-.18-.29.1-.12.52.14.4.76.39.3.35-.37.11-.89-.05-.15.19.19.32.77.36.23.33.29-.62.27-.78v-.72s-.56-.39-.56-.39Zm26.19-9.06l-1.13,2.71-.76,1.43-.33.95-.13,1.06-.15.37-.87,1.25-.62,1.22c.16-.02.32-.04.48-.06l.15-.33,1-1.18,1.18-3.01.46-2.14,1.06-2.01.3-1.09h-.18l-.46.84Zm-17.44-6.42v-47.48s-74.41,0-110.38,0v19.26l.46-.03.37-.25,3.27-2.93.24-.08,1.21-.21.23-.1.12-.14.35-.81.21-.32.38-.4.82-.63,1.36-.73.15-.11.13-.14.33-.47.56-.44.11-.11.11-.14.08-.13.07-.13.38-.95.09-.17.12-.16.13-.12,1.11-.57.22-.03.27.02.5.19.47.28.56.53.31.18.22.04h.25s.33-.16.33-.16l.17-.13.13-.15.29-.46,1.75-1.79.35-.49.3-.51.09-.12.13-.13.1-.09.15-.08.15-.06.51-.11.17-.07.09-.09-.03-.11-.13-.21-.03-.16.02-.19.07-.2.09-.17.43-.65.16-.31.12-.3.08-.14.08-.12.11-.04.14.03.21.19.09.15.26.3.33.22.05.14-.03.08-.15.06-.23.15-.07.08-.05.1-.04.15v.15s0,.1,0,.1l.02.07.02.04.16.23.06.06.1.07,1.06.52.48.34.13.13.15.11.71.24,2.38.41.07-.14,1-.32,2.1.29.91-.68.14-.38-.15-.19-.58-.2.1-.53.47-.14h.57s.37-.15.37-.15l-.81-1.14.3-.19.25-.02.58.09.27-.03.76-.38.58-.13,1.18.26h.58s.22-.2.22-.2l.52-.67.34-.28.87-1.05.24-.17.27-.13.34-.11,1.51.11,1.34.87,2.23,2.28.56.37.66.24.62.03.45-.27.32-.1.82.23.16-.13.16-.28.35-.06.4.08.29.13.43.58-.15.58-.53.45-.72.19.17.42.42,1.41h.18l.07-.37.16-.41.22-.25.26.11.19.43-.1.28-.17.22-.02.24.37.44h.43l.49-.15.54-.03v.26l-.41.12-.19.29v.41l.18.47-.63.48.38.37,1.35.57.25.64-.14.69-.23.71v.67s.45.73.45.73l.04.02.57.27h1.49l.54.11,1.23.5,1.32.33.32.3.56.95.55.38.66.19.58.25.32.59-.1.77-.44.57-.96.86-.22.64.17.57.39.5.44.41,1.04,1.06.68.39,2.58.25.93.27.86.47.64.68.18.51.12.6.19.49.4.21.42.08.98.35.89.19.34.27.34.45,2.23-2.45,3.24,4.62-2.59,3.05v.64s.47.96.47.96l-.13.3-.15.22-.15.17-.19.12.28.74-.34.42-1.16.36-.42.21-.23.18-.23.24-.17.33-.11.62-.25.6-.18.64-.17.21-.28.09-.65-.04-.19.07-.22.2-.19.07-.16.1-.14.28-.08.4.03.24.17.04.3-.18.2.25-.82.38-.29.15-.62.22-.33.71-.18.75-.27.35-.22.45.02,1.04.15,1.12.15.71.32.66.53.74.64.46.63-.23.3-.24.66-.29.33-.37.6-1.27-.28-.48-.12-.15-.2-.12.38-.3.41-.24.06.1.02.04.03.04.1.08v.28l-.16.3.05.4.21.38.32.21.36-.08.38-.28.46-.67.16-.29.12-.31.08-.33.03-.36.48.56.4.91.84,2.75.41.71,1.99,2.15.79.51.59-.03.12-.92-.2-1.05-.29-.9-.72-1.62.93.61.62.73.35.99.11,1.37.09.35.22.5.48.82.45.42.4.14,2.79-.35,1.05.13.83.54.4.4.38.29.36.35.35.6.17.5.2.91.05.32.39.26.21-.3.18-.96.64.73.39.26.24-.49.14-.22.14-.29.07-.36-.04-.25-.15-.56-.03-.34.66.62.22,1.22.1,1.18.34.53.79.29,2.12,1.98-.03-.56-.18-.33-.23-.26-.18-.36.06-.57.24-.71.18-.73-.18-.67-.9-1.39-.8-.71-.19-.28-.18-.71.17-.56.27-.52.14-.64-.28-.57h-.67s-.8.17-.8.17l-.66.03-.59-.38-.52-.63-.35-.73-.14-.68-.31-.24-1.89-.91-.99-.91-.76-1.03-.48-1.26-.18-1.39-.04-.28-.17-.21.21-.28-.19-.57-.13-.82-.16-2.72.04-.42-.03-.29.08-.26.28.93.85,5.65.15.3.3.23,1.96,2.54.5.37.92.21.32.14.48.3.2.25.05.21.03.24.13.34.44.58.44.21,1.01-.03.67-.3.12-.72-.2-.84-.27-.69-.83-1.27-2.03-2.36-.55-1.43-.04-.83.24-2.36-.12-.68-.2-.69-.1-.73.22-.83-.82-.9-.33-.65-.04-.76.3-.51,1.09-.68.41-.57.17-.79h-.31s-.87.52-.87.52l-.28-.27.38-1.21-.29-.3-.14-.24-.03-.11-.03-.16h.68s.29.06.29.06l.22.18.46-.48-.3-.46-.96-.58-.31-.42-.21-.55.05-.45.48-.11.57.34.99,1.19.54.25.22-.4-.38-.91-1.17-1.9-.66-.75-.29-.26-.62-.26-.29-.24-.2-.37-.02-.39.17-.3.35-.11.29.18.29.39.43.73,1.66,1.73.23-.08.18-.25.21-.14.69-.03.48-.17.13-.37-.4-.67-.52-.43-1.56-.74-.63-.13-.2-.13-.19-.3-.08-.34.18-.26.24.07.97.73.39-.28.37.08.29.3.15.41h.22l.16-.84-.31-.81-.44-.79-.4-1.36-.4.02-.63.44-.3-.21-.41-.68-.19-.15-.08-.2-.12-.45-.27-.44-.88-.3-.16-.24-.13-.33-.26-.35-.22-.04-.51-.18-.37-.2.19-.09.75-.05.28-.15.29-.3.33.3,1.45.7.4.4.33.44.27.28.22-.1.19.28.22-.24h.26s.27.16.27.16l.26.31,1.2-.77v-.24l-1-.15-.76-.69-.59-.98-.46-1.04.96.32.24.19.48.87.26.37.45.3.3-.33.02-.25-.96-1.28-.22-.46.19-.21,1.61.4.08-.15-.21-.5.33-.25.31-.04.29-.08.26-.39h-.18l.06-.68-.62-.3-.8-.19-.46-.38,2.23-.57.4.19.58,1.72.22,1.75.88-1.11.22-.15.04-.2-.22-.45-.42-.65.4-2.83.19-.17.19-.33.23-.29h.28l.2.26v.31s-.2.71-.2.71l-.2,1.61.11.73.47.5.76-.68,1.8-1.06,1.41-1.42.19-.34.07-.48-.23-.17-1.08-.37-.31-.37.82-2.08.28-.28.32-.15.4-.06,2,.02.31-.17.49-.88.34-.39.48-.12-.35,1.47-.23.65-.32.57-.73,1.07-.27.71.1.7.5-.64,2.08-1.72.56-.6.46-.66.51-.55.72-.26-.22.86-.35.87-.52.71-.72.41.28.62.45.44.86.51v.24l-.78-.14-1.36-.45-.64.07-.51.32-.64.57-1.17,1.31-.1.68.73.25,3.32.03.76.24.39.48-.76.03-.2-.03-1.3.05-3.29-.11-2.56.31-.1.17-.23.82-.16.3-.29.15-.64.12-.3.27-.1.31-.06.74-.13.35-1.41,2.68-.49,1.3-.13.24-.18.44v.42s.67.32.67.32l.22.33.16.39.06.29-.09,1.64.04.69.25.36.51-.48.25-1.39.42-1.41,1-.55v.26l-.4.28.69.25.63-.3.62-.48.66-.28-.35.66-1.3,1.35-.56.84.22.26-.33.11-.69.13.08.35.13.29.18.22.23.17-.12.76-.49.47-.67.25-.64.07-.83-.12-.5-.32-.78-.83-.32-.21-.33-.14-.26.08-.2.86-.4.8-.09.27-.09.94-.52,2.79.06.65.45-.02.6-.37.3-.4-.14-.23-.26-.34-.19-.38.09-.35.28-.23.24-.08.9-.08.19-.04.29-.18.03-.1.21-.32.24-.27.12.02.2-.62.48.19.93.82-.14.44-.06.61.1.53.38.23.19-.2.22-.88.09-.21.38.06.03.33-.21.77.19.14,1.22.51-.62.44-.82.3-.66.5-.13,1.05.42.87.61.1.6-.39.4-.59.11.59-.25.59-.41.45-.36.18-.54-.07-.52-.21-.47-.33-.39-.44-.22-.85-.07-.14-.3-.06-.19-.15-.3-.46-.43-.23-.46.23-.8.67-.06.32-.17.36-.57,2.17-.27.65-.09.53-.08.9.17.2.4-.06.41-.23.24-.28-.11-.53.06-.85.18-.87.24-.58.45-.45.03.32-.26,1.53.24.37.54-.55.93-1.23.56.27-.08.62-.58,1.15.37.24.26.87.25.19.35-.18.16-.42.13-.51.24-.43.11.37v.35s-.12.31-.12.31l-.19.23.26.46.52.02.63-.15.61-.05v.26l-.4.14-.75.39-.26.23v.23l.57.26.42-.08.38-.22.44-.19-.15.75.54.65.82.46.69.18.68-.21.41-.52.63-1.3h.17l.1.12.12.11-.29.57-.15,1.14-.36.62-.34.23-.46.15-.91.1-2.98-1.13-.54.12-.3-.23-.3-.29.17-.09.44-.39-.41.06-.76.33-.42.09h-.49l-1.31-.25.29.48.14.15.19.13v.25l-.65.77-.22.52.36.24h.91s.36-.11.36-.11l.32-.26.15-.29.02-.2.09-.12.34-.03h.23s.19.04.19.04l.15.08.12.13.09.4-.45.48.16.39-.57.29-.66.2-.54.31-.22.61-.12.93-.28.53-.27-.08-.13-.87-.27-.34-.53-.09-.45.28.02.78.17.19.27.2.25.29.19.82.19.43.21.38.15.22.88,1.39.55.9.15,1h.18l.09-.8-.42-1.67.32-.31.5.34,1.74,2.22.25.68.2.24.77.21.29.31.95,1.66.32.25.27-.35.33-.96v-.51s-.06-.47-.06-.47l-.22-.37-.3-.19.53-.94.83-1.01.75-.42.28.83-.21.57-.81.36-.18.48.12.34.25.31.28.27.17.23.05.36-.04.36v.32s.16.22.16.22l.2-.36.72-2.19.19-.3,1.5-1.73.13-.35.07-.42.1-.35.2-.15.38.04.08.13-.08.2-.17.8-.26.57-.97,1.61-.33.79-.12.84.28.74.54.3,1.29.1.46.24-1.1.52-1.17.34-.94.63-.38,1.41.03.75.09.28.18.12.25-.12.06-.3.03-.33.15-.26.6-.16,1.33.14.68-.26.4.08.51-.06.42.14.09.37-.23.21-.88.15-.3.15.19.25-.15.33-.25.3-.3.23-.3.13v.28l.12.07.03.03v.04s.07.11.07.11l.35-.21.42-.07.72.03.44-.19.32-.38.32-.28.43.08-.4.68-1.33,1.27-.29.45-.19.12-.82.12-.19.28-.12.41-.62.98-.23.24.08.05h.08l.04.05-.02.18h.19l.13-.22.18-.16.23-.1.28-.03-.14.48-.24.29-.25.21-.17.27-.05.32.08.16.1.13.06.26.26.18.58-.37.88-.82.64-.46.68-.09,2.64.23.56.15.32.15c.16-.36.32-.72.47-1.08l.19-.19c2.39-.31,4.77-.63,7.16-.95l.06-.3.64-1.85-.14-.3.17-.13.47-.65.26-.21h.27s.55.24.55.24h.2s.21-.36.21-.36l.33-1.18.15-.26.28-.32.42-2.18.28-.45.38-.32.96-.52-.39.79.09.29.99-.05.28-.26.72-1.66.35-.46.4-.68.29-.7.06-.58-.24-.41h-.33s-.39.06-.39.06l-.41-.14.12-.07.14-.12.14-.09v-.23h-.22v-.29s.29-.52.29-.52l-.42-.33-1.25-.4.53-.29.48.11.47.26.5.14.49-.08.03-.25-.53-.94.41.17h.31s.15-.19.15-.19l-.03-.23h-18.33Zm-8.83,10.37l.06-.31-.12-.34-.24-.35-.43-.36-.68.15-.48.52.17.73.29.11,1.12.12.3-.27Zm27.92-10.38h0s-.04,1.14-.04,1.14l-.49,2.09-.09,1.1.47-.64.34-1.25.19-1.39.02-1.05v-.02h-.41Z"/>
+  <g class="lettering">
+    <path fill="#41687e" d="m57.66,267.1v-10.76c0-4.48-.54-5.2-4.27-5.2v-.94h12.12v.94c-3.73,0-4.27.72-4.27,5.2v10.99c0,5.83,3.37,8.52,7.86,8.52,4.71,0,8.26-2.69,8.26-8.52v-10.99c0-4.48-.58-5.2-4.31-5.2v-.94h10.51v.94c-3.73,0-4.31.72-4.31,5.2v10.76c0,7.04-4.85,10.76-10.82,10.76s-10.78-3.72-10.78-10.76Z"/>
+    <path fill="#41687e" d="m102.57,275.03c0-1.35,1.08-2.42,2.42-2.42s2.42,1.08,2.42,2.42-1.08,2.42-2.42,2.42-2.42-1.08-2.42-2.42Z"/>
+    <path fill="#41687e" d="m130.37,267.99h.94s.04,8.07,8.26,8.07c3.19,0,5.61-2.06,5.61-4.93,0-2.06-2.07-3.81-5.16-5.43l-4.31-2.2c-2.6-1.35-4.98-3.99-4.98-7.4,0-3.72,3.1-6.68,7.45-6.68,2.65,0,4.13.85,5.48,1.84.54-.45,1.08-1.12,1.3-2.06h.9v9.86h-.94c-.31-3.59-1.66-7.85-6.87-7.85-2.51,0-4.36,1.75-4.36,3.99s1.57,3.54,5.48,5.56l4.27,2.2c3.46,1.75,4.72,4.35,4.72,6.81,0,4.89-3.95,8.07-8.58,8.07-3.41,0-5.57-1.79-7-2.11-.54.45-1.08,1.12-1.3,2.11h-.9v-9.86Z"/>
+    <path fill="#41687e" d="m170.48,275.03c0-1.35,1.08-2.42,2.42-2.42s2.42,1.08,2.42,2.42-1.08,2.42-2.42,2.42-2.42-1.08-2.42-2.42Z"/>
+    <path fill="#41687e" d="m224.02,267.99h.94s.04,8.07,8.26,8.07c3.19,0,5.61-2.06,5.61-4.93,0-2.06-2.07-3.81-5.16-5.43l-4.31-2.2c-2.6-1.35-4.98-3.99-4.98-7.4,0-3.72,3.1-6.68,7.45-6.68,2.65,0,4.13.85,5.48,1.84.54-.45,1.08-1.12,1.3-2.06h.9v9.86h-.94c-.31-3.59-1.66-7.85-6.87-7.85-2.51,0-4.36,1.75-4.36,3.99s1.57,3.54,5.48,5.56l4.27,2.2c3.46,1.75,4.72,4.35,4.72,6.81,0,4.89-3.95,8.07-8.58,8.07-3.41,0-5.57-1.79-7-2.11-.54.45-1.08,1.12-1.3,2.11h-.9v-9.86Z"/>
+    <path fill="#41687e" d="m261.25,276.15c3.73,0,4.27-.76,4.27-5.25v-14.57c0-4.48-.54-5.2-4.27-5.2v-.94h20.48l.4,5.92h-.94l-.22-.9c-.63-2.33-1.08-3.36-5.21-3.36h-6.65v10.18h2.24c4.49,0,5.21-.54,5.21-4.3h.94v10.27h-.94c0-3.77-.72-4.31-5.21-4.31h-2.24v6.55c0,4.48.54,5.2,4.27,5.2h3.86c4.13,0,4.62-1.03,5.21-3.41l.22-.9h.94l-.36,5.96h-22v-.94Z"/>
+    <path fill="#41687e" d="m308.64,255.3v15.6c0,4.48.58,5.25,4.31,5.25v.94h-10.24v-.94c3.73,0,4.27-.76,4.27-5.25v-14.57c0-4.48-.54-5.2-4.27-5.2v-.94h6.33l17.24,21.34v-15.2c0-4.48-.54-5.2-4.27-5.2v-.94h10.24v.94c-3.73,0-4.31.72-4.31,5.2v21.52h-1.03l-18.27-22.55Z"/>
+    <path fill="#41687e" d="m346.37,276.15c3.77,0,4-.76,5.39-3.9l9.88-22.82h.58l9.92,22.82c1.39,3.14,1.62,3.9,5.34,3.9v.94h-12.44v-.94c3.73,0,4.58-.94,3.5-3.41l-2.16-4.98h-10.87l-2.16,4.98c-1.08,2.42-.22,3.41,3.5,3.41v.94h-10.51v-.94Zm19.26-10.04l-4.71-10.81-4.67,10.81h9.38Z"/>
+    <path fill="#41687e" d="m397.07,276.15c3.73,0,4.31-.76,4.31-5.25v-18.97h-5.84c-4.13,0-4.58,1.03-5.21,3.41l-.22.9h-.94l.4-6.05h27.21l.4,6.05h-.94l-.22-.9c-.63-2.38-1.08-3.41-5.21-3.41h-5.84v18.97c0,4.48.58,5.25,4.31,5.25v.94h-12.21v-.94Z"/>
+    <path fill="#41687e" d="m434.53,263.64c0-7.8,6.74-14.21,15-14.21s14.95,6.41,14.95,14.21-6.74,14.21-14.95,14.21-15-6.41-15-14.21Zm25.68,0c0-5.56-2.96-12.46-10.69-12.46s-10.73,6.9-10.73,12.46,2.96,12.42,10.73,12.42,10.69-6.86,10.69-12.42Z"/>
+    <path fill="#41687e" d="m483.44,276.15c3.73,0,4.27-.76,4.27-5.25v-14.57c0-4.48-.54-5.2-4.27-5.2v-.94h11.85c6.24,0,9.65,3.41,9.65,7.58,0,3.9-2.92,7-7.99,7.53l4.4,5.16c2.65,3.14,5.66,5.38,8.35,5.7v.94h-7.41l-8.89-11.79h-2.11v5.6c0,4.48.54,5.25,4.27,5.25v.94h-12.12v-.94Zm11.81-12.47c3.91,0,5.7-2.64,5.7-5.92s-1.8-5.92-5.7-5.92h-3.95v11.84h3.95Z"/>
+  </g>
+  <g class="lettering">
+    <path fill="#41687e" d="m684.86,275.93c3.73,0,4.27-.76,4.27-5.25v-14.57c0-4.48-.54-5.2-4.27-5.2v-.94h21.24l.36,5.92h-.94l-.23-.9c-.58-2.33-1.08-3.36-5.16-3.36h-7.41v10.18h2.24c4.49,0,5.21-.54,5.21-4.3h.94v10.27h-.94c0-3.77-.72-4.31-5.21-4.31h-2.24v7.22c0,4.48.54,5.25,4.27,5.25v.94h-12.12v-.94Z"/>
+    <path fill="#41687e" d="m725.2,263.42c0-7.8,6.74-14.21,15-14.21s14.95,6.41,14.95,14.21-6.74,14.21-14.95,14.21-15-6.41-15-14.21Zm25.68,0c0-5.56-2.96-12.46-10.69-12.46s-10.73,6.9-10.73,12.46,2.96,12.42,10.73,12.42,10.69-6.86,10.69-12.42Z"/>
+    <path fill="#41687e" d="m774.11,275.93c3.73,0,4.27-.76,4.27-5.25v-14.57c0-4.48-.54-5.2-4.27-5.2v-.94h11.85c6.24,0,9.65,3.41,9.65,7.58,0,3.9-2.92,7-7.99,7.53l4.4,5.16c2.65,3.14,5.66,5.38,8.35,5.7v.94h-7.41l-8.89-11.79h-2.11v5.6c0,4.48.54,5.25,4.26,5.25v.94h-12.12v-.94Zm11.81-12.47c3.91,0,5.7-2.64,5.7-5.92s-1.8-5.92-5.7-5.92h-3.95v11.84h3.95Z"/>
+    <path fill="#41687e" d="m848.89,270.68c0,4.48.58,5.25,4.31,5.25v.94h-10.24v-.94c3.73,0,4.27-.76,4.27-5.25v-14.57c0-4.48-.54-5.2-4.27-5.2v-.94h7.36l9.52,21.84,9.47-21.84h7.32v.94c-3.77,0-4.31.72-4.31,5.2v14.57c0,4.48.54,5.25,4.31,5.25v.94h-12.12v-.94c3.73,0,4.27-.76,4.27-5.25v-15.29l-9.61,22.24h-.58l-9.7-22.33v15.38Z"/>
+    <path fill="#41687e" d="m891.88,275.93c3.77,0,4-.76,5.39-3.9l9.88-22.82h.58l9.92,22.82c1.39,3.14,1.62,3.9,5.34,3.9v.94h-12.44v-.94c3.73,0,4.58-.94,3.5-3.41l-2.15-4.98h-10.87l-2.15,4.98c-1.08,2.42-.23,3.41,3.5,3.41v.94h-10.51v-.94Zm19.26-10.04l-4.71-10.81-4.67,10.81h9.38Z"/>
+    <path fill="#41687e" d="m938.27,275.93c3.73,0,4.27-.76,4.27-5.25v-14.57c0-4.48-.54-5.2-4.27-5.2v-.94h11.85c6.24,0,9.65,3.41,9.65,7.58,0,3.9-2.92,7-7.99,7.53l4.4,5.16c2.65,3.14,5.66,5.38,8.35,5.7v.94h-7.41l-8.89-11.79h-2.11v5.6c0,4.48.54,5.25,4.27,5.25v.94h-12.12v-.94Zm11.81-12.47c3.91,0,5.7-2.64,5.7-5.92s-1.8-5.92-5.7-5.92h-3.95v11.84h3.95Z"/>
+    <path fill="#41687e" d="m984.67,275.93c3.73,0,4.26-.76,4.26-5.25v-4.35l-7.45-11.52c-1.93-2.96-3.32-3.9-6.51-3.9v-.94h12.8v.94c-3.77,0-3.77,1.35-2.42,3.41l6.46,9.86,6.56-9.86c1.57-2.42,1.35-3.41-2.43-3.41v-.94h10.51v.94c-3.77,0-4.71,1.25-6.51,3.9l-7.41,11.21v4.66c0,4.48.54,5.25,4.27,5.25v.94h-12.12v-.94Z"/>
+    <path fill="#41687e" d="m1021.72,275.93c3.73,0,4.27-.76,4.27-5.25v-14.57c0-4.48-.54-5.2-4.27-5.2v-.94h12.12v.94c-3.73,0-4.27.72-4.27,5.2v13.9c0,4.48.54,5.2,4.27,5.2h5.39c4.09,0,4.58-1.03,5.16-3.41l.22-.9h.94l-.36,5.96h-23.48v-.94Z"/>
+    <path fill="#41687e" d="m1059.41,275.93c3.77,0,4-.76,5.39-3.9l9.88-22.82h.58l9.92,22.82c1.39,3.14,1.62,3.9,5.34,3.9v.94h-12.44v-.94c3.73,0,4.58-.94,3.5-3.41l-2.15-4.98h-10.87l-2.15,4.98c-1.08,2.42-.23,3.41,3.5,3.41v.94h-10.51v-.94Zm19.26-10.04l-4.71-10.81-4.67,10.81h9.38Z"/>
+    <path fill="#41687e" d="m1111.73,255.08v15.6c0,4.48.58,5.25,4.31,5.25v.94h-10.24v-.94c3.73,0,4.27-.76,4.27-5.25v-14.57c0-4.48-.54-5.2-4.27-5.2v-.94h6.33l17.24,21.34v-15.2c0-4.48-.54-5.2-4.26-5.2v-.94h10.24v.94c-3.73,0-4.31.72-4.31,5.2v21.52h-1.03l-18.28-22.55Z"/>
+    <path fill="#41687e" d="m1153.64,275.93c3.73,0,4.27-.76,4.27-5.25v-14.57c0-4.48-.54-5.2-4.27-5.2v-.94h12.17c10.46,0,15,6.05,15,13.45s-4.53,13.45-15,13.45h-12.17v-.94Zm12.21-.72c8.76,0,10.64-6.55,10.64-11.79s-1.89-11.79-10.64-11.79h-4.36v18.38c0,4.48.49,5.2,4.18,5.2h.18Z"/>
+  </g>
+  <g class="lettering">
+    <path fill="#0d1f33" d="m124.02,95.54l-50.04,107.68h-23.94L0,95.54h32.2l29.72,72.06h.99l29.89-72.06h31.21Z"/>
+    <path fill="#0d1f33" d="m123.68,203.22l50.04-107.68h23.94l50.04,107.68h-31.54l-6.94-16.49h-48.22l-6.77,16.49h-30.55Zm46.57-38.91h29.72l-14.37-34.46h-.99l-14.37,34.46Z"/>
+    <path fill="#0d1f33" d="m372.54,95.54v107.68h-24.44l-47.56-58.54h-.16v58.54h-29.06v-107.68h24.27l47.72,58.7h.17v-58.7h29.06Z"/>
+    <path fill="#0d1f33" d="m456.91,203.22v-107.68h29.06v38.91h43.26v-38.91h28.9v107.68h-28.9v-45.35h-43.26v45.35h-29.06Z"/>
+    <path fill="#0d1f33" d="m649.62,92.24c34.35,0,61.93,25.56,61.93,56.89s-27.58,57.38-61.93,57.38-61.26-25.56-61.26-57.38,26.92-56.89,61.26-56.89Zm0,90.2c17.83,0,31.87-15.17,31.87-33.31s-14.04-32.65-31.87-32.65-31.38,14.84-31.38,32.65,13.71,33.31,31.38,33.31Z"/>
+    <path fill="#0d1f33" d="m770.5,95.54v83.44h60.6v24.24h-89.5v-107.68h28.9Z"/>
+    <path fill="#0d1f33" d="m886.42,95.54v83.44h60.6v24.24h-89.5v-107.68h28.9Z"/>
+    <path fill="#0d1f33" d="m1040.32,160.01h-37.98v18.96h66.88v24.24h-95.78v-107.68h92.15v24.24h-63.25v16.98h37.98v23.25Z"/>
+    <path fill="#0d1f33" d="m1200,95.54v107.68h-24.44l-47.56-58.54h-.16v58.54h-29.06v-107.68h24.27l47.72,58.7h.17v-58.7h29.06Z"/>
+  </g>
+  <g class="lettering">
+    <path fill="#0d1f33" d="m423.76,39.76c-5.15,5-12.72,9.07-21.87,9.07-14.94,0-25.73-10.99-25.73-24.48S387.02,0,401.67,0c8.15,0,15.87,3.07,20.94,7.85l-3.22,3.14c-4.5-4.14-11.15-6.78-17.66-6.78-11.87,0-20.59,9.14-20.59,20.2s8.79,20.13,20.8,20.13c7.51,0,14.08-3.35,18.59-7.92l3.22,3.14Z"/>
+    <path fill="#0d1f33" d="m488.66,47.68V1.07h4.79v19.27h31.17V1.07h4.79v46.61h-4.79v-23.13h-31.17v23.13h-4.79Z"/>
+    <path fill="#0d1f33" d="m599.89,47.68V1.07h25.66c5.86,0,9.94,1.57,12.72,4.57,2.22,2.35,3.5,5.42,3.5,8.92,0,6.28-4.36,11.42-11.29,12.71l11.72,20.41h-5.43l-11.15-19.84h-20.94v19.84h-4.79Zm4.79-42.33v18.27h22.59c5.86,0,9.72-4.21,9.72-9.14,0-2.36-.86-4.43-2.43-6.07-2.22-2.28-5.22-3.07-9.01-3.07h-20.87Z"/>
+    <path fill="#0d1f33" d="m708.83,47.68V1.07h4.79v46.61h-4.79Z"/>
+    <path fill="#0d1f33" d="m817.41,10.07c-2.86-2.64-8.94-6-17.58-6-6.29,0-13.44,2.36-13.44,9s8.36,6.99,16.3,7.42c8.08.5,21.16,1.28,21.16,13.35,0,10.49-9.79,14.99-21.02,14.99s-18.87-4.92-23.8-9.49l2.93-3.28c4.07,3.78,10.58,8.64,20.94,8.64,8.72,0,16.16-3.21,16.16-10.28,0-7.85-8.51-8.78-16.37-9.28-9.86-.57-21.09-1.28-21.09-11.71s10.22-13.42,18.44-13.42c9.44,0,16.8,3.86,20.3,6.78l-2.93,3.28Z"/>
+  </g>
+</svg>          </div>
+        </a>
+      </div>
+    </div>
+
+    <div id="js-site-header" class="SiteHeader__main">
+      <div class="SiteHeader__nav SiteHeader__navLinkContainer h-100 ml-auto">
+        <div class="SiteHeader__navItem h-100">
+
+<div class="SiteNav h-100">
+    
+      <nav aria-label="Site Navigation" class="SiteNav__layout h-100">
+        <div class="SiteNav__main  h-100">
+          <ul class="SiteNav__linkList">
+
+                
+
+
+                <li class="SiteNav__item SiteNav__item--dropdown">
+                  <a class="SiteNav__link align-items-center SiteNav__link--selected"
+                    data-transition-selected-if="/about"
+                    data-transition-selected-class="SiteNav__link--selected"
+                    href="https://www.vanhollen.senate.gov/about"
+                    tabindex="0">About</a>
+
+                    <ul class="SiteNav__dropdown nomobile">
+
+
+                          <li class="SiteNav__dropdownItem">
+                            <a class="SiteNav__dropdownLink SiteNav__dropdownLink--selected"
+                              data-transition-selected-if="/about/about-chris"
+                              data-transition-selected-class="SiteNav__dropdownLink--selected"
+                              data-transition-selected-nestedIf = "/about/about-chris"
+                              href="https://www.vanhollen.senate.gov/about/about-chris"
+                              tabindex="0">About Chris</a>
+                          </li>
+
+
+                          <li class="SiteNav__dropdownItem">
+                            <a class="SiteNav__dropdownLink"
+                              data-transition-selected-if="/about/issues"
+                              data-transition-selected-class="SiteNav__dropdownLink--selected"
+                              data-transition-selected-nestedIf = "/about/issues"
+                              href="https://www.vanhollen.senate.gov/about/issues"
+                              tabindex="0">Issues</a>
+                          </li>
+
+
+                          <li class="SiteNav__dropdownItem">
+                            <a class="SiteNav__dropdownLink"
+                              data-transition-selected-if="/about/voting-record"
+                              data-transition-selected-class="SiteNav__dropdownLink--selected"
+                              data-transition-selected-nestedIf = "/about/voting-record"
+                              href="https://www.vanhollen.senate.gov/about/voting-record"
+                              tabindex="0">Voting</a>
+                          </li>
+
+
+                          <li class="SiteNav__dropdownItem">
+                            <a class="SiteNav__dropdownLink"
+                              data-transition-selected-if="/about/legislation"
+                              data-transition-selected-class="SiteNav__dropdownLink--selected"
+                              data-transition-selected-nestedIf = "/about/legislation"
+                              href="https://www.vanhollen.senate.gov/about/legislation"
+                              tabindex="0">Legislation</a>
+                          </li>
+                    </ul>
+                </li>
+
+                
+
+
+                <li class="SiteNav__item">
+                  <a class="SiteNav__link align-items-center"
+                    data-transition-selected-if="/constituent-services"
+                    data-transition-selected-class="SiteNav__link--selected"
+                    href="https://www.vanhollen.senate.gov/constituent-services"
+                    tabindex="0">Constituent Services</a>
+
+                </li>
+
+                
+
+
+                <li class="SiteNav__item SiteNav__item--dropdown">
+                  <a class="SiteNav__link align-items-center"
+                    data-transition-selected-if="/news"
+                    data-transition-selected-class="SiteNav__link--selected"
+                    href="https://www.vanhollen.senate.gov/news"
+                    tabindex="0">News</a>
+
+                    <ul class="SiteNav__dropdown help">
+
+
+                          <li class="SiteNav__dropdownItem">
+                            <a class="SiteNav__dropdownLink"
+                              data-transition-selected-if="/news/press-releases"
+                              data-transition-selected-class="SiteNav__dropdownLink--selected"
+                              data-transition-selected-nestedIf = "/news/press-releases"
+                              href="https://www.vanhollen.senate.gov/news/press-releases"
+                              tabindex="0">Press Releases</a>
+                          </li>
+
+
+                          <li class="SiteNav__dropdownItem">
+                            <a class="SiteNav__dropdownLink"
+                              data-transition-selected-if="/news/newsletters"
+                              data-transition-selected-class="SiteNav__dropdownLink--selected"
+                              data-transition-selected-nestedIf = "/news/newsletters"
+                              href="https://www.vanhollen.senate.gov/news/newsletters"
+                              tabindex="0">Newsletters</a>
+                          </li>
+
+
+                          <li class="SiteNav__dropdownItem">
+                            <a class="SiteNav__dropdownLink"
+                              data-transition-selected-if="/news/videos"
+                              data-transition-selected-class="SiteNav__dropdownLink--selected"
+                              data-transition-selected-nestedIf = "/news/videos"
+                              href="https://www.vanhollen.senate.gov/news/videos"
+                              tabindex="0">Videos</a>
+                          </li>
+                    </ul>
+                </li>
+
+                
+
+
+                <li class="SiteNav__item SiteNav__item--dropdown">
+                  <a class="SiteNav__link align-items-center"
+                    data-transition-selected-if="/contact"
+                    data-transition-selected-class="SiteNav__link--selected"
+                    href="https://www.vanhollen.senate.gov/contact"
+                    tabindex="0">Contact</a>
+
+                    <ul class="SiteNav__dropdown">
+
+
+                          <li class="SiteNav__dropdownItem">
+                            <a class="SiteNav__dropdownLink"
+                              data-transition-selected-if="/contact/email"
+                              data-transition-selected-class="SiteNav__dropdownLink--selected"
+                              data-transition-selected-nestedIf = "/contact/email"
+                              href="https://www.vanhollen.senate.gov/contact/email"
+                              tabindex="0">Email Senator Van Hollen</a>
+                          </li>
+
+
+                          <li class="SiteNav__dropdownItem">
+                            <a class="SiteNav__dropdownLink"
+                              data-transition-selected-if="/contact/schedule-requests"
+                              data-transition-selected-class="SiteNav__dropdownLink--selected"
+                              data-transition-selected-nestedIf = "/contact/schedule-requests"
+                              href="https://www.vanhollen.senate.gov/contact/schedule-requests"
+                              tabindex="0">Schedule Requests</a>
+                          </li>
+
+
+                          <li class="SiteNav__dropdownItem">
+                            <a class="SiteNav__dropdownLink"
+                              data-transition-selected-if="/contact#office-locations"
+                              data-transition-selected-class="SiteNav__dropdownLink--selected"
+                              data-transition-selected-nestedIf = "/contact#office-locations"
+                              href="https://www.vanhollen.senate.gov/contact#office-locations"
+                              tabindex="0">Office Locations</a>
+                          </li>
+
+
+                          <li class="SiteNav__dropdownItem">
+                            <a class="SiteNav__dropdownLink"
+                              data-transition-selected-if="/contact/newsletter-sign-up"
+                              data-transition-selected-class="SiteNav__dropdownLink--selected"
+                              data-transition-selected-nestedIf = "/contact/newsletter-sign-up"
+                              href="https://www.vanhollen.senate.gov/contact/newsletter-sign-up"
+                              tabindex="0">Newsletter Sign-up</a>
+                          </li>
+                    </ul>
+                </li>
+
+                
+
+
+                <li class="SiteNav__item SiteNav__item--dropdown">
+                  <a class="SiteNav__link align-items-center"
+                    data-transition-selected-if="/investing-in-md"
+                    data-transition-selected-class="SiteNav__link--selected"
+                    href="https://www.vanhollen.senate.gov/investing-in-md"
+                    tabindex="0">Investing in MD</a>
+
+                    <ul class="SiteNav__dropdown">
+
+
+                          <li class="SiteNav__dropdownItem">
+                            <a class="SiteNav__dropdownLink"
+                              data-transition-selected-if="/investing-in-md/fy26-congressionally-directed-spending-project"
+                              data-transition-selected-class="SiteNav__dropdownLink--selected"
+                              data-transition-selected-nestedIf = "/investing-in-md/fy26-congressionally-directed-spending-project"
+                              href="https://www.vanhollen.senate.gov/investing-in-md/fy26-congressionally-directed-spending-project"
+                              tabindex="0">FY26 Congressionally Directed Spending Projects Secured</a>
+                          </li>
+
+
+                          <li class="SiteNav__dropdownItem">
+                            <a class="SiteNav__dropdownLink"
+                              data-transition-selected-if="/investing-in-md/fy26-community-funding-projects-requested"
+                              data-transition-selected-class="SiteNav__dropdownLink--selected"
+                              data-transition-selected-nestedIf = "/investing-in-md/fy26-community-funding-projects-requested"
+                              href="https://www.vanhollen.senate.gov/investing-in-md/fy26-community-funding-projects-requested"
+                              tabindex="0">FY26 Congressionally Directed Spending Projects Requested</a>
+                          </li>
+
+
+                          <li class="SiteNav__dropdownItem">
+                            <a class="SiteNav__dropdownLink"
+                              data-transition-selected-if="/investing-in-md/resources-for-applicants"
+                              data-transition-selected-class="SiteNav__dropdownLink--selected"
+                              data-transition-selected-nestedIf = "/investing-in-md/resources-for-applicants"
+                              href="https://www.vanhollen.senate.gov/investing-in-md/resources-for-applicants"
+                              tabindex="0">Resources For Applicants</a>
+                          </li>
+
+
+                          <li class="SiteNav__dropdownItem">
+                            <a class="SiteNav__dropdownLink"
+                              data-transition-selected-if="/investing-in-md/previous-fiscal-years-congressionally-directed-spending-projects"
+                              data-transition-selected-class="SiteNav__dropdownLink--selected"
+                              data-transition-selected-nestedIf = "/investing-in-md/previous-fiscal-years-congressionally-directed-spending-projects"
+                              href="https://www.vanhollen.senate.gov/investing-in-md/previous-fiscal-years-congressionally-directed-spending-projects"
+                              tabindex="0">Previous Fiscal Years Congressionally Directed Spending Projects</a>
+                          </li>
+                    </ul>
+                </li>
+  
+          </ul>
+        </div>
+      </nav>
+</div>
+
+<script>
+
+  var topLevelLinks = document.querySelectorAll('.SiteNav__link');
+
+  for (var i = 0; i < topLevelLinks.length; i++) {
+    topLevelLinks[i].addEventListener('mouseover', function () {
+      this
+        .parentElement
+        .classList
+        .add('focus');
+    });
+
+    topLevelLinks[i].addEventListener('mouseleave', function () {
+      this
+        .parentElement
+        .classList
+        .remove('focus');
+    });
+  }
+</script>        </div>
+      </div>
+
+      <div class="SiteHeader__nav SiteHeader__navSearch h-100">
+        
+        <div class="SiteHeader__search h-100">
+<div id="SiteSearch" class="SiteNavSearch">
+  <button class="SiteNavSearch__searchToggleButton js-navSearch"
+    aria-label="Website search open"
+    data-toggle-search="true"
+    data-toggle-class="SiteHeader--searchMode"
+    data-target="#js-site-header">
+    <span class="SiteNavSearch__searchIcon"></span>
+    <span class="sr-only">Website Search Open</span>
+  </button>
+
+  <div class="SiteNavSearch__searchOverlay">
+    <form class="SiteNavSearch__searchForm" aria-label="search" role="search" method="get" action="/search">
+      <div class="SiteNavSearch__searchFormContent">
+        <input name="q" id="js-site-nav-search-input" class="SiteNavSearch__searchInput" type="text" placeholder="Search" aria-label="Site Search">
+        <button class="SiteNavSearch__searchFormButton" type="submit">
+          <span class="sr-only">Submit Site Search Query</span>
+          <span class="SiteNavSearch__searchToggleIcon fa fa-search" aria-hidden="true"></span>
+        </button>
+      </div>
+    </form>
+
+    <button class="SiteNavSearch__searchToggleButton js-navSearch"
+      aria-label="Website search"
+      data-toggle-search="true"
+      data-toggle-class="SiteHeader--searchMode"
+      data-target="#js-site-header">
+      <span class="SiteNavSearch__searchIconClose" aria-hidden="true"></span>
+      <span class="sr-only">Website Search</span>
+    </button>
+  </div>
+</div>
+
+<script>
+  $(document).ready(function () {
+    $('.js-navSearch').click(this, function () {
+      var className = $(this).data('toggle-class');
+      var target = $(this).data('target');
+      var searchTarget = $('#SiteSearch');
+      //var logoTarget = $('.js-siteLogo');
+      var hasClass = $(target).hasClass(className);
+
+      $(target).toggleClass(className);
+      $(searchTarget).toggleClass('SiteNavSearch--searchMode');
+
+      //$(logoTarget).toggleClass('SiteHeader__logoContainer--searchMode');
+
+      if (hasClass) {
+        $('#js-site-nav-search-input').val('');
+        return;
+      }
+
+      $('#js-site-nav-search-input').focus();
+    });
+  });
+</script>
+        </div>
+      </div>
+
+    </div>
+
+
+
+  </div>
+</div>                </div>
+
+                <div class="SiteLayout__mobileHeader">
+<div class="MobileHeader">
+  <div class="MobileHeader__bgColor"></div>
+  <div class="MobileHeader__container container h-100">
+    <div class="row no-gutters justify-content-between align-items-center h-100">
+      <div class="MobileHeader__logo d-flex justify-content-center justify-self-stretch">
+        <a class="MobileHeader__logoLink" href="/">
+        <span class="sr-only">Home Logo Link</span>
+<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 316">
+
+  <path class="stateicon" fill="#008e7f" d="m643.54,312.17l-.24-.33-.33-.18-.29.1-.12.52.14.4.76.39.3.35-.37.11-.89-.05-.15.19.19.32.77.36.23.33.29-.62.27-.78v-.72s-.56-.39-.56-.39Zm26.19-9.06l-1.13,2.71-.76,1.43-.33.95-.13,1.06-.15.37-.87,1.25-.62,1.22c.16-.02.32-.04.48-.06l.15-.33,1-1.18,1.18-3.01.46-2.14,1.06-2.01.3-1.09h-.18l-.46.84Zm-17.44-6.42v-47.48s-74.41,0-110.38,0v19.26l.46-.03.37-.25,3.27-2.93.24-.08,1.21-.21.23-.1.12-.14.35-.81.21-.32.38-.4.82-.63,1.36-.73.15-.11.13-.14.33-.47.56-.44.11-.11.11-.14.08-.13.07-.13.38-.95.09-.17.12-.16.13-.12,1.11-.57.22-.03.27.02.5.19.47.28.56.53.31.18.22.04h.25s.33-.16.33-.16l.17-.13.13-.15.29-.46,1.75-1.79.35-.49.3-.51.09-.12.13-.13.1-.09.15-.08.15-.06.51-.11.17-.07.09-.09-.03-.11-.13-.21-.03-.16.02-.19.07-.2.09-.17.43-.65.16-.31.12-.3.08-.14.08-.12.11-.04.14.03.21.19.09.15.26.3.33.22.05.14-.03.08-.15.06-.23.15-.07.08-.05.1-.04.15v.15s0,.1,0,.1l.02.07.02.04.16.23.06.06.1.07,1.06.52.48.34.13.13.15.11.71.24,2.38.41.07-.14,1-.32,2.1.29.91-.68.14-.38-.15-.19-.58-.2.1-.53.47-.14h.57s.37-.15.37-.15l-.81-1.14.3-.19.25-.02.58.09.27-.03.76-.38.58-.13,1.18.26h.58s.22-.2.22-.2l.52-.67.34-.28.87-1.05.24-.17.27-.13.34-.11,1.51.11,1.34.87,2.23,2.28.56.37.66.24.62.03.45-.27.32-.1.82.23.16-.13.16-.28.35-.06.4.08.29.13.43.58-.15.58-.53.45-.72.19.17.42.42,1.41h.18l.07-.37.16-.41.22-.25.26.11.19.43-.1.28-.17.22-.02.24.37.44h.43l.49-.15.54-.03v.26l-.41.12-.19.29v.41l.18.47-.63.48.38.37,1.35.57.25.64-.14.69-.23.71v.67s.45.73.45.73l.04.02.57.27h1.49l.54.11,1.23.5,1.32.33.32.3.56.95.55.38.66.19.58.25.32.59-.1.77-.44.57-.96.86-.22.64.17.57.39.5.44.41,1.04,1.06.68.39,2.58.25.93.27.86.47.64.68.18.51.12.6.19.49.4.21.42.08.98.35.89.19.34.27.34.45,2.23-2.45,3.24,4.62-2.59,3.05v.64s.47.96.47.96l-.13.3-.15.22-.15.17-.19.12.28.74-.34.42-1.16.36-.42.21-.23.18-.23.24-.17.33-.11.62-.25.6-.18.64-.17.21-.28.09-.65-.04-.19.07-.22.2-.19.07-.16.1-.14.28-.08.4.03.24.17.04.3-.18.2.25-.82.38-.29.15-.62.22-.33.71-.18.75-.27.35-.22.45.02,1.04.15,1.12.15.71.32.66.53.74.64.46.63-.23.3-.24.66-.29.33-.37.6-1.27-.28-.48-.12-.15-.2-.12.38-.3.41-.24.06.1.02.04.03.04.1.08v.28l-.16.3.05.4.21.38.32.21.36-.08.38-.28.46-.67.16-.29.12-.31.08-.33.03-.36.48.56.4.91.84,2.75.41.71,1.99,2.15.79.51.59-.03.12-.92-.2-1.05-.29-.9-.72-1.62.93.61.62.73.35.99.11,1.37.09.35.22.5.48.82.45.42.4.14,2.79-.35,1.05.13.83.54.4.4.38.29.36.35.35.6.17.5.2.91.05.32.39.26.21-.3.18-.96.64.73.39.26.24-.49.14-.22.14-.29.07-.36-.04-.25-.15-.56-.03-.34.66.62.22,1.22.1,1.18.34.53.79.29,2.12,1.98-.03-.56-.18-.33-.23-.26-.18-.36.06-.57.24-.71.18-.73-.18-.67-.9-1.39-.8-.71-.19-.28-.18-.71.17-.56.27-.52.14-.64-.28-.57h-.67s-.8.17-.8.17l-.66.03-.59-.38-.52-.63-.35-.73-.14-.68-.31-.24-1.89-.91-.99-.91-.76-1.03-.48-1.26-.18-1.39-.04-.28-.17-.21.21-.28-.19-.57-.13-.82-.16-2.72.04-.42-.03-.29.08-.26.28.93.85,5.65.15.3.3.23,1.96,2.54.5.37.92.21.32.14.48.3.2.25.05.21.03.24.13.34.44.58.44.21,1.01-.03.67-.3.12-.72-.2-.84-.27-.69-.83-1.27-2.03-2.36-.55-1.43-.04-.83.24-2.36-.12-.68-.2-.69-.1-.73.22-.83-.82-.9-.33-.65-.04-.76.3-.51,1.09-.68.41-.57.17-.79h-.31s-.87.52-.87.52l-.28-.27.38-1.21-.29-.3-.14-.24-.03-.11-.03-.16h.68s.29.06.29.06l.22.18.46-.48-.3-.46-.96-.58-.31-.42-.21-.55.05-.45.48-.11.57.34.99,1.19.54.25.22-.4-.38-.91-1.17-1.9-.66-.75-.29-.26-.62-.26-.29-.24-.2-.37-.02-.39.17-.3.35-.11.29.18.29.39.43.73,1.66,1.73.23-.08.18-.25.21-.14.69-.03.48-.17.13-.37-.4-.67-.52-.43-1.56-.74-.63-.13-.2-.13-.19-.3-.08-.34.18-.26.24.07.97.73.39-.28.37.08.29.3.15.41h.22l.16-.84-.31-.81-.44-.79-.4-1.36-.4.02-.63.44-.3-.21-.41-.68-.19-.15-.08-.2-.12-.45-.27-.44-.88-.3-.16-.24-.13-.33-.26-.35-.22-.04-.51-.18-.37-.2.19-.09.75-.05.28-.15.29-.3.33.3,1.45.7.4.4.33.44.27.28.22-.1.19.28.22-.24h.26s.27.16.27.16l.26.31,1.2-.77v-.24l-1-.15-.76-.69-.59-.98-.46-1.04.96.32.24.19.48.87.26.37.45.3.3-.33.02-.25-.96-1.28-.22-.46.19-.21,1.61.4.08-.15-.21-.5.33-.25.31-.04.29-.08.26-.39h-.18l.06-.68-.62-.3-.8-.19-.46-.38,2.23-.57.4.19.58,1.72.22,1.75.88-1.11.22-.15.04-.2-.22-.45-.42-.65.4-2.83.19-.17.19-.33.23-.29h.28l.2.26v.31s-.2.71-.2.71l-.2,1.61.11.73.47.5.76-.68,1.8-1.06,1.41-1.42.19-.34.07-.48-.23-.17-1.08-.37-.31-.37.82-2.08.28-.28.32-.15.4-.06,2,.02.31-.17.49-.88.34-.39.48-.12-.35,1.47-.23.65-.32.57-.73,1.07-.27.71.1.7.5-.64,2.08-1.72.56-.6.46-.66.51-.55.72-.26-.22.86-.35.87-.52.71-.72.41.28.62.45.44.86.51v.24l-.78-.14-1.36-.45-.64.07-.51.32-.64.57-1.17,1.31-.1.68.73.25,3.32.03.76.24.39.48-.76.03-.2-.03-1.3.05-3.29-.11-2.56.31-.1.17-.23.82-.16.3-.29.15-.64.12-.3.27-.1.31-.06.74-.13.35-1.41,2.68-.49,1.3-.13.24-.18.44v.42s.67.32.67.32l.22.33.16.39.06.29-.09,1.64.04.69.25.36.51-.48.25-1.39.42-1.41,1-.55v.26l-.4.28.69.25.63-.3.62-.48.66-.28-.35.66-1.3,1.35-.56.84.22.26-.33.11-.69.13.08.35.13.29.18.22.23.17-.12.76-.49.47-.67.25-.64.07-.83-.12-.5-.32-.78-.83-.32-.21-.33-.14-.26.08-.2.86-.4.8-.09.27-.09.94-.52,2.79.06.65.45-.02.6-.37.3-.4-.14-.23-.26-.34-.19-.38.09-.35.28-.23.24-.08.9-.08.19-.04.29-.18.03-.1.21-.32.24-.27.12.02.2-.62.48.19.93.82-.14.44-.06.61.1.53.38.23.19-.2.22-.88.09-.21.38.06.03.33-.21.77.19.14,1.22.51-.62.44-.82.3-.66.5-.13,1.05.42.87.61.1.6-.39.4-.59.11.59-.25.59-.41.45-.36.18-.54-.07-.52-.21-.47-.33-.39-.44-.22-.85-.07-.14-.3-.06-.19-.15-.3-.46-.43-.23-.46.23-.8.67-.06.32-.17.36-.57,2.17-.27.65-.09.53-.08.9.17.2.4-.06.41-.23.24-.28-.11-.53.06-.85.18-.87.24-.58.45-.45.03.32-.26,1.53.24.37.54-.55.93-1.23.56.27-.08.62-.58,1.15.37.24.26.87.25.19.35-.18.16-.42.13-.51.24-.43.11.37v.35s-.12.31-.12.31l-.19.23.26.46.52.02.63-.15.61-.05v.26l-.4.14-.75.39-.26.23v.23l.57.26.42-.08.38-.22.44-.19-.15.75.54.65.82.46.69.18.68-.21.41-.52.63-1.3h.17l.1.12.12.11-.29.57-.15,1.14-.36.62-.34.23-.46.15-.91.1-2.98-1.13-.54.12-.3-.23-.3-.29.17-.09.44-.39-.41.06-.76.33-.42.09h-.49l-1.31-.25.29.48.14.15.19.13v.25l-.65.77-.22.52.36.24h.91s.36-.11.36-.11l.32-.26.15-.29.02-.2.09-.12.34-.03h.23s.19.04.19.04l.15.08.12.13.09.4-.45.48.16.39-.57.29-.66.2-.54.31-.22.61-.12.93-.28.53-.27-.08-.13-.87-.27-.34-.53-.09-.45.28.02.78.17.19.27.2.25.29.19.82.19.43.21.38.15.22.88,1.39.55.9.15,1h.18l.09-.8-.42-1.67.32-.31.5.34,1.74,2.22.25.68.2.24.77.21.29.31.95,1.66.32.25.27-.35.33-.96v-.51s-.06-.47-.06-.47l-.22-.37-.3-.19.53-.94.83-1.01.75-.42.28.83-.21.57-.81.36-.18.48.12.34.25.31.28.27.17.23.05.36-.04.36v.32s.16.22.16.22l.2-.36.72-2.19.19-.3,1.5-1.73.13-.35.07-.42.1-.35.2-.15.38.04.08.13-.08.2-.17.8-.26.57-.97,1.61-.33.79-.12.84.28.74.54.3,1.29.1.46.24-1.1.52-1.17.34-.94.63-.38,1.41.03.75.09.28.18.12.25-.12.06-.3.03-.33.15-.26.6-.16,1.33.14.68-.26.4.08.51-.06.42.14.09.37-.23.21-.88.15-.3.15.19.25-.15.33-.25.3-.3.23-.3.13v.28l.12.07.03.03v.04s.07.11.07.11l.35-.21.42-.07.72.03.44-.19.32-.38.32-.28.43.08-.4.68-1.33,1.27-.29.45-.19.12-.82.12-.19.28-.12.41-.62.98-.23.24.08.05h.08l.04.05-.02.18h.19l.13-.22.18-.16.23-.1.28-.03-.14.48-.24.29-.25.21-.17.27-.05.32.08.16.1.13.06.26.26.18.58-.37.88-.82.64-.46.68-.09,2.64.23.56.15.32.15c.16-.36.32-.72.47-1.08l.19-.19c2.39-.31,4.77-.63,7.16-.95l.06-.3.64-1.85-.14-.3.17-.13.47-.65.26-.21h.27s.55.24.55.24h.2s.21-.36.21-.36l.33-1.18.15-.26.28-.32.42-2.18.28-.45.38-.32.96-.52-.39.79.09.29.99-.05.28-.26.72-1.66.35-.46.4-.68.29-.7.06-.58-.24-.41h-.33s-.39.06-.39.06l-.41-.14.12-.07.14-.12.14-.09v-.23h-.22v-.29s.29-.52.29-.52l-.42-.33-1.25-.4.53-.29.48.11.47.26.5.14.49-.08.03-.25-.53-.94.41.17h.31s.15-.19.15-.19l-.03-.23h-18.33Zm-8.83,10.37l.06-.31-.12-.34-.24-.35-.43-.36-.68.15-.48.52.17.73.29.11,1.12.12.3-.27Zm27.92-10.38h0s-.04,1.14-.04,1.14l-.49,2.09-.09,1.1.47-.64.34-1.25.19-1.39.02-1.05v-.02h-.41Z"/>
+  <g class="lettering">
+    <path fill="#41687e" d="m57.66,267.1v-10.76c0-4.48-.54-5.2-4.27-5.2v-.94h12.12v.94c-3.73,0-4.27.72-4.27,5.2v10.99c0,5.83,3.37,8.52,7.86,8.52,4.71,0,8.26-2.69,8.26-8.52v-10.99c0-4.48-.58-5.2-4.31-5.2v-.94h10.51v.94c-3.73,0-4.31.72-4.31,5.2v10.76c0,7.04-4.85,10.76-10.82,10.76s-10.78-3.72-10.78-10.76Z"/>
+    <path fill="#41687e" d="m102.57,275.03c0-1.35,1.08-2.42,2.42-2.42s2.42,1.08,2.42,2.42-1.08,2.42-2.42,2.42-2.42-1.08-2.42-2.42Z"/>
+    <path fill="#41687e" d="m130.37,267.99h.94s.04,8.07,8.26,8.07c3.19,0,5.61-2.06,5.61-4.93,0-2.06-2.07-3.81-5.16-5.43l-4.31-2.2c-2.6-1.35-4.98-3.99-4.98-7.4,0-3.72,3.1-6.68,7.45-6.68,2.65,0,4.13.85,5.48,1.84.54-.45,1.08-1.12,1.3-2.06h.9v9.86h-.94c-.31-3.59-1.66-7.85-6.87-7.85-2.51,0-4.36,1.75-4.36,3.99s1.57,3.54,5.48,5.56l4.27,2.2c3.46,1.75,4.72,4.35,4.72,6.81,0,4.89-3.95,8.07-8.58,8.07-3.41,0-5.57-1.79-7-2.11-.54.45-1.08,1.12-1.3,2.11h-.9v-9.86Z"/>
+    <path fill="#41687e" d="m170.48,275.03c0-1.35,1.08-2.42,2.42-2.42s2.42,1.08,2.42,2.42-1.08,2.42-2.42,2.42-2.42-1.08-2.42-2.42Z"/>
+    <path fill="#41687e" d="m224.02,267.99h.94s.04,8.07,8.26,8.07c3.19,0,5.61-2.06,5.61-4.93,0-2.06-2.07-3.81-5.16-5.43l-4.31-2.2c-2.6-1.35-4.98-3.99-4.98-7.4,0-3.72,3.1-6.68,7.45-6.68,2.65,0,4.13.85,5.48,1.84.54-.45,1.08-1.12,1.3-2.06h.9v9.86h-.94c-.31-3.59-1.66-7.85-6.87-7.85-2.51,0-4.36,1.75-4.36,3.99s1.57,3.54,5.48,5.56l4.27,2.2c3.46,1.75,4.72,4.35,4.72,6.81,0,4.89-3.95,8.07-8.58,8.07-3.41,0-5.57-1.79-7-2.11-.54.45-1.08,1.12-1.3,2.11h-.9v-9.86Z"/>
+    <path fill="#41687e" d="m261.25,276.15c3.73,0,4.27-.76,4.27-5.25v-14.57c0-4.48-.54-5.2-4.27-5.2v-.94h20.48l.4,5.92h-.94l-.22-.9c-.63-2.33-1.08-3.36-5.21-3.36h-6.65v10.18h2.24c4.49,0,5.21-.54,5.21-4.3h.94v10.27h-.94c0-3.77-.72-4.31-5.21-4.31h-2.24v6.55c0,4.48.54,5.2,4.27,5.2h3.86c4.13,0,4.62-1.03,5.21-3.41l.22-.9h.94l-.36,5.96h-22v-.94Z"/>
+    <path fill="#41687e" d="m308.64,255.3v15.6c0,4.48.58,5.25,4.31,5.25v.94h-10.24v-.94c3.73,0,4.27-.76,4.27-5.25v-14.57c0-4.48-.54-5.2-4.27-5.2v-.94h6.33l17.24,21.34v-15.2c0-4.48-.54-5.2-4.27-5.2v-.94h10.24v.94c-3.73,0-4.31.72-4.31,5.2v21.52h-1.03l-18.27-22.55Z"/>
+    <path fill="#41687e" d="m346.37,276.15c3.77,0,4-.76,5.39-3.9l9.88-22.82h.58l9.92,22.82c1.39,3.14,1.62,3.9,5.34,3.9v.94h-12.44v-.94c3.73,0,4.58-.94,3.5-3.41l-2.16-4.98h-10.87l-2.16,4.98c-1.08,2.42-.22,3.41,3.5,3.41v.94h-10.51v-.94Zm19.26-10.04l-4.71-10.81-4.67,10.81h9.38Z"/>
+    <path fill="#41687e" d="m397.07,276.15c3.73,0,4.31-.76,4.31-5.25v-18.97h-5.84c-4.13,0-4.58,1.03-5.21,3.41l-.22.9h-.94l.4-6.05h27.21l.4,6.05h-.94l-.22-.9c-.63-2.38-1.08-3.41-5.21-3.41h-5.84v18.97c0,4.48.58,5.25,4.31,5.25v.94h-12.21v-.94Z"/>
+    <path fill="#41687e" d="m434.53,263.64c0-7.8,6.74-14.21,15-14.21s14.95,6.41,14.95,14.21-6.74,14.21-14.95,14.21-15-6.41-15-14.21Zm25.68,0c0-5.56-2.96-12.46-10.69-12.46s-10.73,6.9-10.73,12.46,2.96,12.42,10.73,12.42,10.69-6.86,10.69-12.42Z"/>
+    <path fill="#41687e" d="m483.44,276.15c3.73,0,4.27-.76,4.27-5.25v-14.57c0-4.48-.54-5.2-4.27-5.2v-.94h11.85c6.24,0,9.65,3.41,9.65,7.58,0,3.9-2.92,7-7.99,7.53l4.4,5.16c2.65,3.14,5.66,5.38,8.35,5.7v.94h-7.41l-8.89-11.79h-2.11v5.6c0,4.48.54,5.25,4.27,5.25v.94h-12.12v-.94Zm11.81-12.47c3.91,0,5.7-2.64,5.7-5.92s-1.8-5.92-5.7-5.92h-3.95v11.84h3.95Z"/>
+  </g>
+  <g class="lettering">
+    <path fill="#41687e" d="m684.86,275.93c3.73,0,4.27-.76,4.27-5.25v-14.57c0-4.48-.54-5.2-4.27-5.2v-.94h21.24l.36,5.92h-.94l-.23-.9c-.58-2.33-1.08-3.36-5.16-3.36h-7.41v10.18h2.24c4.49,0,5.21-.54,5.21-4.3h.94v10.27h-.94c0-3.77-.72-4.31-5.21-4.31h-2.24v7.22c0,4.48.54,5.25,4.27,5.25v.94h-12.12v-.94Z"/>
+    <path fill="#41687e" d="m725.2,263.42c0-7.8,6.74-14.21,15-14.21s14.95,6.41,14.95,14.21-6.74,14.21-14.95,14.21-15-6.41-15-14.21Zm25.68,0c0-5.56-2.96-12.46-10.69-12.46s-10.73,6.9-10.73,12.46,2.96,12.42,10.73,12.42,10.69-6.86,10.69-12.42Z"/>
+    <path fill="#41687e" d="m774.11,275.93c3.73,0,4.27-.76,4.27-5.25v-14.57c0-4.48-.54-5.2-4.27-5.2v-.94h11.85c6.24,0,9.65,3.41,9.65,7.58,0,3.9-2.92,7-7.99,7.53l4.4,5.16c2.65,3.14,5.66,5.38,8.35,5.7v.94h-7.41l-8.89-11.79h-2.11v5.6c0,4.48.54,5.25,4.26,5.25v.94h-12.12v-.94Zm11.81-12.47c3.91,0,5.7-2.64,5.7-5.92s-1.8-5.92-5.7-5.92h-3.95v11.84h3.95Z"/>
+    <path fill="#41687e" d="m848.89,270.68c0,4.48.58,5.25,4.31,5.25v.94h-10.24v-.94c3.73,0,4.27-.76,4.27-5.25v-14.57c0-4.48-.54-5.2-4.27-5.2v-.94h7.36l9.52,21.84,9.47-21.84h7.32v.94c-3.77,0-4.31.72-4.31,5.2v14.57c0,4.48.54,5.25,4.31,5.25v.94h-12.12v-.94c3.73,0,4.27-.76,4.27-5.25v-15.29l-9.61,22.24h-.58l-9.7-22.33v15.38Z"/>
+    <path fill="#41687e" d="m891.88,275.93c3.77,0,4-.76,5.39-3.9l9.88-22.82h.58l9.92,22.82c1.39,3.14,1.62,3.9,5.34,3.9v.94h-12.44v-.94c3.73,0,4.58-.94,3.5-3.41l-2.15-4.98h-10.87l-2.15,4.98c-1.08,2.42-.23,3.41,3.5,3.41v.94h-10.51v-.94Zm19.26-10.04l-4.71-10.81-4.67,10.81h9.38Z"/>
+    <path fill="#41687e" d="m938.27,275.93c3.73,0,4.27-.76,4.27-5.25v-14.57c0-4.48-.54-5.2-4.27-5.2v-.94h11.85c6.24,0,9.65,3.41,9.65,7.58,0,3.9-2.92,7-7.99,7.53l4.4,5.16c2.65,3.14,5.66,5.38,8.35,5.7v.94h-7.41l-8.89-11.79h-2.11v5.6c0,4.48.54,5.25,4.27,5.25v.94h-12.12v-.94Zm11.81-12.47c3.91,0,5.7-2.64,5.7-5.92s-1.8-5.92-5.7-5.92h-3.95v11.84h3.95Z"/>
+    <path fill="#41687e" d="m984.67,275.93c3.73,0,4.26-.76,4.26-5.25v-4.35l-7.45-11.52c-1.93-2.96-3.32-3.9-6.51-3.9v-.94h12.8v.94c-3.77,0-3.77,1.35-2.42,3.41l6.46,9.86,6.56-9.86c1.57-2.42,1.35-3.41-2.43-3.41v-.94h10.51v.94c-3.77,0-4.71,1.25-6.51,3.9l-7.41,11.21v4.66c0,4.48.54,5.25,4.27,5.25v.94h-12.12v-.94Z"/>
+    <path fill="#41687e" d="m1021.72,275.93c3.73,0,4.27-.76,4.27-5.25v-14.57c0-4.48-.54-5.2-4.27-5.2v-.94h12.12v.94c-3.73,0-4.27.72-4.27,5.2v13.9c0,4.48.54,5.2,4.27,5.2h5.39c4.09,0,4.58-1.03,5.16-3.41l.22-.9h.94l-.36,5.96h-23.48v-.94Z"/>
+    <path fill="#41687e" d="m1059.41,275.93c3.77,0,4-.76,5.39-3.9l9.88-22.82h.58l9.92,22.82c1.39,3.14,1.62,3.9,5.34,3.9v.94h-12.44v-.94c3.73,0,4.58-.94,3.5-3.41l-2.15-4.98h-10.87l-2.15,4.98c-1.08,2.42-.23,3.41,3.5,3.41v.94h-10.51v-.94Zm19.26-10.04l-4.71-10.81-4.67,10.81h9.38Z"/>
+    <path fill="#41687e" d="m1111.73,255.08v15.6c0,4.48.58,5.25,4.31,5.25v.94h-10.24v-.94c3.73,0,4.27-.76,4.27-5.25v-14.57c0-4.48-.54-5.2-4.27-5.2v-.94h6.33l17.24,21.34v-15.2c0-4.48-.54-5.2-4.26-5.2v-.94h10.24v.94c-3.73,0-4.31.72-4.31,5.2v21.52h-1.03l-18.28-22.55Z"/>
+    <path fill="#41687e" d="m1153.64,275.93c3.73,0,4.27-.76,4.27-5.25v-14.57c0-4.48-.54-5.2-4.27-5.2v-.94h12.17c10.46,0,15,6.05,15,13.45s-4.53,13.45-15,13.45h-12.17v-.94Zm12.21-.72c8.76,0,10.64-6.55,10.64-11.79s-1.89-11.79-10.64-11.79h-4.36v18.38c0,4.48.49,5.2,4.18,5.2h.18Z"/>
+  </g>
+  <g class="lettering">
+    <path fill="#0d1f33" d="m124.02,95.54l-50.04,107.68h-23.94L0,95.54h32.2l29.72,72.06h.99l29.89-72.06h31.21Z"/>
+    <path fill="#0d1f33" d="m123.68,203.22l50.04-107.68h23.94l50.04,107.68h-31.54l-6.94-16.49h-48.22l-6.77,16.49h-30.55Zm46.57-38.91h29.72l-14.37-34.46h-.99l-14.37,34.46Z"/>
+    <path fill="#0d1f33" d="m372.54,95.54v107.68h-24.44l-47.56-58.54h-.16v58.54h-29.06v-107.68h24.27l47.72,58.7h.17v-58.7h29.06Z"/>
+    <path fill="#0d1f33" d="m456.91,203.22v-107.68h29.06v38.91h43.26v-38.91h28.9v107.68h-28.9v-45.35h-43.26v45.35h-29.06Z"/>
+    <path fill="#0d1f33" d="m649.62,92.24c34.35,0,61.93,25.56,61.93,56.89s-27.58,57.38-61.93,57.38-61.26-25.56-61.26-57.38,26.92-56.89,61.26-56.89Zm0,90.2c17.83,0,31.87-15.17,31.87-33.31s-14.04-32.65-31.87-32.65-31.38,14.84-31.38,32.65,13.71,33.31,31.38,33.31Z"/>
+    <path fill="#0d1f33" d="m770.5,95.54v83.44h60.6v24.24h-89.5v-107.68h28.9Z"/>
+    <path fill="#0d1f33" d="m886.42,95.54v83.44h60.6v24.24h-89.5v-107.68h28.9Z"/>
+    <path fill="#0d1f33" d="m1040.32,160.01h-37.98v18.96h66.88v24.24h-95.78v-107.68h92.15v24.24h-63.25v16.98h37.98v23.25Z"/>
+    <path fill="#0d1f33" d="m1200,95.54v107.68h-24.44l-47.56-58.54h-.16v58.54h-29.06v-107.68h24.27l47.72,58.7h.17v-58.7h29.06Z"/>
+  </g>
+  <g class="lettering">
+    <path fill="#0d1f33" d="m423.76,39.76c-5.15,5-12.72,9.07-21.87,9.07-14.94,0-25.73-10.99-25.73-24.48S387.02,0,401.67,0c8.15,0,15.87,3.07,20.94,7.85l-3.22,3.14c-4.5-4.14-11.15-6.78-17.66-6.78-11.87,0-20.59,9.14-20.59,20.2s8.79,20.13,20.8,20.13c7.51,0,14.08-3.35,18.59-7.92l3.22,3.14Z"/>
+    <path fill="#0d1f33" d="m488.66,47.68V1.07h4.79v19.27h31.17V1.07h4.79v46.61h-4.79v-23.13h-31.17v23.13h-4.79Z"/>
+    <path fill="#0d1f33" d="m599.89,47.68V1.07h25.66c5.86,0,9.94,1.57,12.72,4.57,2.22,2.35,3.5,5.42,3.5,8.92,0,6.28-4.36,11.42-11.29,12.71l11.72,20.41h-5.43l-11.15-19.84h-20.94v19.84h-4.79Zm4.79-42.33v18.27h22.59c5.86,0,9.72-4.21,9.72-9.14,0-2.36-.86-4.43-2.43-6.07-2.22-2.28-5.22-3.07-9.01-3.07h-20.87Z"/>
+    <path fill="#0d1f33" d="m708.83,47.68V1.07h4.79v46.61h-4.79Z"/>
+    <path fill="#0d1f33" d="m817.41,10.07c-2.86-2.64-8.94-6-17.58-6-6.29,0-13.44,2.36-13.44,9s8.36,6.99,16.3,7.42c8.08.5,21.16,1.28,21.16,13.35,0,10.49-9.79,14.99-21.02,14.99s-18.87-4.92-23.8-9.49l2.93-3.28c4.07,3.78,10.58,8.64,20.94,8.64,8.72,0,16.16-3.21,16.16-10.28,0-7.85-8.51-8.78-16.37-9.28-9.86-.57-21.09-1.28-21.09-11.71s10.22-13.42,18.44-13.42c9.44,0,16.8,3.86,20.3,6.78l-2.93,3.28Z"/>
+  </g>
+</svg>        </a>
+      </div>
+
+      <button class="MobileHeader__icon MobileHeader__icon--search js-open-mobile-search h-100  col-auto ml-auto mr-4" aria-label="open site search" data-toggle="modal" data-target="#website-search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 55.64 55.98"><path d="M55.64 49.53L36.57 30.46A19.84 19.84 0 005.8 5.81a19.85 19.85 0 0024.26 31.05L49.18 56zM10.74 29a12.85 12.85 0 1118.14 0 12.92 12.92 0 01-18.14 0z"/></svg>
+      </button>
+
+      <button class="js-open-mobile-nav MobileHeader__icon MobileHeader__icon--menu col-auto" aria-label="open mobile navigation">
+        <span class="MobileHeader__mobileNavIcon">
+          <span></span>
+        </span>
+      </button>
+    </div>
+  </div>
+</div>
+                </div>
+            </div>
+
+          <div id="aria-skip-nav" tabindex="-1"></div>
+          <div class="SiteLayout__transitionContainer d-flex flex-column flex-grow-1" data-transition="container" data-transition-namespace="internal" data-nav="site">
+            
+
+            
+<script>
+  if (!application) var application = {};
+  application = {
+    "config": {
+      "tinymce": {
+        "plugins": {
+          "selectvideo": {
+            "player": "jwplayer", // should be set to "legacy" or "jwplayer" currently
+            "youtube": true, // set to true to write the youtube tags for youtube videos
+            "width": "100%", // set width and height on the containing element
+            "height": "100%",
+            "tracking": true
+          }
+        }
+      }
+    },
+    "fn": { // deprecated mootools 1.2 stuff that we'll probably still use once we upgrade fully to 1.3
+      "defined": function (obj) {
+        return (obj != undefined);
+      },
+      "check": function (obj) {
+        return !!(obj || obj === 0);
+      }
+    },
+    "form": {
+      "processed": "null",
+    },
+    "friendly_urls": false,
+    "siteroot": "https://www.vanhollen.senate.gov/",
+    "theme": "",
+    "webroot": "https://www.vanhollen.senate.gov/",
+    "assetWebroot": "https://www.vanhollen.senate.gov/",
+  };
+</script>
+
+              <div class="SiteLayout__main">
+
+  <main>
+    
+
+
+
+                  <!--startindex-->
+
+
+
+
+
+<div class="Blocks">
+            
+
+
+
+  <div class="Block Block--static--bannerBackgroundImageBox Block--width--wide Block--backgroundColor--default Block--textColor--default Block--textFamily--default">
+    <div class="Block__content">
+      
+
+<div
+  data-editor-modifier="left,right"
+  data-editor-background="background"
+  style="background-image: url('https://www.vanhollen.senate.gov/imo/media/image/VanHollen_About_Banner5.jpg')"
+  class="BannerBackgroundImageBox BannerBackgroundImageBox--right">
+  <div class="BannerBackgroundImageBox__content">
+
+    <div class="BannerBackgroundImageBox__contentContainer">
+      <h1
+        data-editor-text="title"
+        data-placeholder="Heading Text"
+        class="BannerBackgroundImageBox__heading">
+        About Chris
+      </h1>
+        
+      
+      
+    </div>
+
+  </div>
+
+</div>
+
+
+
+
+    </div>
+  </div>
+
+            
+
+
+
+  <div class="Block Block--paragraph Block--width--normal Block--backgroundColor--default Block--textColor--default Block--textFamily--default pb-4">
+    <div class="Block__content">
+      <div class="Paragraph Paragraph--variant--introLg Paragraph--textAlign--left RawHTML">
+  <p>Elected to the United States Senate by the people of Maryland in November 2016, Chris Van Hollen is committed to fighting every day to ensure that our state and our country live up to their full promise of equal rights, equal justice, and equal opportunity.</p>
+</div>
+
+    </div>
+  </div>
+
+            
+
+
+
+  <div class="Block Block--paragraph Block--width--normal Block--backgroundColor--default Block--textColor--default Block--textFamily--default pb-4">
+    <div class="Block__content">
+      <div class="Paragraph Paragraph--variant--default Paragraph--textAlign--left RawHTML">
+  <p>Senator Van Hollen&nbsp;believes that every child deserves the opportunity to pursue their dreams and benefit from a quality education, and that anyone willing to work hard should be able to find a good job.&nbsp;&nbsp;That's why his top priorities include creating more and better jobs, strengthening small businesses, and increasing educational and job training opportunities for individuals of all ages and in every community.</p>
+</div>
+
+    </div>
+  </div>
+
+            
+
+
+
+  <div class="Block Block--paragraph Block--width--normal Block--backgroundColor--default Block--textColor--default Block--textFamily--default pb-4">
+    <div class="Block__content">
+      <div class="Paragraph Paragraph--variant--default Paragraph--textAlign--left RawHTML">
+  <p>Senator Van Hollen started his time in public service as a member of the Maryland State Legislature, where he became known as a tenacious advocate for everyday Marylanders and someone who was unafraid to take on powerful special interests on behalf of working people. In 2002, he was elected to represent Maryland's 8th Congressional District. In the House of Representatives, he served as a member of the Democratic leadership and was elected by his colleagues to be the Ranking Member of the House Budget Committee and protect vital interests like Social Security and Medicare.</p>
+</div>
+
+    </div>
+  </div>
+
+            
+
+
+
+  <div class="Block Block--static--imageGrid Block--width--wide Block--backgroundColor--default Block--textColor--default Block--textFamily--default mt-5 mb-5">
+    <div class="Block__content">
+      
+
+<div class="ImageGrid">
+
+  <div class="ImageGrid__layout row no-gutters">
+
+    <div class="ImageGrid__imageRowLeft">
+
+      <div class="ImageGrid__imageRowLeftTop">
+        <img
+          data-editor-image="image1"
+          class="ImageGrid__image"
+          src="https://www.vanhollen.senate.gov/imo/media/image/VanHollen_About_Inset11.jpg"
+          alt="VanHollen_About_Inset1"/>
+
+        <img
+          data-editor-image="image2"
+          class="ImageGrid__image"
+          src="https://www.vanhollen.senate.gov/imo/media/image/VanHollen_About_Inset21.jpg"
+          alt="VanHollen_About_Inset2"/>
+      </div>
+
+      <div class="ImageGrid__imageRowLeftBottom">
+        <img
+              data-editor-image="image3"
+              class="ImageGrid__image"
+              src="https://www.vanhollen.senate.gov/imo/media/image/VanHollen_About_Inset42.jpg"
+              alt="VanHollen_About_Inset4"/>
+      </div>
+      
+      
+    </div>
+
+    <div class="ImageGrid__imageRowRight">
+      <div class="ImageGrid__imageRowRightTop">
+        <img
+          data-editor-image="image4"
+          class="ImageGrid__image"
+          src="https://www.vanhollen.senate.gov/imo/media/image/VanHollen_About_Inset31.jpg"
+          alt="VanHollen_About_Inset3"/>
+      </div>
+      <div class="ImageGrid__imageRowRightBottom">
+        <img
+          data-editor-image="image5"
+          class="ImageGrid__image"
+          src="https://www.vanhollen.senate.gov/imo/media/image/VanHollen_About_Inset51_cropped.jpg"
+          alt="VanHollen_About_Inset5"/>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+    </div>
+  </div>
+
+            
+
+
+
+  <div class="Block Block--paragraph Block--width--normal Block--backgroundColor--default Block--textColor--default Block--textFamily--default pb-4">
+    <div class="Block__content">
+      <div class="Paragraph Paragraph--variant--default Paragraph--textAlign--left RawHTML">
+  <p>A tireless fighter for the people of Maryland, Senator Van Hollen has also become known for working hard to find common sense solutions to difficult national issues. &nbsp;In January 2015, he released a comprehensive plan to address the problem of&nbsp;growing inequality in America and provide a blueprint for building an economy that works for everyone, a goal that he will continue to fight for in the U.S. Senate.</p>
+</div>
+
+    </div>
+  </div>
+
+            
+
+
+
+  <div class="Block Block--paragraph Block--width--normal Block--backgroundColor--default Block--textColor--default Block--textFamily--default pb-4">
+    <div class="Block__content">
+      <div class="Paragraph Paragraph--variant--default Paragraph--textAlign--left RawHTML">
+  <p>Senator Van Hollen is proud to have worked successfully with members of both parties to pass bipartisan legislation whenever possible on issues of common concern, including expanding medical research, protecting the Chesapeake Bay, fighting childhood cancer, and passing the ABLE Act to assist families with children with disabilities.</p>
+</div>
+
+    </div>
+  </div>
+
+            
+
+
+
+  <div class="Block Block--paragraph Block--width--normal Block--backgroundColor--default Block--textColor--default Block--textFamily--default pb-2">
+    <div class="Block__content">
+      <div class="Paragraph Paragraph--variant--default Paragraph--textAlign--left RawHTML">
+  <p>Chris Van Hollen is a graduate of Swarthmore College, the John F. Kennedy School of Public Policy at Harvard University, and Georgetown University Law Center where he attended night school. &nbsp;He and his wife, Katherine Wilkens, are the proud parents of three children, Anna, Nicholas, and Alexander.</p>
+</div>
+
+    </div>
+  </div>
+
+            
+
+
+
+  <div class="Block Block--button Block--width--normal Block--backgroundColor--default Block--textColor--default Block--textFamily--default mb-5 pt-2 pb-2">
+    <div class="Block__content">
+      
+
+
+
+
+
+
+<div class="ButtonBlock row  justify-content-start m-n2">
+
+
+
+
+
+ 
+
+
+      <div data-animate="btn--secondary" class="ButtonBlock__col col-auto ButtonBlock__col--secondary p-2">
+        <a class="ButtonBlock__button Button Button--md Button--secondary h-100"
+        href="/imo/media/doc/Senator_Van_Hollen_Bio.pdf"
+        target="_blank"
+        rel="">
+
+
+
+          <div class="Button__label"><span class="Button__labelText">Download Official Biography</span></div>
+
+
+        </a>
+      </div>
+
+</div>
+
+
+    </div>
+  </div>
+
+            
+
+
+
+  <div class="Block Block--static--contentBanner Block--width--banner Block--backgroundColor--default Block--textColor--default Block--textFamily--default">
+    <div class="Block__content">
+      
+
+<div data-editor-modifier="left,right" class="ContentBanner ContentBanner--right js-BannerContent">
+  <div class="ContentBanner__layout">
+    <div class="ContentBanner__imageContainer">
+        <div
+            class="ContentBanner__background ContentBanner__noTransformOnMobile"
+            data-editor-background="background"
+            style="background-image: url('https://www.vanhollen.senate.gov/imo/media/image/Portrait.jpg')"
+          ></div>
+      
+        <div class="ContentBanner__imgLink">
+          <a
+          data-editor-link="imageLink"
+          href="/imo/media/image/official_photo.jpg"
+          class="Button Button--md Button--secondary"
+          target="_self"
+          rel="">
+          <div class="Button__label">
+            <span class="Button__labelText">Download Official Portrait</span>
+          </div>
+        </a>
+        </div>
+        
+        <div class="ContentBanner__shadow"></div>
+    </div>
+    
+    
+    <div class="ContentBanner__contentContainer">
+        <div
+          data-animate="slideleft"
+          data-editor-column="body"
+          data-placeholder="Body text"
+          class="ContentBanner__body">
+          
+
+
+
+  <div class="Block Block--heading Block--width--normal Block--backgroundColor--default Block--textColor--accentLight Block--textFamily--default mt-1 pb-1">
+    <div class="Block__content">
+      <div id="committee-assignments" class="Heading Heading--h2 Heading--underline"><h2 class="Heading__title">CommitTee Assignments</h2></div>
+
+    </div>
+  </div>
+
+
+
+
+  <div class="Block Block--static--accordion Block--width--wide Block--backgroundColor--default Block--textColor--default Block--textFamily--default Accordion--active">
+    <div class="Block__content">
+      
+
+<div class="Accordion js-accordion">
+    <div data-editor-repeat="sections" data-editor-repeat-label="Dropdown" class="Accordion__section js-accordion-item">
+      <div class="Accordion__sectionHeader js-accordion-trigger">
+        <div class="Accordion__sectionTitle SectionHeader">
+          <div data-editor-text="title" data-editor-repeat-var data-placeholder="Section Title" class="SectionHeader__title">
+            Appropriations Committee
+          </div>
+        </div>
+
+        <div class="Accordion__sectionButton">
+          <div class="Accordion__sectionExpand">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 768 768"><path d="M607.5 415.5h-192v192h-63v-192h-192v-63h192v-192h63v192h192v63z"/></svg>
+          </div>
+          <div class="Accordion__sectionCollapse">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 768 768"><path d="M192 351.75h384v64.5H192v-64.5z"/></svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="Accordion__sectionContentWrapper js-accordion-content">
+        <div class="Accordion__sectionContent">
+          <div data-editor-column="content" data-editor-repeat-var>
+            
+
+
+
+  <div class="Block Block--list Block--width--banner Block--backgroundColor--default Block--textColor--default Block--textFamily--default pt-2 pb-2">
+    <div class="Block__content">
+      
+
+
+
+
+  <div class="ListBlock RawHTML">
+    <ul  class="List--disc">
+          <li>
+    <span>Subcommittee on Commerce, Justice, Science, and Related Agencies, Ranking Member</span></li>
+
+          <li>
+    <span>Subcommittee on Financial Services and General Government</span></li>
+
+          <li>
+    <span>Subcommittee on Homeland Security</span></li>
+
+          <li>
+    <span>Subcommittee on Interior, Environment, and Related Agencies</span></li>
+
+          <li>
+    <span>Subcommittee on Transportation, Housing and Urban Development, and Related Agencies <br></span></li>
+
+    </ul>
+  </div>
+
+    </div>
+  </div>
+
+
+
+
+  <div class="Block Block--button Block--width--normal Block--backgroundColor--default Block--textColor--default Block--textFamily--default pt-2 pb-2">
+    <div class="Block__content">
+      
+
+
+
+
+
+
+<div class="ButtonBlock row  justify-content-start m-n2">
+
+
+
+
+
+ 
+
+
+      <div data-animate="btn--secondary" class="ButtonBlock__col col-auto ButtonBlock__col--secondary p-2">
+        <a class="ButtonBlock__button Button Button--md Button--secondary h-100"
+        href="https://www.appropriations.senate.gov/"
+        target="_blank"
+        rel="">
+
+
+
+          <div class="Button__label"><span class="Button__labelText">visit committee website</span></div>
+
+
+        </a>
+      </div>
+
+</div>
+
+
+    </div>
+  </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div data-editor-repeat="sections" data-editor-repeat-label="Dropdown" class="Accordion__section js-accordion-item">
+      <div class="Accordion__sectionHeader js-accordion-trigger">
+        <div class="Accordion__sectionTitle SectionHeader">
+          <div data-editor-text="title" data-editor-repeat-var data-placeholder="Section Title" class="SectionHeader__title">
+            Foreign Relations Committee
+          </div>
+        </div>
+
+        <div class="Accordion__sectionButton">
+          <div class="Accordion__sectionExpand">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 768 768"><path d="M607.5 415.5h-192v192h-63v-192h-192v-63h192v-192h63v192h192v63z"/></svg>
+          </div>
+          <div class="Accordion__sectionCollapse">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 768 768"><path d="M192 351.75h384v64.5H192v-64.5z"/></svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="Accordion__sectionContentWrapper js-accordion-content">
+        <div class="Accordion__sectionContent">
+          <div data-editor-column="content" data-editor-repeat-var>
+            
+
+
+
+  <div class="Block Block--list Block--width--normal Block--backgroundColor--default Block--textColor--default Block--textFamily--default pt-2 pb-2">
+    <div class="Block__content">
+      
+
+
+
+
+  <div class="ListBlock RawHTML">
+    <ul  class="List--disc">
+          <li>
+    <span>Subcommittee on State Department and USAID Management, International Operations, and Bilateral International Development, Ranking Member</span></li>
+
+          <li>
+    <span>Subcommittee on East Asia, the Pacific, and International Cybersecurity Policy</span></li>
+
+          <li>
+    <span>Subcommittee on Africa and Global Health Policy </span></li>
+
+    </ul>
+  </div>
+
+    </div>
+  </div>
+
+
+
+
+  <div class="Block Block--button Block--width--normal Block--backgroundColor--default Block--textColor--default Block--textFamily--default pt-2 pb-2">
+    <div class="Block__content">
+      
+
+
+
+
+
+
+<div class="ButtonBlock row  justify-content-start m-n2">
+
+
+
+
+
+ 
+
+
+      <div data-animate="btn--secondary" class="ButtonBlock__col col-auto ButtonBlock__col--secondary p-2">
+        <a class="ButtonBlock__button Button Button--md Button--secondary h-100"
+        href="https://www.foreign.senate.gov/"
+        target="_blank"
+        rel="">
+
+
+
+          <div class="Button__label"><span class="Button__labelText">Visit Committee Website</span></div>
+
+
+        </a>
+      </div>
+
+</div>
+
+
+    </div>
+  </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div data-editor-repeat="sections" data-editor-repeat-label="Dropdown" class="Accordion__section js-accordion-item">
+      <div class="Accordion__sectionHeader js-accordion-trigger">
+        <div class="Accordion__sectionTitle SectionHeader">
+          <div data-editor-text="title" data-editor-repeat-var data-placeholder="Section Title" class="SectionHeader__title">
+            Banking, Housing, &amp; Urban Affairs
+          </div>
+        </div>
+
+        <div class="Accordion__sectionButton">
+          <div class="Accordion__sectionExpand">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 768 768"><path d="M607.5 415.5h-192v192h-63v-192h-192v-63h192v-192h63v192h192v63z"/></svg>
+          </div>
+          <div class="Accordion__sectionCollapse">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 768 768"><path d="M192 351.75h384v64.5H192v-64.5z"/></svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="Accordion__sectionContentWrapper js-accordion-content">
+        <div class="Accordion__sectionContent">
+          <div data-editor-column="content" data-editor-repeat-var>
+            
+
+
+
+  <div class="Block Block--list Block--width--normal Block--backgroundColor--default Block--textColor--default Block--textFamily--default pt-2 pb-2">
+    <div class="Block__content">
+      
+
+
+
+
+  <div class="ListBlock RawHTML">
+    <ul  class="List--disc">
+          <li>
+    <span>Subcommittee on Housing, Transportation, and Community Development</span></li>
+
+          <li>
+    <span>Subcommittee on National Security and International Trade and Finance</span></li>
+
+          <li>
+    <span>Subcommittee on Digital Assets</span></li>
+
+    </ul>
+  </div>
+
+    </div>
+  </div>
+
+
+
+
+  <div class="Block Block--button Block--width--normal Block--backgroundColor--default Block--textColor--default Block--textFamily--default pt-2 pb-2">
+    <div class="Block__content">
+      
+
+
+
+
+
+
+<div class="ButtonBlock row  justify-content-start m-n2">
+
+
+
+
+
+ 
+
+
+      <div data-animate="btn--secondary" class="ButtonBlock__col col-auto ButtonBlock__col--secondary p-2">
+        <a class="ButtonBlock__button Button Button--md Button--secondary h-100"
+        href="https://www.banking.senate.gov/"
+        target="_blank"
+        rel="">
+
+
+
+          <div class="Button__label"><span class="Button__labelText">Visit Committee Website</span></div>
+
+
+        </a>
+      </div>
+
+</div>
+
+
+    </div>
+  </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div data-editor-repeat="sections" data-editor-repeat-label="Dropdown" class="Accordion__section js-accordion-item">
+      <div class="Accordion__sectionHeader js-accordion-trigger">
+        <div class="Accordion__sectionTitle SectionHeader">
+          <div data-editor-text="title" data-editor-repeat-var data-placeholder="Section Title" class="SectionHeader__title">
+            Budget Committee
+          </div>
+        </div>
+
+        <div class="Accordion__sectionButton">
+          <div class="Accordion__sectionExpand">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 768 768"><path d="M607.5 415.5h-192v192h-63v-192h-192v-63h192v-192h63v192h192v63z"/></svg>
+          </div>
+          <div class="Accordion__sectionCollapse">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 768 768"><path d="M192 351.75h384v64.5H192v-64.5z"/></svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="Accordion__sectionContentWrapper js-accordion-content">
+        <div class="Accordion__sectionContent">
+          <div data-editor-column="content" data-editor-repeat-var>
+            
+
+
+
+  <div class="Block Block--button Block--width--normal Block--backgroundColor--default Block--textColor--default Block--textFamily--default pt-2 pb-2">
+    <div class="Block__content">
+      
+
+
+
+
+
+
+<div class="ButtonBlock row  justify-content-start m-n2">
+
+
+
+
+
+ 
+
+
+      <div data-animate="btn--secondary" class="ButtonBlock__col col-auto ButtonBlock__col--secondary p-2">
+        <a class="ButtonBlock__button Button Button--md Button--secondary h-100"
+        href="https://www.budget.senate.gov/"
+        target="_blank"
+        rel="">
+
+
+
+          <div class="Button__label"><span class="Button__labelText">Visit Committee Website</span></div>
+
+
+        </a>
+      </div>
+
+</div>
+
+
+    </div>
+  </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+<script>
+  if (typeof initAccordion === 'undefined') {
+    // Create initAccordion function only once, use existing otherwise
+    var initAccordion = function (container) {
+
+      // Get all accordions on page
+      var accordions = document.querySelectorAll(container);
+      $(accordions).each(function (index, accordion) {
+        // Don't re-run this function on the same accordion twice
+        if (accordion.initialized)
+          return;
+        // Find all items in THIS accordion
+        // Keep logic from interfering with other accordions on page
+        var items = $(accordion).find(container + '-item');
+        $(items).each(function (index, item) {
+          var content = $(item).find(container + '-content');
+
+          // Setup click action on all the items in THIS accordion
+          $(item)
+            .find(container + '-trigger')
+            .on('click', function () {
+              // If clicked item was open, close it
+              if ($(item).hasClass('expand')) {
+                $(item).removeClass('expand');
+                $(content).css('height', 0);
+              } else {
+                // If it wasn't open, expand the clicked item
+
+                // Scroll the window to the top on expanding an item
+                if (index > 0) {
+                  // Only items after the first would need the window scrolled
+
+                  // Compute the scroll position of where the newly expanded item WILL be
+                  // First we get this item's top so we can use it below
+                  var thisItemTop = $(item)
+                    .offset()
+                    .top;
+                  // Then we get the open content container so we can compare and measure it
+                  var expandedContent = $(accordion)
+                    .find('.expand')
+                    .first();
+
+                  // If we clicked on an item above the expanded one then we don't need to scroll
+                  if (expandedContent.length && thisItemTop > $(expandedContent).offset().top) {
+                    // Then we get the open content's height since the page is about to collapse by that much
+                    var expandedContentHeight = $(expandedContent)
+                      .find('.js-accordion-content')
+                      .outerHeight();
+                    // The we get header's height, but only what's currently fixed to the top (not the news alert)
+                    var headerHeight = $('.SiteHeader').outerHeight() || 0;
+                    // Now we take the top of this item which we want to scroll to,
+                    // and subtract the expandedContentHeight and headerHeight so our new position
+                    // is perfectly at the top just below the fixed header
+                    var newItemTop = $(item)
+                      .offset()
+                      .top - expandedContentHeight - headerHeight;
+
+                    // Last check, don't bother scrolling if our new top is already in view
+                    if (window.getScrollTop && newItemTop < window.getScrollTop()) {
+                      $('html').animate({
+                        scrollTop: newItemTop
+                      }, 250, 'linear')
+                    }
+                  }
+                }
+
+                // CSS transitions can't animate between height 0 and auto
+                // so we need to find the height of the content
+                var newHeight = $(content)
+                  .children()
+                  .first()
+                  .outerHeight() + 20;
+
+                // Collapse all open items in THIS accordion only
+                $(items)
+                  .removeClass('expand')
+                  .find(container + '-content')
+                  .css('height', 0);
+
+                // Expand the clicked item with the content's height from above
+                $(item).addClass('expand');
+                $(content).css('height', newHeight);
+              }
+            });
+        })
+        
+        
+        
+         var activeItem = $(accordion).closest('.Accordion--active').find('.js-accordion-item').first();
+        if (activeItem.length > 0) {
+          var content = $(activeItem).find(container + '-content');
+          var newHeight = $(content).children().first().outerHeight() + 20;
+
+          $(activeItem).addClass('expand');
+          $(content).css('height', newHeight);
+        }
+        
+        
+
+        // Set initialized flag so this accordion doesn't get duplicate click handlers added
+        accordion.initialized = true;
+      })
+    }
+  }
+
+  $(function () {
+    initAccordion('.js-accordion');
+    
+    
+      const nestedEditors = $(".js-accordion-item iframe").contents();
+      $(nestedEditors).each(function (index, editor) {
+        $(editor).find('html').addClass('Accordion--editMode')        
+        ;
+      })
+    
+    
+    
+    
+    
+    
+  });
+</script>
+    </div>
+  </div>
+
+        </div>
+    </div>
+  </div>
+</div>
+
+
+
+    </div>
+  </div>
+
+</div>
+                  <!--stopindex-->
+
+  </main>
+
+              </div>
+
+            
+                <!-- Custom Footer Code: Google Analytics -->
+                <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZC3RPPXNWJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ZC3RPPXNWJ');
+</script>
+                <!-- Custom Footer Code: Adobe -->
+                <script src="https://assets.adobedtm.com/566dc2d26e4f/f8d2f26c1eac/launch-3a705652822d.min.js"></script>
+
+
+<script>
+  if (typeof window.setupAnimations !== 'function') {
+    window.setupAnimations = function () {
+      window.animationsSet = true;
+      var animations = document.querySelectorAll('[data-animate]');
+      animations.forEach(function(animationEl, i) {
+        var animationClass = "";
+        var animationTriggerName = "";
+
+        if (animationEl.dataset.animate) {
+          animationClass = "animate-" + animationEl.dataset.animate;
+          animationTriggerName = "js-trigger-" + i;
+        } else if (animationEl.dataset.animatechild) {
+          animationClass = "animate-" + animationEl.dataset.animatechild;
+          animationTriggerName = "js-trigger-" + i;
+        } else {
+          return;
+        }
+
+        animationEl.classList.add(animationClass);
+        animationEl.classList.add(animationTriggerName);
+
+        // removed the toggleClass
+        ScrollTrigger.create({
+          id: animationTriggerName,
+          trigger: '.' + animationTriggerName,
+          start: 'top 90%',
+          onEnter: function(self) {
+            self.trigger.classList.add('visible');
+          },
+        });
+      })
+    }
+  }
+
+  $(function() {
+    if (!window.animationsSet) setupAnimations();
+  });
+</script>
+
+<script>
+  if (typeof window.internalLink !== 'function') {
+    window.isInternalLink = function (href) {
+      var isInternal =
+        Boolean(href.match(new RegExp('^' + window.location.origin))) // 1: If same site domain
+        || Boolean(href.match(/^\/[^\/]/)); // 2: If starts with a single / and not a double //
+
+      return isInternal;
+    }
+  }
+
+  if (typeof window.getParameterByName !== 'function') {
+    window.getParameterByName = function (name, url = window.location.href) {
+      name = name.replace(/[\[\]]/g, '\\$&');
+      var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+          results = regex.exec(url);
+      if (!results) return null;
+      if (!results[2]) return '';
+      return decodeURIComponent(results[2].replace(/\+/g, ' '));
+    }
+  }
+
+  if (typeof window.onLinkClick !== 'function') {
+    window.onLinkClick = function () {
+      $(function () {
+        $('a').each(function () {
+          var $this = $(this);
+
+          if ($this.hasLinkClickEvent) return;
+
+          var newWin = $this.hasClass('new-win');
+          var senExit = $this.hasClass('sen-exit');
+          var href = $this.attr('href');
+          var target = getParameterByName('target', href);
+
+          if (href && target == '_blank') {
+            $this.on('click', function(event) {
+              event.preventDefault();
+              window.open(href, target);
+            })
+          } else if (href && href.charAt(0) == '#') {
+            $this.click(function (e) {
+              e.preventDefault();
+              var targetName = this.getAttribute('href').replace('#', '');
+              var targetElement = document.getElementById(targetName) || document.querySelector('[name="' + targetName + '"]');
+
+              if (!targetElement) {
+                return;
+              }
+
+              var offsetHeight = window.getStuckHeaderHeight() || 0;
+              gsap.to(window, {duration: 1, scrollTo: {y: targetElement, offsetY: offsetHeight}, ease: 'power3'})
+              targetElement.focus();
+            });
+
+            $this.hasLinkClickEvent = true;
+          } else if (href) {
+            if (isInternalLink(href)) {
+              if (transitions) {
+                $this.on('click', function(event) {
+                  if (event.currentTarget.hasAttribute('data-modal-template')) return;
+                  if (event.currentTarget.hasAttribute('data-no-transition')) return;
+                  // If user help down modifier key during click they are opening in new tab/window
+                  if (2 === event.which || event.metaKey || event.ctrlKey) return;
+                  $('body').addClass('wait');
+                })
+              }
+            }
+          }
+        });
+      });
+    }
+  }
+
+  $(function(){
+    onLinkClick();
+  });
+
+</script>
+
+
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v10.0" nonce="7qGTTSrW"></script>
+
+              <script>
+                $('.RawHTML')
+                  .find('iframe#player, iframe[src*="youtu.be"], iframe[src*="youtube.com"]')
+                  .wrap('<div class="video-width"><div class="embedded-video"></div></div>');
+                $('.js-press-release')
+                  .find('table')
+                  .addClass('Table Table--striped')
+                  .wrap('<div class="ReadingWidthBreakout overflow-x-auto overflow-scroll-x-shadow"><div class="container"></div></div>');
+
+                // Clear focus state off of button 0.5s after clicking it
+                $('.Button').click(function () {
+                  var button = this;
+                  setTimeout(function () {
+                    button.blur();
+                  }, 500);
+                });
+              </script>
+
+              <div class="js-footer SiteLayout__footer">
+
+<footer class="SiteFooter container pb-3">
+  <div class="SiteFooter__iconRow">
+<svg class="SiteFooter__icon" version="1.1" id="bridge"
+xmlns="http://www.w3.org/2000/svg" 
+xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 253.4 71.4">
+<style type="text/css">
+	.st0{clip-path:url(#bridge_clip);fill:#C69C55;}
+	.st1{clip-path:url(#bridge_clip);fill:#1C2A35;}
+	.st2{clip-path:url(#bridge_clip);fill:#7797A5;}
+</style>
+<g>
+	<defs>
+		<rect id="SVGID_1_" width="253.4" height="71.4"/>
+	</defs>
+	<clipPath id="SVGID_00000127019340148615724670000007464388420745467019_">
+		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+	</clipPath>
+	<path id="Path_49" style="clip-path:url(#SVGID_00000127019340148615724670000007464388420745467019_);fill:#C69C55;" d="
+		M88.5,70.7C105,25.2,155.3,1.6,200.9,18.2c24.4,8.9,43.7,28.1,52.6,52.6H88.5z"/>
+	<path id="Path_50" style="clip-path:url(#SVGID_00000127019340148615724670000007464388420745467019_);fill:#1C2A35;" d="
+		M142.5,31.6v-3.1l4.4-0.7l5,0.7v3.1H142.5z"/>
+	
+		<rect id="Rectangle_100" x="140.5" y="27.2" style="clip-path:url(#SVGID_00000127019340148615724670000007464388420745467019_);fill:#1C2A35;" width="3" height="42.6"/>
+	
+		<rect id="Rectangle_101" x="150.8" y="27.2" style="clip-path:url(#SVGID_00000127019340148615724670000007464388420745467019_);fill:#1C2A35;" width="3" height="42.6"/>
+	
+		<rect id="Rectangle_102" x="142" y="47.7" style="clip-path:url(#SVGID_00000127019340148615724670000007464388420745467019_);fill:#1C2A35;" width="9.8" height="3.3"/>
+	
+		<rect id="Rectangle_103" x="72.1" y="37.1" style="clip-path:url(#SVGID_00000127019340148615724670000007464388420745467019_);fill:#1C2A35;" width="1.4" height="32.7"/>
+	
+		<rect id="Rectangle_104" x="78.2" y="37.1" style="clip-path:url(#SVGID_00000127019340148615724670000007464388420745467019_);fill:#1C2A35;" width="1.4" height="32.7"/>
+	<path id="Path_51" style="clip-path:url(#SVGID_00000127019340148615724670000007464388420745467019_);fill:#1C2A35;" d="
+		M72.5,39.5v-1.4l3.1-1.2l3.5,1.2v1.4l-3.5-1.2L72.5,39.5z"/>
+	
+		<rect id="Rectangle_105" x="75.5" y="38.5" transform="matrix(0.7311 -0.6823 0.6823 0.7311 -9.0332 63.3438)" style="clip-path:url(#SVGID_00000127019340148615724670000007464388420745467019_);fill:#1C2A35;" width="0.7" height="9.3"/>
+	
+		<rect id="Rectangle_106" x="75.5" y="48.2" transform="matrix(0.7311 -0.6823 0.6823 0.7311 -15.6599 65.9558)" style="clip-path:url(#SVGID_00000127019340148615724670000007464388420745467019_);fill:#1C2A35;" width="0.7" height="9.3"/>
+	
+		<rect id="Rectangle_107" x="75.5" y="58.8" transform="matrix(0.7311 -0.6823 0.6823 0.7311 -22.898 68.8206)" style="clip-path:url(#SVGID_00000127019340148615724670000007464388420745467019_);fill:#1C2A35;" width="0.7" height="9.3"/>
+	
+		<rect id="Rectangle_108" x="71.2" y="42.8" transform="matrix(0.6818 -0.7316 0.7316 0.6818 -7.4204 69.2029)" style="clip-path:url(#SVGID_00000127019340148615724670000007464388420745467019_);fill:#1C2A35;" width="9.3" height="0.7"/>
+	
+		<rect id="Rectangle_109" x="71.2" y="52.5" transform="matrix(0.6817 -0.7317 0.7317 0.6817 -14.5199 72.3063)" style="clip-path:url(#SVGID_00000127019340148615724670000007464388420745467019_);fill:#1C2A35;" width="9.3" height="0.7"/>
+	
+		<rect id="Rectangle_110" x="71.2" y="63.1" transform="matrix(0.6818 -0.7316 0.7316 0.6818 -22.2852 75.682)" style="clip-path:url(#SVGID_00000127019340148615724670000007464388420745467019_);fill:#1C2A35;" width="9.3" height="0.7"/>
+	
+		<rect id="Rectangle_111" x="9.3" y="66.6" style="clip-path:url(#SVGID_00000127019340148615724670000007464388420745467019_);fill:#1C2A35;" width="244.2" height="4.7"/>
+	<path id="Path_52" style="clip-path:url(#SVGID_00000127019340148615724670000007464388420745467019_);fill:#1C2A35;" d="
+		M140.8,67.8c-35.3-6.7-61.7-29.1-61.9-29.3l0.6-0.7c0.3,0.2,26.4,22.5,61.5,29.1L140.8,67.8z"/>
+	<path id="Path_53" style="clip-path:url(#SVGID_00000127019340148615724670000007464388420745467019_);fill:#1C2A35;" d="M9.8,67.5
+		l-0.2-0.8c0.4-0.1,38.6-10.8,62.7-28.3l0.5,0.7C48.5,56.7,10.2,67.4,9.8,67.5"/>
+	<path id="Path_54" style="clip-path:url(#SVGID_00000127019340148615724670000007464388420745467019_);fill:#1C2A35;" d="
+		M73.9,67.3l-0.3-1c0.4-0.1,44.8-14.2,68.3-37.3l0.7,0.7C118.9,53,74.3,67.2,73.9,67.3"/>
+	
+		<rect id="Rectangle_112" x="67.7" y="41.8" style="clip-path:url(#SVGID_00000127019340148615724670000007464388420745467019_);fill:#1C2A35;" width="0.5" height="29.1"/>
+	
+		<rect id="Rectangle_113" x="61.9" y="45.6" style="clip-path:url(#SVGID_00000127019340148615724670000007464388420745467019_);fill:#1C2A35;" width="0.5" height="25.3"/>
+	
+		<rect id="Rectangle_114" x="56.1" y="48.5" style="clip-path:url(#SVGID_00000127019340148615724670000007464388420745467019_);fill:#1C2A35;" width="0.5" height="22.8"/>
+	
+		<rect id="Rectangle_115" x="50.3" y="51.4" style="clip-path:url(#SVGID_00000127019340148615724670000007464388420745467019_);fill:#1C2A35;" width="0.5" height="16.9"/>
+	
+		<rect id="Rectangle_116" x="44.5" y="54.2" style="clip-path:url(#SVGID_00000127019340148615724670000007464388420745467019_);fill:#1C2A35;" width="0.5" height="14.2"/>
+	
+		<rect id="Rectangle_117" x="38.7" y="56.7" style="clip-path:url(#SVGID_00000127019340148615724670000007464388420745467019_);fill:#1C2A35;" width="0.5" height="12.1"/>
+	
+		<rect id="Rectangle_118" x="32.9" y="59" style="clip-path:url(#SVGID_00000127019340148615724670000007464388420745467019_);fill:#1C2A35;" width="0.5" height="10"/>
+	
+		<rect id="Rectangle_119" x="27.1" y="61.1" style="clip-path:url(#SVGID_00000127019340148615724670000007464388420745467019_);fill:#1C2A35;" width="0.5" height="7.9"/>
+	
+		<rect id="Rectangle_120" x="21.3" y="63.2" style="clip-path:url(#SVGID_00000127019340148615724670000007464388420745467019_);fill:#1C2A35;" width="0.5" height="6"/>
+	
+		<rect id="Rectangle_121" x="15.5" y="65.6" style="clip-path:url(#SVGID_00000127019340148615724670000007464388420745467019_);fill:#1C2A35;" width="0.5" height="3.6"/>
+	
+		<rect id="Rectangle_122" x="125.3" y="42.2" style="clip-path:url(#SVGID_00000127019340148615724670000007464388420745467019_);fill:#1C2A35;" width="0.5" height="27.8"/>
+	
+		<rect id="Rectangle_123" x="130.8" y="38.3" style="clip-path:url(#SVGID_00000127019340148615724670000007464388420745467019_);fill:#1C2A35;" width="0.5" height="31.7"/>
+	
+		<rect id="Rectangle_124" x="119.5" y="45.6" style="clip-path:url(#SVGID_00000127019340148615724670000007464388420745467019_);fill:#1C2A35;" width="0.5" height="23.7"/>
+	
+		<rect id="Rectangle_125" x="113.8" y="49.5" style="clip-path:url(#SVGID_00000127019340148615724670000007464388420745467019_);fill:#1C2A35;" width="0.5" height="20.8"/>
+	
+		<rect id="Rectangle_126" x="108" y="52.1" style="clip-path:url(#SVGID_00000127019340148615724670000007464388420745467019_);fill:#1C2A35;" width="0.5" height="17.6"/>
+	
+		<rect id="Rectangle_127" x="102.2" y="53.5" style="clip-path:url(#SVGID_00000127019340148615724670000007464388420745467019_);fill:#1C2A35;" width="0.5" height="15.6"/>
+	
+		<rect id="Rectangle_128" x="96.4" y="50.3" style="clip-path:url(#SVGID_00000127019340148615724670000007464388420745467019_);fill:#1C2A35;" width="0.5" height="19.3"/>
+	
+		<rect id="Rectangle_129" x="90.6" y="46.5" style="clip-path:url(#SVGID_00000127019340148615724670000007464388420745467019_);fill:#1C2A35;" width="0.5" height="22.4"/>
+	
+		<rect id="Rectangle_130" x="84.8" y="42.7" style="clip-path:url(#SVGID_00000127019340148615724670000007464388420745467019_);fill:#1C2A35;" width="0.5" height="26.3"/>
+	
+		<rect id="Rectangle_131" x="182.2" y="43.3" style="clip-path:url(#SVGID_00000127019340148615724670000007464388420745467019_);fill:#1C2A35;" width="0.5" height="25"/>
+	
+		<rect id="Rectangle_132" x="187.9" y="45.8" style="clip-path:url(#SVGID_00000127019340148615724670000007464388420745467019_);fill:#1C2A35;" width="0.5" height="21.5"/>
+	
+		<rect id="Rectangle_133" x="193.6" y="48.6" style="clip-path:url(#SVGID_00000127019340148615724670000007464388420745467019_);fill:#1C2A35;" width="0.5" height="18.7"/>
+	
+		<rect id="Rectangle_134" x="199.4" y="51" style="clip-path:url(#SVGID_00000127019340148615724670000007464388420745467019_);fill:#1C2A35;" width="0.5" height="16.8"/>
+	
+		<rect id="Rectangle_135" x="205.1" y="53" style="clip-path:url(#SVGID_00000127019340148615724670000007464388420745467019_);fill:#1C2A35;" width="0.5" height="14.4"/>
+	
+		<rect id="Rectangle_136" x="210.8" y="55.4" style="clip-path:url(#SVGID_00000127019340148615724670000007464388420745467019_);fill:#1C2A35;" width="0.5" height="12.5"/>
+	
+		<rect id="Rectangle_137" x="222.4" y="58.6" style="clip-path:url(#SVGID_00000127019340148615724670000007464388420745467019_);fill:#1C2A35;" width="0.5" height="9.2"/>
+	
+		<rect id="Rectangle_138" x="176.5" y="40.4" style="clip-path:url(#SVGID_00000127019340148615724670000007464388420745467019_);fill:#1C2A35;" width="0.5" height="28.7"/>
+	
+		<rect id="Rectangle_139" x="170.8" y="38" style="clip-path:url(#SVGID_00000127019340148615724670000007464388420745467019_);fill:#1C2A35;" width="0.5" height="29.8"/>
+	
+		<rect id="Rectangle_140" x="165" y="35.7" style="clip-path:url(#SVGID_00000127019340148615724670000007464388420745467019_);fill:#1C2A35;" width="0.5" height="33.7"/>
+	
+		<rect id="Rectangle_141" x="159.3" y="32.7" style="clip-path:url(#SVGID_00000127019340148615724670000007464388420745467019_);fill:#1C2A35;" width="0.5" height="35.8"/>
+	
+		<rect id="Rectangle_142" x="136.4" y="34.9" style="clip-path:url(#SVGID_00000127019340148615724670000007464388420745467019_);fill:#1C2A35;" width="0.5" height="35"/>
+	<path id="Path_55" style="clip-path:url(#SVGID_00000127019340148615724670000007464388420745467019_);fill:#1C2A35;" d="
+		M253.2,67.1c-46.8-8.5-99.7-37.5-100.2-37.8l0.5-0.9c0.5,0.3,53.3,29.2,99.9,37.7L253.2,67.1z"/>
+	
+		<rect id="Rectangle_143" x="216.7" y="57.3" style="clip-path:url(#SVGID_00000127019340148615724670000007464388420745467019_);fill:#1C2A35;" width="0.5" height="10.9"/>
+	
+		<rect id="Rectangle_144" x="228.2" y="60.4" style="clip-path:url(#SVGID_00000127019340148615724670000007464388420745467019_);fill:#1C2A35;" width="0.5" height="7.5"/>
+	
+		<rect id="Rectangle_145" x="233.6" y="62.3" style="clip-path:url(#SVGID_00000127019340148615724670000007464388420745467019_);fill:#1C2A35;" width="0.5" height="5.2"/>
+	
+		<rect id="Rectangle_146" x="238.6" y="63" style="clip-path:url(#SVGID_00000127019340148615724670000007464388420745467019_);fill:#1C2A35;" width="0.5" height="5.2"/>
+	<path id="Path_56" style="clip-path:url(#SVGID_00000127019340148615724670000007464388420745467019_);fill:#7797A5;" d="M8,17.4
+		l-8-1.1c0-0.1,0-0.2,0-0.2c1.1-0.1,2.2-0.2,3.3-0.4c1.4-0.2,2.8-0.6,4.2-0.9c1.6-0.6,3.3,0.2,3.9,1.8c0.7-1,1.5-1.9,2.1-2.8
+		c0.1-0.2-0.1-0.6-0.2-0.8c-0.9-1.2-1.8-2.3-2.9-3.3c-2.5-2-3.5-5.3-1.9-7.9l0.7,1c1.1-0.9,1.1,0.3,1.5,0.8l1.3-0.2L12,4.1
+		c0.1,0,0.2,0.1,0.2,0c0.6-0.3,1.1-0.8,1.8,0.1c0.3,0.4,1.3,0.3,1.9,0.5c1.3,0.5,2.5,1.1,3.7,1.8c0.6,0.5,1.4,0.5,2.1,0.1
+		c2.5-1.3,4.6-2.9,5.7-5.7l0.4,0.1c0,0.7-0.1,1.4-0.2,2.1l1.6-1.4L29.4,2c-0.1,0.5-0.2,1-0.3,1.6l2-0.6c0,0.3,0,0.5,0,0.5
+		c0.8,0.2,1.6,0.3,2.4,0.5c1.2,0.2,1.2,1.1,1,2c-0.4,1.8-0.9,3.6-1.5,5.4c-0.4,0.7-0.8,1.4-1.4,1.9c-1.2,1.4-2.4,2.8-3.5,4
+		c0.1,2.2,2.1,2.5,3.3,3.7c1.2,1.1,2.7,1.9,4.3,2.4c0.3,0.1,0.8,0.3,1,0.1c1.7-0.9,2.6,0.1,3.6,1.2c0.4,0.3,0.8,0.5,1.3,0.7
+		c0,0.1,0,0.3,0,0.4c-0.6,0.1-1.3,0.1-1.9,0.1c-1.5-0.5-2.9-1.1-4.4-1.6c-2.3-0.9-4.6-1.9-7-2.7c-0.9-0.4-2-0.4-2.9-0.2
+		c-3.3,1-6.4,0.2-9.4-0.9c-1.2-0.6-2.6-0.5-3.7,0.1c-0.2,0.1-0.3,0.1-0.5,0.2C9.2,21.4,7.5,20,8,17.4"/>
+</g>
+</svg>
+  </div>
+
+  <div class="pb-4">
+    <div class="SiteFooter__layout row justify-content-center">
+
+
+        
+
+        <div class="SiteFooter d-block">
+<nav class="FooterNav" aria-label="Footer Navigation">
+
+  <ul class="FooterNav__linkList">
+
+
+
+
+
+        <li class="FooterNav__item  ">
+          <a data-transition-selected-if="/about"
+            data-transition-selected-class="FooterNav__link--selected"
+
+          class="FooterNav__link FooterNav__link--selected " href="https://www.vanhollen.senate.gov/about">
+            About
+          </a>
+        </li>
+
+
+
+
+
+        <li class="FooterNav__item  ">
+          <a data-transition-selected-if="/constituent-services"
+            data-transition-selected-class="FooterNav__link--selected"
+
+          class="FooterNav__link " href="https://www.vanhollen.senate.gov/constituent-services">
+            Constituent Services
+          </a>
+        </li>
+
+
+
+
+
+        <li class="FooterNav__item  ">
+          <a data-transition-selected-if="/news"
+            data-transition-selected-class="FooterNav__link--selected"
+
+          class="FooterNav__link " href="https://www.vanhollen.senate.gov/news">
+            News
+          </a>
+        </li>
+
+
+
+
+
+        <li class="FooterNav__item  ">
+          <a data-transition-selected-if="/contact"
+            data-transition-selected-class="FooterNav__link--selected"
+
+          class="FooterNav__link " href="https://www.vanhollen.senate.gov/contact">
+            Contact
+          </a>
+        </li>
+
+
+
+
+
+        <li class="FooterNav__item  FooterNav__item--showMobile">
+          <a data-transition-selected-if="/privacy-policy"
+            data-transition-selected-class="FooterNav__link--selected"
+
+          class="FooterNav__link " href="https://www.vanhollen.senate.gov/privacy-policy">
+            Privacy Policy
+          </a>
+        </li>
+
+
+
+
+
+        <li class="FooterNav__item  ">
+          <a data-transition-selected-if="/investing-in-md"
+            data-transition-selected-class="FooterNav__link--selected"
+
+          class="FooterNav__link " href="https://www.vanhollen.senate.gov/investing-in-md">
+            Investing in MD
+          </a>
+        </li>
+  </ul>
+
+
+  <div class="FooterNav__socialIcons">
+    <ul class="SocialIcons" aria-label="Social media links">
+      
+        <li class="SocialIcons__item">
+          <a class="SocialIcons__link SocialBubble" href="https://bsky.app/profile/vanhollen.senate.gov" target="_blank" rel="noreferrer">
+    
+            <i class="fa SocialBubble__icon SocialBubble__icon--bluesky">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="16" height="16" fill="currentColor"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M111.8 62.2C170.2 105.9 233 194.7 256 242.4c23-47.6 85.8-136.4 144.2-180.2c42.1-31.6 110.3-56 110.3 21.8c0 15.5-8.9 130.5-14.1 149.2C478.2 298 412 314.6 353.1 304.5c102.9 17.5 129.1 75.5 72.5 133.5c-107.4 110.2-154.3-27.6-166.3-62.9l0 0c-1.7-4.9-2.6-7.8-3.3-7.8s-1.6 3-3.3 7.8l0 0c-12 35.3-59 173.1-166.3 62.9c-56.5-58-30.4-116 72.5-133.5C100 314.6 33.8 298 15.7 233.1C10.4 214.4 1.5 99.4 1.5 83.9c0-77.8 68.2-53.4 110.3-21.8z"/></svg>
+            </i>
+        
+          </a>
+        </li>
+      
+        <li class="SocialIcons__item">
+          <a class="SocialIcons__link SocialBubble" href="https://www.facebook.com/chrisvanhollen" target="_blank" rel="noreferrer">
+            <i class="fa fa-facebook SocialBubble__icon SocialBubble__icon--facebook">
+              <span class="sr-only">Senator vanhollen Facebook</span>
+            </i>
+          </a>
+        </li>
+      
+        <li class="SocialIcons__item">
+          <a class="SocialIcons__link SocialBubble" href="https://twitter.com/ChrisVanHollen" target="_blank" rel="noreferrer">
+            <i class="fa fa-twitter SocialBubble__icon SocialBubble__icon--twitter">
+              <span class="sr-only">Senator vanhollen Twitter</span>
+            </i>
+          </a>
+        </li>
+      
+        <li class="SocialIcons__item">
+          <a class="SocialIcons__link SocialBubble" href="https://www.instagram.com/chrisvanhollen" target="_blank" rel="noreferrer">
+            <i class="fa fa-instagram SocialBubble__icon SocialBubble__icon--instagram">
+              <span class="sr-only">Senator vanhollen Instagram</span>
+            </i>
+          </a>
+        </li>
+    
+      <li class="SocialIcons__item">
+        <a class="SocialIcons__link SocialBubble" href="https://www.youtube.com/@senatorvanhollen" target="_blank" rel="noreferrer">
+          <i class="fa fa-youtube-play SocialBubble__icon SocialBubble__icon--youtube">
+            <span class="sr-only">Senator vanhollen Youtube</span>
+          </i>
+        </a>
+      </li>
+
+
+    </ul>
+  </div>
+</nav>        </div>
+      
+      
+
+    </div>
+  </div>
+</footer>
+
+              </div>
+
+          </div>
+
+<div class="MobileNav">
+    <nav aria-label="Mobile Navigation" class="MobileNav__linksContainer container">
+
+          
+
+          <div class="MobileNav__item">
+<a class="MobileNav__link js-mobile-dropdown-parent" href="https://www.vanhollen.senate.gov/about">
+              <span>About</span>
+            </a>
+
+              <div class="js-mobile-dropdown MobileNav__subLinks">
+                    <a class="MobileNav__subLink" href="https://www.vanhollen.senate.gov/about/about-chris">
+                      <div class="MobileNav__subLink__label">
+                        <span>About Chris</span>
+                      </div>
+                    </a>
+                    <a class="MobileNav__subLink" href="https://www.vanhollen.senate.gov/about/issues">
+                      <div class="MobileNav__subLink__label">
+                        <span>Issues</span>
+                      </div>
+                    </a>
+                    <a class="MobileNav__subLink" href="https://www.vanhollen.senate.gov/about/voting-record">
+                      <div class="MobileNav__subLink__label">
+                        <span>Voting</span>
+                      </div>
+                    </a>
+                    <a class="MobileNav__subLink" href="https://www.vanhollen.senate.gov/about/legislation">
+                      <div class="MobileNav__subLink__label">
+                        <span>Legislation</span>
+                      </div>
+                    </a>
+              </div>
+          </div>
+
+          
+
+          <div class="MobileNav__item">
+<a class="MobileNav__link" href="https://www.vanhollen.senate.gov/constituent-services">
+              <span>Constituent Services</span>
+            </a>
+
+          </div>
+
+          
+
+          <div class="MobileNav__item">
+<a class="MobileNav__link js-mobile-dropdown-parent" href="https://www.vanhollen.senate.gov/news">
+              <span>News</span>
+            </a>
+
+              <div class="js-mobile-dropdown MobileNav__subLinks">
+                    <a class="MobileNav__subLink" href="https://www.vanhollen.senate.gov/news/press-releases">
+                      <div class="MobileNav__subLink__label">
+                        <span>Press Releases</span>
+                      </div>
+                    </a>
+                    <a class="MobileNav__subLink" href="https://www.vanhollen.senate.gov/news/newsletters">
+                      <div class="MobileNav__subLink__label">
+                        <span>Newsletters</span>
+                      </div>
+                    </a>
+                    <a class="MobileNav__subLink" href="https://www.vanhollen.senate.gov/news/videos">
+                      <div class="MobileNav__subLink__label">
+                        <span>Videos</span>
+                      </div>
+                    </a>
+              </div>
+          </div>
+
+          
+
+          <div class="MobileNav__item">
+<a class="MobileNav__link js-mobile-dropdown-parent" href="https://www.vanhollen.senate.gov/contact">
+              <span>Contact</span>
+            </a>
+
+              <div class="js-mobile-dropdown MobileNav__subLinks">
+                    <a class="MobileNav__subLink" href="https://www.vanhollen.senate.gov/contact/email">
+                      <div class="MobileNav__subLink__label">
+                        <span>Email Senator Van Hollen</span>
+                      </div>
+                    </a>
+                    <a class="MobileNav__subLink" href="https://www.vanhollen.senate.gov/contact/schedule-requests">
+                      <div class="MobileNav__subLink__label">
+                        <span>Schedule Requests</span>
+                      </div>
+                    </a>
+                    <a class="MobileNav__subLink" href="https://www.vanhollen.senate.gov/contact#office-locations">
+                      <div class="MobileNav__subLink__label">
+                        <span>Office Locations</span>
+                      </div>
+                    </a>
+                    <a class="MobileNav__subLink" href="https://www.vanhollen.senate.gov/contact/newsletter-sign-up">
+                      <div class="MobileNav__subLink__label">
+                        <span>Newsletter Sign-up</span>
+                      </div>
+                    </a>
+              </div>
+          </div>
+
+          
+
+          <div class="MobileNav__item">
+<a class="MobileNav__link js-mobile-dropdown-parent" href="https://www.vanhollen.senate.gov/investing-in-md">
+              <span>Investing in MD</span>
+            </a>
+
+              <div class="js-mobile-dropdown MobileNav__subLinks">
+                    <a class="MobileNav__subLink" href="https://www.vanhollen.senate.gov/investing-in-md/fy26-congressionally-directed-spending-project">
+                      <div class="MobileNav__subLink__label">
+                        <span>FY26 Congressionally Directed Spending Projects Secured</span>
+                      </div>
+                    </a>
+                    <a class="MobileNav__subLink" href="https://www.vanhollen.senate.gov/investing-in-md/fy26-community-funding-projects-requested">
+                      <div class="MobileNav__subLink__label">
+                        <span>FY26 Congressionally Directed Spending Projects Requested</span>
+                      </div>
+                    </a>
+                    <a class="MobileNav__subLink" href="https://www.vanhollen.senate.gov/investing-in-md/resources-for-applicants">
+                      <div class="MobileNav__subLink__label">
+                        <span>Resources For Applicants</span>
+                      </div>
+                    </a>
+                    <a class="MobileNav__subLink" href="https://www.vanhollen.senate.gov/investing-in-md/previous-fiscal-years-congressionally-directed-spending-projects">
+                      <div class="MobileNav__subLink__label">
+                        <span>Previous Fiscal Years Congressionally Directed Spending Projects</span>
+                      </div>
+                    </a>
+              </div>
+          </div>
+    </nav>
+</div>
+
+<script>
+  window.animatedMobileNavIn = gsap
+    .timeline({paused: true})
+    .set('.MobileNav__linksContainer', {overflowY: 'hidden'})
+    .from('.MobileNav__item', {
+      duration: 0.5,
+      opacity: 0,
+      translateY: 50,
+      stagger: 0.1,
+      ease: 'power3',
+      clearProps: true
+    }, '+=0.25')
+    .set('.MobileNav__linksContainer', {overflowY: ''});
+
+  window.animatedMobileNavOut = gsap
+    .timeline({paused: true})
+    .to('.MobileNav__item', {
+      duration: 0.5,
+      opacity: 0,
+      translateY: -50,
+      stagger: 0.05,
+      ease: 'power3'
+    });
+
+  $(function () {
+    // Control logic/animations of opening and closing of mobile nav
+    var toggleMobileNav = function (state) {
+      var navOverflowElement = document.querySelector('.MobileNav__linksContainer');
+
+      if (state === 'open') {
+        window.disableBodyScroll(navOverflowElement)
+
+        var padding = function () {
+          var newsAlert = $('.SiteLayout__alert').outerHeight();
+          var mobileHeader = $('.SiteLayout__navigation').outerHeight() || $('.pin-spacer-MobileHeader').outerHeight() ;
+          var paddingVal = (newsAlert || 0) + (mobileHeader || 0)
+
+          return paddingVal < 90 ? 90 : paddingVal;
+        }
+
+        $('.MobileNav').css('paddingTop', function () {
+          var paddingToAdd = padding();
+          return paddingToAdd < 160
+            ? 160
+            : paddingToAdd;
+        });
+        window.disableBodyScroll(navOverflowElement)
+        window
+          .animatedMobileNavIn
+          .play(0);
+        document
+          .body
+          .classList
+          .add('mobile-nav-open');
+        gsap.to(window, {
+          duration: 0.5,
+          scrollTo: '.SiteHeader',
+          ease: 'power3'
+        });
+      } else if (state === 'close') {
+        window.enableBodyScroll(navOverflowElement);
+        window
+          .animatedMobileNavOut
+          .play(0);
+        document
+          .body
+          .classList
+          .remove('mobile-nav-open');
+      }
+    };
+
+    // Click handling for open/close of mobile nav
+    $('.js-open-mobile-nav').click(function () {
+      if (document.body.classList.contains('mobile-nav-open')) {
+        toggleMobileNav('close')
+      } else {
+        toggleMobileNav('open')
+      }
+    });
+
+    $('.js-open-mobile-search').click(function () {
+      if (document.body.classList.contains('mobile-nav-open')) {
+        toggleMobileNav('close')
+      }
+    });
+
+    // Expand/Collapse Dropdowns and Handle repeat clicks on parents
+    var clickAndClose = function () {
+      $('.js-mobile-dropdown-parent').removeClass('active');
+      toggleMobileNav('close');
+      gsap.to('.js-mobile-dropdown', 0.2, {height: 0});
+    };
+
+    var onClickParent = function (event) {
+      var parentLink = $(event.target).closest('.MobileNav__link');
+      var dropdown = $(parentLink).next('.js-mobile-dropdown')[0];
+
+      if (dropdown) {
+        if ($(parentLink).hasClass('active')) {
+          clickAndClose();
+        } else {
+          event.preventDefault();
+          event.stopImmediatePropagation();
+          $('.js-mobile-dropdown-parent').removeClass('active');
+          $('.js-mobile-dropdown').each(function (index, element) {
+            if (element === dropdown) return;
+            gsap.to(element, 0.6, {height: 0});
+          })
+          parentLink.addClass('active');
+          gsap.set(dropdown, {height: "auto"});
+          gsap.from(dropdown, 0.6, {height: 0});
+          gsap.from(dropdown.querySelectorAll('.MobileNav__subLink'), {
+            duration: 0.8,
+            opacity: 0,
+            scale: 0.5,
+            stagger: 0.1,
+            ease: 'power3'
+          })
+        }
+      } else {
+        clickAndClose()
+      };
+    };
+
+    $('.MobileNav__link').click(onClickParent);
+    $('.MobileNav__subLink').click(clickAndClose);
+  });
+</script>
+
+          <div class="SiteLayout__loading">
+            <div class="Loading">
+              <div class="Loading__spinner">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+  
+
+
+
+  <div class="BootstrapModal BootstrapModal--search modal fade" id="website-search" tabindex="-1" role="dialog" aria-labelledby="website-search-title">
+    <div class="BootstrapModal__container modal-dialog" role="document">
+      <div class="BootstrapModal__content modal-content">
+        <div class="BootstrapModal__header align-items-center modal-header">
+          <h2 id="website-search-title" class="BootstrapModal__headerTitle modal-title sr-only">website-search</h2>
+
+        </div>
+
+        <div class="BootstrapModal__body modal-body">
+              <form aria-label="search" id="sitesearch" role="search" method="get" action="/search">
+      <div class="MobileSearch">
+        <div class="MobileSearch__layout">
+          <label class="sr-only" for="q" >Site Search</label>
+          <input class="MobileSearch__input" type="search" name="q" id="q" placeholder="Search" autofocus>
+          <button class="MobileSearch__button" aria-label="submit search query" type="submit">
+            <span class="fa fa-search" aria-hidden="true"></span>
+          </button>
+        </div>
+        <button type="button" class="BootstrapModal__closeIcon" data-dismiss="modal" aria-label="Close search">
+          <span class="CustomIcon__before--close" aria-hidden="true"></span>
+        </button>
+      </div>
+    </form>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script>
+    $('#website-search').on('shown.bs.modal', function () {
+      $('[autofocus]').trigger('focus')
+    })
+  </script>
+
+<script type="text/javascript">
+  if (typeof window.makeStickyHeader !== 'function') {
+    window.makeStickyHeader = function (containerProp) {
+      window.madeStickyHeader = true;
+      var container = containerProp || document;
+      var siteHeader = document.querySelector('.SiteHeader');
+      var mobileHeader = document.querySelector('.MobileHeader');
+
+      ScrollTrigger.defaults({
+        // uncomment to see debug markers
+        //markers: true
+      });
+
+      // Pin SiteHeader when it hits the top of the viewport
+      if (siteHeader) {
+        ScrollTrigger.create({
+          id: 'SiteHeader', // creates .pin-spacer-SiteHeader which we target in _SiteHeader.scss
+          trigger: '.SiteLayout__siteHeader',
+          endTrigger: ".SiteLayout__footer",
+          start: "top top",
+          end: "bottom top",
+          pin: true,
+          pinSpacing: false
+        })
+      }
+
+      var trigger = document.querySelector('.Block--static--bannerBackgroundImage:first-child, .Block--static--banner:first-child, .HomeHero, .SiteLayout__transitionContainer');
+      var stickyHeaderConfig = {
+        trigger: trigger,
+        endTrigger: '.SiteLayout__container',
+        start: '50% top',
+        end: 'bottom top',
+        onEnter: function() {
+          $('.SiteHeader, .MobileHeader').addClass('stuck')
+        },
+        onLeaveBack: function() {
+          $('.SiteHeader, .MobileHeader').removeClass('stuck')
+        },
+      }
+      if (window.stickyHeaderConfig) Object.assign(stickyHeaderConfig, window.stickyHeaderConfig);
+
+      if (siteHeader) siteHeader.classList.remove('stuck');
+      if (mobileHeader) mobileHeader.classList.remove('stuck');
+      if (stickyHeaderConfig.trigger) {
+        ScrollTrigger.create(stickyHeaderConfig)
+      } else {
+        if (siteHeader) siteHeader.classList.add('stuck');
+        if (mobileHeader) mobileHeader.classList.add('stuck');
+      }
+
+      // Pin MobileHeader when it hits the top of the viewport
+      if (mobileHeader) {
+        ScrollTrigger.create({
+          id: 'MobileHeader', // creates .pin-spacer-MobileHeader which we target in _MobileHeader.scss
+          trigger: mobileHeader,
+          endTrigger: ".SiteLayout__footer",
+          start: "top top",
+          pin: true,
+          pinSpacing: false
+        })
+      }
+
+      var mobileHeaderBgColor = document.querySelector('.MobileHeader__bgColor')
+      if (mobileHeaderBgColor) {
+        gsap.from(mobileHeaderBgColor, {
+          clearProps: true,
+          scrollTrigger: {
+            id: 'MobileHeaderBackground',
+            trigger: '.SiteLayout__navigation',
+            start: "+=10px",
+            end: "+=1px",
+            scrub: 1
+          }
+        });
+      }
+    }
+  }
+
+  var prevBodyHeight = 0;
+  if (window.polyfills) var resizeObserver = new window
+    .polyfills
+    .ResizeObserver(function (entries) {
+      var newHeight = (entries[0].contentRect)
+        ? entries[0].contentRect.height
+        : 0;
+
+      if (newHeight === prevBodyHeight)
+        return;
+
+      // If the height changed save it
+      prevBodyHeight = newHeight;
+
+      // If we have any scrollTriggers on window loop through and refresh them
+      window.refreshScrollTriggers();
+    })
+
+  // start observing a DOM node
+  $(function () {
+    if (!window.madeStickyHeader)
+      window.makeStickyHeader();
+    resizeObserver.observe(document.body);
+  });
+</script>
+
+        <script type="text/javascript">
+          $(function () {
+            $("script.deferred-script").each(function () {
+              var text = $(this).text();
+              eval(
+                text == ''
+                ? this.innerHTML
+                : text);
+            });
+          });
+          sen = true;
+        </script>
+
+
+  <script>
+    
+    var arrayify = function(list) {
+      return Array.prototype.slice.call(list)
+    };
+
+    
+    var runScript = function(originalElement) {
+      var element = document.createElement('script');
+
+      if (originalElement.attributes.length) {
+        var attributes = arrayify(originalElement.attributes);
+
+        attributes.forEach(function(attr) {
+          element.setAttribute(attr.name, attr.value);
+        });
+      }
+      element.textContent = originalElement.textContent;
+      element.setAttribute('async', 'false');
+
+      originalElement.replaceWith(element);
+      return element;
+    };
+
+    var shouldPrevent = function(data) {
+      if (data.el.hasAttribute('data-no-transition') || data.el.hasAttribute('data-modal-template')) return true;
+      var targetUrl = data.href.replace(window.location.origin, '');
+      var regex = new RegExp(/^(?:\/?assets)|(?:\/?imo)/);
+      if (targetUrl && regex.test(targetUrl)) return true;
+
+      return false;
+    }
+
+    
+    
+    var transitionFormHandler = function(container) {
+      var forms = container.querySelectorAll('form[method="get"]');
+      if (forms.length) forms.forEach(function(form) {
+        if ($(form).attr('data-no-transition') !== undefined) return;
+        $(form).on('submit', function(event) {
+          event.preventDefault();
+          $('body').addClass('wait');
+          var targetUrl = event.target.action;
+          var targetQuery = $(this).serialize();
+          $('.BootstrapModal').modal('hide');
+          transitions.go(targetUrl + '?' + targetQuery);
+        })
+      })
+    }
+
+    var isIE = document.body.style.msTouchAction !== undefined;
+    if (!isIE && transitions) {
+      // Grab the prefers reduced media query.
+      var mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
+
+      // Check if the media query matches or is not available.
+      if (!mediaQuery || mediaQuery.matches) {
+        transitionsReducedMotion();
+      } else {
+        transitionsFullMotion();
+      }
+
+      // Adds an event listener to check for changes in the media query's value.
+      mediaQuery.addEventListener("change", function() {
+        if (mediaQuery.matches) {
+          transitions.destroy();
+          transitionsReducedMotion();
+        } else {
+          transitions.destroy();
+          transitionsFullMotion();
+        }
+      });
+
+      // When user has 'prefers-reduced-motion' turned on in their OS
+      function transitionsReducedMotion() {
+        transitions.init({
+          preventRunning: true,
+          timeout: 20000,
+          schema: {
+            prefix: 'data-transition'
+          },
+          prevent: shouldPrevent,
+          transitions: [{
+            name: 'default-transition',
+            leave: function(data) {
+              return gsap.timeline()
+                .to(data.current.container, {
+                  opacity: 0,
+                  duration: 0.2,
+                }, '<')
+                .set('.SiteFooter', { opacity: 0 })
+            },
+            beforeLeave: function(data) {
+               if(!data.next.url.hash){
+                gsap.to(window, { duration: 1, scrollTo: {y: 0}, ease: 'power3'});;
+               }else{
+                  gsap.to(window, { duration: 0, scrollTo: {y: 0}});
+               }    
+              return;
+            },
+            enter: function(data) {
+              return gsap.timeline()
+                .set(data.current.container, {position: 'absolute', opacity: 0})
+                .from(data.next.container, {
+                  opacity: 0,
+                  duration: 0.2,
+                }, '<')
+                .to('.SiteFooter', {
+                  opacity: 1,
+                  duration: 0.1,
+                }, '<')
+                .set('.SiteFooter', { opacity: '' })
+                
+            },
+            after: function(data){
+              if(data.trigger.hash){
+                var urlHash = data.trigger.hash;
+                gsap.to(window, { duration: 0.5, scrollTo: {y: urlHash, offsetY:150 }});
+               }
+            },
+          }],
+        });
+
+        transitionsGlobalHooks();
+      };
+      // For regular motion users
+      function transitionsFullMotion() {
+        // Remove below line and write custom transitions here
+        transitionsReducedMotion();
+      };
+
+      function transitionsGlobalHooks() {
+        transitions.hooks.before(function(data) {
+          $('body').addClass('wait');
+          $('.fc-tbx').remove(); // Clear Forms Builder validation errors
+
+          // Allow Google Recaptcha script include to reinitialize
+          if (typeof grecaptcha !== 'undefined') delete grecaptcha;
+          if (typeof ___grecaptcha_cfg !== 'undefined') delete ___grecaptcha_cfg;
+
+          $('.SiteHeader--searchMode').removeClass('SiteHeader--searchMode');
+          $('.SiteNavSearch--searchMode').removeClass('SiteNavSearch--searchMode');
+          $('.SiteNavSearch input').val('');
+        });
+
+        transitions.hooks.afterLeave(function(data) {
+          var currentNav = data.current.container.dataset.nav
+          var nextNav = data.next.container.dataset.nav
+          var nextUrl = data.next.url.href;
+          if (currentNav !== nextNav && nextUrl) window.location = nextUrl;
+
+          var nextPage = new DOMParser().parseFromString(data.next.html, "text/html");
+
+          // Sync body tags
+          var newBodyClasses = nextPage.querySelector('body').classList;
+          if (newBodyClasses) document.body.className = newBodyClasses;
+
+          $('[data-transition-selected-if]').each(function (link) {
+            var linkCondition = $(this).attr('data-transition-selected-if');
+            var selectedClass = $(this).attr('data-transition-selected-class') || 'selected';
+
+            $(this).removeClass(selectedClass);
+            if (new RegExp('^' + linkCondition).test(window.location.pathname)) {
+              var secondaryCondition = $(this).attr('data-transition-selected-nestedIf'),
+                pathArr = window.location.pathname.split('/'),
+                linkPathArr = secondaryCondition ? secondaryCondition.split('/') : " ";
+
+              $(this).addClass(selectedClass);
+
+              if (secondaryCondition && pathArr.length < 4 && window.location.pathname !== secondaryCondition) {
+                $(this).removeClass(selectedClass);
+              } else if (secondaryCondition && pathArr.length >= 4 && linkPathArr.length < 3) {
+                $(this).removeClass(selectedClass);
+              }
+            }
+          });
+
+          // Sync NewsAlert content
+          var newDocument = document.createRange().createContextualFragment(data.next.html);
+          var nextNewsAlert = newDocument.querySelector('.NewsAlert');
+          var prevNewsAlert = document.querySelector('.NewsAlert');
+
+
+          // Clean up any existing nextNewsAlert Splide instance
+          if (typeof window.destroyNewsAlertSplide === 'function') window.destroyNewsAlertSplide();
+
+          if (nextNewsAlert) {
+            var prevNewsAlertHasContent = prevNewsAlert.classList.contains('NewsAlert--hasContent');
+            var nextNewsAlertHasContent = nextNewsAlert.classList.contains('NewsAlert--hasContent');
+
+            // If previous page NewsAlert doesn't have items and next page does animate open container
+            if (!prevNewsAlertHasContent && nextNewsAlertHasContent) {
+              prevNewsAlert.className = nextNewsAlert.className || prevNewsAlert.className;
+              prevNewsAlert.innerHTML = nextNewsAlert.innerHTML || '';
+
+              var newHeight = $(nextNewsAlert).height();
+              gsap.timeline()
+                .from('.NewsAlert', {
+                  height: 0,
+                  duration: 0.5
+                })
+                .set('.NewsAlert', { height: '' })
+            }
+            // If previous page NewsAlert has items and next page doesn't animate closed the container
+            else if (prevNewsAlertHasContent && !nextNewsAlertHasContent) {
+              var currentHeight = $(prevNewsAlert).height();
+              gsap.timeline()
+                .to('.NewsAlert', {
+                  height: 0,
+                  duration: 0.5
+                })
+                .call(function() {
+                  prevNewsAlert.className = nextNewsAlert.className || prevNewsAlert.className;
+                  prevNewsAlert.innerHTML = nextNewsAlert.innerHTML || '';
+                })
+                .set('.NewsAlert', { height: '' })
+
+            }
+            // If previous and next page NewsAlert didn't change don't animate container
+            else {
+              prevNewsAlert.className = nextNewsAlert.className || prevNewsAlert.className;
+              prevNewsAlert.innerHTML = nextNewsAlert.innerHTML || '';
+            }
+
+            // Rerun script tag within NewsAlert to reactivate animations if next page NewsAlert has content
+            if (nextNewsAlertHasContent) {
+              var scripts = prevNewsAlert.querySelectorAll('script');
+              if (scripts && scripts.length) scripts.forEach(function(script) {runScript(script)});
+            }
+          }
+        });
+
+        transitions.hooks.after(function(data) {
+          $('body').removeClass('wait');
+
+          // Recalculate ScrollTrigger values
+          window.killScrollTriggers();
+          window.madeStickyHeader = false;
+          window.makeStickyHeader(data.next.container);
+          window.animationsSet = false;
+          window.setupAnimations(data.next.container);
+
+          // Force load any scripts after page transition
+          // Borrowed idea from swup.js:
+          // https://github.com/swup/scripts-plugin/blob/master/src/index.js
+          var scripts = data.next.container.querySelectorAll('script');
+          if (scripts && scripts.length) scripts.forEach(function(script) {runScript(script)});
+
+          transitionFormHandler(data.next.container);
+
+          if (typeof ga !== 'undefined') {
+            ga('set', 'page', window.location.pathname);
+            ga('send', 'pageview');
+          }
+          if (typeof FB !== 'undefined') FB.XFBML.parse();
+        });
+
+        // Prefetching the top level pages after a couple seconds for faster response time on click
+setTimeout(function() {
+                  transitions.prefetch('https://www.vanhollen.senate.gov/about');
+                }, 2000);setTimeout(function() {
+                  transitions.prefetch('https://www.vanhollen.senate.gov/constituent-services');
+                }, 3000);setTimeout(function() {
+                  transitions.prefetch('https://www.vanhollen.senate.gov/news');
+                }, 4000);setTimeout(function() {
+                  transitions.prefetch('https://www.vanhollen.senate.gov/contact');
+                }, 5000);setTimeout(function() {
+                  transitions.prefetch('https://www.vanhollen.senate.gov/investing-in-md');
+                }, 6000);
+        transitionFormHandler(document);
+      }
+    }
+  </script>
+  </body>
+</html>
+<!-- Build #1775168854 -->

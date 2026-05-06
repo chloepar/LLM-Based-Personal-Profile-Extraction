@@ -1,0 +1,2779 @@
+<!DOCTYPE html>
+<html lang="en" class='no-js template--block_editor'>
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+      <meta name="page-title" content="About">
+      <title>About | Senator Martin Heinrich</title>
+      <link rel="canonical" href="https://www.heinrich.senate.gov/about/">
+
+      <link rel="shortcut icon" href="/assets/images/favicon.ico">
+      <link href="/assets/images/favicon.ico" rel="Icon" type="image/x-icon"/>
+      <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
+      <link rel="manifest" href="/assets/images/site.webmanifest">
+      <link rel="mask-icon" href="/assets/images/safari-pinned-tab.svg" color="#1D3B45">
+      <meta name="apple-mobile-web-app-title" content="Martin">
+      <meta name="application-name" content="Martin">
+      <meta name="msapplication-TileColor" content="#ffffff">
+      <meta name="msapplication-config" content="/assets/images/browserconfig.xml">
+      <meta name="theme-color" content="#ffffff">
+      <meta name="google-site-verification" content="pv4CBQ9zSlHM3SpPSKTboWn3pQG58gUeQls_3f8_rjM">
+
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+
+<meta name="twitter:title" content="About | U.S. Senator Martin Heinrich of New Mexico">
+
+<meta property="twitter:image" content="https://www.heinrich.senate.gov/assets/images/sharelogo.jpg"/>
+
+<meta name="twitter:description" content="The Official U.S. Senate website of Senator Martin Heinrich of New Mexico"/>
+
+
+<meta property="og:url" content="https://www.heinrich.senate.gov/about/"/>
+
+<meta property="og:title" content="About | U.S. Senator Martin Heinrich of New Mexico"/>
+
+<meta property="og:image" content="https://www.heinrich.senate.gov/assets/images/sharelogo.jpg"/>
+
+<meta property="og:description" content="The Official U.S. Senate website of Senator Martin Heinrich of New Mexico"/>
+
+      
+
+
+<script>
+  if (!application) var application = {};
+  application = {
+    "config": {
+      "tinymce": {
+        "plugins": {
+          "selectvideo": {
+            "player": "jwplayer", // should be set to "legacy" or "jwplayer" currently
+            "youtube": true, // set to true to write the youtube tags for youtube videos
+            "width": "100%", // set width and height on the containing element
+            "height": "100%",
+            "tracking": true
+          }
+        }
+      }
+    },
+    "fn": { // deprecated mootools 1.2 stuff that we'll probably still use once we upgrade fully to 1.3
+      "defined": function (obj) {
+        return (obj != undefined);
+      },
+      "check": function (obj) {
+        return !!(obj || obj === 0);
+      }
+    },
+    "form": {
+      "processed": "null",
+    },
+    "friendly_urls": false,
+    "siteroot": "https://www.heinrich.senate.gov/",
+    "theme": "",
+    "webroot": "https://www.heinrich.senate.gov/",
+    "assetWebroot": "https://www.heinrich.senate.gov/",
+  };
+</script>
+
+    
+      <link rel="stylesheet" type="text/css" href="https://www.heinrich.senate.gov/styles/common.css?1775100212"/>
+
+        <script src="https://www.heinrich.senate.gov/scripts/global.js?1775100212"></script>
+      <script src="https://www.heinrich.senate.gov/scripts/gsap.js?1775100212"></script>
+
+<script src="https://assets.adobedtm.com/566dc2d26e4f/f8d2f26c1eac/launch-3a705652822d.min.js"></script>
+
+      <script>
+        $.ajaxSetup({ cache: true });
+        function getScripts(scripts, callback) {
+          var progress = 0;
+          scripts.forEach(function(script) {
+              $.getScript(script, function () {
+                  if (++progress == scripts.length && typeof callback == 'function') callback();
+              });
+          });
+        }
+      </script>
+
+      <script>
+        var initForm = function() {
+          getScripts(['https://www.heinrich.senate.gov/scripts/mootools.min.js?1775100212'], function() {
+            getScripts(['https://www.heinrich.senate.gov/scripts/form/Forms_Builder.js?1775100212'], function() {
+              creativengine_forms_builder.init();
+
+              // fix for bootstrap tooltip hide/mootools hide collision
+              $$('form input,form select,form textarea, input, .nav-tabs li a').each(function (item) {
+                if (typeof item.hide == 'function') {
+                  item.hide = null;
+                }
+              });
+
+              Element.implement({
+                'slide': function (how, mode) {
+                  return this;
+                }
+              });
+            })
+          })
+        }
+      </script>
+
+
+      <script type="text/javascript">
+        var gRecaptchaReady = function () {
+          let textarea = document.getElementById("g-recaptcha-response");
+          if (!textarea)
+            return;
+          textarea.setAttribute("aria-hidden", "true");
+          textarea.setAttribute("aria-label", "do not use");
+          textarea.setAttribute("aria-readonly", "true");
+        }
+
+        window.getStuckHeaderHeight = function () {
+          var siteHeader = document.querySelector('.SiteHeader');
+          var siteHeaderHeight = (siteHeader)
+            ? siteHeader.offsetHeight
+            : 0;
+          var mobileHeader = document.querySelector('.MobileHeader');
+          var mobileHeaderHeight = (mobileHeader)
+            ? mobileHeader.offsetHeight
+            : 0;
+
+          // Returns the height of either desktop or mobile header because the hidden header will return 0
+          return siteHeaderHeight + mobileHeaderHeight;
+        }
+
+        window.requestAnimationFrame = window.requestAnimationFrame.bind(window);
+        //gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
+
+        window.refreshScrollTriggers = () => {
+          if (typeof ScrollTrigger !== 'undefined') {
+            ScrollTrigger.getAll().forEach(t => t.refresh());
+          }
+        };
+        window.killScrollTriggers = () => {
+          if (typeof ScrollTrigger !== 'undefined') {
+            ScrollTrigger.getAll().forEach(t => t.kill());
+          }
+        };
+      </script>
+
+      
+      
+      <script>
+        window.top['site_path'] = "D4133993-4040-F985-52CD-C7141EEE1FFF";
+        window.top['SAM_META'] = {
+          jquery: "",
+          bootstrap: {
+            major: ""
+          }
+        };
+      </script>
+      
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,900;1,400;1,900&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+
+      <link rel="stylesheet" href="https://www.heinrich.senate.gov/assets/styles/font-awesome.min.css"/>
+
+  </head>
+
+  
+
+  <body data-transition="wrapper"
+    class="body--internal no-breadcrumb body--block_editor">
+    <!-- in sen-n -->
+    <!--stopindex-->
+          <div class="SiteLayout d-flex flex-column">
+          <div class="SiteLayout__alert">
+            <a href="#aria-skip-nav" class="SkipNav sr-only sr-only-focusable">Skip to content</a>
+
+<div class="NewsAlert">
+  <div class="NewsAlert__container NewsAlert__container--absolute container">
+    <div class="NewsAlert__iconContainer">
+        <div class="NewsAlert__icon" aria-hidden="true">
+          <svg class="NewsAlert__iconShape" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+            <path d="M50,5A45,45,0,1,0,95,50,45,45,0,0,0,50,5Zm4.3,70H45.7V66.4h8.6Zm3.17-43.6L54.25,61.9H45.75L42.53,31.4V25H57.47Z"/>
+          </svg>
+        </div>
+    </div>
+  </div>
+
+
+</div>
+
+            
+          </div>
+
+        <div class="SiteLayout__container d-flex flex-column flex-grow-1">
+            <div class="SiteLayout__navigation">
+                <div class="SiteLayout__siteHeader">
+<div class="js-site-header SiteHeader showBg">
+  <div class="SiteHeader__background"></div>
+
+  <div  class="SiteHeader__layout">
+    
+  <div class="SiteHeader__backgroundShadow"></div>
+    
+    <div class="SiteHeader__logoContainer js-siteLogo">
+      <a class="SiteHeader__logoLink"
+        href="/"
+        aria-label="Senator Martin Heinrich Logo goes to Home Page">
+        <div class="SiteHeader__logo">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 512">
+  <polygon fill="#db9e60" points="0.71 270.13 0.71 512 28.79 512 28.79 496.24 88.37 496.24 88.37 484.95 211.45 484.95 211.45 270.13 0.71 270.13"/>
+  <rect fill="#c37f59" x="0.71" y="270.25" width="210.73" height="144.05"/>
+  <path fill="#663f3d" d="M.71,372.09s32.94-2,35.31-2.4a44.9,44.9,0,0,0,11.4-4.6c2.67-1.78,1.49-2.07,3.12-2.37a53.12,53.12,0,0,0,8.71-1.78c3.73-1.23,4.38-1.66,7-1.66,1.43,0,2.39-.06,3.44-.14.39,0,2.74-.86,3.38-.93s7.68-.22,10.19-1.08,9-3.16,11.78-5.75S99.25,342,101,342s14.36-.51,16.87-.79,9.48-1.3,11.13-.86a5.35,5.35,0,0,1,3.16,2.44,5.23,5.23,0,0,0,2.73,2.51c2.08,1.08,8.83,8.8,18.81,11.1a179.91,179.91,0,0,0,24.85,3.81c3.37.14,7,3.8,9,4a104.89,104.89,0,0,1,12.58,3.09c4.23,1.29,11.3,5.6,11.3,5.6v45.89H.71Z"/>
+  <ellipse fill="#f3bc67" cx="52.25" cy="321.93" rx="13.88" ry="13.89"/>
+  <path fill="#804f4d" d="M.71,404.74H211.45v-16s-31.62-7.53-42.92-6.59S.71,395.33.71,395.33Z"/>
+  <path fill="#a3bbc3" d="M33.76,473.38s5.91-8.78,31.35-10.82,30.81-3,42.27-6.84c4.55-1.53,7.06-9-8.27-11-17.18-2.2-25.88-3.17-26.22-7.57S87.77,429.06,102,427s17.92-1.72,27.13-4.06H140.2c-4.4,2-31.62,4.91-39.4,6.94s-4.56,6.7,1,8.28c10.22,2.92,44.48,3.06,55.5,8.28,15,7.12,32.3,23.25,33,27H33.76Z"/>
+  <path fill="#c37f59" d="M.71,441.82s26.84,1.52,41.47,10.1,29.51,11.28,38.09,12.29S126.5,474.64,128.72,485c.08.41-40.35,0-40.35,0v11.29H29.08V512H.71Z"/>
+  <path fill="#8e5956" d="M.71,383.43v39.38H211.45V398.67S189.92,396,177.9,396c-10.87,0-8,9.18-36.52,9.18-15.63,0-77.52-18.62-89.4-18a118,118,0,0,1-20.63-.63S8.22,380.92.71,383.43Z"/>
+  <path fill="#b46b41" d="M99.8,485s25.82-25.38,31-28,6.13-3.23,9.36-.65,12.58-1,12.58-1,6.13-1,10.65,2.26c0,0,26.43-26.8,33.88-26.8,4.11,0,8.07,3.23,8.07,3.23l6.13-3.55V485S99.8,484.63,99.8,485Z"/>
+  <path fill="#1d3b45" d="M85.53,184h-20L33.23,83.71V215.44H0V0H33.84L75.38,125.26,117.22,0h35.07V215.44H117.83V83.71Z"/>
+  <path fill="#1d3b45" d="M251.66,167.43H212.28l-7.7,48H170.13L210.12,0H255l40.61,215.44h-36.3ZM247,137.88,232,42.16l-15.08,95.72Z"/>
+  <path fill="#1d3b45" d="M394.4,215.44,367,129.57H349.18v85.87H313.49V0h55.69c32.61,0,54.15,12.93,54.15,45.55V84c0,20.62-8.62,33.55-23.39,40l30.77,91.41ZM349.18,98.79H368c11.69,0,19.69-4.31,19.69-19.69v-28c0-15.39-8-19.7-19.69-19.7H349.18Z"/>
+  <path fill="#1d3b45" d="M545.77,31.39h-36V215.44H474.08v-184h-36V0H545.77Z"/>
+  <path fill="#1d3b45" d="M565.45,215.44V0h35.69V215.44Z"/>
+  <path fill="#1d3b45" d="M633.14,215.44V0h35.68l45.23,133.26V0h32.61V215.44H712.82l-47.07-140v140Z"/>
+  <path fill="#1d3b45" d="M302.9,269.54v89.87h40.92V269.54h35.69V485H343.82V391.42H302.9V485H267.21V269.54Z"/>
+  <path fill="#1d3b45" d="M410.27,485V269.54h94.45v31.39H446V360h49.22v31.39H446v62.17h59.68V485Z"/>
+  <path fill="#1d3b45" d="M532.1,485V269.54h35.69V485Z"/>
+  <path fill="#1d3b45" d="M599.78,485V269.54h35.69L680.7,402.81V269.54h32.61V485H679.47l-47.08-140V485Z"/>
+  <path fill="#1d3b45" d="M825,485,797.6,399.11H779.76V485H744.07V269.54h55.68c32.62,0,54.15,12.93,54.15,45.55v38.47c0,20.62-8.61,33.55-23.38,40L861.29,485ZM779.76,368.33h18.76c11.69,0,19.69-4.3,19.69-19.69v-28c0-15.39-8-19.7-19.69-19.7H779.76Z"/>
+  <path fill="#1d3b45" d="M884.05,485V269.54h35.68V485Z"/>
+  <path fill="#1d3b45" d="M1059.41,441.89c0,33.24-21.54,45.55-54.15,45.55h-.61c-32.62,0-54.15-12-54.15-45.55V312.63c0-32,21.53-45.55,54.15-45.55h.61c32.61,0,54.15,13.54,54.15,45.55V352h-35.69V318.17c0-15.08-7.38-19.7-18.77-19.7s-18.76,4.62-18.76,19.7V436.35c0,15.08,7.38,19.7,18.76,19.7s18.77-4.62,18.77-19.7V397.27h35.69Z"/>
+  <path fill="#1d3b45" d="M1123.39,269.54v89.87h40.92V269.54H1200V485h-35.69V391.42h-40.92V485h-35.68V269.54Z"/>
+</svg>
+        </div>
+      </a>
+    </div>
+
+    <div id="js-site-header" class="SiteHeader__main">
+      <div class="SiteHeader__nav SiteHeader__navLinkContainer ml-auto">
+
+<div class="SiteNav h-100">
+    
+      <nav aria-label="Site Navigation" class="SiteNav__layout h-100">
+        <div class="SiteNav__main  h-100">
+          <ul class="SiteNav__linkList">
+
+                
+
+
+                <li class="SiteNav__item SiteNav__item--dropdown">
+                  <a class="SiteNav__link align-items-center SiteNav__link--selected"
+                    data-transition-selected-if="/about"
+                    data-transition-selected-class="SiteNav__link--selected"
+                    href="https://www.heinrich.senate.gov/about"
+                    tabindex="0">About</a>
+
+                    <ul class="SiteNav__dropdown">
+
+
+                          <li class="SiteNav__dropdownItem">
+                            <a class="SiteNav__dropdownLink SiteNav__dropdownLink--selected"
+                              data-transition-selected-if="/about"
+                              data-transition-selected-class="SiteNav__dropdownLink--selected"
+                              data-transition-selected-nestedIf = "/about"
+                              href="https://www.heinrich.senate.gov/about"
+                              tabindex="0">About Martin</a>
+                          </li>
+
+
+                          <li class="SiteNav__dropdownItem">
+                            <a class="SiteNav__dropdownLink"
+                              data-transition-selected-if="/about/committees"
+                              data-transition-selected-class="SiteNav__dropdownLink--selected"
+                              data-transition-selected-nestedIf = "/about/committees"
+                              href="https://www.heinrich.senate.gov/about/committees"
+                              tabindex="0">Committee Assignments</a>
+                          </li>
+
+
+                          <li class="SiteNav__dropdownItem">
+                            <a class="SiteNav__dropdownLink"
+                              data-transition-selected-if="/about/new-mexico"
+                              data-transition-selected-class="SiteNav__dropdownLink--selected"
+                              data-transition-selected-nestedIf = "/about/new-mexico"
+                              href="https://www.heinrich.senate.gov/about/new-mexico"
+                              tabindex="0">New Mexico</a>
+                          </li>
+                    </ul>
+                </li>
+
+                
+
+
+                <li class="SiteNav__item SiteNav__item--dropdown">
+                  <a class="SiteNav__link align-items-center"
+                    data-transition-selected-if="/helping-you"
+                    data-transition-selected-class="SiteNav__link--selected"
+                    href="https://www.heinrich.senate.gov/helping-you"
+                    tabindex="0">Services</a>
+
+                    <ul class="SiteNav__dropdown">
+
+
+                          <li class="SiteNav__dropdownItem">
+                            <a class="SiteNav__dropdownLink"
+                              data-transition-selected-if="/helping-you/help"
+                              data-transition-selected-class="SiteNav__dropdownLink--selected"
+                              data-transition-selected-nestedIf = "/helping-you/help"
+                              href="https://www.heinrich.senate.gov/helping-you/help"
+                              tabindex="0">Help with a Federal Agency</a>
+                          </li>
+
+
+                          <li class="SiteNav__dropdownItem">
+                            <a class="SiteNav__dropdownLink"
+                              data-transition-selected-if="/helping-you/health-care-resources"
+                              data-transition-selected-class="SiteNav__dropdownLink--selected"
+                              data-transition-selected-nestedIf = "/helping-you/health-care-resources"
+                              href="https://www.heinrich.senate.gov/helping-you/health-care-resources"
+                              tabindex="0">Health Care Resources</a>
+                          </li>
+
+
+                          <li class="SiteNav__dropdownItem">
+                            <a class="SiteNav__dropdownLink"
+                              data-transition-selected-if="/helping-you/student-resources"
+                              data-transition-selected-class="SiteNav__dropdownLink--selected"
+                              data-transition-selected-nestedIf = "/helping-you/student-resources"
+                              href="https://www.heinrich.senate.gov/helping-you/student-resources"
+                              tabindex="0">Student Resources</a>
+                          </li>
+
+
+                          <li class="SiteNav__dropdownItem">
+                            <a class="SiteNav__dropdownLink"
+                              data-transition-selected-if="/helping-you/student-resources/internships"
+                              data-transition-selected-class="SiteNav__dropdownLink--selected"
+                              data-transition-selected-nestedIf = "/helping-you/student-resources/internships"
+                              href="https://www.heinrich.senate.gov/helping-you/student-resources/internships"
+                              tabindex="0">Internships</a>
+                          </li>
+
+
+                          <li class="SiteNav__dropdownItem">
+                            <a class="SiteNav__dropdownLink"
+                              data-transition-selected-if="/helping-you/veterans-resources"
+                              data-transition-selected-class="SiteNav__dropdownLink--selected"
+                              data-transition-selected-nestedIf = "/helping-you/veterans-resources"
+                              href="https://www.heinrich.senate.gov/helping-you/veterans-resources"
+                              tabindex="0">Veterans Resources</a>
+                          </li>
+
+
+                          <li class="SiteNav__dropdownItem">
+                            <a class="SiteNav__dropdownLink"
+                              data-transition-selected-if="/helping-you/visiting"
+                              data-transition-selected-class="SiteNav__dropdownLink--selected"
+                              data-transition-selected-nestedIf = "/helping-you/visiting"
+                              href="https://www.heinrich.senate.gov/helping-you/visiting"
+                              tabindex="0">Visiting D.C.</a>
+                          </li>
+
+
+                          <li class="SiteNav__dropdownItem">
+                            <a class="SiteNav__dropdownLink"
+                              data-transition-selected-if="/helping-you/student-resources/academy"
+                              data-transition-selected-class="SiteNav__dropdownLink--selected"
+                              data-transition-selected-nestedIf = "/helping-you/student-resources/academy"
+                              href="https://www.heinrich.senate.gov/helping-you/student-resources/academy"
+                              tabindex="0">Service Academy Nominations</a>
+                          </li>
+
+
+                          <li class="SiteNav__dropdownItem">
+                            <a class="SiteNav__dropdownLink"
+                              data-transition-selected-if="/helping-you/flags"
+                              data-transition-selected-class="SiteNav__dropdownLink--selected"
+                              data-transition-selected-nestedIf = "/helping-you/flags"
+                              href="https://www.heinrich.senate.gov/helping-you/flags"
+                              tabindex="0">Flag Requests</a>
+                          </li>
+
+
+                          <li class="SiteNav__dropdownItem">
+                            <a class="SiteNav__dropdownLink"
+                              data-transition-selected-if="/helping-you/grants"
+                              data-transition-selected-class="SiteNav__dropdownLink--selected"
+                              data-transition-selected-nestedIf = "/helping-you/grants"
+                              href="https://www.heinrich.senate.gov/helping-you/grants"
+                              tabindex="0">Federal Grant Funding</a>
+                          </li>
+
+
+                          <li class="SiteNav__dropdownItem">
+                            <a class="SiteNav__dropdownLink"
+                              data-transition-selected-if="/helping-you/mobile-office-hours"
+                              data-transition-selected-class="SiteNav__dropdownLink--selected"
+                              data-transition-selected-nestedIf = "/helping-you/mobile-office-hours"
+                              href="https://www.heinrich.senate.gov/helping-you/mobile-office-hours"
+                              tabindex="0">Mobile Office Hours</a>
+                          </li>
+
+
+                          <li class="SiteNav__dropdownItem">
+                            <a class="SiteNav__dropdownLink"
+                              data-transition-selected-if="/helping-you/appropriations-requests"
+                              data-transition-selected-class="SiteNav__dropdownLink--selected"
+                              data-transition-selected-nestedIf = "/helping-you/appropriations-requests"
+                              href="https://www.heinrich.senate.gov/helping-you/appropriations-requests"
+                              tabindex="0">Appropriations Requests</a>
+                          </li>
+
+
+                          <li class="SiteNav__dropdownItem">
+                            <a class="SiteNav__dropdownLink"
+                              data-transition-selected-if="/helping-you/congressionally-directed-spending"
+                              data-transition-selected-class="SiteNav__dropdownLink--selected"
+                              data-transition-selected-nestedIf = "/helping-you/congressionally-directed-spending"
+                              href="https://www.heinrich.senate.gov/helping-you/congressionally-directed-spending"
+                              tabindex="0">Congressionally Directed Spending</a>
+                          </li>
+
+
+                          <li class="SiteNav__dropdownItem">
+                            <a class="SiteNav__dropdownLink"
+                              data-transition-selected-if="/casework-stories"
+                              data-transition-selected-class="SiteNav__dropdownLink--selected"
+                              data-transition-selected-nestedIf = "/casework-stories"
+                              href="https://www.heinrich.senate.gov/casework-stories"
+                              tabindex="0">Casework Success Stories</a>
+                          </li>
+
+
+                          <li class="SiteNav__dropdownItem">
+                            <a class="SiteNav__dropdownLink"
+                              data-transition-selected-if="/medal-retrieval"
+                              data-transition-selected-class="SiteNav__dropdownLink--selected"
+                              data-transition-selected-nestedIf = "/medal-retrieval"
+                              href="https://www.heinrich.senate.gov/medal-retrieval"
+                              tabindex="0">Medal Retrieval Assistance</a>
+                          </li>
+
+
+                          <li class="SiteNav__dropdownItem">
+                            <a class="SiteNav__dropdownLink"
+                              data-transition-selected-if="/services/judicial-nominations"
+                              data-transition-selected-class="SiteNav__dropdownLink--selected"
+                              data-transition-selected-nestedIf = "/services/judicial-nominations"
+                              href="https://www.heinrich.senate.gov/services/judicial-nominations"
+                              tabindex="0">Judicial Nominations</a>
+                          </li>
+
+
+                          <li class="SiteNav__dropdownItem">
+                            <a class="SiteNav__dropdownLink"
+                              data-transition-selected-if="/helping-you/congratulatory-letters"
+                              data-transition-selected-class="SiteNav__dropdownLink--selected"
+                              data-transition-selected-nestedIf = "/helping-you/congratulatory-letters"
+                              href="https://www.heinrich.senate.gov/helping-you/congratulatory-letters"
+                              tabindex="0">Congratulatory Letters</a>
+                          </li>
+                    </ul>
+                </li>
+
+                
+
+
+                <li class="SiteNav__item SiteNav__item--dropdown">
+                  <a class="SiteNav__link align-items-center"
+                    data-transition-selected-if="/priorities"
+                    data-transition-selected-class="SiteNav__link--selected"
+                    href="https://www.heinrich.senate.gov/priorities"
+                    tabindex="0">Priorities</a>
+
+                    <ul class="SiteNav__dropdown">
+
+
+                          <li class="SiteNav__dropdownItem">
+                            <a class="SiteNav__dropdownLink"
+                              data-transition-selected-if="/priorities/issues"
+                              data-transition-selected-class="SiteNav__dropdownLink--selected"
+                              data-transition-selected-nestedIf = "/priorities/issues"
+                              href="https://www.heinrich.senate.gov/priorities/issues"
+                              tabindex="0">Issues</a>
+                          </li>
+
+
+                          <li class="SiteNav__dropdownItem">
+                            <a class="SiteNav__dropdownLink"
+                              data-transition-selected-if="/priorities/legislation"
+                              data-transition-selected-class="SiteNav__dropdownLink--selected"
+                              data-transition-selected-nestedIf = "/priorities/legislation"
+                              href="https://www.heinrich.senate.gov/priorities/legislation"
+                              tabindex="0">Legislation</a>
+                          </li>
+
+
+                          <li class="SiteNav__dropdownItem">
+                            <a class="SiteNav__dropdownLink"
+                              data-transition-selected-if="/priorities/voting-record"
+                              data-transition-selected-class="SiteNav__dropdownLink--selected"
+                              data-transition-selected-nestedIf = "/priorities/voting-record"
+                              href="https://www.heinrich.senate.gov/priorities/voting-record"
+                              tabindex="0">Voting Record</a>
+                          </li>
+                    </ul>
+                </li>
+
+                
+
+
+                <li class="SiteNav__item SiteNav__item--dropdown">
+                  <a class="SiteNav__link align-items-center"
+                    data-transition-selected-if="/newsroom"
+                    data-transition-selected-class="SiteNav__link--selected"
+                    href="https://www.heinrich.senate.gov/newsroom"
+                    tabindex="0">Newsroom</a>
+
+                    <ul class="SiteNav__dropdown">
+
+
+                          <li class="SiteNav__dropdownItem">
+                            <a class="SiteNav__dropdownLink"
+                              data-transition-selected-if="/newsroom/press-releases"
+                              data-transition-selected-class="SiteNav__dropdownLink--selected"
+                              data-transition-selected-nestedIf = "/newsroom/press-releases"
+                              href="https://www.heinrich.senate.gov/newsroom/press-releases"
+                              tabindex="0">Press Releases</a>
+                          </li>
+
+
+                          <li class="SiteNav__dropdownItem">
+                            <a class="SiteNav__dropdownLink"
+                              data-transition-selected-if="/newsroom/in-the-news"
+                              data-transition-selected-class="SiteNav__dropdownLink--selected"
+                              data-transition-selected-nestedIf = "/newsroom/in-the-news"
+                              href="https://www.heinrich.senate.gov/newsroom/in-the-news"
+                              tabindex="0">In the News</a>
+                          </li>
+
+
+                          <li class="SiteNav__dropdownItem">
+                            <a class="SiteNav__dropdownLink"
+                              data-transition-selected-if="/newsroom/blog"
+                              data-transition-selected-class="SiteNav__dropdownLink--selected"
+                              data-transition-selected-nestedIf = "/newsroom/blog"
+                              href="https://www.heinrich.senate.gov/newsroom/blog"
+                              tabindex="0">Martin's Blog</a>
+                          </li>
+                    </ul>
+                </li>
+
+                
+
+
+                <li class="SiteNav__item SiteNav__item--dropdown">
+                  <a class="SiteNav__link align-items-center"
+                    data-transition-selected-if="/resources"
+                    data-transition-selected-class="SiteNav__link--selected"
+                    href="https://www.heinrich.senate.gov/resources"
+                    tabindex="0">Resources</a>
+
+                    <ul class="SiteNav__dropdown">
+
+
+                          <li class="SiteNav__dropdownItem">
+                            <a class="SiteNav__dropdownLink"
+                              data-transition-selected-if="/solar-toolkit"
+                              data-transition-selected-class="SiteNav__dropdownLink--selected"
+                              data-transition-selected-nestedIf = "/solar-toolkit"
+                              href="https://www.heinrich.senate.gov/solar-toolkit"
+                              tabindex="0">Solar Toolkit</a>
+                          </li>
+
+
+                          <li class="SiteNav__dropdownItem">
+                            <a class="SiteNav__dropdownLink"
+                              data-transition-selected-if="/resources/wildfire-preparedness-and-prevention-center"
+                              data-transition-selected-class="SiteNav__dropdownLink--selected"
+                              data-transition-selected-nestedIf = "/resources/wildfire-preparedness-and-prevention-center"
+                              href="https://www.heinrich.senate.gov/resources/wildfire-preparedness-and-prevention-center"
+                              tabindex="0">Wildfire Preparedness</a>
+                          </li>
+
+
+                          <li class="SiteNav__dropdownItem">
+                            <a class="SiteNav__dropdownLink"
+                              data-transition-selected-if="/resources/kids-to-parks"
+                              data-transition-selected-class="SiteNav__dropdownLink--selected"
+                              data-transition-selected-nestedIf = "/resources/kids-to-parks"
+                              href="https://www.heinrich.senate.gov/resources/kids-to-parks"
+                              tabindex="0">Kids To Parks</a>
+                          </li>
+
+
+                          <li class="SiteNav__dropdownItem">
+                            <a class="SiteNav__dropdownLink"
+                              data-transition-selected-if="/reca"
+                              data-transition-selected-class="SiteNav__dropdownLink--selected"
+                              data-transition-selected-nestedIf = "/reca"
+                              href="https://www.heinrich.senate.gov/reca"
+                              tabindex="0">RECA Eligibility Information</a>
+                          </li>
+                    </ul>
+                </li>
+
+                
+
+
+                <li class="SiteNav__item SiteNav__item--dropdown">
+                  <a class="SiteNav__link align-items-center"
+                    data-transition-selected-if="/contact"
+                    data-transition-selected-class="SiteNav__link--selected"
+                    href="https://www.heinrich.senate.gov/contact"
+                    tabindex="0">Contact</a>
+
+                    <ul class="SiteNav__dropdown">
+
+
+                          <li class="SiteNav__dropdownItem">
+                            <a class="SiteNav__dropdownLink"
+                              data-transition-selected-if="/contact/write-martin"
+                              data-transition-selected-class="SiteNav__dropdownLink--selected"
+                              data-transition-selected-nestedIf = "/contact/write-martin"
+                              href="https://www.heinrich.senate.gov/contact/write-martin"
+                              tabindex="0">Write Martin</a>
+                          </li>
+
+
+                          <li class="SiteNav__dropdownItem">
+                            <a class="SiteNav__dropdownLink"
+                              data-transition-selected-if="/contact/scheduling-requests"
+                              data-transition-selected-class="SiteNav__dropdownLink--selected"
+                              data-transition-selected-nestedIf = "/contact/scheduling-requests"
+                              href="https://www.heinrich.senate.gov/contact/scheduling-requests"
+                              tabindex="0">Scheduling Requests</a>
+                          </li>
+
+
+                          <li class="SiteNav__dropdownItem">
+                            <a class="SiteNav__dropdownLink"
+                              data-transition-selected-if="/contact/newsletter"
+                              data-transition-selected-class="SiteNav__dropdownLink--selected"
+                              data-transition-selected-nestedIf = "/contact/newsletter"
+                              href="https://www.heinrich.senate.gov/contact/newsletter"
+                              tabindex="0">Newsletter Sign-up</a>
+                          </li>
+
+
+                          <li class="SiteNav__dropdownItem">
+                            <a class="SiteNav__dropdownLink"
+                              data-transition-selected-if="/helping-you/help"
+                              data-transition-selected-class="SiteNav__dropdownLink--selected"
+                              data-transition-selected-nestedIf = "/helping-you/help"
+                              href="https://www.heinrich.senate.gov/helping-you/help"
+                              tabindex="0">Request Assistance</a>
+                          </li>
+                    </ul>
+                </li>
+
+                
+
+
+                <li class="SiteNav__item">
+                  <a class="SiteNav__link align-items-center"
+                    data-transition-selected-if="/espanol"
+                    data-transition-selected-class="SiteNav__link--selected"
+                    href="https://www.heinrich.senate.gov/espanol"
+                    tabindex="0">Español</a>
+
+                </li>
+  
+          </ul>
+        </div>
+      </nav>
+</div>
+
+<script>
+
+  var topLevelLinks = document.querySelectorAll('.SiteNav__item');
+
+  for (var i = 0; i < topLevelLinks.length; i++) {
+    topLevelLinks[i].addEventListener('mouseover', function () {
+      this.classList.add('focus');
+    });
+
+    topLevelLinks[i].addEventListener('mouseleave', function () {
+      this.classList.remove('focus');
+    });
+  }
+</script>      </div>
+
+      
+      <div class="SiteHeader__search">
+<div id="SiteSearch" class="SiteNavSearch">
+  <button class="SiteNavSearch__searchToggleButton"
+    aria-label="Website search open"
+    data-toggle-search="true"
+    data-toggle-class="SiteHeader--searchMode"
+    data-target="#js-site-header">
+    <span class="SiteNavSearch__searchIcon"></span>
+    <span class="sr-only">Website Search Open</span>
+  </button>
+
+  <div class="SiteNavSearch__searchOverlay">
+    <form class="SiteNavSearch__searchForm" aria-label="search" role="search" method="get" action="/search">
+      <div class="SiteNavSearch__searchFormContent">
+        <input name="q" id="js-site-nav-search-input" class="SiteNavSearch__searchInput" type="text" placeholder="Search" aria-label="Site Search">
+        <button class="SiteNavSearch__searchFormButton" type="submit">
+          <span class="sr-only">Submit Site Search Query</span>
+          <span class="SiteNavSearch__searchToggleIcon fa fa-search" aria-hidden="true"></span>
+        </button>
+      </div>
+    </form>
+
+    <button class="SiteNavSearch__searchToggleButton"
+      aria-label="Website search"
+      data-toggle-search="true"
+      data-toggle-class="SiteHeader--searchMode"
+      data-target="#js-site-header">
+      <span class="SiteNavSearch__searchIconClose" aria-hidden="true"></span>
+      <span class="sr-only">Website Search</span>
+    </button>
+  </div>
+</div>
+
+<script>
+
+  if (typeof window.setupSearchToggle !== 'function') {
+  
+      window.setupSearchToggle = function (){
+       window.searchToggleSetup = true;
+
+      $('[data-toggle-class]').click(this, function () {
+  
+          var className = $(this).data('toggle-class');
+          var target = $(this).data('target');
+          var searchTarget = $('.SiteNavSearch');
+          var logoTarget = $('.js-siteLogo');
+          var hasClass = $(target).hasClass(className);
+    
+          $(target).toggleClass(className);
+
+          searchTarget.toggleClass('SiteNavSearch--searchMode');
+          $(logoTarget).toggleClass('SiteHeader__logoContainer--searchMode');
+
+          if (hasClass) {
+            $('#js-site-nav-search-input').val('');
+            return;
+          }
+    
+          $('#js-site-nav-search-input').focus();
+      })
+   }
+  }
+  
+    $(function() {
+      if (!window.searchToggleSetup) setupSearchToggle();
+  });
+</script>
+      </div>
+    </div>
+
+    <div class="SiteHeader__social">
+      
+<ul class="SocialIcons d-flex" aria-label="Social media links">
+
+  
+    <li class="SocialIcons__item">
+      <a class="SocialIcons__link SocialBubble" href="https://www.facebook.com/SenatorHeinrich" target="_blank" rel="noreferrer">
+        <i class="fa fa-facebook SocialBubble__icon SocialBubble__icon--facebook">
+          <span class="sr-only">Senator Heinrich Facebook</span>
+        </i>
+      </a>
+    </li>
+
+  
+    <li class="SocialIcons__item">
+      <a class="SocialIcons__link SocialBubble" href="https://twitter.com/SenatorHeinrich" target="_blank" rel="noreferrer">
+        <i class="fa fa-twitter SocialBubble__icon SocialBubble__icon--twitter">
+          <span class="sr-only">Senator Heinrich Twitter</span>
+        </i>
+      </a>
+    </li>
+
+  
+    <li class="SocialIcons__item">
+      <a class="SocialIcons__link SocialBubble" href="https://www.instagram.com/senatormartinheinrich" target="_blank" rel="noreferrer">
+        <i class="fa fa-instagram SocialBubble__icon SocialBubble__icon--instagram">
+          <span class="sr-only">Senator Heinrich Instagram</span>
+        </i>
+      </a>
+    </li>
+  
+    <li class="SocialIcons__item">
+      <a class="SocialIcons__link SocialBubble" href="https://bsky.app/profile/heinrich.senate.gov" target="_blank" rel="noreferrer">
+        <i class="fa SocialBubble__icon SocialBubble__icon--bluesky">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="16" height="16" fill="currentColor"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M111.8 62.2C170.2 105.9 233 194.7 256 242.4c23-47.6 85.8-136.4 144.2-180.2c42.1-31.6 110.3-56 110.3 21.8c0 15.5-8.9 130.5-14.1 149.2C478.2 298 412 314.6 353.1 304.5c102.9 17.5 129.1 75.5 72.5 133.5c-107.4 110.2-154.3-27.6-166.3-62.9l0 0c-1.7-4.9-2.6-7.8-3.3-7.8s-1.6 3-3.3 7.8l0 0c-12 35.3-59 173.1-166.3 62.9c-56.5-58-30.4-116 72.5-133.5C100 314.6 33.8 298 15.7 233.1C10.4 214.4 1.5 99.4 1.5 83.9c0-77.8 68.2-53.4 110.3-21.8z"/></svg>
+        </i>
+      </a>
+    </li>
+
+  
+    <li class="SocialIcons__item">
+      <a class="SocialIcons__link SocialBubble" href="https://www.threads.net/@senatormartinheinrich" target="_blank" rel="noreferrer">
+        <i class="fa SocialBubble__icon SocialBubble__icon--thread">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="16" height="16" fill="currentColor"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M331.5 235.7c2.2 .9 4.2 1.9 6.3 2.8c29.2 14.1 50.6 35.2 61.8 61.4c15.7 36.5 17.2 95.8-30.3 143.2c-36.2 36.2-80.3 52.5-142.6 53h-.3c-70.2-.5-124.1-24.1-160.4-70.2c-32.3-41-48.9-98.1-49.5-169.6V256v-.2C17 184.3 33.6 127.2 65.9 86.2C102.2 40.1 156.2 16.5 226.4 16h.3c70.3 .5 124.9 24 162.3 69.9c18.4 22.7 32 50 40.6 81.7l-40.4 10.8c-7.1-25.8-17.8-47.8-32.2-65.4c-29.2-35.8-73-54.2-130.5-54.6c-57 .5-100.1 18.8-128.2 54.4C72.1 146.1 58.5 194.3 58 256c.5 61.7 14.1 109.9 40.3 143.3c28 35.6 71.2 53.9 128.2 54.4c51.4-.4 85.4-12.6 113.7-40.9c32.3-32.2 31.7-71.8 21.4-95.9c-6.1-14.2-17.1-26-31.9-34.9c-3.7 26.9-11.8 48.3-24.7 64.8c-17.1 21.8-41.4 33.6-72.7 35.3c-23.6 1.3-46.3-4.4-63.9-16c-20.8-13.8-33-34.8-34.3-59.3c-2.5-48.3 35.7-83 95.2-86.4c21.1-1.2 40.9-.3 59.2 2.8c-2.4-14.8-7.3-26.6-14.6-35.2c-10-11.7-25.6-17.7-46.2-17.8H227c-16.6 0-39 4.6-53.3 26.3l-34.4-23.6c19.2-29.1 50.3-45.1 87.8-45.1h.8c62.6 .4 99.9 39.5 103.7 107.7l-.2 .2zm-156 68.8c1.3 25.1 28.4 36.8 54.6 35.3c25.6-1.4 54.6-11.4 59.5-73.2c-13.2-2.9-27.8-4.4-43.4-4.4c-4.8 0-9.6 .1-14.4 .4c-42.9 2.4-57.2 23.2-56.2 41.8l-.1 .1z"/></svg>
+        </i>
+
+      </a>
+    </li>
+
+  
+    <li class="SocialIcons__item">
+      <a class="SocialIcons__link SocialBubble" href="https://www.youtube.com/SenMartinHeinrich" target="_blank" rel="noreferrer">
+        <i class="fa fa-youtube-play SocialBubble__icon SocialBubble__icon--youtube">
+          <span class="sr-only">Senator Heinrich Youtube</span>
+        </i>
+      </a>
+    </li>
+
+  
+    <li class="SocialIcons__item">
+      <a class="SocialIcons__link SocialBubble" href="https://www.flickr.com/photos/martinheinrich" target="_blank" rel="noreferrer">
+        <i class="fa fa-flickr SocialBubble__icon SocialBubble__icon--flickr">
+          <span class="sr-only">Senator Heinrich Flickr</span>
+        </i>
+      </a>
+    </li>
+
+</ul>    </div>
+  </div>
+</div>
+                </div>
+
+                <div class="SiteLayout__mobileHeader">
+<div class="MobileHeader">
+  <div class="MobileHeader__bgColor"></div>
+  <div class="MobileHeader__container container h-100">
+    <div class="row no-gutters justify-content-between align-items-center h-100">
+      <div class="MobileHeader__logo d-flex justify-content-center justify-self-stretch">
+        <a class="MobileHeader__logoLink" href="/">
+        <span class="sr-only">Home Logo Link</span>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 512">
+  <polygon fill="#db9e60" points="0.71 270.13 0.71 512 28.79 512 28.79 496.24 88.37 496.24 88.37 484.95 211.45 484.95 211.45 270.13 0.71 270.13"/>
+  <rect fill="#c37f59" x="0.71" y="270.25" width="210.73" height="144.05"/>
+  <path fill="#663f3d" d="M.71,372.09s32.94-2,35.31-2.4a44.9,44.9,0,0,0,11.4-4.6c2.67-1.78,1.49-2.07,3.12-2.37a53.12,53.12,0,0,0,8.71-1.78c3.73-1.23,4.38-1.66,7-1.66,1.43,0,2.39-.06,3.44-.14.39,0,2.74-.86,3.38-.93s7.68-.22,10.19-1.08,9-3.16,11.78-5.75S99.25,342,101,342s14.36-.51,16.87-.79,9.48-1.3,11.13-.86a5.35,5.35,0,0,1,3.16,2.44,5.23,5.23,0,0,0,2.73,2.51c2.08,1.08,8.83,8.8,18.81,11.1a179.91,179.91,0,0,0,24.85,3.81c3.37.14,7,3.8,9,4a104.89,104.89,0,0,1,12.58,3.09c4.23,1.29,11.3,5.6,11.3,5.6v45.89H.71Z"/>
+  <ellipse fill="#f3bc67" cx="52.25" cy="321.93" rx="13.88" ry="13.89"/>
+  <path fill="#804f4d" d="M.71,404.74H211.45v-16s-31.62-7.53-42.92-6.59S.71,395.33.71,395.33Z"/>
+  <path fill="#a3bbc3" d="M33.76,473.38s5.91-8.78,31.35-10.82,30.81-3,42.27-6.84c4.55-1.53,7.06-9-8.27-11-17.18-2.2-25.88-3.17-26.22-7.57S87.77,429.06,102,427s17.92-1.72,27.13-4.06H140.2c-4.4,2-31.62,4.91-39.4,6.94s-4.56,6.7,1,8.28c10.22,2.92,44.48,3.06,55.5,8.28,15,7.12,32.3,23.25,33,27H33.76Z"/>
+  <path fill="#c37f59" d="M.71,441.82s26.84,1.52,41.47,10.1,29.51,11.28,38.09,12.29S126.5,474.64,128.72,485c.08.41-40.35,0-40.35,0v11.29H29.08V512H.71Z"/>
+  <path fill="#8e5956" d="M.71,383.43v39.38H211.45V398.67S189.92,396,177.9,396c-10.87,0-8,9.18-36.52,9.18-15.63,0-77.52-18.62-89.4-18a118,118,0,0,1-20.63-.63S8.22,380.92.71,383.43Z"/>
+  <path fill="#b46b41" d="M99.8,485s25.82-25.38,31-28,6.13-3.23,9.36-.65,12.58-1,12.58-1,6.13-1,10.65,2.26c0,0,26.43-26.8,33.88-26.8,4.11,0,8.07,3.23,8.07,3.23l6.13-3.55V485S99.8,484.63,99.8,485Z"/>
+  <path fill="#1d3b45" d="M85.53,184h-20L33.23,83.71V215.44H0V0H33.84L75.38,125.26,117.22,0h35.07V215.44H117.83V83.71Z"/>
+  <path fill="#1d3b45" d="M251.66,167.43H212.28l-7.7,48H170.13L210.12,0H255l40.61,215.44h-36.3ZM247,137.88,232,42.16l-15.08,95.72Z"/>
+  <path fill="#1d3b45" d="M394.4,215.44,367,129.57H349.18v85.87H313.49V0h55.69c32.61,0,54.15,12.93,54.15,45.55V84c0,20.62-8.62,33.55-23.39,40l30.77,91.41ZM349.18,98.79H368c11.69,0,19.69-4.31,19.69-19.69v-28c0-15.39-8-19.7-19.69-19.7H349.18Z"/>
+  <path fill="#1d3b45" d="M545.77,31.39h-36V215.44H474.08v-184h-36V0H545.77Z"/>
+  <path fill="#1d3b45" d="M565.45,215.44V0h35.69V215.44Z"/>
+  <path fill="#1d3b45" d="M633.14,215.44V0h35.68l45.23,133.26V0h32.61V215.44H712.82l-47.07-140v140Z"/>
+  <path fill="#1d3b45" d="M302.9,269.54v89.87h40.92V269.54h35.69V485H343.82V391.42H302.9V485H267.21V269.54Z"/>
+  <path fill="#1d3b45" d="M410.27,485V269.54h94.45v31.39H446V360h49.22v31.39H446v62.17h59.68V485Z"/>
+  <path fill="#1d3b45" d="M532.1,485V269.54h35.69V485Z"/>
+  <path fill="#1d3b45" d="M599.78,485V269.54h35.69L680.7,402.81V269.54h32.61V485H679.47l-47.08-140V485Z"/>
+  <path fill="#1d3b45" d="M825,485,797.6,399.11H779.76V485H744.07V269.54h55.68c32.62,0,54.15,12.93,54.15,45.55v38.47c0,20.62-8.61,33.55-23.38,40L861.29,485ZM779.76,368.33h18.76c11.69,0,19.69-4.3,19.69-19.69v-28c0-15.39-8-19.7-19.69-19.7H779.76Z"/>
+  <path fill="#1d3b45" d="M884.05,485V269.54h35.68V485Z"/>
+  <path fill="#1d3b45" d="M1059.41,441.89c0,33.24-21.54,45.55-54.15,45.55h-.61c-32.62,0-54.15-12-54.15-45.55V312.63c0-32,21.53-45.55,54.15-45.55h.61c32.61,0,54.15,13.54,54.15,45.55V352h-35.69V318.17c0-15.08-7.38-19.7-18.77-19.7s-18.76,4.62-18.76,19.7V436.35c0,15.08,7.38,19.7,18.76,19.7s18.77-4.62,18.77-19.7V397.27h35.69Z"/>
+  <path fill="#1d3b45" d="M1123.39,269.54v89.87h40.92V269.54H1200V485h-35.69V391.42h-40.92V485h-35.68V269.54Z"/>
+</svg>
+        </a>
+      </div>
+
+      <button class="MobileHeader__icon MobileHeader__icon--search js-open-mobile-search h-100  col-auto ml-auto mr-4" aria-label="open site search" data-toggle="modal" data-target="#website-search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 55.64 55.98"><path d="M55.64 49.53L36.57 30.46A19.84 19.84 0 005.8 5.81a19.85 19.85 0 0024.26 31.05L49.18 56zM10.74 29a12.85 12.85 0 1118.14 0 12.92 12.92 0 01-18.14 0z"/></svg>
+      </button>
+
+      <button class="js-open-mobile-nav MobileHeader__icon MobileHeader__icon--menu col-auto" aria-label="open mobile navigation">
+        <span class="MobileHeader__mobileNavIcon">
+          <span></span>
+        </span>
+      </button>
+    </div>
+  </div>
+</div>
+                </div>
+            </div>
+
+          <div id="aria-skip-nav" tabindex="-1"></div>
+          <div class="SiteLayout__transitionContainer d-flex flex-column flex-grow-1" data-transition="container" data-transition-namespace="internal" data-nav="site">
+            
+
+            
+<script>
+  if (!application) var application = {};
+  application = {
+    "config": {
+      "tinymce": {
+        "plugins": {
+          "selectvideo": {
+            "player": "jwplayer", // should be set to "legacy" or "jwplayer" currently
+            "youtube": true, // set to true to write the youtube tags for youtube videos
+            "width": "100%", // set width and height on the containing element
+            "height": "100%",
+            "tracking": true
+          }
+        }
+      }
+    },
+    "fn": { // deprecated mootools 1.2 stuff that we'll probably still use once we upgrade fully to 1.3
+      "defined": function (obj) {
+        return (obj != undefined);
+      },
+      "check": function (obj) {
+        return !!(obj || obj === 0);
+      }
+    },
+    "form": {
+      "processed": "null",
+    },
+    "friendly_urls": false,
+    "siteroot": "https://www.heinrich.senate.gov/",
+    "theme": "",
+    "webroot": "https://www.heinrich.senate.gov/",
+    "assetWebroot": "https://www.heinrich.senate.gov/",
+  };
+</script>
+
+              <div class="SiteLayout__main">
+
+
+  
+
+
+
+
+                  <!--startindex-->
+
+
+
+
+
+<div class="Blocks">
+            
+
+
+
+  <div class="Block Block--static--bannerMainHeroImage Block--width--wide Block--backgroundColor--default Block--textColor--default Block--textFamily--default mb-5">
+    <div class="Block__content">
+      
+
+<div
+  data-editor-modifier="right,left,yellowRight,yellowLeft"
+  data-editor-background="background"
+  style="background-image: url('https://www.heinrich.senate.gov/imo/media/image/Heinrich_About_Banner%20(1).jpg')"
+  class="BannerMainHeroImage BannerMainHeroImage--right">
+  <div class="BannerMainHeroImage__content d-none d-lg-flex">
+
+    <div class="BannerMainHeroImage__contentContainer">
+
+
+      <div class="BannerMainHeroImage__headingLayout">
+        <span class="BannerMainHeroImage__headingColor1" data-placeholder="Heading Text" data-editor-text="title1">About</span>
+        <span class="BannerMainHeroImage__headingColor2" data-placeholder="Excepteur sint occaecat" data-editor-text="title2">martin</span>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<div class="Heading--h1 d-block d-lg-none">
+  <h1 class="Heading__title">
+    About
+    martin</h1>
+</div>
+
+
+
+    </div>
+  </div>
+
+            
+
+
+
+  <div class="Block Block--paragraph Block--width--wide Block--backgroundColor--default Block--textColor--default Block--textFamily--default mb-5">
+    <div class="Block__content">
+      <div class="Paragraph Paragraph--variant--default Paragraph--textAlign--left RawHTML">
+  <p>With a background in engineering, Martin Heinrich brings a unique perspective to the Senate, where he is focused on creating the jobs of the future and protecting the vital missions at New Mexico’s national labs and military installations. Raised by working class parents, he is a strong advocate for working families, a staunch ally of Indian Country, and a champion for New Mexico’s public lands and growing clean energy economy.&nbsp;</p>
+</div>
+
+    </div>
+  </div>
+
+            
+
+
+
+  <div class="Block Block--static--bannerBackgroundImageBox Block--width--wide Block--backgroundColor--default Block--textColor--default Block--textFamily--default mb-5 pb-2">
+    <div class="Block__content">
+      
+
+<div
+  data-editor-modifier="navyLeft,navyRight,blueLeft,blueRight,tanLeft,tanRight,yellowLeft,yellowRight,maroonLeft,maroonRight"
+  data-editor-background="background"
+  style="background-image: url('https://www.heinrich.senate.gov/imo/media/image/Heinrich_About_EarlyDays%20(1).jpg')"
+  class="BannerBackgroundImageBox BannerBackgroundImageBox--navyLeft">
+  <div class="BannerBackgroundImageBox__content">
+
+    <div class="BannerBackgroundImageBox__contentContainer">
+      <h2 class="BannerBackgroundImageBox__heading" data-placeholder="Heading Text" data-editor-text="title">martin's<br>early days</h2>
+
+      
+    </div>
+
+  </div>
+
+</div>
+    </div>
+  </div>
+
+            
+
+
+
+  <div class="Block Block--paragraph Block--width--wide Block--backgroundColor--default Block--textColor--default Block--textFamily--default pb-5">
+    <div class="Block__content">
+      <div class="Paragraph Paragraph--variant--default Paragraph--textAlign--left RawHTML">
+  <p>After completing a Bachelor of Science degree in Mechanical Engineering at the University of Missouri, Heinrich and his wife, Julie, moved to Albuquerque where he began his career as a contractor working on directed energy technology at Phillips Laboratories, which is now Air Force Research Laboratory at Kirtland Air Force Base. Heinrich later served in AmeriCorps for the U.S. Fish and Wildlife Service, and was the Executive Director of the Cottonwood Gulch Foundation. He also led the Coalition for New Mexico Wilderness and founded a small public affairs consulting firm.</p>
+</div>
+
+    </div>
+  </div>
+
+            
+
+
+
+  <div class="Block Block--static--bannerBackgroundImageBox Block--width--wide Block--backgroundColor--default Block--textColor--default Block--textFamily--default mb-5 pb-2">
+    <div class="Block__content">
+      
+
+<div
+  data-editor-modifier="navyLeft,navyRight,blueLeft,blueRight,tanLeft,tanRight,yellowLeft,yellowRight,maroonLeft,maroonRight"
+  data-editor-background="background"
+  style="background-image: url('https://www.heinrich.senate.gov/imo/media/image/heinrich_about_servingabq.jpeg')"
+  class="BannerBackgroundImageBox BannerBackgroundImageBox--yellowRight">
+  <div class="BannerBackgroundImageBox__content">
+
+    <div class="BannerBackgroundImageBox__contentContainer">
+      <h2 class="BannerBackgroundImageBox__heading" data-placeholder="Heading Text" data-editor-text="title">serving<br>albuquerque</h2>
+
+      
+    </div>
+
+  </div>
+
+</div>
+    </div>
+  </div>
+
+            
+
+
+
+  <div class="Block Block--paragraph Block--width--wide Block--backgroundColor--default Block--textColor--default Block--textFamily--default pb-5">
+    <div class="Block__content">
+      <div class="Paragraph Paragraph--variant--default Paragraph--textAlign--left RawHTML">
+  <p>Before he was elected to Congress, Heinrich served four years as an Albuquerque City Councilor and was elected as City Council President. During his time on City Council, Heinrich championed successful efforts to raise the city minimum wage, address crime through community policing, support local small businesses, make Albuquerque a leader in energy and water conservation, and fought for campaign finance reform. He also served as New Mexico’s Natural Resources Trustee, working to conserve the state’s outdoor heritage.&nbsp;</p>
+</div>
+
+    </div>
+  </div>
+
+            
+
+
+
+  <div class="Block Block--static--bannerBackgroundImageBox Block--width--wide Block--backgroundColor--default Block--textColor--default Block--textFamily--default mb-5 pb-2">
+    <div class="Block__content">
+      
+
+<div
+  data-editor-modifier="navyLeft,navyRight,blueLeft,blueRight,tanLeft,tanRight,yellowLeft,yellowRight,maroonLeft,maroonRight"
+  data-editor-background="background"
+  style="background-image: url('https://www.heinrich.senate.gov/imo/media/image/Heinrich_About_USHouse%20(1).jpg')"
+  class="BannerBackgroundImageBox BannerBackgroundImageBox--blueLeft">
+  <div class="BannerBackgroundImageBox__content">
+
+    <div class="BannerBackgroundImageBox__contentContainer">
+      <h2 class="BannerBackgroundImageBox__heading" data-placeholder="Heading Text" data-editor-text="title">united states<br>house</h2>
+
+      
+    </div>
+
+  </div>
+
+</div>
+    </div>
+  </div>
+
+            
+
+
+
+  <div class="Block Block--paragraph Block--width--wide Block--backgroundColor--default Block--textColor--default Block--textFamily--default pb-5">
+    <div class="Block__content">
+      <div class="Paragraph Paragraph--variant--default Paragraph--textAlign--left RawHTML">
+  <p>Prior to being elected to the U.S. Senate, Heinrich served two terms in the U.S. House of Representatives. In the House, Heinrich voted to cut taxes for the middle class, worked to make college more affordable, improved benefits for veterans, opposed cuts to Social Security and Medicare, and championed the DREAM Act as an original cosponsor. Heinrich authored the HEARTH Act to remove barriers to homeownership for American Indian families and led the effort in Congress to reauthorize the Indian Health Care Improvement Act.&nbsp;</p>
+</div>
+
+    </div>
+  </div>
+
+            
+
+
+
+  <div class="Block Block--static--bannerBackgroundImageBox Block--width--wide Block--backgroundColor--default Block--textColor--default Block--textFamily--default mb-5 pb-2">
+    <div class="Block__content">
+      
+
+<div
+  data-editor-modifier="navyLeft,navyRight,blueLeft,blueRight,tanLeft,tanRight,yellowLeft,yellowRight,maroonLeft,maroonRight"
+  data-editor-background="background"
+  style="background-image: url('https://www.heinrich.senate.gov/imo/media/image/Heinrich_About_USSenate%20(1).jpg')"
+  class="BannerBackgroundImageBox BannerBackgroundImageBox--tanRight">
+  <div class="BannerBackgroundImageBox__content">
+
+    <div class="BannerBackgroundImageBox__contentContainer">
+      <h2 class="BannerBackgroundImageBox__heading" data-placeholder="Heading Text" data-editor-text="title">united states<br>senate</h2>
+
+      
+    </div>
+
+  </div>
+
+</div>
+    </div>
+  </div>
+
+            
+
+
+
+  <div class="Block Block--paragraph Block--width--wide Block--backgroundColor--default Block--textColor--default Block--textFamily--default mb-3">
+    <div class="Block__content">
+      <div class="Paragraph Paragraph--variant--default Paragraph--textAlign--left RawHTML">
+  <p>A member of the U.S. Senate since 2012, Senator Heinrich serves as the Ranking Member on the Committee on Energy and Natural Resources, which plays a critical role in setting national energy policies and managing our nation’s public lands within the U.S. Department of the Interior and the U.S. Forest Service. The Committee also oversees the U.S. Department of Energy and has jurisdiction over U.S. territories and nuclear waste policy.</p>
+</div>
+
+    </div>
+  </div>
+
+            
+
+
+
+  <div class="Block Block--paragraph Block--width--wide Block--backgroundColor--default Block--textColor--default Block--textFamily--default mb-3">
+    <div class="Block__content">
+      <div class="Paragraph Paragraph--variant--default Paragraph--textAlign--left RawHTML">
+  <p>Senator Heinrich serves on the Senate Appropriations Agriculture, Rural Development, Food and Drug Administration, and Related Agencies Subcommittee, which oversees funding for the U.S. Department of Agriculture, except for the U.S. Forest Service, the Farm Credit Administration, and the Food and Drug Administration.</p>
+</div>
+
+    </div>
+  </div>
+
+            
+
+
+
+  <div class="Block Block--paragraph Block--width--wide Block--backgroundColor--default Block--textColor--default Block--textFamily--default mb-3">
+    <div class="Block__content">
+      <div class="Paragraph Paragraph--variant--default Paragraph--textAlign--left RawHTML">
+  <p>Senator Heinrich also serves on the following Appropriations Subcommittees: Department of Interior, Environment, and Related Agencies; Energy and Water Development; and Military Construction, Veterans Affairs, and Related Agencies. He also serves as the Ranking Member on the Legislative Branch Subcommittee.</p>
+</div>
+
+    </div>
+  </div>
+
+            
+
+
+
+  <div class="Block Block--paragraph Block--width--wide Block--backgroundColor--default Block--textColor--default Block--textFamily--default mb-3">
+    <div class="Block__content">
+      <div class="Paragraph Paragraph--variant--default Paragraph--textAlign--left RawHTML">
+  <p>As a member and former Chair of the Joint Economic Committee, Senator Heinrich plays a role that allows him to promote policies that foster job creation through innovation and encourage the use of energy efficient technology. The committee consists of members from both the U.S. Senate and the U.S. House of Representatives and helps provide citizens and lawmakers with critical information on the health of the U.S. economy and often examines how government can better work for the middle class.</p>
+</div>
+
+    </div>
+  </div>
+
+            
+
+
+
+  <div class="Block Block--paragraph Block--width--wide Block--backgroundColor--default Block--textColor--default Block--textFamily--default mb-3">
+    <div class="Block__content">
+      <div class="Paragraph Paragraph--variant--default Paragraph--textAlign--left RawHTML">
+  <p>As a member of the Select Committee on Intelligence, Senator Heinrich’s responsibilities include performing an annual review of the intelligence budget by the president and the preparation of legislation authorizing appropriations for the various civilian and military agencies and departments comprising the intelligence community.</p>
+</div>
+
+    </div>
+  </div>
+
+            
+
+
+
+  <div class="Block Block--paragraph Block--width--wide Block--backgroundColor--default Block--textColor--default Block--textFamily--default mb-3">
+    <div class="Block__content">
+      <div class="Paragraph Paragraph--variant--default Paragraph--textAlign--left RawHTML">
+  <p>As the previous Chairman of the Military Construction, Veterans Affairs, and Related Agencies subcommittee, Heinrich has fought to ensure our military installations have all the modern facilities they need to execute their national security missions, and to secure all the resources and funding the VA needs to keep America's promise to our service members and their families when they return home as veterans.</p>
+</div>
+
+    </div>
+  </div>
+
+            
+
+
+
+  <div class="Block Block--static--imageRow Block--width--wide Block--backgroundColor--default Block--textColor--default Block--textFamily--default pb-5">
+    <div class="Block__content">
+      
+
+<div class="ImageRow">
+  <div class="ImageRow__layout row no-gutters">
+  
+
+    <div class="ImageRow__colSm">
+      <img
+          class="ImageRow__image"
+          data-editor-image="image1"
+          src="https://www.heinrich.senate.gov/imo/media/image/Heinrich_About_USSenate_Image1.jpg"
+          alt="Heinrich_About_USSenate_Image1"
+          width="357"
+          height="268"/>
+    </div>
+
+    <div class="ImageRow__colLg">
+      <img
+        class="ImageRow__image"
+        data-editor-image="image2"
+        src="https://www.heinrich.senate.gov/imo/media/image/Heinrich_About_USSenate_Image2.jpg"
+        alt="Heinrich_About_USSenate_Image2"
+        width="486"
+        height="318"/>
+    </div>
+
+    <div class="ImageRow__colSm">
+      <img
+          class="ImageRow__image"
+          data-editor-image="image3"
+          src="https://www.heinrich.senate.gov/imo/media/image/Heinrich_About_USSenate_Image3.jpg"
+          alt="Heinrich_About_USSenate_Image3"
+          width="357"
+          height="268"/>
+    </div>
+
+  </div>
+</div>
+    </div>
+  </div>
+
+            
+
+
+
+  <div class="Block Block--paragraph Block--width--wide Block--backgroundColor--default Block--textColor--default Block--textFamily--default pb-5">
+    <div class="Block__content">
+      <div class="Paragraph Paragraph--variant--default Paragraph--textAlign--left RawHTML">
+  <p>An avid sportsman and conservationist, Heinrich works to protect New Mexico’s public lands, watersheds, and wildlife for future generations. He worked with local communities to designate the Río Grande del Norte and Organ Mountains-Desert Peaks National Monuments.</p>
+</div>
+
+    </div>
+  </div>
+
+            
+
+
+
+  <div class="Block Block--static--imageRow Block--width--wide Block--backgroundColor--default Block--textColor--default Block--textFamily--default pb-5">
+    <div class="Block__content">
+      
+
+<div class="ImageRow">
+  <div class="ImageRow__layout row no-gutters">
+  
+
+    <div class="ImageRow__colSm">
+      <img
+          class="ImageRow__image"
+          data-editor-image="image1"
+          src="https://www.heinrich.senate.gov/imo/media/image/Heinrich_About_USSenate_Image4.jpg"
+          alt="Heinrich_About_USSenate_Image4"
+          width="357"
+          height="268"/>
+    </div>
+
+    <div class="ImageRow__colLg">
+      <img
+        class="ImageRow__image"
+        data-editor-image="image2"
+        src="https://www.heinrich.senate.gov/imo/media/image/Heinrich_About_USSenate_Image5.jpg"
+        alt="Heinrich_About_USSenate_Image5"
+        width="486"
+        height="318"/>
+    </div>
+
+    <div class="ImageRow__colSm">
+      <img
+          class="ImageRow__image"
+          data-editor-image="image3"
+          src="https://www.heinrich.senate.gov/imo/media/image/Heinrich_About_USSenate_Image6.jpg"
+          alt="Heinrich_About_USSenate_Image6"
+          width="357"
+          height="268"/>
+    </div>
+
+  </div>
+</div>
+    </div>
+  </div>
+
+            
+
+
+
+  <div class="Block Block--paragraph Block--width--wide Block--backgroundColor--default Block--textColor--default Block--textFamily--default pb-5">
+    <div class="Block__content">
+      <div class="Paragraph Paragraph--variant--default Paragraph--textAlign--left RawHTML">
+  <p>With its abundance of solar and wind resources and energy research hubs, New Mexico can lead the way in combating the devastating effects of climate change and modernizing our nation’s electrical grid. In 2015, Heinrich helped negotiate the long-term extension of renewable energy tax credits that support New Mexico’s growing clean energy industries. Heinrich introduced legislation to prepare New Mexico’s workforce for good-paying clean energy jobs. He has also supported the development of renewable energy projects on public and tribal lands, the adoption of innovative energy storage and battery technologies, and improvement to the security of our nation’s energy infrastructure.</p>
+</div>
+
+    </div>
+  </div>
+
+            
+
+
+
+  <div class="Block Block--static--imageRow Block--width--wide Block--backgroundColor--default Block--textColor--default Block--textFamily--default pb-5">
+    <div class="Block__content">
+      
+
+<div class="ImageRow">
+  <div class="ImageRow__layout row no-gutters">
+  
+
+    <div class="ImageRow__colSm">
+      <img
+          class="ImageRow__image"
+          data-editor-image="image1"
+          src="https://www.heinrich.senate.gov/imo/media/image/Heinrich_About_USSenate_Image7.jpg"
+          alt="Heinrich_About_USSenate_Image7"
+          width="357"
+          height="268"/>
+    </div>
+
+    <div class="ImageRow__colLg">
+      <img
+        class="ImageRow__image"
+        data-editor-image="image2"
+        src="https://www.heinrich.senate.gov/imo/media/image/Heinrich_About_USSenate_Image8.jpg"
+        alt="Heinrich_About_USSenate_Image8"
+        width="486"
+        height="318"/>
+    </div>
+
+    <div class="ImageRow__colSm">
+      <img
+          class="ImageRow__image"
+          data-editor-image="image3"
+          src="https://www.heinrich.senate.gov/imo/media/image/Heinrich_About_USSenate_Image9.jpg"
+          alt="Heinrich_About_USSenate_Image9"
+          width="357"
+          height="268"/>
+    </div>
+
+  </div>
+</div>
+    </div>
+  </div>
+
+            
+
+
+
+  <div class="Block Block--paragraph Block--width--wide Block--backgroundColor--default Block--textColor--default Block--textFamily--default pb-5">
+    <div class="Block__content">
+      <div class="Paragraph Paragraph--variant--default Paragraph--textAlign--left RawHTML">
+  <p>To build a brighter economic future, Heinrich believes in investments in communities and the next generation of New Mexicans. Heinrich supports major investments in early childhood education, public schools, and health care. He introduced the bipartisan Two Generation Economic Empowerment Act to help states like New Mexico coordinate programs across human services, workforce development, education, and health care agencies so they can work more effectively to put parents and children on the path to success. He has also long championed strengthening the education pipeline for science, technology, engineering, and math (STEM) careers for all students including women and minorities.</p>
+</div>
+
+    </div>
+  </div>
+
+            
+
+
+
+  <div class="Block Block--static--imageRow Block--width--wide Block--backgroundColor--default Block--textColor--default Block--textFamily--default pb-5">
+    <div class="Block__content">
+      
+
+<div class="ImageRow">
+  <div class="ImageRow__layout row no-gutters">
+  
+
+    <div class="ImageRow__colSm">
+      <img
+          class="ImageRow__image"
+          data-editor-image="image1"
+          src="https://www.heinrich.senate.gov/imo/media/image/Heinrich_About_USSenate_Image101.jpg"
+          alt="Heinrich_About_USSenate_Image10"
+          width="357"
+          height="268"/>
+    </div>
+
+    <div class="ImageRow__colLg">
+      <img
+        class="ImageRow__image"
+        data-editor-image="image2"
+        src="https://www.heinrich.senate.gov/imo/media/image/Heinrich_About_USSenate_Image111.jpg"
+        alt="Heinrich_About_USSenate_Image11"
+        width="486"
+        height="318"/>
+    </div>
+
+    <div class="ImageRow__colSm">
+      <img
+          class="ImageRow__image"
+          data-editor-image="image3"
+          src="https://www.heinrich.senate.gov/imo/media/image/Heinrich_About_USSenate_Image121.jpg"
+          alt="Heinrich_About_USSenate_Image12"
+          width="357"
+          height="268"/>
+    </div>
+
+  </div>
+</div>
+    </div>
+  </div>
+
+            
+
+
+
+  <div class="Block Block--static--bannerImageWithIconButtons Block--width--wide Block--backgroundColor--default Block--textColor--default Block--textFamily--default mb-5">
+    <div class="Block__content">
+      
+
+<div data-editor-modifier="left,right" class="BannerImageWithIconButtons BannerImageWithIconButtons--left">
+  <div  class="BannerImageWithIconButtons__layout d-flex">
+
+    <div class="col-auto BannerImageWithIconButtons__imageCol ">
+      <div class="BannerImageWithIconButtons__imageContainer">
+        <img
+          data-editor-image="bannerImage"
+          src="https://www.heinrich.senate.gov/imo/media/image/Heinrich_About_Portrait1.jpg"
+          alt="Heinrich_About_Portrait"
+          width="356"
+          height="363"/>
+      </div>
+
+    </div>
+
+    <div class="col BannerImageWithIconButtons__contentCol">
+      <div class="mb-2">
+        <h2
+        data-editor-text="bannertitle"
+        data-placeholder="Heading Text"
+        class="Heading Heading--h3 color-white">
+          see more
+        </h2>
+      </div>
+
+      <div class="row no-gutters mx-n2">
+
+          <div data-editor-repeat="buttons" data-editor-repeat-label="Button" class="BannerImageWithIconButtons__btnCols col p-2 js-buttonPopup-item">
+            <a
+                  href="/imo/media/image/Heinrich_Official%20Headshot%202019.jpg"
+                  target="_blank"
+                  rel=""
+            class="ButtonPopup__button Button Button--highImpact h-100 w-100 js-buttonPopup-trigger">
+                <div class="Button__image">
+                  <img
+                        data-editor-image="image"
+                        data-editor-repeat-var
+                        class="d-block img-fluid w-100"
+                        src="https://www.heinrich.senate.gov/imo/media/image/MartinHeinrich_Icons_Buttons_Download.svg"
+                        alt="Download Icon"
+                        width="100"
+                        height="100"/>
+                </div>
+
+              <div class="Button__label">
+                <div
+                      class="d-block"
+                      data-editor-link="link"
+                      data-editor-repeat-var
+                        >download portrait</div>
+              </div>
+            </a>
+          </div>
+          <div data-editor-repeat="buttons" data-editor-repeat-label="Button" class="BannerImageWithIconButtons__btnCols col p-2 js-buttonPopup-item">
+            <a
+                  href="download/biography-2023"
+                  target="_self"
+                  rel=""
+            class="ButtonPopup__button Button Button--highImpact h-100 w-100 js-buttonPopup-trigger">
+                <div class="Button__image">
+                  <img
+                        data-editor-image="image"
+                        data-editor-repeat-var
+                        class="d-block img-fluid w-100"
+                        src="https://www.heinrich.senate.gov/imo/media/image/MartinHeinrich_Icons_Buttons_Download.svg"
+                        alt="Download Icon"
+                        width="100"
+                        height="100"/>
+                </div>
+
+              <div class="Button__label">
+                <div
+                      class="d-block"
+                      data-editor-link="link"
+                      data-editor-repeat-var
+                        >download official bio</div>
+              </div>
+            </a>
+          </div>
+          <div data-editor-repeat="buttons" data-editor-repeat-label="Button" class="BannerImageWithIconButtons__btnCols col p-2 js-buttonPopup-item">
+            <a
+                  href="/about/committees"
+                  target="_self"
+                  rel=""
+            class="ButtonPopup__button Button Button--highImpact h-100 w-100 js-buttonPopup-trigger">
+                <div class="Button__image">
+                  <img
+                        data-editor-image="image"
+                        data-editor-repeat-var
+                        class="d-block img-fluid w-100"
+                        src="https://www.heinrich.senate.gov/imo/media/image/MartinHeinrich_Icons_Buttons_Committees.svg"
+                        alt="Gavel Icon"
+                        width="100"
+                        height="100"/>
+                </div>
+
+              <div class="Button__label">
+                <div
+                      class="d-block"
+                      data-editor-link="link"
+                      data-editor-repeat-var
+                        >committee assignments</div>
+              </div>
+            </a>
+          </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+    </div>
+  </div>
+
+</div>
+                  <!--stopindex-->
+
+              </div>
+
+            
+                <!-- Custom Footer Code: Google Analytics -->
+                <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KD7CVQH8QK"></script>
+<script>
+ window.dataLayer = window.dataLayer || [];
+ function gtag(){dataLayer.push(arguments);}
+ gtag('js', new Date());
+
+ gtag('config', 'G-KD7CVQH8QK');
+</script>
+                <!-- Custom Footer Code: Adobe -->
+                <script src="https://assets.adobedtm.com/566dc2d26e4f/f8d2f26c1eac/launch-3a705652822d.min.js"></script>
+
+
+<script>
+  if (typeof window.setupAnimations !== 'function') {
+    window.setupAnimations = function () {
+      window.animationsSet = true;
+      var animations = document.querySelectorAll('[data-animate]');
+      animations.forEach(function(animationEl, i) {
+        var animationClass = "";
+        var animationTriggerName = "";
+
+        if (animationEl.dataset.animate) {
+          animationClass = "animate-" + animationEl.dataset.animate;
+          animationTriggerName = "js-trigger-" + i;
+        } else if (animationEl.dataset.animatechild) {
+          animationClass = "animate-" + animationEl.dataset.animatechild;
+          animationTriggerName = "js-trigger-" + i;
+        } else {
+          return;
+        }
+
+        animationEl.classList.add(animationClass);
+        animationEl.classList.add(animationTriggerName);
+
+        // removed the toggleClass
+        ScrollTrigger.create({
+          id: animationTriggerName,
+          trigger: '.' + animationTriggerName,
+          start: 'top 90%',
+          onEnter: function(self) {
+            self.trigger.classList.add('visible');
+          },
+        });
+      })
+    }
+  }
+
+  $(function() {
+    if (!window.animationsSet) setupAnimations();
+  });
+</script>
+
+<script>
+  if (typeof window.internalLink !== 'function') {
+    window.isInternalLink = function (href) {
+      var isInternal =
+        Boolean(href.match(new RegExp('^' + window.location.origin))) // 1: If same site domain
+        || Boolean(href.match(/^\/[^\/]/)); // 2: If starts with a single / and not a double //
+
+      return isInternal;
+    }
+  }
+
+  if (typeof window.getParameterByName !== 'function') {
+    window.getParameterByName = function (name, url = window.location.href) {
+      name = name.replace(/[\[\]]/g, '\\$&');
+      var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+          results = regex.exec(url);
+      if (!results) return null;
+      if (!results[2]) return '';
+      return decodeURIComponent(results[2].replace(/\+/g, ' '));
+    }
+  }
+
+  if (typeof window.onLinkClick !== 'function') {
+    window.onLinkClick = function () {
+      $(function () {
+        $('a').each(function () {
+          var $this = $(this);
+
+          if ($this.hasLinkClickEvent) return;
+
+          var newWin = $this.hasClass('new-win');
+          var senExit = $this.hasClass('sen-exit');
+          var href = $this.attr('href');
+          var target = getParameterByName('target', href);
+
+          if (href && target == '_blank') {
+            $this.on('click', function(event) {
+              event.preventDefault();
+              window.open(href, target);
+            })
+          } else if (href && href.charAt(0) == '#') {
+            $this.click(function (e) {
+              e.preventDefault();
+              var targetName = this.getAttribute('href').replace('#', '');
+              var targetElement = document.getElementById(targetName) || document.querySelector('[name="' + targetName + '"]');
+
+              if (!targetElement) {
+                return;
+              }
+
+              var offsetHeight = window.getStuckHeaderHeight() || 0;
+              gsap.to(window, {duration: 1, scrollTo: {y: targetElement, offsetY: offsetHeight}, ease: 'power3'})
+              targetElement.focus();
+            });
+
+            $this.hasLinkClickEvent = true;
+          } else if (href) {
+            if (isInternalLink(href)) {
+              if (transitions) {
+                $this.on('click', function(event) {
+                  if (event.currentTarget.hasAttribute('data-modal-template')) return;
+                  if (event.currentTarget.hasAttribute('data-no-transition')) return;
+                  // If user help down modifier key during click they are opening in new tab/window
+                  if (2 === event.which || event.metaKey || event.ctrlKey) return;
+                  $('body').addClass('wait');
+                })
+              }
+            }
+          }
+        });
+      });
+    }
+  }
+
+  $(function(){
+    onLinkClick();
+  });
+
+</script>
+
+
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v10.0" nonce="7qGTTSrW"></script>
+
+              <script>
+                $('.RawHTML')
+                  .find('iframe#player, iframe[src*="youtu.be"], iframe[src*="youtube.com"]')
+                  .wrap('<div class="video-width"><div class="embedded-video"></div></div>');
+                $('.js-press-release')
+                  .find('table')
+                  .addClass('Table Table--striped')
+                  .wrap('<div class="ReadingWidthBreakout overflow-x-auto overflow-scroll-x-shadow"><div class="container"></div></div>');
+
+                // Clear focus state off of button 0.5s after clicking it
+                $('.Button').click(function () {
+                  var button = this;
+                  setTimeout(function () {
+                    button.blur();
+                  }, 500);
+                });
+              </script>
+
+                <div class="js-footer SiteLayout__footer">
+<footer class="SiteFooter">
+  <div class="SiteFooter__layout">
+    <div class="row align-items-start align-items-lg-center justify-content-between">
+      <div class="col col-lg-12 col-xl mb-md-3 mb-xl-0">
+          
+          <div class="SiteFooter__nav">
+<nav class="FooterNav" aria-label="Footer Navigation">
+  <ul class="FooterNav__linkList FooterNav__linkList--desktop">
+
+
+
+
+
+
+        <li class="FooterNav__item  FooterNav__item--dropdown ">
+
+          <a data-transition-selected-if="/about"
+            data-transition-selected-class="FooterNav__link--selected"
+
+          class="FooterNav__link FooterNav__link--selected " href="https://www.heinrich.senate.gov/about" title="About">
+            About
+          </a>
+        </li>
+
+
+
+
+
+
+        <li class="FooterNav__item  FooterNav__item--dropdown ">
+
+          <a data-transition-selected-if="/helping-you"
+            data-transition-selected-class="FooterNav__link--selected"
+
+          class="FooterNav__link " href="https://www.heinrich.senate.gov/helping-you" title="Helping You">
+            Helping You
+          </a>
+        </li>
+
+
+
+
+
+
+        <li class="FooterNav__item  FooterNav__item--dropdown ">
+
+          <a data-transition-selected-if="/priorities"
+            data-transition-selected-class="FooterNav__link--selected"
+
+          class="FooterNav__link " href="https://www.heinrich.senate.gov/priorities" title="Priorities">
+            Priorities
+          </a>
+        </li>
+
+
+
+
+
+
+        <li class="FooterNav__item  FooterNav__item--dropdown ">
+
+          <a data-transition-selected-if="/newsroom"
+            data-transition-selected-class="FooterNav__link--selected"
+
+          class="FooterNav__link " href="https://www.heinrich.senate.gov/newsroom" title="Newsroom">
+            Newsroom
+          </a>
+        </li>
+
+
+
+
+
+
+        <li class="FooterNav__item  FooterNav__item--dropdown ">
+
+          <a data-transition-selected-if="/resources"
+            data-transition-selected-class="FooterNav__link--selected"
+
+          class="FooterNav__link " href="https://www.heinrich.senate.gov/resources" title="Resources">
+            Resources
+          </a>
+        </li>
+
+
+
+
+
+
+        <li class="FooterNav__item  FooterNav__item--dropdown ">
+
+          <a data-transition-selected-if="/contact"
+            data-transition-selected-class="FooterNav__link--selected"
+
+          class="FooterNav__link " href="https://www.heinrich.senate.gov/contact" title="Contact">
+            Contact
+          </a>
+        </li>
+
+
+
+
+
+
+        <li class="FooterNav__item  FooterNav__item--showMobile">
+
+          <a data-transition-selected-if="/privacy-policy"
+            data-transition-selected-class="FooterNav__link--selected"
+
+          class="FooterNav__link " href="https://www.heinrich.senate.gov/privacy-policy" title="Privacy Policy">
+            Privacy Policy
+          </a>
+        </li>
+  </ul>
+
+
+</nav>
+          </div>
+      </div>
+
+      <div class="col-auto col-lg-auto col-xl-auto order-lg-last">
+<ul class="SocialIcons d-flex" aria-label="Social media links">
+
+  
+    <li class="SocialIcons__item">
+      <a class="SocialIcons__link SocialBubble" href="https://www.facebook.com/SenatorHeinrich" target="_blank" rel="noreferrer">
+        <i class="fa fa-facebook SocialBubble__icon SocialBubble__icon--facebook">
+          <span class="sr-only">Senator Heinrich Facebook</span>
+        </i>
+      </a>
+    </li>
+
+  
+    <li class="SocialIcons__item">
+      <a class="SocialIcons__link SocialBubble" href="https://twitter.com/SenatorHeinrich" target="_blank" rel="noreferrer">
+        <i class="fa fa-twitter SocialBubble__icon SocialBubble__icon--twitter">
+          <span class="sr-only">Senator Heinrich Twitter</span>
+        </i>
+      </a>
+    </li>
+
+  
+    <li class="SocialIcons__item">
+      <a class="SocialIcons__link SocialBubble" href="https://www.instagram.com/senatormartinheinrich" target="_blank" rel="noreferrer">
+        <i class="fa fa-instagram SocialBubble__icon SocialBubble__icon--instagram">
+          <span class="sr-only">Senator Heinrich Instagram</span>
+        </i>
+      </a>
+    </li>
+  
+    <li class="SocialIcons__item">
+      <a class="SocialIcons__link SocialBubble" href="https://bsky.app/profile/heinrich.senate.gov" target="_blank" rel="noreferrer">
+        <i class="fa SocialBubble__icon SocialBubble__icon--bluesky">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="16" height="16" fill="currentColor"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M111.8 62.2C170.2 105.9 233 194.7 256 242.4c23-47.6 85.8-136.4 144.2-180.2c42.1-31.6 110.3-56 110.3 21.8c0 15.5-8.9 130.5-14.1 149.2C478.2 298 412 314.6 353.1 304.5c102.9 17.5 129.1 75.5 72.5 133.5c-107.4 110.2-154.3-27.6-166.3-62.9l0 0c-1.7-4.9-2.6-7.8-3.3-7.8s-1.6 3-3.3 7.8l0 0c-12 35.3-59 173.1-166.3 62.9c-56.5-58-30.4-116 72.5-133.5C100 314.6 33.8 298 15.7 233.1C10.4 214.4 1.5 99.4 1.5 83.9c0-77.8 68.2-53.4 110.3-21.8z"/></svg>
+        </i>
+      </a>
+    </li>
+
+  
+    <li class="SocialIcons__item">
+      <a class="SocialIcons__link SocialBubble" href="https://www.threads.net/@senatormartinheinrich" target="_blank" rel="noreferrer">
+        <i class="fa SocialBubble__icon SocialBubble__icon--thread">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="16" height="16" fill="currentColor"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M331.5 235.7c2.2 .9 4.2 1.9 6.3 2.8c29.2 14.1 50.6 35.2 61.8 61.4c15.7 36.5 17.2 95.8-30.3 143.2c-36.2 36.2-80.3 52.5-142.6 53h-.3c-70.2-.5-124.1-24.1-160.4-70.2c-32.3-41-48.9-98.1-49.5-169.6V256v-.2C17 184.3 33.6 127.2 65.9 86.2C102.2 40.1 156.2 16.5 226.4 16h.3c70.3 .5 124.9 24 162.3 69.9c18.4 22.7 32 50 40.6 81.7l-40.4 10.8c-7.1-25.8-17.8-47.8-32.2-65.4c-29.2-35.8-73-54.2-130.5-54.6c-57 .5-100.1 18.8-128.2 54.4C72.1 146.1 58.5 194.3 58 256c.5 61.7 14.1 109.9 40.3 143.3c28 35.6 71.2 53.9 128.2 54.4c51.4-.4 85.4-12.6 113.7-40.9c32.3-32.2 31.7-71.8 21.4-95.9c-6.1-14.2-17.1-26-31.9-34.9c-3.7 26.9-11.8 48.3-24.7 64.8c-17.1 21.8-41.4 33.6-72.7 35.3c-23.6 1.3-46.3-4.4-63.9-16c-20.8-13.8-33-34.8-34.3-59.3c-2.5-48.3 35.7-83 95.2-86.4c21.1-1.2 40.9-.3 59.2 2.8c-2.4-14.8-7.3-26.6-14.6-35.2c-10-11.7-25.6-17.7-46.2-17.8H227c-16.6 0-39 4.6-53.3 26.3l-34.4-23.6c19.2-29.1 50.3-45.1 87.8-45.1h.8c62.6 .4 99.9 39.5 103.7 107.7l-.2 .2zm-156 68.8c1.3 25.1 28.4 36.8 54.6 35.3c25.6-1.4 54.6-11.4 59.5-73.2c-13.2-2.9-27.8-4.4-43.4-4.4c-4.8 0-9.6 .1-14.4 .4c-42.9 2.4-57.2 23.2-56.2 41.8l-.1 .1z"/></svg>
+        </i>
+
+      </a>
+    </li>
+
+  
+    <li class="SocialIcons__item">
+      <a class="SocialIcons__link SocialBubble" href="https://www.youtube.com/SenMartinHeinrich" target="_blank" rel="noreferrer">
+        <i class="fa fa-youtube-play SocialBubble__icon SocialBubble__icon--youtube">
+          <span class="sr-only">Senator Heinrich Youtube</span>
+        </i>
+      </a>
+    </li>
+
+  
+    <li class="SocialIcons__item">
+      <a class="SocialIcons__link SocialBubble" href="https://www.flickr.com/photos/martinheinrich" target="_blank" rel="noreferrer">
+        <i class="fa fa-flickr SocialBubble__icon SocialBubble__icon--flickr">
+          <span class="sr-only">Senator Heinrich Flickr</span>
+        </i>
+      </a>
+    </li>
+
+</ul>      </div>
+
+      <div class="col-12 col-lg col-xl-auto col-xl-12 order-xl-last my-4 my-md-0 mt-xl-2">
+        <div id="GoogleTranslate" class="SiteFooter__googleTranslate"></div>
+        <script type="text/javascript">
+        function googleTranslateElementInit() {
+          new google.translate.TranslateElement({
+            pageLanguage: 'en',
+            includedLanguages: 'en,es',
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+          }, 'GoogleTranslate');
+        }
+        </script>
+        <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+      </div>
+    </div>
+  </div>
+</footer>
+              </div>
+
+
+          </div>
+
+<div class="MobileNav">
+  <nav aria-label="Mobile Navigation" class="MobileNav__linksContainer container">
+    <div class="MobileNav__linksPadding">
+            <div class="MobileNav__item">
+<a class="MobileNav__link js-mobile-dropdown-parent" href="https://www.heinrich.senate.gov/about">
+                <span>About</span>
+              </a>
+
+
+                <div class="js-mobile-dropdown MobileNav__subLinks">
+                      <a title ="About Martin" class="MobileNav__subLink" href="https://www.heinrich.senate.gov/about">
+                        <div class="MobileNav__subLink__label">
+                          <span>About Martin</span>
+                        </div>
+                      </a>
+                      <a title ="Committee Assignments" class="MobileNav__subLink" href="https://www.heinrich.senate.gov/about/committees">
+                        <div class="MobileNav__subLink__label">
+                          <span>Committee Assignments</span>
+                        </div>
+                      </a>
+                      <a title ="New Mexico" class="MobileNav__subLink" href="https://www.heinrich.senate.gov/about/new-mexico">
+                        <div class="MobileNav__subLink__label">
+                          <span>New Mexico</span>
+                        </div>
+                      </a>
+                </div>
+            </div>
+            <div class="MobileNav__item">
+<a class="MobileNav__link js-mobile-dropdown-parent" href="https://www.heinrich.senate.gov/helping-you">
+                <span>Services</span>
+              </a>
+
+
+                <div class="js-mobile-dropdown MobileNav__subLinks">
+                      <a title ="Help with a Federal Agency" class="MobileNav__subLink" href="https://www.heinrich.senate.gov/helping-you/help">
+                        <div class="MobileNav__subLink__label">
+                          <span>Help with a Federal Agency</span>
+                        </div>
+                      </a>
+                      <a title ="Health Care Resources" class="MobileNav__subLink" href="https://www.heinrich.senate.gov/helping-you/health-care-resources">
+                        <div class="MobileNav__subLink__label">
+                          <span>Health Care Resources</span>
+                        </div>
+                      </a>
+                      <a title ="Student Resources" class="MobileNav__subLink" href="https://www.heinrich.senate.gov/helping-you/student-resources">
+                        <div class="MobileNav__subLink__label">
+                          <span>Student Resources</span>
+                        </div>
+                      </a>
+                      <a title ="Internships" class="MobileNav__subLink" href="https://www.heinrich.senate.gov/helping-you/student-resources/internships">
+                        <div class="MobileNav__subLink__label">
+                          <span>Internships</span>
+                        </div>
+                      </a>
+                      <a title ="Veterans Resources" class="MobileNav__subLink" href="https://www.heinrich.senate.gov/helping-you/veterans-resources">
+                        <div class="MobileNav__subLink__label">
+                          <span>Veterans Resources</span>
+                        </div>
+                      </a>
+                      <a title ="Visiting D.C." class="MobileNav__subLink" href="https://www.heinrich.senate.gov/helping-you/visiting">
+                        <div class="MobileNav__subLink__label">
+                          <span>Visiting D.C.</span>
+                        </div>
+                      </a>
+                      <a title ="Service Academy Nominations" class="MobileNav__subLink" href="https://www.heinrich.senate.gov/helping-you/student-resources/academy">
+                        <div class="MobileNav__subLink__label">
+                          <span>Service Academy Nominations</span>
+                        </div>
+                      </a>
+                      <a title ="Flag Requests" class="MobileNav__subLink" href="https://www.heinrich.senate.gov/helping-you/flags">
+                        <div class="MobileNav__subLink__label">
+                          <span>Flag Requests</span>
+                        </div>
+                      </a>
+                      <a title ="Federal Grant Funding" class="MobileNav__subLink" href="https://www.heinrich.senate.gov/helping-you/grants">
+                        <div class="MobileNav__subLink__label">
+                          <span>Federal Grant Funding</span>
+                        </div>
+                      </a>
+                      <a title ="Mobile Office Hours" class="MobileNav__subLink" href="https://www.heinrich.senate.gov/helping-you/mobile-office-hours">
+                        <div class="MobileNav__subLink__label">
+                          <span>Mobile Office Hours</span>
+                        </div>
+                      </a>
+                      <a title ="Appropriations Requests" class="MobileNav__subLink" href="https://www.heinrich.senate.gov/helping-you/appropriations-requests">
+                        <div class="MobileNav__subLink__label">
+                          <span>Appropriations Requests</span>
+                        </div>
+                      </a>
+                      <a title ="Congressionally Directed Spending" class="MobileNav__subLink" href="https://www.heinrich.senate.gov/helping-you/congressionally-directed-spending">
+                        <div class="MobileNav__subLink__label">
+                          <span>Congressionally Directed Spending</span>
+                        </div>
+                      </a>
+                      <a title ="Casework Success Stories" class="MobileNav__subLink" href="https://www.heinrich.senate.gov/casework-stories">
+                        <div class="MobileNav__subLink__label">
+                          <span>Casework Success Stories</span>
+                        </div>
+                      </a>
+                      <a title ="Medal Retrieval Assistance" class="MobileNav__subLink" href="https://www.heinrich.senate.gov/medal-retrieval">
+                        <div class="MobileNav__subLink__label">
+                          <span>Medal Retrieval Assistance</span>
+                        </div>
+                      </a>
+                      <a title ="Judicial Nominations" class="MobileNav__subLink" href="https://www.heinrich.senate.gov/services/judicial-nominations">
+                        <div class="MobileNav__subLink__label">
+                          <span>Judicial Nominations</span>
+                        </div>
+                      </a>
+                      <a title ="Congratulatory Letters" class="MobileNav__subLink" href="https://www.heinrich.senate.gov/helping-you/congratulatory-letters">
+                        <div class="MobileNav__subLink__label">
+                          <span>Congratulatory Letters</span>
+                        </div>
+                      </a>
+                </div>
+            </div>
+            <div class="MobileNav__item">
+<a class="MobileNav__link js-mobile-dropdown-parent" href="https://www.heinrich.senate.gov/priorities">
+                <span>Priorities</span>
+              </a>
+
+
+                <div class="js-mobile-dropdown MobileNav__subLinks">
+                      <a title ="Issues" class="MobileNav__subLink" href="https://www.heinrich.senate.gov/priorities/issues">
+                        <div class="MobileNav__subLink__label">
+                          <span>Issues</span>
+                        </div>
+                      </a>
+                      <a title ="Legislation" class="MobileNav__subLink" href="https://www.heinrich.senate.gov/priorities/legislation">
+                        <div class="MobileNav__subLink__label">
+                          <span>Legislation</span>
+                        </div>
+                      </a>
+                      <a title ="Voting Record" class="MobileNav__subLink" href="https://www.heinrich.senate.gov/priorities/voting-record">
+                        <div class="MobileNav__subLink__label">
+                          <span>Voting Record</span>
+                        </div>
+                      </a>
+                </div>
+            </div>
+            <div class="MobileNav__item">
+<a class="MobileNav__link js-mobile-dropdown-parent" href="https://www.heinrich.senate.gov/newsroom">
+                <span>Newsroom</span>
+              </a>
+
+
+                <div class="js-mobile-dropdown MobileNav__subLinks">
+                      <a title ="Press Releases" class="MobileNav__subLink" href="https://www.heinrich.senate.gov/newsroom/press-releases">
+                        <div class="MobileNav__subLink__label">
+                          <span>Press Releases</span>
+                        </div>
+                      </a>
+                      <a title ="In the News" class="MobileNav__subLink" href="https://www.heinrich.senate.gov/newsroom/in-the-news">
+                        <div class="MobileNav__subLink__label">
+                          <span>In the News</span>
+                        </div>
+                      </a>
+                      <a title ="Martin&#39;s Blog" class="MobileNav__subLink" href="https://www.heinrich.senate.gov/newsroom/blog">
+                        <div class="MobileNav__subLink__label">
+                          <span>Martin&#39;s Blog</span>
+                        </div>
+                      </a>
+                </div>
+            </div>
+            <div class="MobileNav__item">
+<a class="MobileNav__link js-mobile-dropdown-parent" href="https://www.heinrich.senate.gov/resources">
+                <span>Resources</span>
+              </a>
+
+
+                <div class="js-mobile-dropdown MobileNav__subLinks">
+                      <a title ="Solar Toolkit" class="MobileNav__subLink" href="https://www.heinrich.senate.gov/solar-toolkit">
+                        <div class="MobileNav__subLink__label">
+                          <span>Solar Toolkit</span>
+                        </div>
+                      </a>
+                      <a title ="Wildfire Preparedness" class="MobileNav__subLink" href="https://www.heinrich.senate.gov/resources/wildfire-preparedness-and-prevention-center">
+                        <div class="MobileNav__subLink__label">
+                          <span>Wildfire Preparedness</span>
+                        </div>
+                      </a>
+                      <a title ="Kids To Parks" class="MobileNav__subLink" href="https://www.heinrich.senate.gov/resources/kids-to-parks">
+                        <div class="MobileNav__subLink__label">
+                          <span>Kids To Parks</span>
+                        </div>
+                      </a>
+                      <a title ="RECA Eligibility Information" class="MobileNav__subLink" href="https://www.heinrich.senate.gov/reca">
+                        <div class="MobileNav__subLink__label">
+                          <span>RECA Eligibility Information</span>
+                        </div>
+                      </a>
+                </div>
+            </div>
+            <div class="MobileNav__item">
+<a class="MobileNav__link js-mobile-dropdown-parent" href="https://www.heinrich.senate.gov/contact">
+                <span>Contact</span>
+              </a>
+
+
+                <div class="js-mobile-dropdown MobileNav__subLinks">
+                      <a title ="Write Martin" class="MobileNav__subLink" href="https://www.heinrich.senate.gov/contact/write-martin">
+                        <div class="MobileNav__subLink__label">
+                          <span>Write Martin</span>
+                        </div>
+                      </a>
+                      <a title ="Scheduling Requests" class="MobileNav__subLink" href="https://www.heinrich.senate.gov/contact/scheduling-requests">
+                        <div class="MobileNav__subLink__label">
+                          <span>Scheduling Requests</span>
+                        </div>
+                      </a>
+                      <a title ="Newsletter Sign-up" class="MobileNav__subLink" href="https://www.heinrich.senate.gov/contact/newsletter">
+                        <div class="MobileNav__subLink__label">
+                          <span>Newsletter Sign-up</span>
+                        </div>
+                      </a>
+                      <a title ="Request Assistance" class="MobileNav__subLink" href="https://www.heinrich.senate.gov/helping-you/help">
+                        <div class="MobileNav__subLink__label">
+                          <span>Request Assistance</span>
+                        </div>
+                      </a>
+                </div>
+            </div>
+            <div class="MobileNav__item">
+<a class="MobileNav__link js-mobile-dropdown-parent" href="https://www.heinrich.senate.gov/espanol">
+                <span>Español</span>
+              </a>
+
+
+            </div>
+    </div>
+  </nav>
+</div>
+
+<script>
+  window.animatedMobileNavIn = gsap
+    .timeline({paused: true})
+    .set('.MobileNav__linksContainer', {overflowY: 'hidden'})
+    .from('.MobileNav__item', {
+      duration: 0.5,
+      opacity: 0,
+      translateY: 50,
+      stagger: 0.1,
+      ease: 'power3',
+      clearProps: true
+    }, '+=0.25')
+    .set('.MobileNav__linksContainer', {overflowY: ''});
+
+  //window.animatedMobileNavIn.set('.MobileHeader__mobileNavIcon', {border: '1px solid red'})
+
+  window.animatedMobileNavOut = gsap
+    .timeline({paused: true})
+    .to('.MobileNav__item', {
+      duration: 0.5,
+      opacity: 0,
+      translateY: -50,
+      stagger: 0.05,
+      ease: 'power3'
+    });
+
+  if (typeof window.siteMobileNav !== 'function') {
+    window.siteMobileNav = function () {
+      window.siteMobileNavSet = true;
+      
+      // Control logic/animations of opening and closing of mobile nav
+      var toggleMobileNav = function (state) {
+        var navOverflowElement = document.querySelector('.MobileNav__linksContainer');
+
+        if (state === 'open') {
+          window.disableBodyScroll(navOverflowElement)
+
+          var padding = function () {
+            var newsAlert = $('.SiteLayout__alert').outerHeight();
+            var mobileHeader = $('.SiteLayout__navigation').outerHeight() || $('.MobileHeader__container').outerHeight();
+            var paddingVal = (newsAlert || 0) + (mobileHeader || 0)
+
+            return paddingVal < 90
+              ? 90
+              : paddingVal;
+          }
+
+          $('.MobileNav').css('paddingTop', function () {
+            var paddingToAdd = padding();
+            return paddingToAdd > 160
+              ? 160
+              : paddingToAdd;
+          });
+          window.disableBodyScroll(navOverflowElement)
+          window
+            .animatedMobileNavIn
+            .play(0);
+          document
+            .body
+            .classList
+            .add('mobile-nav-open');
+          gsap.to(window, {
+            duration: 0.5,
+            scrollTo: '.SiteHeader',
+            ease: 'power3'
+          });
+        } else if (state === 'close') {
+          window.enableBodyScroll(navOverflowElement);
+          window
+            .animatedMobileNavOut
+            .play(0);
+          document
+            .body
+            .classList
+            .remove('mobile-nav-open');
+        }
+      };
+
+      // Click handling for open/close of mobile nav
+      $('.js-open-mobile-nav').click(function () {
+        if (document.body.classList.contains('mobile-nav-open')) {
+          toggleMobileNav('close')
+        } else {
+          toggleMobileNav('open')
+        }
+      });
+
+      $('.js-open-mobile-search').click(function () {
+        if (document.body.classList.contains('mobile-nav-open')) {
+          toggleMobileNav('close')
+        }
+      });
+
+      // Expand/Collapse Dropdowns and Handle repeat clicks on parents
+      var clickAndClose = function () {
+        $('.js-mobile-dropdown-parent').removeClass('active');
+        toggleMobileNav('close');
+        gsap.to('.js-mobile-dropdown', 0.2, {height: 0});
+      };
+
+      var onClickParent = function (event) {
+
+        var parentLink = $(event.target).closest('.MobileNav__link');
+        var dropdown = $(parentLink).next('.js-mobile-dropdown')[0];
+
+        if (dropdown) {
+          if ($(parentLink).hasClass('active')) {
+            clickAndClose();
+          } else {
+            event.preventDefault();
+            event.stopImmediatePropagation();
+            $('.js-mobile-dropdown-parent').removeClass('active');
+            $('.js-mobile-dropdown').each(function (index, element) {
+              if (element === dropdown) 
+                return;
+              gsap.to(element, 0.6, {height: 0});
+            })
+            parentLink.addClass('active');
+            gsap.set(dropdown, {height: "auto"});
+            gsap.from(dropdown, 0.6, {height: 0});
+            gsap.from(dropdown.querySelectorAll('.MobileNav__subLink'), {
+              duration: 0.8,
+              opacity: 0,
+              scale: 0.5,
+              stagger: 0.1,
+              ease: 'power3'
+            })
+          }
+        } else {
+          clickAndClose()
+        };
+      };
+
+      $('.MobileNav__link').click(onClickParent);
+      $('.MobileNav__subLink').click(clickAndClose);
+
+    }
+  }
+
+  $(function () {     
+      if (!window.siteMobileNavSet){
+      siteMobileNav();
+      } 
+  });
+</script>
+          <div class="SiteLayout__loading">
+            <div class="Loading">
+              <div class="Loading__spinner">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+  
+
+
+
+  <div class="BootstrapModal BootstrapModal--search modal fade" id="website-search" tabindex="-1" role="dialog" aria-labelledby="website-search-title">
+    <div class="BootstrapModal__container modal-dialog" role="document">
+      <div class="BootstrapModal__content modal-content">
+        <div class="BootstrapModal__header align-items-center modal-header">
+          <h2 id="website-search-title" class="BootstrapModal__headerTitle modal-title sr-only">website-search</h2>
+
+        </div>
+
+        <div class="BootstrapModal__body modal-body">
+            <form aria-label="search" id="sitesearch" role="search" method="get" action="/search">
+    <div class="MobileSearch">
+      <div class="MobileSearch__layout">
+        <label class="sr-only" for="q" >Site Search</label>
+        <input class="MobileSearch__input" type="search" name="q" id="q" placeholder="Search" autofocus>
+        <button class="MobileSearch__button" aria-label="submit search query" type="submit">
+          <span class="fa fa-search" aria-hidden="true"></span>
+        </button>
+      </div>
+      <button type="button" class="BootstrapModal__closeIcon" data-dismiss="modal" aria-label="Close search">
+        <span class="CustomIcon__before--close" aria-hidden="true"></span>
+      </button>
+    </div>
+  </form>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script>
+    $('#website-search').on('shown.bs.modal', function () {
+      $('[autofocus]').trigger('focus')
+    })
+  </script>
+
+<script type="text/javascript">
+  if (typeof window.makeStickyHeader !== 'function') {
+    window.getStuckHeaderHeight = function () {
+      var siteHeader = document.querySelector('.js-site-header');
+      var siteHeaderHeight = (siteHeader)
+        ? siteHeader.offsetHeight
+        : 0;
+      var mobileHeader = document.querySelector('.MobileHeader');
+      var mobileHeaderHeight = (mobileHeader)
+        ? mobileHeader.offsetHeight
+        : 0;
+
+      // Get height of either desktop or mobile header, the not shown header will return 0
+      return siteHeaderHeight + mobileHeaderHeight;
+    }
+
+    window.makeStickyHeader = function (containerProp) {
+      window.madeStickyHeader = true;
+      var container = containerProp || document;
+      var siteHeader = document.querySelector('.js-site-header');
+      var mobileHeader = document.querySelector('.MobileHeader');
+
+      ScrollTrigger.defaults({
+        // uncomment to see debug markers
+        //markers: true
+      });
+
+      // Pin SiteHeader when it hits the top of the viewport
+      if (siteHeader) {
+        ScrollTrigger.create({
+          id: 'SiteHeader', // creates .pin-spacer-SiteHeader which we target in _SiteHeader.scss
+          trigger: '.SiteLayout__siteHeader',
+          endTrigger: '.SiteLayout',
+          start: 'top top',
+          end: 'bottom top',
+          pin: true,
+          pinSpacing: false
+        })
+      }
+
+      var banner = document.querySelector('.Block--static--bannerBackgroundImage:first-child, .Block--static--banner:first-child, .HomeHero');
+
+      if (siteHeader) siteHeader.classList.remove('stuck');
+      if (mobileHeader) mobileHeader.classList.remove('stuck');
+      ScrollTrigger.create({
+        trigger: '.SiteLayout__main',
+        endTrigger: '.SiteLayout__container',
+        start: '50% top',
+        end: 'bottom top',
+        onEnter: function() {
+          $('.js-site-header, .MobileHeader').addClass('stuck')
+        }
+      })
+
+      // Pin MobileHeader when it hits the top of the viewport
+      if (mobileHeader) {
+        ScrollTrigger.create({
+          id: 'MobileHeader', // creates .pin-spacer-MobileHeader which we target in _MobileHeader.scss
+          trigger: '.SiteLayout__mobileHeader',
+          endTrigger: '.SiteLayout__footer',
+          start: 'top top',
+          pin: true,
+          pinSpacing: false
+        })
+      }
+
+      var mobileHeaderBgColor = document.querySelector('.MobileHeader__bgColor')
+      if (mobileHeaderBgColor) {
+        gsap.from(mobileHeaderBgColor, {
+          clearProps: true,
+          scrollTrigger: {
+            id: 'MobileHeaderBackground',
+            trigger: '.SiteLayout__navigation',
+            start: '+=10px',
+            end: '+=1px',
+            scrub: 1
+          }
+        });
+      }
+    }
+  }
+
+  var prevBodyHeight = 0;
+  if (window.polyfills) var resizeObserver = new window
+    .polyfills
+    .ResizeObserver(function (entries) {
+      var newHeight = (entries[0].contentRect)
+        ? entries[0].contentRect.height
+        : 0;
+
+      if (newHeight === prevBodyHeight)
+        return;
+
+      // If the height changed save it
+      prevBodyHeight = newHeight;
+
+      // If we have any scrollTriggers on window loop through and refresh them
+      window.refreshScrollTriggers();
+    })
+
+  // start observing a DOM node
+  $(function () {
+    if (!window.madeStickyHeader)
+      window.makeStickyHeader();
+    resizeObserver.observe(document.body);
+  });
+</script>
+
+        <script type="text/javascript">
+          $(function () {
+            $("script.deferred-script").each(function () {
+              var text = $(this).text();
+              eval(
+                text == ''
+                ? this.innerHTML
+                : text);
+            });
+          });
+          sen = true;
+        </script>
+
+
+  <script>
+    
+    var arrayify = function(list) {
+      return Array.prototype.slice.call(list)
+    };
+
+    
+    var runScript = function(originalElement) {
+      var element = document.createElement('script');
+
+      if (originalElement.attributes.length) {
+        var attributes = arrayify(originalElement.attributes);
+
+        attributes.forEach(function(attr) {
+          element.setAttribute(attr.name, attr.value);
+        });
+      }
+      element.textContent = originalElement.textContent;
+      element.setAttribute('async', 'false');
+
+      originalElement.replaceWith(element);
+      return element;
+    };
+
+    var shouldPrevent = function(data) {
+      if (data.el.hasAttribute('data-no-transition') || data.el.hasAttribute('data-modal-template')) return true;
+      var targetUrl = data.href.replace(window.location.origin, '');
+      var regex = new RegExp(/^(?:\/?assets)|(?:\/?imo)/);
+      if (targetUrl && regex.test(targetUrl)) return true;
+
+      return false;
+    }
+
+    
+    
+    var transitionFormHandler = function(container) {
+      var forms = container.querySelectorAll('form[method="get"]');
+      if (forms.length) forms.forEach(function(form) {
+        if ($(form).attr('data-no-transition') !== undefined) return;
+        $(form).on('submit', function(event) {
+          event.preventDefault();
+          $('body').addClass('wait');
+          var targetUrl = event.target.action;
+          var targetQuery = $(this).serialize();
+          $('.BootstrapModal').modal('hide');
+          transitions.go(targetUrl + '?' + targetQuery);
+        })
+      })
+    }
+
+    var isIE = document.body.style.msTouchAction !== undefined;
+    if (!isIE && transitions) {
+      // Grab the prefers reduced media query.
+      var mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
+
+      // Check if the media query matches or is not available.
+      if (!mediaQuery || mediaQuery.matches) {
+        transitionsReducedMotion();
+      } else {
+        transitionsFullMotion();
+      }
+
+      // Adds an event listener to check for changes in the media query's value.
+      mediaQuery.addEventListener("change", function() {
+        if (mediaQuery.matches) {
+          transitions.destroy();
+          transitionsReducedMotion();
+        } else {
+          transitions.destroy();
+          transitionsFullMotion();
+        }
+      });
+
+      // When user has 'prefers-reduced-motion' turned on in their OS
+      function transitionsReducedMotion() {
+        transitions.init({
+          preventRunning: true,
+          timeout: 20000,
+          schema: {
+            prefix: 'data-transition'
+          },
+          prevent: shouldPrevent,
+          transitions: [{
+            name: 'default-transition',
+            leave: function(data) {
+              return gsap.timeline()
+                .to(data.current.container, {
+                  opacity: 0,
+                  duration: 0.2,
+                }, '<')
+                .set('.SiteFooter', { opacity: 0 })
+            },
+            beforeLeave: function(data) {
+              gsap.to(window, { duration: 1, scrollTo: {y: 0}, ease: 'power3'});
+              return;
+            },
+            enter: function(data) {
+              return gsap.timeline()
+                .set(data.current.container, {position: 'absolute', opacity: 0})
+                .from(data.next.container, {
+                  opacity: 0,
+                  duration: 0.2,
+                }, '<')
+                .to('.SiteFooter', {
+                  opacity: 1,
+                  duration: 0.1,
+                }, '<')
+                .set('.SiteFooter', { opacity: '' })
+            },
+          }],
+        });
+
+        transitionsGlobalHooks();
+      };
+      // For regular motion users
+      function transitionsFullMotion() {
+        // Remove below line and write custom transitions here
+        transitionsReducedMotion();
+      };
+
+      function transitionsGlobalHooks() {
+        transitions.hooks.before(function(data) {
+          $('body').addClass('wait');
+          $('.fc-tbx').remove(); // Clear Forms Builder validation errors
+
+          // Allow Google Recaptcha script include to reinitialize
+          if (typeof grecaptcha !== 'undefined') delete grecaptcha;
+          if (typeof ___grecaptcha_cfg !== 'undefined') delete ___grecaptcha_cfg;
+
+          $('.SiteHeader--searchMode').removeClass('SiteHeader--searchMode');
+          $('.SiteNavSearch--searchMode').removeClass('SiteNavSearch--searchMode');
+          $('.SiteNavSearch input').val('');
+        });
+
+        transitions.hooks.afterLeave(function(data) {
+          var currentNav = data.current.container.dataset.nav
+          var nextNav = data.next.container.dataset.nav
+          var nextUrl = data.next.url.href;
+          if (currentNav !== nextNav && nextUrl) window.location = nextUrl;
+
+          var nextPage = new DOMParser().parseFromString(data.next.html, "text/html");
+
+          // Sync body tags
+          var newBodyClasses = nextPage.querySelector('body').classList;
+          if (newBodyClasses) document.body.className = newBodyClasses;
+
+          $('[data-transition-selected-if]').each(function (link) {
+            var linkCondition = $(this).attr('data-transition-selected-if');
+            var selectedClass = $(this).attr('data-transition-selected-class') || 'selected';
+
+            $(this).removeClass(selectedClass);
+            if (new RegExp('^' + linkCondition).test(window.location.pathname)) {
+              var secondaryCondition = $(this).attr('data-transition-selected-nestedIf'),
+                pathArr = window.location.pathname.split('/'),
+                linkPathArr = secondaryCondition ? secondaryCondition.split('/') : " ";
+
+              $(this).addClass(selectedClass);
+
+              if (secondaryCondition && pathArr.length < 4 && window.location.pathname !== secondaryCondition) {
+                $(this).removeClass(selectedClass);
+              } else if (secondaryCondition && pathArr.length >= 4 && linkPathArr.length < 3) {
+                $(this).removeClass(selectedClass);
+              }
+            }
+          });
+
+          // Sync NewsAlert content
+          var newDocument = document.createRange().createContextualFragment(data.next.html);
+          var nextNewsAlert = newDocument.querySelector('.NewsAlert');
+          var prevNewsAlert = document.querySelector('.NewsAlert');
+
+
+          // Clean up any existing nextNewsAlert Splide instance
+          if (typeof window.destroyNewsAlertSplide === 'function') window.destroyNewsAlertSplide();
+
+          if (nextNewsAlert) {
+            var prevNewsAlertHasContent = prevNewsAlert.classList.contains('NewsAlert--hasContent');
+            var nextNewsAlertHasContent = nextNewsAlert.classList.contains('NewsAlert--hasContent');
+
+            // If previous page NewsAlert doesn't have items and next page does animate open container
+            if (!prevNewsAlertHasContent && nextNewsAlertHasContent) {
+              prevNewsAlert.className = nextNewsAlert.className || prevNewsAlert.className;
+              prevNewsAlert.innerHTML = nextNewsAlert.innerHTML || '';
+
+              var newHeight = $(nextNewsAlert).height();
+              gsap.timeline()
+                .from('.NewsAlert', {
+                  height: 0,
+                  duration: 0.5
+                })
+                .set('.NewsAlert', { height: '' })
+            }
+            // If previous page NewsAlert has items and next page doesn't animate closed the container
+            else if (prevNewsAlertHasContent && !nextNewsAlertHasContent) {
+              var currentHeight = $(prevNewsAlert).height();
+              gsap.timeline()
+                .to('.NewsAlert', {
+                  height: 0,
+                  duration: 0.5
+                })
+                .call(function() {
+                  prevNewsAlert.className = nextNewsAlert.className || prevNewsAlert.className;
+                  prevNewsAlert.innerHTML = nextNewsAlert.innerHTML || '';
+                })
+                .set('.NewsAlert', { height: '' })
+
+            }
+            // If previous and next page NewsAlert didn't change don't animate container
+            else {
+              prevNewsAlert.className = nextNewsAlert.className || prevNewsAlert.className;
+              prevNewsAlert.innerHTML = nextNewsAlert.innerHTML || '';
+            }
+
+            // Rerun script tag within NewsAlert to reactivate animations if next page NewsAlert has content
+            if (nextNewsAlertHasContent) {
+              var scripts = prevNewsAlert.querySelectorAll('script');
+              if (scripts && scripts.length) scripts.forEach(function(script) {runScript(script)});
+            }
+          }
+        });
+
+        transitions.hooks.after(function(data) {
+          $('body').removeClass('wait');
+
+          // Recalculate ScrollTrigger values
+          window.killScrollTriggers();
+          window.madeStickyHeader = false;
+          window.makeStickyHeader(data.next.container);
+          window.animationsSet = false;
+          window.setupAnimations(data.next.container);
+
+          // Force load any scripts after page transition
+          // Borrowed idea from swup.js:
+          // https://github.com/swup/scripts-plugin/blob/master/src/index.js
+          var scripts = data.next.container.querySelectorAll('script');
+          if (scripts && scripts.length) scripts.forEach(function(script) {runScript(script)});
+
+          transitionFormHandler(data.next.container);
+
+          if (typeof ga !== 'undefined') {
+            ga('set', 'page', window.location.pathname);
+            ga('send', 'pageview');
+          }
+          if (typeof FB !== 'undefined') FB.XFBML.parse();
+        });
+
+        // Prefetching the top level pages after a couple seconds for faster response time on click
+setTimeout(function() {
+                  transitions.prefetch('https://www.heinrich.senate.gov/about');
+                }, 2000);setTimeout(function() {
+                  transitions.prefetch('https://www.heinrich.senate.gov/helping-you');
+                }, 3000);setTimeout(function() {
+                  transitions.prefetch('https://www.heinrich.senate.gov/priorities');
+                }, 4000);setTimeout(function() {
+                  transitions.prefetch('https://www.heinrich.senate.gov/newsroom');
+                }, 5000);setTimeout(function() {
+                  transitions.prefetch('https://www.heinrich.senate.gov/resources');
+                }, 6000);setTimeout(function() {
+                  transitions.prefetch('https://www.heinrich.senate.gov/contact');
+                }, 7000);setTimeout(function() {
+                  transitions.prefetch('https://www.heinrich.senate.gov/espanol');
+                }, 8000);
+        transitionFormHandler(document);
+      }
+    }
+  </script>
+  </body>
+</html>
+<!-- Build #1775100212 -->

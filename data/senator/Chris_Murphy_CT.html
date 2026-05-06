@@ -1,0 +1,1800 @@
+<!DOCTYPE html>
+<html lang="en" class='no-js template--block_editor'>
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+      <meta name="page-title" content="About Chris">
+      <title>About Chris | Senator Chris Murphy</title>
+      <link rel="canonical" href="https://www.murphy.senate.gov/about/">
+
+      <link rel="shortcut icon" href="/assets/images/favicon.ico">
+      <link href="/assets/images/favicon.ico" rel="Icon" type="image/x-icon"/>
+      <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
+      <link rel="manifest" href="/assets/images/site.webmanifest">
+      <link rel="mask-icon" href="/assets/images/safari-pinned-tab.svg" color="#00ad6b">
+      <meta name="apple-mobile-web-app-title" content="Chris Murphy">
+      <meta name="application-name" content="Chris Murphy">
+      <meta name="msapplication-TileColor" content="#ffffff">
+      <meta name="msapplication-config" content="/assets/images/browserconfig.xml">
+      <meta name="theme-color" content="#ffffff">
+      <meta name="google-site-verification" content="pv4CBQ9zSlHM3SpPSKTboWn3pQG58gUeQls_3f8_rjM">
+
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+
+<meta name="twitter:title" content="About Chris | U.S. Senator Chris Murphy of Connecticut">
+
+<meta property="twitter:image" content="https://www.murphy.senate.gov/assets/images/sharelogo.jpg"/>
+
+<meta name="twitter:description" content="The official U.S. Senate website of Senator Chris Murphy of Connecticut"/>
+
+
+<meta property="og:url" content="https://www.murphy.senate.gov/about/"/>
+
+<meta property="og:title" content="About Chris | U.S. Senator Chris Murphy of Connecticut"/>
+
+<meta property="og:image" content="https://www.murphy.senate.gov/assets/images/sharelogo.jpg"/>
+
+<meta property="og:description" content="The official U.S. Senate website of Senator Chris Murphy of Connecticut"/>
+
+      
+
+
+<script>
+  if (!application) var application = {};
+  application = {
+    "config": {
+      "tinymce": {
+        "plugins": {
+          "selectvideo": {
+            "player": "jwplayer", // should be set to "legacy" or "jwplayer" currently
+            "youtube": true, // set to true to write the youtube tags for youtube videos
+            "width": "100%", // set width and height on the containing element
+            "height": "100%",
+            "tracking": true
+          }
+        }
+      }
+    },
+    "fn": { // deprecated mootools 1.2 stuff that we'll probably still use once we upgrade fully to 1.3
+      "defined": function (obj) {
+        return (obj != undefined);
+      },
+      "check": function (obj) {
+        return !!(obj || obj === 0);
+      }
+    },
+    "form": {
+      "processed": "null",
+    },
+    "friendly_urls": false,
+    "siteroot": "https://www.murphy.senate.gov/",
+    "theme": "",
+    "webroot": "https://www.murphy.senate.gov/",
+    "assetWebroot": "https://www.murphy.senate.gov/",
+  };
+</script>
+
+    
+      <link rel="stylesheet" type="text/css" href="https://www.murphy.senate.gov/styles/common.css?1775285094"/>
+
+      <script src="https://www.murphy.senate.gov/scripts/global.js?1775285094"></script>
+      <script src="https://www.murphy.senate.gov/scripts/gsap.js?1775285094"></script>
+
+      <script>
+        $.ajaxSetup({ cache: true });
+        function getScripts(scripts, callback) {
+          var progress = 0;
+          scripts.forEach(function(script) {
+              $.getScript(script, function () {
+                  if (++progress == scripts.length && typeof callback == 'function') callback();
+              });
+          });
+        }
+      </script>
+
+      <script>
+        var initForm = function() {
+          getScripts(['https://www.murphy.senate.gov/scripts/mootools.min.js?1775285094'], function() {
+            getScripts(['https://www.murphy.senate.gov/scripts/form/Forms_Builder.js?1775285094'], function() {
+              creativengine_forms_builder.init();
+
+              // fix for bootstrap tooltip hide/mootools hide collision
+              $$('form input,form select,form textarea, input, .nav-tabs li a').each(function (item) {
+                if (typeof item.hide == 'function') {
+                  item.hide = null;
+                }
+              });
+
+              Element.implement({
+                'slide': function (how, mode) {
+                  return this;
+                }
+              });
+            })
+          })
+        }
+      </script>
+
+
+      <script type="text/javascript">
+        var gRecaptchaReady = function () {
+          let textarea = document.getElementById("g-recaptcha-response");
+          if (!textarea)
+            return;
+          textarea.setAttribute("aria-hidden", "true");
+          textarea.setAttribute("aria-label", "do not use");
+          textarea.setAttribute("aria-readonly", "true");
+        }
+
+        window.getStuckHeaderHeight = function () {
+          var siteHeader = document.querySelector('.SiteHeader');
+          var siteHeaderHeight = (siteHeader)
+            ? siteHeader.offsetHeight
+            : 0;
+          var mobileHeader = document.querySelector('.MobileHeader');
+          var mobileHeaderHeight = (mobileHeader)
+            ? mobileHeader.offsetHeight
+            : 0;
+
+          // Returns the height of either desktop or mobile header because the hidden header will return 0
+          return siteHeaderHeight + mobileHeaderHeight;
+        }
+
+        window.requestAnimationFrame = window.requestAnimationFrame.bind(window);
+        //gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
+
+        window.refreshScrollTriggers = () => {
+          if (typeof ScrollTrigger !== 'undefined') {
+            ScrollTrigger.getAll().forEach(t => t.refresh());
+          }
+        };
+        window.killScrollTriggers = () => {
+          if (typeof ScrollTrigger !== 'undefined') {
+            ScrollTrigger.getAll().forEach(t => t.kill());
+          }
+        };
+      </script>
+
+      
+      
+      <script>
+        window.top['site_path'] = "D4133993-4040-F985-52CD-C7141EEE1FFF";
+        window.top['SAM_META'] = {
+          jquery: "",
+          bootstrap: {
+            major: ""
+          }
+        };
+      </script>
+      
+
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700%7CRoboto+Slab:400,700&amp;display=swap" rel="stylesheet">
+
+      <link rel="stylesheet" href="https://www.murphy.senate.gov/assets/styles/font-awesome.min.css"/>
+
+  </head>
+
+  
+
+  <body data-transition="wrapper"
+    class="body--internal body--block_editor hasAlert">
+    <!-- in sen-n -->
+    <!--stopindex-->
+      <div class="SiteLayout d-flex flex-column">
+          <div class="SiteLayout__alert">
+            <a href="#aria-skip-nav" class="SkipNav sr-only sr-only-focusable">Skip to content</a>
+
+<div class="NewsAlert NewsAlert--hasContent">
+  <div class="NewsAlert__container NewsAlert__container--absolute container">
+    <div class="NewsAlert__iconContainer">
+        <div class="NewsAlert__icon" aria-hidden="true">
+          <svg class="NewsAlert__iconShape" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+            <path d="M50,5A45,45,0,1,0,95,50,45,45,0,0,0,50,5Zm4.3,70H45.7V66.4h8.6Zm3.17-43.6L54.25,61.9H45.75L42.53,31.4V25H57.47Z"/>
+          </svg>
+        </div>
+    </div>
+  </div>
+
+      <div class="NewsAlert__linkContainer">
+        <a class="NewsAlert__link carousel-cell w-100 h-100" href="https://www.murphy.senate.gov/services/assistance-abroad">
+          <div class="NewsAlert__container container h-100">
+            <div class="NewsAlert__row row no-gutters h-100">
+              <div class="NewsAlert__content col d-none d-sm-block ">
+                <span class="NewsAlert__contentLabel">
+                  <span class="sr-only">News</span> Alert:</span> If you or your family is currently being impacted by the war in the Middle East, click here. 
+              </div>
+
+              <div class="NewsAlert__content col d-sm-none">
+                <span class="NewsAlert__contentLabel">
+                  <span class="sr-only">News</span> Alert:</span> If you or your family is currently being impacted by the war in the Mi...
+              </div>
+
+            </div>
+          </div>
+        </a>
+      </div>
+
+</div>
+
+
+            
+          </div>
+
+        <div class="SiteLayout__container d-flex flex-column flex-grow-1">
+            <div class="SiteLayout__navigation">
+                <div class="SiteLayout__siteHeader">
+<div class="SiteHeader">
+  <div class="container">
+    <div class="SiteHeader__layout">
+      <div class="SiteHeader__logo">
+        <a href="/"><img width="300" height="113" alt="Site Logo" src="/assets/images/theme/logo.svg"/></a>
+      </div>
+
+      <div class="SiteHeader__nav">
+
+<div id="js-site-nav" class="SiteNav h-100">
+    
+      <nav aria-label="Site Navigation" class="SiteNav__layout h-100">
+        <div class="SiteNav__main  h-100">
+          <ul class="SiteNav__linkList">
+
+                
+
+
+                <li class="SiteNav__item">
+                  <a class="SiteNav__link align-items-center"
+                    data-transition-selected-if="/contact"
+                    data-transition-selected-class="SiteNav__link--selected"
+                    href="https://www.murphy.senate.gov/contact"
+                    tabindex="0">Contact</a>
+
+                </li>
+
+                
+
+
+                <li class="SiteNav__item">
+                  <a class="SiteNav__link align-items-center SiteNav__link--selected"
+                    data-transition-selected-if="/about"
+                    data-transition-selected-class="SiteNav__link--selected"
+                    href="https://www.murphy.senate.gov/about"
+                    tabindex="0">About</a>
+
+                </li>
+
+                
+
+
+                <li class="SiteNav__item SiteNav__item--dropdown">
+                  <a class="SiteNav__link align-items-center"
+                    data-transition-selected-if="/newsroom"
+                    data-transition-selected-class="SiteNav__link--selected"
+                    href="https://www.murphy.senate.gov/newsroom"
+                    tabindex="0">Newsroom</a>
+
+                    <ul class="SiteNav__dropdown">
+
+
+                          <li class="SiteNav__dropdownItem">
+                            <a class="SiteNav__dropdownLink"
+                              data-transition-selected-if="/newsroom/press-releases"
+                              data-transition-selected-class="SiteNav__dropdownLink--selected"
+                              data-transition-selected-nestedIf = "/newsroom/press-releases"
+                              href="https://www.murphy.senate.gov/newsroom/press-releases"
+                              tabindex="0">Press Releases</a>
+                          </li>
+
+
+                          <li class="SiteNav__dropdownItem">
+                            <a class="SiteNav__dropdownLink"
+                              data-transition-selected-if="/newsroom/in-the-news"
+                              data-transition-selected-class="SiteNav__dropdownLink--selected"
+                              data-transition-selected-nestedIf = "/newsroom/in-the-news"
+                              href="https://www.murphy.senate.gov/newsroom/in-the-news"
+                              tabindex="0">In the News</a>
+                          </li>
+                    </ul>
+                </li>
+
+                
+
+
+                <li class="SiteNav__item SiteNav__item--dropdown">
+                  <a class="SiteNav__link align-items-center"
+                    data-transition-selected-if="/issues"
+                    data-transition-selected-class="SiteNav__link--selected"
+                    href="https://www.murphy.senate.gov/issues"
+                    tabindex="0">Key Issues</a>
+
+                    <ul class="SiteNav__dropdown">
+
+
+                          <li class="SiteNav__dropdownItem">
+                            <a class="SiteNav__dropdownLink"
+                              data-transition-selected-if="/key-issues"
+                              data-transition-selected-class="SiteNav__dropdownLink--selected"
+                              data-transition-selected-nestedIf = "/key-issues"
+                              href="https://www.murphy.senate.gov/key-issues"
+                              tabindex="0">Key Issues</a>
+                          </li>
+
+
+                          <li class="SiteNav__dropdownItem">
+                            <a class="SiteNav__dropdownLink"
+                              data-transition-selected-if="/legislation"
+                              data-transition-selected-class="SiteNav__dropdownLink--selected"
+                              data-transition-selected-nestedIf = "/legislation"
+                              href="https://www.murphy.senate.gov/legislation"
+                              tabindex="0">Sponsored Legislation</a>
+                          </li>
+                    </ul>
+                </li>
+
+                
+
+
+                <li class="SiteNav__item SiteNav__item--dropdown">
+                  <a class="SiteNav__link align-items-center"
+                    data-transition-selected-if="/services"
+                    data-transition-selected-class="SiteNav__link--selected"
+                    href="https://www.murphy.senate.gov/services"
+                    tabindex="0">Services</a>
+
+                    <ul class="SiteNav__dropdown help">
+
+
+                          <li class="SiteNav__dropdownItem">
+                            <a class="SiteNav__dropdownLink"
+                              data-transition-selected-if="/services/appropriations"
+                              data-transition-selected-class="SiteNav__dropdownLink--selected"
+                              data-transition-selected-nestedIf = "/services/appropriations"
+                              href="https://www.murphy.senate.gov/services/appropriations"
+                              tabindex="0">Appropriations</a>
+                          </li>
+
+
+                          <li class="SiteNav__dropdownItem">
+                            <a class="SiteNav__dropdownLink"
+                              data-transition-selected-if="/services/for-connecticut-residents"
+                              data-transition-selected-class="SiteNav__dropdownLink--selected"
+                              data-transition-selected-nestedIf = "/services/for-connecticut-residents"
+                              href="https://www.murphy.senate.gov/services/for-connecticut-residents"
+                              tabindex="0">For Connecticut Residents</a>
+                          </li>
+
+
+                          <li class="SiteNav__dropdownItem">
+                            <a class="SiteNav__dropdownLink"
+                              data-transition-selected-if="/services/student-resources"
+                              data-transition-selected-class="SiteNav__dropdownLink--selected"
+                              data-transition-selected-nestedIf = "/services/student-resources"
+                              href="https://www.murphy.senate.gov/services/student-resources"
+                              tabindex="0">For Students</a>
+                          </li>
+
+
+                          <li class="SiteNav__dropdownItem">
+                            <a class="SiteNav__dropdownLink"
+                              data-transition-selected-if="/services/help-with-the-federal-government"
+                              data-transition-selected-class="SiteNav__dropdownLink--selected"
+                              data-transition-selected-nestedIf = "/services/help-with-the-federal-government"
+                              href="https://www.murphy.senate.gov/services/help-with-the-federal-government"
+                              tabindex="0">Help with a Federal Agency</a>
+                          </li>
+
+
+                          <li class="SiteNav__dropdownItem">
+                            <a class="SiteNav__dropdownLink"
+                              data-transition-selected-if="/services/scheduling-requests"
+                              data-transition-selected-class="SiteNav__dropdownLink--selected"
+                              data-transition-selected-nestedIf = "/services/scheduling-requests"
+                              href="https://www.murphy.senate.gov/services/scheduling-requests"
+                              tabindex="0">Scheduling Requests</a>
+                          </li>
+                    </ul>
+                </li>
+
+                
+
+
+                <li class="SiteNav__item">
+                  <a class="SiteNav__link align-items-center"
+                    data-transition-selected-if="/funding-map"
+                    data-transition-selected-class="SiteNav__link--selected"
+                    href="https://www.murphy.senate.gov/funding-map"
+                    tabindex="0">Map</a>
+
+                </li>
+
+          </ul>
+        </div>
+
+        <div class="SiteNav__searchToggle">
+          <button class="SiteNav__searchToggleButton" data-toggle-class="SiteNav--searchMode" data-target="#js-site-nav">
+            <span class="sr-only">Search Button</span>
+            <span class="SiteNav__searchToggleIcon fa fa-search" aria-hidden="true"></span>
+          </button>
+        </div>
+
+        <div class="SiteNav__searchOverlay SiteNav__layout">
+          <div class="SiteNav__main">
+            <form class="SiteNav__searchForm row ml-3 mr-0 flex-nowrap" aria-label="search" role="search" method="get" action="/search">
+              <label class="sr-only" for="js-site-nav-search-input">Search</label>
+              <input id="js-site-nav-search-input" class="SiteNav__searchInput col" name="q" type="text" placeholder="Search">
+              <button class="SiteNav__searchFormButton col-auto" type="submit">
+                <span class="sr-only">Nav Search Submit</span>
+                <span class="SiteNav__searchToggleIcon fa fa-search" aria-hidden="true"></span>
+              </button>
+            </form>
+          </div>
+
+          <div class="SiteNav__searchToggle">
+            <button class="SiteNav__searchToggleButton" data-toggle-class="SiteNav--searchMode" data-target="#js-site-nav">
+              <span class="sr-only">Search Close</span>
+              <span class="SiteNav__searchToggleIcon fa fa-close" aria-hidden="true"></span>
+            </button>
+          </div>
+        </div>
+      </nav>
+</div>
+
+<script>
+  var topLevelLinks = document.querySelectorAll('.SiteNav__link');
+
+  for (var i = 0; i < topLevelLinks.length; i++) {
+    topLevelLinks[i].addEventListener('mouseover', function () {
+      this
+        .parentElement
+        .classList
+        .add('focus');
+    });
+
+    topLevelLinks[i].addEventListener('mouseleave', function () {
+      this
+        .parentElement
+        .classList
+        .remove('focus');
+    });
+  }
+</script>
+
+<script>
+  $(document).ready(function () {
+    $('[data-toggle-class]').click(this, function () {
+      var className = $(this).data('toggle-class');
+      var target = $(this).data('target');
+      var searchTarget = $('#SiteNav');
+      var logoTarget = $('.js-siteLogo');
+      var hasClass = $(target).hasClass(className);
+
+      $(target).toggleClass(className);
+      $(searchTarget).toggleClass('SiteNav--searchMode');
+
+      if (hasClass) {
+        $('#js-site-nav-search-input').val('');
+        return;
+      }
+
+      $('#js-site-nav-search-input').focus();
+    });
+  });
+</script>
+      </div>
+
+      <div class="SiteHeader__social">  <ul class="SocialIcons">
+
+      <li class="SocialIcons__item">
+        <a class="SocialIcons__link SocialBubble" href="https://www.facebook.com/SenChrisMurphy" target="_blank">
+          <i class="fa fa-facebook SocialBubble__icon SocialBubble__icon--facebook">
+            <span class="sr-only">Senator Murphy Facebook</span>
+          </i>
+        </a>
+      </li>
+
+      <li class="SocialIcons__item">
+        <a class="SocialIcons__link SocialBubble" href="https://www.instagram.com/senchrismurphy" target="_blank">
+          <i class="fa fa-instagram SocialBubble__icon SocialBubble__icon--instagram">
+            <span class="sr-only">Senator Murphy Instagram</span>
+          </i>
+        </a>
+      </li>
+
+      <li class="SocialIcons__item">
+        <a class="SocialIcons__link SocialBubble" href="https://www.flickr.com/photos/senatormurphy/" target="_blank">
+          <i class="fa fa-flickr SocialBubble__icon SocialBubble__icon--flickr">
+            <span class="sr-only">Senator Murphy Flickr</span>
+          </i>
+        </a>
+      </li>
+
+      <li class="SocialIcons__item">
+        <a class="SocialIcons__link SocialBubble" href="https://www.youtube.com/user/SenChrisMurphy" target="_blank">
+          <i class="fa fa-youtube-play SocialBubble__icon SocialBubble__icon--youtube">
+            <span class="sr-only">Senator Murphy Youtube</span>
+          </i>
+        </a>
+      </li>
+
+
+
+  </ul>
+</div>
+    </div>
+  </div>
+</div>
+                </div>
+
+                <div class="SiteLayout__mobileHeader">
+<div class="MobileHeader">
+  <div class="MobileHeader__container">
+    <button class="MobileHeader__icon js-open-mobile-nav" aria-label="open mobile navigation">
+      <span class="fa fa-bars" aria-hidden="true"></span>
+    </button>
+
+    <div class="MobileHeader__logo">
+      <a href="/"><img alt="Site Logo" src="/assets/images/theme/logo.svg"/></a>
+    </div>
+
+    <button class="MobileHeader__icon js-open-mobile-search" data-toggle="modal" data-target="#website-search">
+      <span class="fa fa-search" aria-hidden="true"></span>
+      <span class="sr-only">Open website search</span>
+    </button>
+  </div>
+</div>
+                </div>
+            </div>
+
+          <div id="aria-skip-nav" tabindex="-1"></div>
+          <div class="SiteLayout__transitionContainer d-flex flex-column flex-grow-1" data-transition="container" data-transition-namespace="internal" data-nav="site">
+            
+
+            
+<script>
+  if (!application) var application = {};
+  application = {
+    "config": {
+      "tinymce": {
+        "plugins": {
+          "selectvideo": {
+            "player": "jwplayer", // should be set to "legacy" or "jwplayer" currently
+            "youtube": true, // set to true to write the youtube tags for youtube videos
+            "width": "100%", // set width and height on the containing element
+            "height": "100%",
+            "tracking": true
+          }
+        }
+      }
+    },
+    "fn": { // deprecated mootools 1.2 stuff that we'll probably still use once we upgrade fully to 1.3
+      "defined": function (obj) {
+        return (obj != undefined);
+      },
+      "check": function (obj) {
+        return !!(obj || obj === 0);
+      }
+    },
+    "form": {
+      "processed": "null",
+    },
+    "friendly_urls": false,
+    "siteroot": "https://www.murphy.senate.gov/",
+    "theme": "",
+    "webroot": "https://www.murphy.senate.gov/",
+    "assetWebroot": "https://www.murphy.senate.gov/",
+  };
+</script>
+
+              <div class="SiteLayout__main">
+
+
+
+
+                  <!--startindex-->
+
+
+
+
+
+<div class="Blocks">
+            
+
+
+
+  <div class="Block Block--static--banner Block--width--full Block--backgroundColor--none Block--textColor--default Block--textFamily--default">
+    <div class="Block__content">
+      
+<div class="Banner">
+  <div data-editor-background="background" class="Banner__imageContainer" style="background-image: url('https://www.murphy.senate.gov/imo/media/image/02_About.jpg')"></div>
+  <div class="container h-100">
+    <div class="row align-items-end h-100">
+      <div class="col">
+        <div class="Banner__title pb-4 w-50" style="line-height: 1.0">
+          <h1 data-animate="lazyfade" data-editor-text="title" class="Banner__titleLabel">About Chris</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    </div>
+  </div>
+
+            
+
+
+
+  <div class="Block Block--static--mainAsideRight Block--width--wide Block--backgroundColor--none Block--textColor--default Block--textFamily--default mt-4 mb-5">
+    <div class="Block__content">
+      
+<div data-animate="slideup" class="row">
+  <div class="col-12 col-lg-8 px-0 pr-md-5">
+    <div data-editor-column="main">
+
+
+
+  <div class="Block Block--paragraph Block--width--normal Block--backgroundColor--none Block--textColor--default Block--textFamily--default pt-2 pb-2">
+    <div class="Block__content">
+      <div class="Paragraph Paragraph--variant--default Paragraph--textAlign--left RawHTML">
+  <p>Chris Murphy, the junior United States Senator for Connecticut, has dedicated his career to public service as an advocate for Connecticut families. Senator Murphy has been a strong voice in the Senate fighting for job creation, affordable health care, education, sensible gun laws, and a forward-looking foreign policy.</p>
+</div>
+
+    </div>
+  </div>
+
+
+
+
+  <div class="Block Block--paragraph Block--width--normal Block--backgroundColor--none Block--textColor--default Block--textFamily--default pt-2 pb-2">
+    <div class="Block__content">
+      <div class="Paragraph Paragraph--variant--default Paragraph--textAlign--left RawHTML">
+  <p>As a member of the Health, Education, Labor, and Pensions Committee (HELP) Senator Murphy has worked to make college more affordable and ensure that our public education system works to serve all students. Senator Murphy also led a bipartisan effort to reform our mental health system, working across the aisle to craft the first comprehensive mental health bill in the Senate in decades.</p>
+</div>
+
+    </div>
+  </div>
+
+
+
+
+  <div class="Block Block--paragraph Block--width--normal Block--backgroundColor--none Block--textColor--default Block--textFamily--default pt-2 pb-2">
+    <div class="Block__content">
+      <div class="Paragraph Paragraph--variant--default Paragraph--textAlign--left RawHTML">
+  <p>Senator Murphy has laid out a forward-thinking foreign policy vision for the United States. As a member of the Foreign Relations Committee, he has been an outspoken proponent of diplomacy, international human rights and the need for clear-eyed American leadership abroad.</p>
+</div>
+
+    </div>
+  </div>
+
+
+
+
+  <div class="Block Block--paragraph Block--width--normal Block--backgroundColor--none Block--textColor--default Block--textFamily--default pt-2 pb-2">
+    <div class="Block__content">
+      <div class="Paragraph Paragraph--variant--default Paragraph--textAlign--left RawHTML">
+  <p>Following the tragic shooting at Sandy Hook elementary school in 2012, Senator Murphy became one of the leading proponents of commonsense reforms to reduce gun violence. He has championed a number of bipartisan bills aimed at expanding background checks and keeping guns out of the hands of criminals.</p>
+</div>
+
+    </div>
+  </div>
+
+
+
+
+  <div class="Block Block--paragraph Block--width--normal Block--backgroundColor--none Block--textColor--default Block--textFamily--default pt-2 pb-2">
+    <div class="Block__content">
+      <div class="Paragraph Paragraph--variant--default Paragraph--textAlign--left RawHTML">
+  <p>As a member of the Senate Appropriations Committee, Senator Murphy has fought to increase investments in Connecticut manufacturing and promote procurement of world-class national defense products made in the state. He has fought to expand American manufacturing and create jobs through his Buy American initiative, which urges the U.S. government to spend taxpayer dollars on American-made goods. Additionally, Senator Murphy has worked in partnership with local city and town leaders to rehabilitate former brownfield and factory sites so that they can be developed into new community spaces and businesses.</p>
+</div>
+
+    </div>
+  </div>
+
+
+
+
+  <div class="Block Block--paragraph Block--width--normal Block--backgroundColor--none Block--textColor--default Block--textFamily--default pt-2 pb-2">
+    <div class="Block__content">
+      <div class="Paragraph Paragraph--variant--default Paragraph--textAlign--left RawHTML">
+  <p>Prior to his election to the U.S. Senate, Murphy served Connecticut's Fifth Congressional District for three terms in the U.S. House of Representatives. During his time in the House, Murphy worked to improve access to housing for homeless veterans, foster job creation and advocate for affordable healthcare for all Americans. Murphy authored the Frank Melville Supportive Housing Investment Act to revitalize housing programs for people with disabilities. The bill was signed into law by the president in 2010.</p>
+</div>
+
+    </div>
+  </div>
+
+
+
+
+  <div class="Block Block--paragraph Block--width--normal Block--backgroundColor--none Block--textColor--default Block--textFamily--default pt-2 pb-2">
+    <div class="Block__content">
+      <div class="Paragraph Paragraph--variant--default Paragraph--textAlign--left RawHTML">
+  <p>Before getting elected to Congress, Murphy served for eight years in Connecticut General Assembly where he was the author of the state's historic stem cell investment legislation and the state's workplace smoking ban. Senator Murphy grew up in Wethersfield, Connecticut, and attended Williams College in Massachusetts. He graduated from the University of Connecticut School of Law and practiced real estate and banking law with the firm of Ruben, Johnson &amp; Morgan in Hartford, Connecticut.</p>
+</div>
+
+    </div>
+  </div>
+</div>
+  </div>
+
+  <div class="col-12 col-lg-4">
+    <div class="AsideBlock py-3">
+      <div data-editor-column="aside"></div>
+    </div>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+                  <!--stopindex-->
+
+              </div>
+
+            
+                <!-- Custom Footer Code: Adobe -->
+                <script src="https://assets.adobedtm.com/566dc2d26e4f/f8d2f26c1eac/launch-3a705652822d.min.js"></script>
+
+
+<script>
+  if (typeof window.setupAnimations !== 'function') {
+    window.setupAnimations = function () {
+      window.animationsSet = true;
+      var animations = document.querySelectorAll('[data-animate]');
+      animations.forEach(function(animationEl, i) {
+        var animationClass = "";
+        var animationTriggerName = "";
+
+        if (animationEl.dataset.animate) {
+          animationClass = "animate-" + animationEl.dataset.animate;
+          animationTriggerName = "js-trigger-" + i;
+        } else if (animationEl.dataset.animatechild) {
+          animationClass = "animate-" + animationEl.dataset.animatechild;
+          animationTriggerName = "js-trigger-" + i;
+        } else {
+          return;
+        }
+
+        animationEl.classList.add(animationClass);
+        animationEl.classList.add(animationTriggerName);
+
+        // removed the toggleClass
+        ScrollTrigger.create({
+          id: animationTriggerName,
+          trigger: '.' + animationTriggerName,
+          start: 'top 90%',
+          onEnter: function(self) {
+            self.trigger.classList.add('visible');
+          },
+        });
+      })
+    }
+  }
+
+  $(function() {
+    if (!window.animationsSet) setupAnimations();
+  });
+</script>
+
+<script>
+  if (typeof window.internalLink !== 'function') {
+    window.isInternalLink = function (href) {
+      var isInternal =
+        Boolean(href.match(new RegExp('^' + window.location.origin))) // 1: If same site domain
+        || Boolean(href.match(/^\/[^\/]/)); // 2: If starts with a single / and not a double //
+
+      return isInternal;
+    }
+  }
+
+  if (typeof window.getParameterByName !== 'function') {
+    window.getParameterByName = function (name, url = window.location.href) {
+      name = name.replace(/[\[\]]/g, '\\$&');
+      var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+          results = regex.exec(url);
+      if (!results) return null;
+      if (!results[2]) return '';
+      return decodeURIComponent(results[2].replace(/\+/g, ' '));
+    }
+  }
+
+  if (typeof window.onLinkClick !== 'function') {
+    window.onLinkClick = function () {
+      $(function () {
+        $('a').each(function () {
+          var $this = $(this);
+
+          if ($this.hasLinkClickEvent) return;
+
+          var newWin = $this.hasClass('new-win');
+          var senExit = $this.hasClass('sen-exit');
+          var href = $this.attr('href');
+          var target = getParameterByName('target', href);
+
+          if (href && target == '_blank') {
+            $this.on('click', function(event) {
+              event.preventDefault();
+              window.open(href, target);
+            })
+          } else if (href && href.charAt(0) == '#') {
+            $this.click(function (e) {
+              e.preventDefault();
+              var targetName = this.getAttribute('href').replace('#', '');
+              var targetElement = document.getElementById(targetName) || document.querySelector('[name="' + targetName + '"]');
+
+              if (!targetElement) {
+                return;
+              }
+
+              var offsetHeight = window.getStuckHeaderHeight() || 0;
+              gsap.to(window, {duration: 1, scrollTo: {y: targetElement, offsetY: offsetHeight}, ease: 'power3'})
+              targetElement.focus();
+            });
+
+            $this.hasLinkClickEvent = true;
+          } else if (href) {
+            if (isInternalLink(href)) {
+              if (transitions) {
+                $this.on('click', function(event) {
+                  if (event.currentTarget.hasAttribute('data-modal-template')) return;
+                  if (event.currentTarget.hasAttribute('data-no-transition')) return;
+                  // If user help down modifier key during click they are opening in new tab/window
+                  if (2 === event.which || event.metaKey || event.ctrlKey) return;
+                  $('body').addClass('wait');
+                })
+              }
+            }
+          }
+        });
+      });
+    }
+  }
+
+  $(function(){
+    onLinkClick();
+  });
+
+</script>
+
+
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v10.0" nonce="7qGTTSrW"></script>
+
+              <script>
+                $('.RawHTML')
+                  .find('iframe#player, iframe[src*="youtu.be"], iframe[src*="youtube.com"]')
+                  .wrap('<div class="video-width"><div class="embedded-video"></div></div>');
+                $('.js-press-release')
+                  .find('table')
+                  .addClass('Table Table--striped')
+                  .wrap('<div class="ReadingWidthBreakout overflow-x-auto overflow-scroll-x-shadow"><div class="container"></div></div>');
+
+                // Clear focus state off of button 0.5s after clicking it
+                $('.Button').click(function () {
+                  var button = this;
+                  setTimeout(function () {
+                    button.blur();
+                  }, 500);
+                });
+              </script>
+
+              <div class="js-footer SiteLayout__footer">
+
+  <footer class="SiteFooter">
+    <div class="container">
+      <div class="SiteFooter__layout">
+        <div class="SiteFooter__social">
+          <h2 class="SiteFooter__socialTitle">
+            Stay Connected
+          </h2>
+
+          <div class="SiteFooter__socialButtons">
+  <ul class="SocialIcons">
+
+      <li class="SocialIcons__item">
+        <a class="SocialIcons__link SocialBubble" href="https://www.facebook.com/SenChrisMurphy" target="_blank">
+          <i class="fa fa-facebook SocialBubble__icon SocialBubble__icon--facebook">
+            <span class="sr-only">Senator Murphy Facebook</span>
+          </i>
+        </a>
+      </li>
+
+      <li class="SocialIcons__item">
+        <a class="SocialIcons__link SocialBubble" href="https://www.instagram.com/senchrismurphy" target="_blank">
+          <i class="fa fa-instagram SocialBubble__icon SocialBubble__icon--instagram">
+            <span class="sr-only">Senator Murphy Instagram</span>
+          </i>
+        </a>
+      </li>
+
+      <li class="SocialIcons__item">
+        <a class="SocialIcons__link SocialBubble" href="https://www.flickr.com/photos/senatormurphy/" target="_blank">
+          <i class="fa fa-flickr SocialBubble__icon SocialBubble__icon--flickr">
+            <span class="sr-only">Senator Murphy Flickr</span>
+          </i>
+        </a>
+      </li>
+
+      <li class="SocialIcons__item">
+        <a class="SocialIcons__link SocialBubble" href="https://www.youtube.com/user/SenChrisMurphy" target="_blank">
+          <i class="fa fa-youtube-play SocialBubble__icon SocialBubble__icon--youtube">
+            <span class="sr-only">Senator Murphy Youtube</span>
+          </i>
+        </a>
+      </li>
+
+
+
+  </ul>
+          </div>
+        </div>
+
+        <div class="SiteFooter__nav hidden-md">
+<nav class="FooterNav" aria-label="FooterNav">
+  <ul class="FooterNav__linkList row">
+
+
+
+
+        <li class="FooterNav__item  col-auto">
+          <a class="FooterNav__link FooterNav__link--selected" href="https://www.murphy.senate.gov/about">
+            About
+          </a>
+
+        </li>
+
+
+
+
+        <li class="FooterNav__item  FooterNav__item--dropdown col-auto">
+          <a class="FooterNav__link" href="https://www.murphy.senate.gov/newsroom">
+            Newsroom
+          </a>
+
+            <ul class="FooterNav__dropdown ">
+<li class="FooterNav__dropdownItem">
+                    <a class="FooterNav__dropdownLink " href="https://www.murphy.senate.gov/newsroom/press-releases" tabindex="0">
+                      Press Releases
+                    </a>
+                  </li>
+<li class="FooterNav__dropdownItem">
+                    <a class="FooterNav__dropdownLink " href="https://www.murphy.senate.gov/newsroom/in-the-news" tabindex="0">
+                      In the News
+                    </a>
+                  </li>
+            </ul>
+        </li>
+
+
+
+
+        <li class="FooterNav__item  FooterNav__item--dropdown col-auto">
+          <a class="FooterNav__link" href="https://www.murphy.senate.gov/key-issues">
+            Key Issues
+          </a>
+
+            <ul class="FooterNav__dropdown ">
+<li class="FooterNav__dropdownItem">
+                    <a class="FooterNav__dropdownLink " href="https://www.murphy.senate.gov/legislation" tabindex="0">
+                      Sponsored Legislation
+                    </a>
+                  </li>
+            </ul>
+        </li>
+
+
+
+
+        <li class="FooterNav__item  FooterNav__item--dropdown col-auto">
+          <a class="FooterNav__link" href="https://www.murphy.senate.gov/services">
+            Services
+          </a>
+
+            <ul class="FooterNav__dropdown ">
+<li class="FooterNav__dropdownItem">
+                    <a class="FooterNav__dropdownLink " href="https://www.murphy.senate.gov/services/academy" tabindex="0">
+                      Academy Nominations
+                    </a>
+                  </li>
+<li class="FooterNav__dropdownItem">
+                    <a class="FooterNav__dropdownLink " href="https://www.murphy.senate.gov/addiction-resources" tabindex="0">
+                      Addiction Resources
+                    </a>
+                  </li>
+<li class="FooterNav__dropdownItem">
+                    <a class="FooterNav__dropdownLink " href="https://www.murphy.senate.gov/services/appropriations" tabindex="0">
+                      Appropriations Requests
+                    </a>
+                  </li>
+<li class="FooterNav__dropdownItem">
+                    <a class="FooterNav__dropdownLink " href="https://www.murphy.senate.gov/crumbling-foundations-resources" tabindex="0">
+                      Crumbling Foundations
+                    </a>
+                  </li>
+<li class="FooterNav__dropdownItem">
+                    <a class="FooterNav__dropdownLink " href="https://www.murphy.senate.gov/services/flags" tabindex="0">
+                      Flag Requests
+                    </a>
+                  </li>
+<li class="FooterNav__dropdownItem">
+                    <a class="FooterNav__dropdownLink " href="https://www.murphy.senate.gov/services/grants" tabindex="0">
+                      Grants
+                    </a>
+                  </li>
+<li class="FooterNav__dropdownItem">
+                    <a class="FooterNav__dropdownLink " href="https://www.murphy.senate.gov/services/help-with-the-federal-government" tabindex="0">
+                      Help with a Federal Agency
+                    </a>
+                  </li>
+<li class="FooterNav__dropdownItem">
+                    <a class="FooterNav__dropdownLink " href="https://www.murphy.senate.gov/services/internships" tabindex="0">
+                      Internships
+                    </a>
+                  </li>
+<li class="FooterNav__dropdownItem">
+                    <a class="FooterNav__dropdownLink " href="https://www.murphy.senate.gov/services/scheduling-requests" tabindex="0">
+                      Scheduling Requests
+                    </a>
+                  </li>
+<li class="FooterNav__dropdownItem">
+                    <a class="FooterNav__dropdownLink " href="https://www.murphy.senate.gov/services/special-recognitions" tabindex="0">
+                      Special Recognitions
+                    </a>
+                  </li>
+<li class="FooterNav__dropdownItem">
+                    <a class="FooterNav__dropdownLink " href="https://www.murphy.senate.gov/services/visiting" tabindex="0">
+                      Visiting DC
+                    </a>
+                  </li>
+            </ul>
+        </li>
+
+
+
+
+        <li class="FooterNav__item  col-auto">
+          <a class="FooterNav__link" href="https://www.murphy.senate.gov/funding-map">
+            Map
+          </a>
+
+        </li>
+
+
+
+
+        <li class="FooterNav__item  col-auto">
+          <a class="FooterNav__link" href="https://www.murphy.senate.gov/contact/">
+            Contact
+          </a>
+
+        </li>
+
+
+
+
+        <li class="FooterNav__item  col-auto">
+          <a class="FooterNav__link" href="https://www.murphy.senate.gov/privacy/">
+            Privacy Policy
+          </a>
+
+        </li>
+  </ul>
+</nav>
+        </div>
+      </div>
+    </div>
+  </footer>
+              </div>
+
+          </div>
+
+<div class="MobileNav">
+    <nav aria-label="Mobile Navigation" class="MobileNav__linksContainer container">
+
+          
+
+          <div class="MobileNav__item">
+<a class="MobileNav__link" href="https://www.murphy.senate.gov/contact">
+              <span>Contact</span>
+            </a>
+
+          </div>
+
+          
+
+          <div class="MobileNav__item">
+<a class="MobileNav__link" href="https://www.murphy.senate.gov/about">
+              <span>About</span>
+            </a>
+
+          </div>
+
+          
+
+          <div class="MobileNav__item">
+<a class="MobileNav__link js-mobile-dropdown-parent" href="https://www.murphy.senate.gov/newsroom">
+              <span>Newsroom</span>
+            </a>
+
+              <div class="js-mobile-dropdown MobileNav__subLinks">
+                    <a class="MobileNav__subLink" href="https://www.murphy.senate.gov/newsroom/press-releases">
+                      <div class="MobileNav__subLink__label">
+                        <span>Press Releases</span>
+                      </div>
+                    </a>
+                    <a class="MobileNav__subLink" href="https://www.murphy.senate.gov/newsroom/in-the-news">
+                      <div class="MobileNav__subLink__label">
+                        <span>In the News</span>
+                      </div>
+                    </a>
+              </div>
+          </div>
+
+          
+
+          <div class="MobileNav__item">
+<a class="MobileNav__link js-mobile-dropdown-parent" href="https://www.murphy.senate.gov/issues">
+              <span>Key Issues</span>
+            </a>
+
+              <div class="js-mobile-dropdown MobileNav__subLinks">
+                    <a class="MobileNav__subLink" href="https://www.murphy.senate.gov/key-issues">
+                      <div class="MobileNav__subLink__label">
+                        <span>Key Issues</span>
+                      </div>
+                    </a>
+                    <a class="MobileNav__subLink" href="https://www.murphy.senate.gov/legislation">
+                      <div class="MobileNav__subLink__label">
+                        <span>Sponsored Legislation</span>
+                      </div>
+                    </a>
+              </div>
+          </div>
+
+          
+
+          <div class="MobileNav__item">
+<a class="MobileNav__link js-mobile-dropdown-parent" href="https://www.murphy.senate.gov/services">
+              <span>Services</span>
+            </a>
+
+              <div class="js-mobile-dropdown MobileNav__subLinks">
+                    <a class="MobileNav__subLink" href="https://www.murphy.senate.gov/services/appropriations">
+                      <div class="MobileNav__subLink__label">
+                        <span>Appropriations</span>
+                      </div>
+                    </a>
+                    <a class="MobileNav__subLink" href="https://www.murphy.senate.gov/services/for-connecticut-residents">
+                      <div class="MobileNav__subLink__label">
+                        <span>For Connecticut Residents</span>
+                      </div>
+                    </a>
+                    <a class="MobileNav__subLink" href="https://www.murphy.senate.gov/services/student-resources">
+                      <div class="MobileNav__subLink__label">
+                        <span>For Students</span>
+                      </div>
+                    </a>
+                    <a class="MobileNav__subLink" href="https://www.murphy.senate.gov/services/help-with-the-federal-government">
+                      <div class="MobileNav__subLink__label">
+                        <span>Help with a Federal Agency</span>
+                      </div>
+                    </a>
+                    <a class="MobileNav__subLink" href="https://www.murphy.senate.gov/services/scheduling-requests">
+                      <div class="MobileNav__subLink__label">
+                        <span>Scheduling Requests</span>
+                      </div>
+                    </a>
+              </div>
+          </div>
+
+          
+
+          <div class="MobileNav__item">
+<a class="MobileNav__link" href="https://www.murphy.senate.gov/funding-map">
+              <span>Map</span>
+            </a>
+
+          </div>
+    </nav>
+</div>
+
+<script>
+  window.animatedMobileNavIn = gsap
+    .timeline({paused: true})
+    .set('.MobileNav__linksContainer', {overflowY: 'hidden'})
+    .from('.MobileNav__item', {
+      duration: 0.5,
+      opacity: 0,
+      translateY: 50,
+      stagger: 0.1,
+      ease: 'power3',
+      clearProps: true
+    }, '+=0.25')
+    .set('.MobileNav__linksContainer', {overflowY: ''});
+
+  window.animatedMobileNavOut = gsap
+    .timeline({paused: true})
+    .to('.MobileNav__item', {
+      duration: 0.5,
+      opacity: 0,
+      translateY: -50,
+      stagger: 0.05,
+      ease: 'power3'
+    });
+
+  $(function () {
+    // Control logic/animations of opening and closing of mobile nav
+    var toggleMobileNav = function (state) {
+      var navOverflowElement = document.querySelector('.MobileNav__linksContainer');
+
+      if (state === 'open') {
+        window.disableBodyScroll(navOverflowElement)
+
+        var padding = function () {
+          var newsAlert = $('.SiteLayout__alert').outerHeight();
+          var mobileHeader = $('.SiteLayout__navigation').outerHeight() || $('.pin-spacer-MobileHeader').outerHeight() ;
+          var paddingVal = (newsAlert || 0) + (mobileHeader || 0)
+
+          return paddingVal < 90 ? 90 : paddingVal;
+        }
+
+        $('.MobileNav').css('paddingTop', function () {
+          var paddingToAdd = padding();
+          return paddingToAdd < 160
+            ? 160
+            : paddingToAdd;
+        });
+        window.disableBodyScroll(navOverflowElement)
+        window
+          .animatedMobileNavIn
+          .play(0);
+        document
+          .body
+          .classList
+          .add('mobile-nav-open');
+        gsap.to(window, {
+          duration: 0.5,
+          scrollTo: '.SiteHeader',
+          ease: 'power3'
+        });
+      } else if (state === 'close') {
+        window.enableBodyScroll(navOverflowElement);
+        window
+          .animatedMobileNavOut
+          .play(0);
+        document
+          .body
+          .classList
+          .remove('mobile-nav-open');
+      }
+    };
+
+    // Click handling for open/close of mobile nav
+    $('.js-open-mobile-nav').click(function () {
+      if (document.body.classList.contains('mobile-nav-open')) {
+        toggleMobileNav('close')
+      } else {
+        toggleMobileNav('open')
+      }
+    });
+
+    $('.js-open-mobile-search').click(function () {
+      if (document.body.classList.contains('mobile-nav-open')) {
+        toggleMobileNav('close')
+      }
+    });
+
+    // Expand/Collapse Dropdowns and Handle repeat clicks on parents
+    var clickAndClose = function () {
+      $('.js-mobile-dropdown-parent').removeClass('active');
+      toggleMobileNav('close');
+      gsap.to('.js-mobile-dropdown', 0.2, {height: 0});
+    };
+
+    var onClickParent = function (event) {
+      var parentLink = $(event.target).closest('.MobileNav__link');
+      var dropdown = $(parentLink).next('.js-mobile-dropdown')[0];
+
+      if (dropdown) {
+        if ($(parentLink).hasClass('active')) {
+          clickAndClose();
+        } else {
+          event.preventDefault();
+          event.stopImmediatePropagation();
+          $('.js-mobile-dropdown-parent').removeClass('active');
+          $('.js-mobile-dropdown').each(function (index, element) {
+            if (element === dropdown) return;
+            gsap.to(element, 0.6, {height: 0});
+          })
+          parentLink.addClass('active');
+          gsap.set(dropdown, {height: "auto"});
+          gsap.from(dropdown, 0.6, {height: 0});
+          gsap.from(dropdown.querySelectorAll('.MobileNav__subLink'), {
+            duration: 0.8,
+            opacity: 0,
+            scale: 0.5,
+            stagger: 0.1,
+            ease: 'power3'
+          })
+        }
+      } else {
+        clickAndClose()
+      };
+    };
+
+    $('.MobileNav__link').click(onClickParent);
+    $('.MobileNav__subLink').click(clickAndClose);
+  });
+</script>
+
+          <div class="SiteLayout__loading">
+            <div class="Loading">
+              <div class="Loading__spinner">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  
+
+
+
+  <div class="BootstrapModal BootstrapModal--search modal fade" id="website-search" tabindex="-1" role="dialog" aria-labelledby="website-search-title">
+    <div class="BootstrapModal__container modal-dialog" role="document">
+      <div class="BootstrapModal__content modal-content">
+        <div class="BootstrapModal__header align-items-center modal-header">
+          <h2 id="website-search-title" class="BootstrapModal__headerTitle modal-title sr-only">website-search</h2>
+
+        </div>
+
+        <div class="BootstrapModal__body modal-body">
+            <form class="d-flex h-100 align-items-center" aria-label="search" id="sitesearch" role="search" method="get" action="/search">
+    <div class="MobileSearch w-100">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col">
+            <label class="sr-only" for="q" >Site Search</label>
+            <input class="MobileSearch__input" type="text" name="q" id="q" placeholder="Search" autofocus>
+          </div>
+
+          <div class="col-auto">
+            <button class="MobileSearch__button" type="submit">
+              <span class="fa fa-search" aria-hidden="true"></span>
+              <span class="sr-only">Submit website search</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script>
+    $('#website-search').on('shown.bs.modal', function () {
+      $('[autofocus]').trigger('focus')
+    })
+  </script>
+
+  <script>
+    if (!window.stickyHeaderConfig) window.stickyHeaderConfig = {};
+    window.stickyHeaderConfig.start = 'top 1%';
+  </script>
+
+  <script type="text/javascript">
+  if (typeof window.makeStickyHeader !== 'function') {
+    window.makeStickyHeader = function (containerProp) {
+      window.madeStickyHeader = true;
+      var container = containerProp || document;
+      var siteHeader = document.querySelector('.SiteHeader');
+      var mobileHeader = document.querySelector('.MobileHeader');
+
+      ScrollTrigger.defaults({
+        // uncomment to see debug markers
+        //markers: true
+      });
+
+      // Pin SiteHeader when it hits the top of the viewport
+      if (siteHeader) {
+        ScrollTrigger.create({
+          id: 'SiteHeader', // creates .pin-spacer-SiteHeader which we target in _SiteHeader.scss
+          trigger: '.SiteLayout__siteHeader',
+          endTrigger: ".SiteLayout__footer",
+          start: "top top",
+          end: "bottom top",
+          pin: true,
+          pinSpacing: false
+        })
+      }
+
+      var trigger = document.querySelector('.Block--static--bannerBackgroundImage:first-child, .Block--static--banner:first-child, .HomeHero, .SiteLayout__transitionContainer');
+      var stickyHeaderConfig = {
+        trigger: trigger,
+        endTrigger: '.SiteLayout__container',
+        start: '50% top',
+        end: 'bottom top',
+        onEnter: function() {
+          $('.SiteHeader, .MobileHeader').addClass('stuck')
+        },
+        onLeaveBack: function() {
+          $('.SiteHeader, .MobileHeader').removeClass('stuck')
+        },
+      }
+      if (window.stickyHeaderConfig) Object.assign(stickyHeaderConfig, window.stickyHeaderConfig);
+
+      if (siteHeader) siteHeader.classList.remove('stuck');
+      if (mobileHeader) mobileHeader.classList.remove('stuck');
+      if (stickyHeaderConfig.trigger) {
+        ScrollTrigger.create(stickyHeaderConfig)
+      } else {
+        if (siteHeader) siteHeader.classList.add('stuck');
+        if (mobileHeader) mobileHeader.classList.add('stuck');
+      }
+
+      // Pin MobileHeader when it hits the top of the viewport
+      if (mobileHeader) {
+        ScrollTrigger.create({
+          id: 'MobileHeader', // creates .pin-spacer-MobileHeader which we target in _MobileHeader.scss
+          trigger: mobileHeader,
+          endTrigger: ".SiteLayout__footer",
+          start: "top top",
+          pin: true,
+          pinSpacing: false
+        })
+      }
+
+      var mobileHeaderBgColor = document.querySelector('.MobileHeader__bgColor')
+      if (mobileHeaderBgColor) {
+        gsap.from(mobileHeaderBgColor, {
+          clearProps: true,
+          scrollTrigger: {
+            id: 'MobileHeaderBackground',
+            trigger: '.SiteLayout__navigation',
+            start: "+=10px",
+            end: "+=1px",
+            scrub: 1
+          }
+        });
+      }
+    }
+  }
+
+  var prevBodyHeight = 0;
+  if (window.polyfills) var resizeObserver = new window
+    .polyfills
+    .ResizeObserver(function (entries) {
+      var newHeight = (entries[0].contentRect)
+        ? entries[0].contentRect.height
+        : 0;
+
+      if (newHeight === prevBodyHeight)
+        return;
+
+      // If the height changed save it
+      prevBodyHeight = newHeight;
+
+      // If we have any scrollTriggers on window loop through and refresh them
+      window.refreshScrollTriggers();
+    })
+
+  // start observing a DOM node
+  $(function () {
+    if (!window.madeStickyHeader)
+      window.makeStickyHeader();
+    resizeObserver.observe(document.body);
+  });
+</script>
+
+
+        <script type="text/javascript">
+          $(function () {
+            $("script.deferred-script").each(function () {
+              var text = $(this).text();
+              eval(
+                text == ''
+                ? this.innerHTML
+                : text);
+            });
+          });
+          sen = true;
+        </script>
+
+
+    <script>
+    
+    var arrayify = function(list) {
+      return Array.prototype.slice.call(list)
+    };
+
+    
+    var runScript = function(originalElement) {
+      var element = document.createElement('script');
+
+      if (originalElement.attributes.length) {
+        var attributes = arrayify(originalElement.attributes);
+
+        attributes.forEach(function(attr) {
+          element.setAttribute(attr.name, attr.value);
+        });
+      }
+      element.textContent = originalElement.textContent;
+      element.setAttribute('async', 'false');
+
+      originalElement.replaceWith(element);
+      return element;
+    };
+
+    var shouldPrevent = function(data) {
+      if (data.el.hasAttribute('data-no-transition') || data.el.hasAttribute('data-modal-template')) return true;
+      var targetUrl = data.href.replace(window.location.origin, '');
+      var regex = new RegExp(/^(?:\/?assets)|(?:\/?imo)/);
+      if (targetUrl && regex.test(targetUrl)) return true;
+
+      return false;
+    }
+
+    
+    
+    var transitionFormHandler = function(container) {
+      var forms = container.querySelectorAll('form[method="get"]');
+      if (forms.length) forms.forEach(function(form) {
+        if ($(form).attr('data-no-transition') !== undefined) return;
+        $(form).on('submit', function(event) {
+          event.preventDefault();
+          $('body').addClass('wait');
+          var targetUrl = event.target.action;
+          var targetQuery = $(this).serialize();
+          $('.BootstrapModal').modal('hide');
+          transitions.go(targetUrl + '?' + targetQuery);
+        })
+      })
+    }
+
+    var isIE = document.body.style.msTouchAction !== undefined;
+    if (!isIE && transitions) {
+      // Grab the prefers reduced media query.
+      var mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
+
+      // Check if the media query matches or is not available.
+      if (!mediaQuery || mediaQuery.matches) {
+        transitionsReducedMotion();
+      } else {
+        transitionsFullMotion();
+      }
+
+      // Adds an event listener to check for changes in the media query's value.
+      mediaQuery.addEventListener("change", function() {
+        if (mediaQuery.matches) {
+          transitions.destroy();
+          transitionsReducedMotion();
+        } else {
+          transitions.destroy();
+          transitionsFullMotion();
+        }
+      });
+
+      // When user has 'prefers-reduced-motion' turned on in their OS
+      function transitionsReducedMotion() {
+        transitions.init({
+          preventRunning: true,
+          timeout: 20000,
+          schema: {
+            prefix: 'data-transition'
+          },
+          prevent: shouldPrevent,
+          transitions: [{
+            name: 'default-transition',
+            leave: function(data) {
+              return gsap.timeline()
+                .to(data.current.container, {
+                  opacity: 0,
+                  duration: 0.2,
+                }, '<')
+                .set('.SiteFooter', { opacity: 0 })
+            },
+            beforeLeave: function(data) {
+              gsap.to(window, { duration: 1, scrollTo: {y: 0}, ease: 'power3'});
+              return;
+            },
+            enter: function(data) {
+              return gsap.timeline()
+                .set(data.current.container, {position: 'absolute', opacity: 0})
+                .from(data.next.container, {
+                  opacity: 0,
+                  duration: 0.2,
+                }, '<')
+                .to('.SiteFooter', {
+                  opacity: 1,
+                  duration: 0.1,
+                }, '<')
+                .set('.SiteFooter', { opacity: '' })
+            },
+          }],
+        });
+
+        transitionsGlobalHooks();
+      };
+      // For regular motion users
+      function transitionsFullMotion() {
+        // Remove below line and write custom transitions here
+        transitionsReducedMotion();
+      };
+
+      function transitionsGlobalHooks() {
+        transitions.hooks.before(function(data) {
+          $('body').addClass('wait');
+          $('.fc-tbx').remove(); // Clear Forms Builder validation errors
+
+          // Allow Google Recaptcha script include to reinitialize
+          if (typeof grecaptcha !== 'undefined') delete grecaptcha;
+          if (typeof ___grecaptcha_cfg !== 'undefined') delete ___grecaptcha_cfg;
+
+          $('.SiteHeader--searchMode').removeClass('SiteHeader--searchMode');
+          $('.SiteNavSearch--searchMode').removeClass('SiteNavSearch--searchMode');
+          $('.SiteNavSearch input').val('');
+        });
+
+        transitions.hooks.afterLeave(function(data) {
+          var currentNav = data.current.container.dataset.nav
+          var nextNav = data.next.container.dataset.nav
+          var nextUrl = data.next.url.href;
+          if (currentNav !== nextNav && nextUrl) window.location = nextUrl;
+
+          var nextPage = new DOMParser().parseFromString(data.next.html, "text/html");
+
+          // Sync body tags
+          var newBodyClasses = nextPage.querySelector('body').classList;
+          if (newBodyClasses) document.body.className = newBodyClasses;
+
+          $('[data-transition-selected-if]').each(function (link) {
+            var linkCondition = $(this).attr('data-transition-selected-if');
+            var selectedClass = $(this).attr('data-transition-selected-class') || 'selected';
+
+            $(this).removeClass(selectedClass);
+            if (new RegExp('^' + linkCondition).test(window.location.pathname)) {
+              var secondaryCondition = $(this).attr('data-transition-selected-nestedIf'),
+                pathArr = window.location.pathname.split('/'),
+                linkPathArr = secondaryCondition ? secondaryCondition.split('/') : " ";
+
+              $(this).addClass(selectedClass);
+
+              if (secondaryCondition && pathArr.length < 4 && window.location.pathname !== secondaryCondition) {
+                $(this).removeClass(selectedClass);
+              } else if (secondaryCondition && pathArr.length >= 4 && linkPathArr.length < 3) {
+                $(this).removeClass(selectedClass);
+              }
+            }
+          });
+
+          // Sync NewsAlert content
+          var newDocument = document.createRange().createContextualFragment(data.next.html);
+          var nextNewsAlert = newDocument.querySelector('.NewsAlert');
+          var prevNewsAlert = document.querySelector('.NewsAlert');
+
+
+          // Clean up any existing nextNewsAlert Splide instance
+          if (typeof window.destroyNewsAlertSplide === 'function') window.destroyNewsAlertSplide();
+
+          if (nextNewsAlert) {
+            var prevNewsAlertHasContent = prevNewsAlert.classList.contains('NewsAlert--hasContent');
+            var nextNewsAlertHasContent = nextNewsAlert.classList.contains('NewsAlert--hasContent');
+
+            // If previous page NewsAlert doesn't have items and next page does animate open container
+            if (!prevNewsAlertHasContent && nextNewsAlertHasContent) {
+              prevNewsAlert.className = nextNewsAlert.className || prevNewsAlert.className;
+              prevNewsAlert.innerHTML = nextNewsAlert.innerHTML || '';
+
+              var newHeight = $(nextNewsAlert).height();
+              gsap.timeline()
+                .from('.NewsAlert', {
+                  height: 0,
+                  duration: 0.5
+                })
+                .set('.NewsAlert', { height: '' })
+            }
+            // If previous page NewsAlert has items and next page doesn't animate closed the container
+            else if (prevNewsAlertHasContent && !nextNewsAlertHasContent) {
+              var currentHeight = $(prevNewsAlert).height();
+              gsap.timeline()
+                .to('.NewsAlert', {
+                  height: 0,
+                  duration: 0.5
+                })
+                .call(function() {
+                  prevNewsAlert.className = nextNewsAlert.className || prevNewsAlert.className;
+                  prevNewsAlert.innerHTML = nextNewsAlert.innerHTML || '';
+                })
+                .set('.NewsAlert', { height: '' })
+
+            }
+            // If previous and next page NewsAlert didn't change don't animate container
+            else {
+              prevNewsAlert.className = nextNewsAlert.className || prevNewsAlert.className;
+              prevNewsAlert.innerHTML = nextNewsAlert.innerHTML || '';
+            }
+
+            // Rerun script tag within NewsAlert to reactivate animations if next page NewsAlert has content
+            if (nextNewsAlertHasContent) {
+              var scripts = prevNewsAlert.querySelectorAll('script');
+              if (scripts && scripts.length) scripts.forEach(function(script) {runScript(script)});
+            }
+          }
+        });
+
+        transitions.hooks.after(function(data) {
+          $('body').removeClass('wait');
+
+          // Recalculate ScrollTrigger values
+          window.killScrollTriggers();
+          window.madeStickyHeader = false;
+          window.makeStickyHeader(data.next.container);
+          window.animationsSet = false;
+          window.setupAnimations(data.next.container);
+
+          // Force load any scripts after page transition
+          // Borrowed idea from swup.js:
+          // https://github.com/swup/scripts-plugin/blob/master/src/index.js
+          var scripts = data.next.container.querySelectorAll('script');
+          if (scripts && scripts.length) scripts.forEach(function(script) {runScript(script)});
+
+          transitionFormHandler(data.next.container);
+
+          if (typeof ga !== 'undefined') {
+            ga('set', 'page', window.location.pathname);
+            ga('send', 'pageview');
+          }
+          if (typeof FB !== 'undefined') FB.XFBML.parse();
+        });
+
+        // Prefetching the top level pages after a couple seconds for faster response time on click
+setTimeout(function() {
+                  transitions.prefetch('https://www.murphy.senate.gov/contact');
+                }, 3000);setTimeout(function() {
+                  transitions.prefetch('https://www.murphy.senate.gov/about');
+                }, 4000);setTimeout(function() {
+                  transitions.prefetch('https://www.murphy.senate.gov/newsroom');
+                }, 5000);setTimeout(function() {
+                  transitions.prefetch('https://www.murphy.senate.gov/issues');
+                }, 6000);setTimeout(function() {
+                  transitions.prefetch('https://www.murphy.senate.gov/services');
+                }, 7000);setTimeout(function() {
+                  transitions.prefetch('https://www.murphy.senate.gov/funding-map');
+                }, 8000);
+        transitionFormHandler(document);
+      }
+    }
+  </script>
+
+    <script>
+      var isIE = document.body.style.msTouchAction !== undefined;
+      if (!isIE && transitions) {
+        transitions.hooks.before(function(data) {
+          var searchToggle = document.querySelector('.SiteNav__searchToggleButton');
+          if (!searchToggle) return;
+          var searchToggleTargetSelector = searchToggle.dataset.target;
+
+          if (!searchToggleTargetSelector) return;
+          var searchToggleTarget = document.querySelector(searchToggleTargetSelector);
+          var searchToggleClass = searchToggle.dataset.toggleClass;
+
+          if (searchToggleTarget && searchToggleClass) searchToggleTarget.classList.remove(searchToggleClass)
+          $('#js-site-nav-search-input').val('');
+        });
+      }
+    </script>
+  </body>
+</html>
+<!-- Build #1775285094 -->

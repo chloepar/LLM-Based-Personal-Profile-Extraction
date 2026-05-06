@@ -1,0 +1,2371 @@
+<!doctype html>
+<html lang="en-US">
+<head><meta charset="UTF-8"><script>if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script>(()=>{class RocketLazyLoadScripts{constructor(){this.v="2.0.3",this.userEvents=["keydown","keyup","mousedown","mouseup","mousemove","mouseover","mouseenter","mouseout","mouseleave","touchmove","touchstart","touchend","touchcancel","wheel","click","dblclick","input","visibilitychange"],this.attributeEvents=["onblur","onclick","oncontextmenu","ondblclick","onfocus","onmousedown","onmouseenter","onmouseleave","onmousemove","onmouseout","onmouseover","onmouseup","onmousewheel","onscroll","onsubmit"]}async t(){this.i(),this.o(),/iP(ad|hone)/.test(navigator.userAgent)&&this.h(),this.u(),this.l(this),this.m(),this.k(this),this.p(this),this._(),await Promise.all([this.R(),this.L()]),this.lastBreath=Date.now(),this.S(this),this.P(),this.D(),this.O(),this.M(),await this.C(this.delayedScripts.normal),await this.C(this.delayedScripts.defer),await this.C(this.delayedScripts.async),this.F("domReady"),await this.T(),await this.j(),await this.I(),this.F("windowLoad"),await this.A(),window.dispatchEvent(new Event("rocket-allScriptsLoaded")),this.everythingLoaded=!0,this.lastTouchEnd&&await new Promise((t=>setTimeout(t,500-Date.now()+this.lastTouchEnd))),this.H(),this.F("all"),this.U(),this.W()}i(){this.CSPIssue=sessionStorage.getItem("rocketCSPIssue"),document.addEventListener("securitypolicyviolation",(t=>{this.CSPIssue||"script-src-elem"!==t.violatedDirective||"data"!==t.blockedURI||(this.CSPIssue=!0,sessionStorage.setItem("rocketCSPIssue",!0))}),{isRocket:!0})}o(){window.addEventListener("pageshow",(t=>{this.persisted=t.persisted,this.realWindowLoadedFired=!0}),{isRocket:!0}),window.addEventListener("pagehide",(()=>{this.onFirstUserAction=null}),{isRocket:!0})}h(){let t;function e(e){t=e}window.addEventListener("touchstart",e,{isRocket:!0}),window.addEventListener("touchend",(function i(o){Math.abs(o.changedTouches[0].pageX-t.changedTouches[0].pageX)<10&&Math.abs(o.changedTouches[0].pageY-t.changedTouches[0].pageY)<10&&o.timeStamp-t.timeStamp<200&&(o.target.dispatchEvent(new PointerEvent("click",{target:o.target,bubbles:!0,cancelable:!0,detail:1})),event.preventDefault(),window.removeEventListener("touchstart",e,{isRocket:!0}),window.removeEventListener("touchend",i,{isRocket:!0}))}),{isRocket:!0})}q(t){this.userActionTriggered||("mousemove"!==t.type||this.firstMousemoveIgnored?"keyup"===t.type||"mouseover"===t.type||"mouseout"===t.type||(this.userActionTriggered=!0,this.onFirstUserAction&&this.onFirstUserAction()):this.firstMousemoveIgnored=!0),"click"===t.type&&t.preventDefault(),this.savedUserEvents.length>0&&(t.stopPropagation(),t.stopImmediatePropagation()),"touchstart"===this.lastEvent&&"touchend"===t.type&&(this.lastTouchEnd=Date.now()),"click"===t.type&&(this.lastTouchEnd=0),this.lastEvent=t.type,this.savedUserEvents.push(t)}u(){this.savedUserEvents=[],this.userEventHandler=this.q.bind(this),this.userEvents.forEach((t=>window.addEventListener(t,this.userEventHandler,{passive:!1,isRocket:!0})))}U(){this.userEvents.forEach((t=>window.removeEventListener(t,this.userEventHandler,{passive:!1,isRocket:!0}))),this.savedUserEvents.forEach((t=>{t.target.dispatchEvent(new window[t.constructor.name](t.type,t))}))}m(){this.eventsMutationObserver=new MutationObserver((t=>{const e="return false";for(const i of t){if("attributes"===i.type){const t=i.target.getAttribute(i.attributeName);t&&t!==e&&(i.target.setAttribute("data-rocket-"+i.attributeName,t),i.target["rocket"+i.attributeName]=new Function("event",t),i.target.setAttribute(i.attributeName,e))}"childList"===i.type&&i.addedNodes.forEach((t=>{if(t.nodeType===Node.ELEMENT_NODE)for(const i of t.attributes)this.attributeEvents.includes(i.name)&&i.value&&""!==i.value&&(t.setAttribute("data-rocket-"+i.name,i.value),t["rocket"+i.name]=new Function("event",i.value),t.setAttribute(i.name,e))}))}})),this.eventsMutationObserver.observe(document,{subtree:!0,childList:!0,attributeFilter:this.attributeEvents})}H(){this.eventsMutationObserver.disconnect(),this.attributeEvents.forEach((t=>{document.querySelectorAll("[data-rocket-"+t+"]").forEach((e=>{e.setAttribute(t,e.getAttribute("data-rocket-"+t)),e.removeAttribute("data-rocket-"+t)}))}))}k(t){Object.defineProperty(HTMLElement.prototype,"onclick",{get(){return this.rocketonclick||null},set(e){this.rocketonclick=e,this.setAttribute(t.everythingLoaded?"onclick":"data-rocket-onclick","this.rocketonclick(event)")}})}S(t){function e(e,i){let o=e[i];e[i]=null,Object.defineProperty(e,i,{get:()=>o,set(s){t.everythingLoaded?o=s:e["rocket"+i]=o=s}})}e(document,"onreadystatechange"),e(window,"onload"),e(window,"onpageshow");try{Object.defineProperty(document,"readyState",{get:()=>t.rocketReadyState,set(e){t.rocketReadyState=e},configurable:!0}),document.readyState="loading"}catch(t){console.log("WPRocket DJE readyState conflict, bypassing")}}l(t){this.originalAddEventListener=EventTarget.prototype.addEventListener,this.originalRemoveEventListener=EventTarget.prototype.removeEventListener,this.savedEventListeners=[],EventTarget.prototype.addEventListener=function(e,i,o){o&&o.isRocket||!t.B(e,this)&&!t.userEvents.includes(e)||t.B(e,this)&&!t.userActionTriggered||e.startsWith("rocket-")||t.everythingLoaded?t.originalAddEventListener.call(this,e,i,o):t.savedEventListeners.push({target:this,remove:!1,type:e,func:i,options:o})},EventTarget.prototype.removeEventListener=function(e,i,o){o&&o.isRocket||!t.B(e,this)&&!t.userEvents.includes(e)||t.B(e,this)&&!t.userActionTriggered||e.startsWith("rocket-")||t.everythingLoaded?t.originalRemoveEventListener.call(this,e,i,o):t.savedEventListeners.push({target:this,remove:!0,type:e,func:i,options:o})}}F(t){"all"===t&&(EventTarget.prototype.addEventListener=this.originalAddEventListener,EventTarget.prototype.removeEventListener=this.originalRemoveEventListener),this.savedEventListeners=this.savedEventListeners.filter((e=>{let i=e.type,o=e.target||window;return"domReady"===t&&"DOMContentLoaded"!==i&&"readystatechange"!==i||("windowLoad"===t&&"load"!==i&&"readystatechange"!==i&&"pageshow"!==i||(this.B(i,o)&&(i="rocket-"+i),e.remove?o.removeEventListener(i,e.func,e.options):o.addEventListener(i,e.func,e.options),!1))}))}p(t){let e;function i(e){return t.everythingLoaded?e:e.split(" ").map((t=>"load"===t||t.startsWith("load.")?"rocket-jquery-load":t)).join(" ")}function o(o){function s(e){const s=o.fn[e];o.fn[e]=o.fn.init.prototype[e]=function(){return this[0]===window&&t.userActionTriggered&&("string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=i(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach((t=>{const e=arguments[0][t];delete arguments[0][t],arguments[0][i(t)]=e}))),s.apply(this,arguments),this}}if(o&&o.fn&&!t.allJQueries.includes(o)){const e={DOMContentLoaded:[],"rocket-DOMContentLoaded":[]};for(const t in e)document.addEventListener(t,(()=>{e[t].forEach((t=>t()))}),{isRocket:!0});o.fn.ready=o.fn.init.prototype.ready=function(i){function s(){parseInt(o.fn.jquery)>2?setTimeout((()=>i.bind(document)(o))):i.bind(document)(o)}return t.realDomReadyFired?!t.userActionTriggered||t.fauxDomReadyFired?s():e["rocket-DOMContentLoaded"].push(s):e.DOMContentLoaded.push(s),o([])},s("on"),s("one"),s("off"),t.allJQueries.push(o)}e=o}t.allJQueries=[],o(window.jQuery),Object.defineProperty(window,"jQuery",{get:()=>e,set(t){o(t)}})}P(){const t=new Map;document.write=document.writeln=function(e){const i=document.currentScript,o=document.createRange(),s=i.parentElement;let n=t.get(i);void 0===n&&(n=i.nextSibling,t.set(i,n));const c=document.createDocumentFragment();o.setStart(c,0),c.appendChild(o.createContextualFragment(e)),s.insertBefore(c,n)}}async R(){return new Promise((t=>{this.userActionTriggered?t():this.onFirstUserAction=t}))}async L(){return new Promise((t=>{document.addEventListener("DOMContentLoaded",(()=>{this.realDomReadyFired=!0,t()}),{isRocket:!0})}))}async I(){return this.realWindowLoadedFired?Promise.resolve():new Promise((t=>{window.addEventListener("load",t,{isRocket:!0})}))}M(){this.pendingScripts=[];this.scriptsMutationObserver=new MutationObserver((t=>{for(const e of t)e.addedNodes.forEach((t=>{"SCRIPT"!==t.tagName||t.noModule||t.isWPRocket||this.pendingScripts.push({script:t,promise:new Promise((e=>{const i=()=>{const i=this.pendingScripts.findIndex((e=>e.script===t));i>=0&&this.pendingScripts.splice(i,1),e()};t.addEventListener("load",i,{isRocket:!0}),t.addEventListener("error",i,{isRocket:!0}),setTimeout(i,1e3)}))})}))})),this.scriptsMutationObserver.observe(document,{childList:!0,subtree:!0})}async j(){await this.J(),this.pendingScripts.length?(await this.pendingScripts[0].promise,await this.j()):this.scriptsMutationObserver.disconnect()}D(){this.delayedScripts={normal:[],async:[],defer:[]},document.querySelectorAll("script[type$=rocketlazyloadscript]").forEach((t=>{t.hasAttribute("data-rocket-src")?t.hasAttribute("async")&&!1!==t.async?this.delayedScripts.async.push(t):t.hasAttribute("defer")&&!1!==t.defer||"module"===t.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(t):this.delayedScripts.normal.push(t):this.delayedScripts.normal.push(t)}))}async _(){await this.L();let t=[];document.querySelectorAll("script[type$=rocketlazyloadscript][data-rocket-src]").forEach((e=>{let i=e.getAttribute("data-rocket-src");if(i&&!i.startsWith("data:")){i.startsWith("//")&&(i=location.protocol+i);try{const o=new URL(i).origin;o!==location.origin&&t.push({src:o,crossOrigin:e.crossOrigin||"module"===e.getAttribute("data-rocket-type")})}catch(t){}}})),t=[...new Map(t.map((t=>[JSON.stringify(t),t]))).values()],this.N(t,"preconnect")}async $(t){if(await this.G(),!0!==t.noModule||!("noModule"in HTMLScriptElement.prototype))return new Promise((e=>{let i;function o(){(i||t).setAttribute("data-rocket-status","executed"),e()}try{if(navigator.userAgent.includes("Firefox/")||""===navigator.vendor||this.CSPIssue)i=document.createElement("script"),[...t.attributes].forEach((t=>{let e=t.nodeName;"type"!==e&&("data-rocket-type"===e&&(e="type"),"data-rocket-src"===e&&(e="src"),i.setAttribute(e,t.nodeValue))})),t.text&&(i.text=t.text),t.nonce&&(i.nonce=t.nonce),i.hasAttribute("src")?(i.addEventListener("load",o,{isRocket:!0}),i.addEventListener("error",(()=>{i.setAttribute("data-rocket-status","failed-network"),e()}),{isRocket:!0}),setTimeout((()=>{i.isConnected||e()}),1)):(i.text=t.text,o()),i.isWPRocket=!0,t.parentNode.replaceChild(i,t);else{const i=t.getAttribute("data-rocket-type"),s=t.getAttribute("data-rocket-src");i?(t.type=i,t.removeAttribute("data-rocket-type")):t.removeAttribute("type"),t.addEventListener("load",o,{isRocket:!0}),t.addEventListener("error",(i=>{this.CSPIssue&&i.target.src.startsWith("data:")?(console.log("WPRocket: CSP fallback activated"),t.removeAttribute("src"),this.$(t).then(e)):(t.setAttribute("data-rocket-status","failed-network"),e())}),{isRocket:!0}),s?(t.fetchPriority="high",t.removeAttribute("data-rocket-src"),t.src=s):t.src="data:text/javascript;base64,"+window.btoa(unescape(encodeURIComponent(t.text)))}}catch(i){t.setAttribute("data-rocket-status","failed-transform"),e()}}));t.setAttribute("data-rocket-status","skipped")}async C(t){const e=t.shift();return e?(e.isConnected&&await this.$(e),this.C(t)):Promise.resolve()}O(){this.N([...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async],"preload")}N(t,e){this.trash=this.trash||[];let i=!0;var o=document.createDocumentFragment();t.forEach((t=>{const s=t.getAttribute&&t.getAttribute("data-rocket-src")||t.src;if(s&&!s.startsWith("data:")){const n=document.createElement("link");n.href=s,n.rel=e,"preconnect"!==e&&(n.as="script",n.fetchPriority=i?"high":"low"),t.getAttribute&&"module"===t.getAttribute("data-rocket-type")&&(n.crossOrigin=!0),t.crossOrigin&&(n.crossOrigin=t.crossOrigin),t.integrity&&(n.integrity=t.integrity),t.nonce&&(n.nonce=t.nonce),o.appendChild(n),this.trash.push(n),i=!1}})),document.head.appendChild(o)}W(){this.trash.forEach((t=>t.remove()))}async T(){try{document.readyState="interactive"}catch(t){}this.fauxDomReadyFired=!0;try{await this.G(),document.dispatchEvent(new Event("rocket-readystatechange")),await this.G(),document.rocketonreadystatechange&&document.rocketonreadystatechange(),await this.G(),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this.G(),window.dispatchEvent(new Event("rocket-DOMContentLoaded"))}catch(t){console.error(t)}}async A(){try{document.readyState="complete"}catch(t){}try{await this.G(),document.dispatchEvent(new Event("rocket-readystatechange")),await this.G(),document.rocketonreadystatechange&&document.rocketonreadystatechange(),await this.G(),window.dispatchEvent(new Event("rocket-load")),await this.G(),window.rocketonload&&window.rocketonload(),await this.G(),this.allJQueries.forEach((t=>t(window).trigger("rocket-jquery-load"))),await this.G();const t=new Event("rocket-pageshow");t.persisted=this.persisted,window.dispatchEvent(t),await this.G(),window.rocketonpageshow&&window.rocketonpageshow({persisted:this.persisted})}catch(t){console.error(t)}}async G(){Date.now()-this.lastBreath>45&&(await this.J(),this.lastBreath=Date.now())}async J(){return document.hidden?new Promise((t=>setTimeout(t))):new Promise((t=>requestAnimationFrame(t)))}B(t,e){return e===document&&"readystatechange"===t||(e===document&&"DOMContentLoaded"===t||(e===window&&"DOMContentLoaded"===t||(e===window&&"load"===t||e===window&&"pageshow"===t)))}static run(){(new RocketLazyLoadScripts).t()}}RocketLazyLoadScripts.run()})();</script>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+	<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	<link rel="alternate" hreflang="en" href="https://www.kelly.senate.gov/about/" />
+<link rel="alternate" hreflang="es" href="https://www.kelly.senate.gov/acerca-de-mark/?lang=es" />
+<link rel="alternate" hreflang="x-default" href="https://www.kelly.senate.gov/about/" />
+
+	<!-- This site is optimized with the Yoast SEO plugin v25.6 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>About Mark - Senator Mark Kelly</title><link rel="preload" data-rocket-preload as="image" href="https://www.kelly.senate.gov/wp-content/uploads/Kelly_About_Banner.jpg" fetchpriority="high">
+	<link rel="canonical" href="https://www.kelly.senate.gov/about/" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="About Mark - Senator Mark Kelly" />
+	<meta property="og:description" content="Mark Kelly has served his country as a U.S. Navy combat pilot, a NASA astronaut, and now as a U.S. Senator for Arizona. He is an independent leader who came to the Senate to serve Arizona’s working families, not corporate special interests. As the son of two police officers, Senator Kelly learned the value of [&hellip;]" />
+	<meta property="og:url" content="https://www.kelly.senate.gov/about/" />
+	<meta property="og:site_name" content="Senator Mark Kelly" />
+	<meta property="article:modified_time" content="2025-07-22T17:17:40+00:00" />
+	<meta property="og:image" content="https://www.kelly.senate.gov/wp-content/uploads/Kelly_About_Banner.jpg" />
+	<meta property="og:image:width" content="1366" />
+	<meta property="og:image:height" content="600" />
+	<meta property="og:image:type" content="image/jpeg" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:label1" content="Est. reading time" />
+	<meta name="twitter:data1" content="6 minutes" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://www.kelly.senate.gov/about/","url":"https://www.kelly.senate.gov/about/","name":"About Mark - Senator Mark Kelly","isPartOf":{"@id":"https://www.kelly.senate.gov/#website"},"primaryImageOfPage":{"@id":"https://www.kelly.senate.gov/about/#primaryimage"},"image":{"@id":"https://www.kelly.senate.gov/about/#primaryimage"},"thumbnailUrl":"https://www.kelly.senate.gov/wp-content/uploads/Kelly_About_Banner.jpg","datePublished":"2021-07-09T21:59:12+00:00","dateModified":"2025-07-22T17:17:40+00:00","breadcrumb":{"@id":"https://www.kelly.senate.gov/about/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://www.kelly.senate.gov/about/"]}]},{"@type":"ImageObject","inLanguage":"en-US","@id":"https://www.kelly.senate.gov/about/#primaryimage","url":"https://www.kelly.senate.gov/wp-content/uploads/Kelly_About_Banner.jpg","contentUrl":"https://www.kelly.senate.gov/wp-content/uploads/Kelly_About_Banner.jpg","width":1366,"height":600},{"@type":"BreadcrumbList","@id":"https://www.kelly.senate.gov/about/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.kelly.senate.gov/"},{"@type":"ListItem","position":2,"name":"About Mark"}]},{"@type":"WebSite","@id":"https://www.kelly.senate.gov/#website","url":"https://www.kelly.senate.gov/","name":"Senator Mark Kelly","description":"U.S. Senator for Arizona","publisher":{"@id":"https://www.kelly.senate.gov/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.kelly.senate.gov/?s={search_term_string}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":true,"valueName":"search_term_string"}}],"inLanguage":"en-US"},{"@type":"Organization","@id":"https://www.kelly.senate.gov/#organization","name":"Senator Mark Kelly","url":"https://www.kelly.senate.gov/","logo":{"@type":"ImageObject","inLanguage":"en-US","@id":"https://www.kelly.senate.gov/#/schema/logo/image/","url":"https://www.kelly.senate.gov/wp-content/uploads/Kelly_Logo_Primary.svg","contentUrl":"https://www.kelly.senate.gov/wp-content/uploads/Kelly_Logo_Primary.svg","caption":"Senator Mark Kelly"},"image":{"@id":"https://www.kelly.senate.gov/#/schema/logo/image/"}}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+
+<link rel="alternate" type="application/rss+xml" title="Senator Mark Kelly &raquo; Feed" href="https://www.kelly.senate.gov/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Senator Mark Kelly &raquo; Comments Feed" href="https://www.kelly.senate.gov/comments/feed/" />
+<link rel='stylesheet' id='sbi_styles-css' href='https://www.kelly.senate.gov/wp-content/cache/background-css/1/www.kelly.senate.gov/wp-content/plugins/instagram-feed-pro/css/sbi-styles.min.css?ver=6.8.1&wpr_t=1775271359' media='all' />
+<link rel='stylesheet' id='sby_styles-css' href='https://www.kelly.senate.gov/wp-content/cache/background-css/1/www.kelly.senate.gov/wp-content/plugins/youtube-feed-pro/css/sb-youtube.min.css?ver=2.6.0&wpr_t=1775271359' media='all' />
+<style id='wp-emoji-styles-inline-css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<link data-minify="1" rel='stylesheet' id='jet-engine-frontend-css' href='https://www.kelly.senate.gov/wp-content/cache/min/1/wp-content/plugins/jet-engine/assets/css/frontend.css?ver=1775161947' media='all' />
+<style id='global-styles-inline-css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:root { --wp--style--global--content-size: 800px;--wp--style--global--wide-size: 1200px; }:where(body) { margin: 0; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.wp-site-blocks) > * { margin-block-start: 24px; margin-block-end: 0; }:where(.wp-site-blocks) > :first-child { margin-block-start: 0; }:where(.wp-site-blocks) > :last-child { margin-block-end: 0; }:root { --wp--style--block-gap: 24px; }:root :where(.is-layout-flow) > :first-child{margin-block-start: 0;}:root :where(.is-layout-flow) > :last-child{margin-block-end: 0;}:root :where(.is-layout-flow) > *{margin-block-start: 24px;margin-block-end: 0;}:root :where(.is-layout-constrained) > :first-child{margin-block-start: 0;}:root :where(.is-layout-constrained) > :last-child{margin-block-end: 0;}:root :where(.is-layout-constrained) > *{margin-block-start: 24px;margin-block-end: 0;}:root :where(.is-layout-flex){gap: 24px;}:root :where(.is-layout-grid){gap: 24px;}.is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}a:where(:not(.wp-element-button)){text-decoration: underline;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;line-height: inherit;padding: calc(0.667em + 2px) calc(1.333em + 2px);text-decoration: none;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='wpml-legacy-horizontal-list-0-css' href='https://www.kelly.senate.gov/wp-content/plugins/sitepress-multilingual-cms/templates/language-switchers/legacy-list-horizontal/style.min.css?ver=1' media='all' />
+<link rel='stylesheet' id='wpml-menu-item-0-css' href='https://www.kelly.senate.gov/wp-content/plugins/sitepress-multilingual-cms/templates/language-switchers/menu-item/style.min.css?ver=1' media='all' />
+<link data-minify="1" rel='stylesheet' id='hello-elementor-css' href='https://www.kelly.senate.gov/wp-content/cache/min/1/wp-content/themes/hello-elementor/assets/css/reset.css?ver=1775161947' media='all' />
+<link data-minify="1" rel='stylesheet' id='hello-elementor-theme-style-css' href='https://www.kelly.senate.gov/wp-content/cache/min/1/wp-content/themes/hello-elementor/assets/css/theme.css?ver=1775161947' media='all' />
+<link data-minify="1" rel='stylesheet' id='hello-elementor-header-footer-css' href='https://www.kelly.senate.gov/wp-content/cache/min/1/wp-content/themes/hello-elementor/assets/css/header-footer.css?ver=1775161947' media='all' />
+<link data-minify="1" rel='stylesheet' id='jet-popup-frontend-css' href='https://www.kelly.senate.gov/wp-content/cache/background-css/1/www.kelly.senate.gov/wp-content/cache/min/1/wp-content/plugins/jet-popup/assets/css/jet-popup-frontend.css?ver=1775161947&wpr_t=1775271359' media='all' />
+<link rel='stylesheet' id='elementor-frontend-css' href='https://www.kelly.senate.gov/wp-content/uploads/elementor/css/custom-frontend.min.css?ver=1775253066' media='all' />
+<link rel='stylesheet' id='widget-search-form-css' href='https://www.kelly.senate.gov/wp-content/plugins/elementor-pro/assets/css/widget-search-form.min.css?ver=3.30.1' media='all' />
+<link rel='stylesheet' id='elementor-icons-shared-0-css' href='https://www.kelly.senate.gov/wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.min.css?ver=5.15.3' media='all' />
+<link data-minify="1" rel='stylesheet' id='elementor-icons-fa-solid-css' href='https://www.kelly.senate.gov/wp-content/cache/min/1/wp-content/plugins/elementor/assets/lib/font-awesome/css/solid.min.css?ver=1775161947' media='all' />
+<link rel='stylesheet' id='widget-nav-menu-css' href='https://www.kelly.senate.gov/wp-content/uploads/elementor/css/custom-pro-widget-nav-menu.min.css?ver=1775253066' media='all' />
+<link rel='stylesheet' id='e-sticky-css' href='https://www.kelly.senate.gov/wp-content/plugins/elementor-pro/assets/css/modules/sticky.min.css?ver=3.30.1' media='all' />
+<link rel='stylesheet' id='widget-image-css' href='https://www.kelly.senate.gov/wp-content/plugins/elementor/assets/css/widget-image.min.css?ver=3.30.3' media='all' />
+<link rel='stylesheet' id='widget-spacer-css' href='https://www.kelly.senate.gov/wp-content/plugins/elementor/assets/css/widget-spacer.min.css?ver=3.30.3' media='all' />
+<link rel='stylesheet' id='widget-social-icons-css' href='https://www.kelly.senate.gov/wp-content/plugins/elementor/assets/css/widget-social-icons.min.css?ver=3.30.3' media='all' />
+<link rel='stylesheet' id='e-apple-webkit-css' href='https://www.kelly.senate.gov/wp-content/uploads/elementor/css/custom-apple-webkit.min.css?ver=1775253066' media='all' />
+<link data-minify="1" rel='stylesheet' id='elementor-icons-css' href='https://www.kelly.senate.gov/wp-content/cache/min/1/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=1775161947' media='all' />
+<link rel='stylesheet' id='elementor-post-84170-css' href='https://www.kelly.senate.gov/wp-content/uploads/elementor/css/post-84170.css?ver=1775253062' media='all' />
+<link rel='stylesheet' id='sby-styles-css' href='https://www.kelly.senate.gov/wp-content/cache/background-css/1/www.kelly.senate.gov/wp-content/plugins/youtube-feed-pro/css/sb-youtube.min.css?ver=2.6.0&wpr_t=1775271359' media='all' />
+<link rel='stylesheet' id='sbistyles-css' href='https://www.kelly.senate.gov/wp-content/cache/background-css/1/www.kelly.senate.gov/wp-content/plugins/instagram-feed-pro/css/sbi-styles.min.css?ver=6.8.1&wpr_t=1775271359' media='all' />
+<link rel='stylesheet' id='widget-divider-css' href='https://www.kelly.senate.gov/wp-content/plugins/elementor/assets/css/widget-divider.min.css?ver=3.30.3' media='all' />
+<link rel='stylesheet' id='widget-heading-css' href='https://www.kelly.senate.gov/wp-content/plugins/elementor/assets/css/widget-heading.min.css?ver=3.30.3' media='all' />
+<link rel='stylesheet' id='elementor-post-64445-css' href='https://www.kelly.senate.gov/wp-content/uploads/elementor/css/post-64445.css?ver=1775253075' media='all' />
+<link rel='stylesheet' id='elementor-post-64542-css' href='https://www.kelly.senate.gov/wp-content/uploads/elementor/css/post-64542.css?ver=1775253069' media='all' />
+<link rel='stylesheet' id='elementor-post-64461-css' href='https://www.kelly.senate.gov/wp-content/uploads/elementor/css/post-64461.css?ver=1775253071' media='all' />
+<link rel='stylesheet' id='eael-general-css' href='https://www.kelly.senate.gov/wp-content/plugins/essential-addons-for-elementor-lite/assets/front-end/css/view/general.min.css?ver=6.2.2' media='all' />
+<link data-minify="1" rel='stylesheet' id='elementor-gf-local-teko-css' href='https://www.kelly.senate.gov/wp-content/cache/min/1/wp-content/uploads/elementor/google-fonts/css/teko.css?ver=1775161947' media='all' />
+<link data-minify="1" rel='stylesheet' id='elementor-gf-local-montserrat-css' href='https://www.kelly.senate.gov/wp-content/cache/min/1/wp-content/uploads/elementor/google-fonts/css/montserrat.css?ver=1775161947' media='all' />
+<link data-minify="1" rel='stylesheet' id='elementor-icons-fa-brands-css' href='https://www.kelly.senate.gov/wp-content/cache/min/1/wp-content/plugins/elementor/assets/lib/font-awesome/css/brands.min.css?ver=1775161947' media='all' />
+<script id="wpml-cookie-js-extra">
+var wpml_cookies = {"wp-wpml_current_language":{"value":"en","expires":1,"path":"\/"}};
+var wpml_cookies = {"wp-wpml_current_language":{"value":"en","expires":1,"path":"\/"}};
+</script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-src="https://www.kelly.senate.gov/wp-content/cache/min/1/wp-content/plugins/sitepress-multilingual-cms/res/js/cookies/language-cookie.js?ver=1775161948" id="wpml-cookie-js" defer data-wp-strategy="defer"></script>
+<script src="https://www.kelly.senate.gov/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script src="https://www.kelly.senate.gov/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<link rel="https://api.w.org/" href="https://www.kelly.senate.gov/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://www.kelly.senate.gov/wp-json/wp/v2/pages/64445" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.kelly.senate.gov/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.7.2" />
+<link rel='shortlink' href='https://www.kelly.senate.gov/?p=64445' />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://www.kelly.senate.gov/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.kelly.senate.gov%2Fabout%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://www.kelly.senate.gov/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.kelly.senate.gov%2Fabout%2F&#038;format=xml" />
+<meta name="generator" content="WPML ver:4.7.6 stt:1,2;" />
+<meta name="generator" content="Elementor 3.30.3; features: additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-swap">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script type="rocketlazyloadscript" async data-rocket-src="https://www.googletagmanager.com/gtag/js?id=G-F6JZ785ZZT"></script>
+<script type="rocketlazyloadscript">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-F6JZ785ZZT');
+</script>
+			<style>
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload),
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload) * {
+					background-image: none !important;
+				}
+				@media screen and (max-height: 1024px) {
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+				@media screen and (max-height: 640px) {
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+			</style>
+			<link rel="icon" href="https://www.kelly.senate.gov/wp-content/uploads/Kelly_Favicon-150x150.png" sizes="32x32" />
+<link rel="icon" href="https://www.kelly.senate.gov/wp-content/uploads/Kelly_Favicon.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://www.kelly.senate.gov/wp-content/uploads/Kelly_Favicon.png" />
+<meta name="msapplication-TileImage" content="https://www.kelly.senate.gov/wp-content/uploads/Kelly_Favicon.png" />
+		<style id="wp-custom-css">
+			/* ------
+ * ------ KELLY colors
+ * Black: #1C1F2A
+ * Blue (Dark): #003F93
+ * Blue (Light): #3E68C1
+ * Gray: #DCEDFF
+ * Red: #F54F4F
+ * Gold #F3A712
+ * ------ */
+
+/* ------ 
+ * HEADER
+ * CORE ELEMENT STYLES
+ * RE-USABLE ELEMENTS
+ * PAGES
+ * SINGLE POST & ARCHIVE
+ * FOOTER
+ * PRINT, PDF
+ * ------ */
+
+ .site-main {
+	min-height: 36rem;
+}
+
+/* ------
+* HEADER
+* ------ */
+
+/* HEADER - Slide In From The Top Option */
+.sticky-header {
+transform: translatey(-120px);
+-moz-transition: all 0.5s ease!important;
+-webkit-transition: all 0.5s ease!important;
+transition: all 0.5s ease!important;
+margin-bottom: -100px;
+	opacity:0;
+}
+
+@media (max-width: 1024px) {
+	.sticky-header {
+			transform: translatey(-180px);
+margin-bottom: -160px;
+	}
+}
+
+@media (max-width: 768px) {
+	.sticky-header {
+			transform: translatey(-220px);
+margin-bottom: -200px;
+	}
+}
+
+@media (max-width: 767px) {
+	.sticky-header {
+			transform: translatey(-160px);
+margin-bottom: -145px;
+	}
+}
+
+@media (max-width: 400px) {
+	.sticky-header {
+			transform: translatey(-160px);
+margin-bottom: -125px;
+	}
+}
+
+
+.elementor-sticky--effects.sticky-header  {
+height: auto!important;
+margin-bottom: 0;
+transform: translatey(0px);
+	width: 100% !important;
+	opacity: 1;
+}
+/* End Of Slide In From The Top Option */
+
+
+/* -- GLOBAL HEADER -- */
+.global-header.elementor-sticky--effects {box-shadow:0px 5px 10px -4px rgb(2 1 1 / 24%);}
+
+/* -- elementor menu fix -- */
+.has-submenu .sub-arrow {display:none;}
+
+
+/* -- GLOBAL MENU -- */
+.hdr-menu {
+z-index:4;     
+}
+
+.hdr-menu ul.sub-menu {
+padding:12px 0;     
+min-width: 21em !important;
+}
+.hdr-menu ul.sub-menu a:hover {}
+
+.hdr-menu .elementor-nav-menu--dropdown a:hover {
+font-weight:700 !important;
+}
+
+/* -- global menu pointer -- */
+.elementor-element .e--pointer-underline .elementor-nav-menu .menu-item a.elementor-item:after {height:0;}
+
+.elementor-element .e--pointer-underline .elementor-nav-menu .menu-item a.elementor-item.has-submenu:after, .elementor-element .e--pointer-underline .elementor-nav-menu .wpml-ls-item a.elementor-item:after {height:4px;}
+
+.elementor-element .e--pointer-underline .elementor-nav-menu .menu-item.current-menu-ancestor a.elementor-item:after {opacity:1;}
+
+/* -- language switcher -- */
+.elementor-element .e--pointer-underline .elementor-nav-menu .wpml-ls-item a.elementor-item {text-transform:none;}
+
+.elementor-nav-menu .wpml-ls-item a.elementor-item span::after {
+content: "→";
+	color: transparent;
+	font-size: 1em;
+	padding-left: 4px;
+} 
+.elementor-nav-menu .wpml-ls-item a.elementor-item:hover span::after {
+content: "→";
+	color: inherit;
+	font-size: 1em;
+	padding-left: 4px;
+}
+
+.elementor-element .e--pointer-underline .elementor-nav-menu .wpml-ls-item a.elementor-item:after {
+height:2px !important;
+background-color:#F54F4F !important;
+opacity:1 !important;
+bottom:3px;
+}
+.elementor-element .e--pointer-underline .elementor-nav-menu .wpml-ls-item a.elementor-item:hover::after {
+height:4px !important;
+background-color:#F3A712 !important;
+
+}
+
+#home-lang-switcher .wpml-ls-item a.elementor-item:hover {}
+.hdr-menu nav.elementor-nav-menu--dropdown .elementor-nav-menu li.menu-item.wpml-ls-item a.elementor-item {padding-top:30px;}
+
+.elementor-nav-menu .wpml-ls-item a.elementor-item span::after {
+display:none;
+}
+
+/* -- mobile dropdown main topics -- */
+#sen-home-menu .elementor-menu-toggle__icon--close {
+color:white !important;
+}
+
+#sen-home-menu nav.elementor-nav-menu--dropdown {
+padding:90px 0 35px 0 !important;
+top:0 !important;
+}
+
+.hdr-menu nav.elementor-nav-menu--dropdown {
+padding: 35px 0 100px !important;
+background-color:#003F93 !important;
+height: 100vh;
+}
+.elementor-menu-toggle.elementor-active {
+z-index:9999;
+}
+
+.hdr-menu nav.elementor-nav-menu--dropdown ul.elementor-nav-menu--dropdown{ background-color:#003F93 !important;}
+
+.hdr-menu nav.elementor-nav-menu--dropdown .elementor-nav-menu li.menu-item a.elementor-item {
+display:flex;
+justify-content:space-between;
+padding-left:0;
+margin-left:33px;
+padding-right:33px;
+padding-top:25px;
+padding-bottom:25px;
+color:white;
+font-weight:800;
+background-color:#003F93 !important;
+letter-spacing:0.0625em;
+}
+
+.hdr-menu nav.elementor-nav-menu--dropdown .elementor-nav-menu li.menu-item a.elementor-item.highlighted {
+padding-bottom:17px;
+background-color:#003F93;
+color:white;
+}
+
+/* -- mobile dropdown button -- */
+@media screen and (min-width: 768px) {
+.hdr-menu .mobile-menu-btn {
+display:none !important;
+}
+}
+@media screen and (max-width: 767px) {
+.hdr-menu .mobile-menu-btn {
+	display: block;
+	margin-top: 14px;
+	margin-bottom:5px;
+}
+.hdr-menu nav.elementor-nav-menu--dropdown .elementor-nav-menu li.menu-item.mobile-menu-btn a.elementor-item {
+	display: inline-block;
+	padding: 16px 32px 13px !important;
+	font-size: 1.1rem;
+	font-weight: 700;
+	color: #1C1F2A;
+	background: #F54F4F !important;
+	border-radius: 100px;
+}
+}
+.hdr-menu nav.elementor-nav-menu--dropdown .elementor-nav-menu li.menu-item.mobile-menu-btn a.elementor-item
+
+
+
+
+.hdr-menu nav.elementor-nav-menu--dropdown .elementor-nav-menu li.menu-item a.elementor-item .sub-arrow {display:flex;}
+.hdr-menu nav.elementor-nav-menu--dropdown .elementor-nav-menu li.menu-item a.elementor-item .sub-arrow:after {
+content:"+";
+font-weight:500;
+background-color:#F54F4F;
+color:#1C1F2A;
+font-size:3rem;
+padding:0 8px 2px 8px;
+border-radius:50px;
+line-height:.9em;
+}
+.hdr-menu nav.elementor-nav-menu--dropdown .elementor-nav-menu li.menu-item a.elementor-item.highlighted .sub-arrow:after {
+content:"–";
+padding:0px 10px 6px 10px;
+line-height:0.85em;
+color:#003F93;
+}
+
+/* -- mobile dropdown sub-menu -- */
+.hdr-menu nav.elementor-nav-menu--dropdown .sub-menu {
+padding:0 !important;
+margin-top:-5px;
+padding-bottom:10px;
+}
+.hdr-menu nav.elementor-nav-menu--dropdown .elementor-nav-menu .sub-menu .menu-item a.elementor-sub-item {
+font-size:1.2rem;
+font-weight:600 !important;
+padding-top:7px;
+padding-bottom:7px;
+letter-spacing:0.0625em;
+color:white;
+background-color:#003F93 !important;
+}
+.hdr-menu nav.elementor-nav-menu--dropdown .elementor-nav-menu .sub-menu .menu-item a.elementor-sub-item:hover,
+.hdr-menu nav.elementor-nav-menu--dropdown .elementor-nav-menu .sub-menu .menu-item a.elementor-item-active {
+color:#F3A712 !important;
+font-weight:800 !important;
+}
+
+/* -- Change dropdown breakpoint -- */
+
+@media (min-width: 1245px) {
+.elementor-nav-menu--dropdown-tablet .elementor-menu-toggle, .elementor-nav-menu--dropdown-tablet .elementor-nav-menu--dropdown {
+	display: none;
+}
+}
+
+@media (max-width: 1244px) {
+.elementor-nav-menu--dropdown-tablet .elementor-nav-menu--main {
+	display: none;
+}
+.elementor-nav-menu--dropdown-tablet .elementor-menu-toggle, .elementor-nav-menu--dropdown-tablet .elementor-nav-menu--dropdown {
+	display: block;
+}
+
+.elementor-nav-menu--dropdown {
+		border-width: 0 !important;
+		
+	}
+.hdr-menu nav.elementor-nav-menu--dropdown .elementor-nav-menu li.menu-item a.elementor-item {
+	margin-left: 12px;
+}
+.elementor-nav-menu__container.elementor-nav-menu--dropdown {
+top: 65px !important;
+}
+}
+
+
+/* -- Spanish -- */
+:lang(es) body[data-elementor-device-mode="desktop"] .hdr-menu.elementor-element .elementor-nav-menu .elementor-item
+{
+font-size: .9rem;
+}
+:lang(es) .btn-schedule {
+display: none;
+}
+
+
+/* ------
+* CORE ELEMENT STYLES
+* ------ */
+
+aside {margin-top:1.5% !important;}
+
+ul ul {
+list-style-type: disc;
+margin-bottom:2px !important;
+}
+
+/* -- search -- */
+.elementor-search-form--skin-full_screen .elementor-search-form input[type=search].elementor-search-form__input {
+margin: 0 auto !important;
+max-width: 80%;
+flex-basis: 600px;
+background-color:white !important;
+text-align:left;
+padding:11px 12px 8px 14px;
+}
+
+input[type=search].elementor-search-form__input::placeholder {
+color: #14394ff5;
+opacity: 1;
+}
+input[type=search].elementor-search-form__input:-ms-input-placeholder, input[type=search].elementor-search-form__input::-ms-input-placeholder {
+color: #14394ff5;
+}
+.elementor-search-form__container .dialog-lightbox-close-button {
+position:relative;
+top:-50px;
+color:white !important;
+}
+
+.elementor-search-form .dialog-lightbox-close-button i {
+font-size: 1.3em;
+}
+.elementor-search-form .dialog-lightbox-close-button i:hover {
+transition: all 0.3s ease-in-out;
+transform: scale(1.45);
+}
+.elementor-search-form__toggle i:hover {
+transition: all 0.3s ease-in-out;
+transform: scale(1.3);
+}
+
+/* -- Drop Cap -- */
+.elementor-drop-cap {
+font-family:"Lato", Sans-serif;
+font-weight:900;
+color:#1B8383;
+margin-right:5px !important;
+}
+
+/* -- headers in text -- */
+p.elementor-heading-title {
+line-height:1.3em;
+}
+.elementor-text-editor :is(h1, h2, h3, h4, h5, h6),
+.single .elementor-widget-theme-post-content :is(h1, h2, h3, h4, h5, h6) {margin-bottom:.7rem;}
+
+/* -- link states -- */
+.elementor-text-editor :is(p, ul, ol) a,
+.single .elementor-widget-theme-post-content :is(p, ul, ol) a{
+text-decoration:underline;
+}
+.elementor-text-editor :is(p, ul, ol) a:hover,
+.single .elementor-widget-theme-post-content :is(p, ul, ol) a:hover{
+text-decoration-thickness:2px;
+text-decoration-color:#F3A712;
+}
+/* -- link states dark background -- */
+.dark-background p a {
+color:#DCEDFF;
+}
+.dark-background p a:hover {
+color:#DCEDFF;
+	text-decoration-color:#F3A712;
+}
+
+/* Spacing Before Sub-Headers */
+.elementor-text-editor :is(p, ul, ol) + :is(h2, h3, h4, h5, h6),
+.single .elementor-widget-theme-post-content :is(p, ul, ol) + :is(h2, h3, h4, h5, h6){
+margin-top: 40px;
+}
+
+/* Bullet list styles */
+.elementor-text-editor :is(ul, ol),
+.single .elementor-widget-theme-post-content :is(ul, ol){
+margin-bottom: 1.1em;
+padding-left:60px;
+}
+
+.elementor-text-editor ul,
+.single .elementor-widget-theme-post-content ul {
+}
+.elementor-text-editor ul ul,
+.single .elementor-widget-theme-post-content ul ul {
+margin-top:0.5em;
+}
+
+.elementor-text-editor ul li::before, .single .elementor-widget-theme-post-content ul li::before {
+}
+
+.elementor-text-editor li,
+.single .elementor-widget-theme-post-content li {
+margin-top:0.5em;
+}
+.elementor-text-editor ol li:before,
+.single .elementor-widget-theme-post-content ol li:before {
+}
+
+/* block quotes */
+blockquote {
+padding: 95px 60px 10px 0px;
+}
+blockquote:before {
+background: var(--wpr-bg-a32702a0-ce5b-4689-bcde-ded92fc6b306) no-repeat;
+background-size: contain;
+content: '';
+position: absolute;
+height: 41px;
+width: 48px;
+left: 40px;
+margin-top:-85px;
+}
+.elementor-text-editor blockquote:before {
+}
+blockquote p {
+font-size:1rem;
+font-weight:bold;
+}
+blockquote cite {
+font-size:1rem;
+font-style:normal;
+font-weight:500;
+}
+blockquote p:first-child:before {
+background: var(--wpr-bg-dd8d96ef-a1e7-480f-9ff3-0840ceb4caee) no-repeat;
+background-size: contain;
+content: '';
+position: absolute;
+height: 2px;
+width: 120px;
+left: 40px;
+margin-top:-20px;
+}
+
+
+/* -- Form Styles -- */
+.gform_body.gform-body h3 {
+	margin: 1rem 0 0 0;
+}
+
+.gform_body.gform-body .gfield.gsection + .gfield {
+	margin: 0;
+}
+
+.gform_body.gform-body .gfield.gsection {
+	margin-bottom: 0 !important;
+}
+
+.gform_wrapper.gravity-theme .eael-gravity-form .gfield .gfield_label {
+	font-size: 1rem;
+	font-weight: 700 !important;
+}
+
+.eael-gravity-form .gfield select {
+padding: 12px;
+}
+
+
+[type=button], [type=submit], button {border:none;}
+
+
+
+/* ------
+* RE-USABLE ELEMENTS
+* ------ */
+
+
+
+nowrap {white-space:nowrap;}
+
+/* -- New Section Padding Options -- */
+/* -- side to side section -- */
+.sen-box-section {
+padding-left:40px !important;
+padding-right:40px !important;
+}
+@media (max-width: 1024px) {
+.sen-box-section {
+padding-left:1em !important;
+padding-right:1em !important;
+}
+}
+
+/* -- indented some section i.e. Office Locations -- */
+.sen-box-section-2 {
+overflow: visible !important;
+max-width:1230px;
+margin-left:auto;
+margin-right:auto;
+padding-left: 2rem !important;
+padding-right: 2rem !important;
+}
+
+/* -- indented more section i.e. Flag Requests -- */
+.sen-box-section-3 {
+max-width:1230px;
+margin-left:auto;
+margin-right:auto;
+}
+.sen-box-section-3>.elementor-container {
+margin:7%;
+}
+
+.sen-card-section>.elementor-container {
+margin-left:3%;
+margin-right:3%;
+}
+.sen-card-section>.elementor-container>.elementor-row {
+margin-left:24px;
+}
+
+html {
+	--sen-card-spacing: 1.5rem;
+}
+@media screen and (max-width: 767px) {
+	html {
+		--sen-card-spacing: 1rem;
+	}
+}
+
+.sen-box-section-2 > div {
+	display: flex;
+	gap: calc(var(--sen-card-spacing) * 2);
+	margin-bottom: calc(var(--sen-card-spacing) * 2);
+}
+
+.sen-card-Column > .elementor-widget-wrap {
+	position: relative;
+	padding-left: var(--sen-card-spacing) !important;
+	padding-top: var(--sen-card-spacing) !important;
+margin: 0 !important;
+
+}
+
+.sen-card-Image {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: var(--sen-card-spacing);
+	right: var(--sen-card-spacing);
+	z-index: 1;
+	width: auto !important;
+	transition: transform, z-index;
+	transition-duration: 600ms, 0s;
+	transition-timing-function: ease-in-out, linear;
+	transition-delay: 0s, 300ms;
+	transform-origin: 50% 50% -2rem;
+	transform: rotate3d(0, 1, 0, 0deg) perspective(999999px) translate3d(0, 0, 160px);
+	transform-style: preserve-3d;
+	will-change: transform;
+	z-index: 3;
+}
+.sen-card-Column > .elementor-widget-wrap:hover .sen-card-Image,
+.sen-card-Column > .elementor-widget-wrap:focus .sen-card-Image {
+	transition-duration: 400ms, 0;
+	transition-delay: 0s, 200ms;
+	transform: rotate3d(0, 1, 0, -180deg) perspective(999999px) translate3d(0, 0, 160px);
+	/* transform: rotate3d(0, 1, 0, -90.1deg) perspective(999999px) translate3d(0, 0, 160px); */
+	z-index: 1;
+}
+.sen-card-Image:after {
+	content: '';
+	background-color: #3E68C1;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	transform: rotateY(180deg);
+	z-index: 2;
+}
+.sen-card-Image * {
+	position: static !important;
+}
+
+.sen-card-Image .wp-caption {
+	position: absolute !important;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+}
+
+.sen-card-Image .wp-caption:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0) 6rem);
+	z-index: 1;
+}
+
+.sen-card-Image .wp-caption img {
+	width: 100% !important;
+	height: 100% !important;
+	object-fit: cover;
+	object-position: center;
+}
+
+.sen-card-Image .wp-caption figcaption {
+	position: absolute !important;
+	bottom: var(--sen-card-spacing);
+	right: var(--sen-card-spacing);
+	z-index: 2;
+	color: white;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 1.25rem;
+	border-bottom: 2px solid var(--e-global-color-secondary);
+}
+
+.sen-card-Content {
+	position: relative;
+	z-index: 2;
+	height: 100% !important;
+	display: flex;
+}
+.sen-card-Content > div {
+	width: 100%;
+}
+
+.sen-card-Content:before {
+	content: '';
+	width: 0;
+	height: 0;
+	padding-top: 60%;
+}
+
+.sen-card-Content > div {
+	margin: 0 !important;
+	padding: 0 !important;
+	height: 100%;
+}
+
+.sen-card-Content .elementor-cta {
+	height: 100%;
+}
+.sen-card-Content .elementor-cta__content {
+	padding: calc(var(--sen-card-spacing) * 2) !important;
+	display: flex;
+	flex-direction: column;
+}
+.sen-card-Content .elementor-cta__description {
+	flex-grow: 1;
+}
+.sen-card-Content .elementor-cta__button-wrapper {
+	text-align: right;
+}
+.sen-card-Content .elementor-button {
+	white-space: nowrap;
+	padding: 0;
+	text-transform: none;
+	border-bottom: 4px solid #003F93 !important;
+}
+.sen-card-Column > .elementor-widget-wrap:hover .elementor-cta__button, 
+.sen-card-Column > .elementor-widget-wrap:focus .elementor-cta__button {
+	border-color: #F3A712 !important;
+}
+
+#sen-wide-card .sen-card-Image {
+	transform-origin: 50% 50% -5rem;
+}
+	
+@media screen and (min-width: 1024px) {
+	#sen-wide-card .sen-card-Image {
+		transform-origin: 50% 50% -15rem;
+	}
+	#sen-wide-card .sen-card-Content:before {
+		padding-top: 30%;
+	}
+}
+
+/* -- Indented Text Widget -- */
+.sen-indented-text {
+margin-top:40px;
+margin-bottom:40px !important;
+padding-left: 9%;
+padding-right: 9%;
+}
+@media (max-width: 1024px) {
+.sen-indented-text {
+margin-top:30px;
+margin-bottom:30px !important;
+padding-left:7%;
+padding-right:7%;
+}
+}
+@media (max-width: 767px) {
+.sen-indented-text {
+margin-top:0px;
+margin-bottom:0px !important;
+}
+}
+
+
+
+/* -- Section Padding News -- */
+.sen-sec-pad-news>.elementor-column-gap-default>.elementor-column>.elementor-widget-wrap {
+padding: 0% 8% 7% 8%;
+}
+@media (max-width: 1024px) {
+.sen-sec-pad-news>.elementor-column-gap-default>.elementor-column>.elementor-widget-wrap {
+padding: 0% 7% 7% 7%;
+}
+}
+@media (max-width: 767px) {
+.sen-sec-pad-news>.elementor-column-gap-default>.elementor-column>.elementor-widget-wrap {
+padding: 0% 7% 16% 7%;
+}
+}
+
+/* -- IMAGE BOX SHADOWS -- */
+.img-box-shadow-left img {
+box-shadow:-44px 44px 0px 0px #dcedff;
+}
+.img-box-shadow-right img {
+box-shadow:44px 44px 0px 0px #dcedff;
+}
+@media (max-width: 767px) {
+.img-box-shadow-left img {
+box-shadow:-27px 27px 0px 0px #dcedff;
+}
+.img-box-shadow-right img {
+box-shadow:27px 27px 0px 0px #dcedff;
+}
+}
+
+
+/* -- BUTTON STYLES -- */
+/* - Button Widget w/ Icon :: sen-btn-arrow :: was btn-remove-arrow - */
+.sen-btn-arrow a .elementor-align-icon-right {
+margin-left: 5px !important;
+}
+.sen-btn-arrow a {
+border-radius: 100px !important;
+}
+.sen-btn-arrow a:not(:hover) {
+padding: 18px 8px 16px 30px !important;
+}
+.sen-btn-arrow a:hover {
+padding: 18px 19px 16px 19px !important;
+}
+.sen-btn-arrow a:not(:hover) i {opacity:0;}
+
+.sen-btn-arrow a.elementor-size-xs:not(:hover) {
+padding: 14px 6px 12px 25px !important;
+}
+.sen-btn-arrow a.elementor-size-xs:hover {
+padding: 14px 14px 12px 17px !important;
+}
+
+/* - Home Header Buttons - */
+#home-hdr-buttons .sen-btn-arrow a {
+min-width:360px;
+}
+
+/* - Button Widgets used as Links :: sen-btn-link :: was sen-btn-hover - */
+.sen-btn-link a {
+padding-bottom:3px !important;
+border-bottom:2px solid #F54F4F;
+background-color: transparent !important;
+text-transform:initial !important;
+}
+.sen-btn-link a:hover {
+	padding-bottom:1px !important;
+border-bottom:4px solid #F3A712;
+background-color: transparent !important;
+}
+
+/* - Image Captions - */
+.sen-img-caption {
+background-color: black;
+}
+.sen-img-caption figcaption {
+position: absolute;
+bottom: 0;
+padding: 4% 7%;
+color: #FEFEFE;
+width:100%;
+z-index:10;
+}
+@media (max-width: 767px) {
+.sen-img-caption figcaption {
+background-color: transparent !important;
+	position: inherit;	
+	color: #1c1f2a !important;
+	font-weight: 500 !important;
+	padding: 3%;
+}
+}
+
+
+/* - CTA Widget w/ Btn - */
+.sen-cta-btn .elementor-cta__button-wrapper {
+bottom: 0;
+left: 0;
+position: absolute;
+right: 0;
+text-align: right;
+}
+.elementor-element.sen-cta-btn .elementor-cta .elementor-button {
+padding-right:0;
+border:none;
+background: transparent;
+color:transparent;
+}
+.sen-cta-btn a.elementor-cta .elementor-button:after {
+content: "→";
+font-size: 1.2em;
+padding: 14px;
+color:#14394F;
+}
+.sen-cta-btn-coral a.elementor-cta .elementor-button:after {
+background:#f58764;
+}
+.sen-cta-btn-coral a.elementor-cta:hover .elementor-button {
+background:#f58764;
+color:#14394F;
+}
+.sen-cta-btn-gold a.elementor-cta .elementor-button:after {
+background:#FFC400;
+}
+.sen-cta-btn-gold a.elementor-cta:hover .elementor-button {
+background:#FFC400;
+color:#14394F;
+}
+.sen-cta-btn-teal a.elementor-cta .elementor-button:after {
+background:#00B1B1;
+}
+.sen-cta-btn-teal a.elementor-cta:hover .elementor-button {
+background:#00B1B1;
+color:#14394F;
+}
+
+/* -- CTA Background Image right -- */
+.sen-cta-back-right .elementor-cta__bg {
+background-position:right;
+}
+
+
+/* -- DROP SHADOWS -- */
+/* -- Images -- */
+@media screen and (max-width: 1024px) {
+.img-green-shadow img {
+	box-shadow: -20px 20px 0px 0px #00b1b1 !important;
+}
+}
+/* -- Videos -- */
+@media screen and (max-width: 1024px) {
+.video-green-shadow .elementor-widget-container {
+	box-shadow: -20px 20px 0px 0px #00b1b1 !important;
+}
+}
+
+
+/* -- PAGE TITLE BANNERS -- */
+
+.page-title-banner-column > .elementor-column-wrap {min-height:515px;}
+
+body[data-elementor-device-mode="mobile"] .page-title-banner-column > .elementor-column-wrap {min-height:0;}
+
+
+/* -- ICON LIST link hover -- */
+.sen-icon-list-links a .elementor-icon-list-text {
+padding-bottom:2px;
+border-bottom: 2px solid #F54F4F;
+}
+.sen-icon-list-links a:hover .elementor-icon-list-text {
+padding-bottom:0;
+border-bottom: 4px solid #F3A712;
+}
+
+/* -- button box border hover -- */
+.sen-button .elementor-button:hover {box-shadow:7px 7px 0px 0px #152251 !important;}
+.sen-button-2 .elementor-button:hover {box-shadow:7px 7px 0px 0px #005CB9 !important;}
+
+
+/* -- alt button light back -- */
+.alt-button-light-back a{
+border-bottom:2px solid white;
+}
+.alt-button-light-back a:hover {
+border-bottom:2px solid #F54F4F;
+}
+.alt-button-light-back a:hover:after {
+	content: " →";
+}
+
+
+
+/* ------
+* PAGES
+* ------ */
+
+
+
+/* -- HOME PAGE -- */
+
+/* -- alert -- SEE SOME STYLING IN WIDGET CUSTOM CSS */
+#alert-content p {
+	margin: 0;
+padding-left: 40px;
+position: relative;
+}
+#alert-section p a {
+	text-decoration: underline;
+}
+#alert-section p a:hover {
+ text-decoration-thickness:2px; 
+text-decoration-color:#F3A712;
+}
+/* -- alert -- MOVED TO WIDGETS CSS */
+#alert-content p:before {
+	content: 'ALERT: ';
+	font-weight: 700;
+}
+#alert-content p:after {
+background: var(--wpr-bg-1d8dbc7f-4402-49e5-9a90-6349904eec7b) no-repeat;
+background-size: contain;
+content: '';
+height: 28px;
+left: 0;
+position: absolute;
+top: -5px;
+width: 28px;
+}
+
+/* -- alert lang -- */
+:lang(en-US) .alert-es {
+display: none;
+}
+
+:lang(es-ES) .alert-en {
+display: none;
+}
+
+/* -- Home Header Buttons -- */
+@media (max-width: 767px) {
+#home-hdr-buttons .elementor-button-icon {
+display:none;
+}
+#home-hdr-buttons a {
+padding-left:8px !important;
+}
+#home-hdr-buttons .elementor-button-wrapper {
+	max-width: 360px;
+	margin:0 auto;
+}
+#home-hdr-buttons a {
+padding-top:20px !important;
+padding-bottom:18px !important;
+
+}
+
+}
+
+/* -- Social Titles -- */
+#sen-home-social-sec .elementor-widget-icon-box {
+margin-top:20px;
+}
+#sen-home-social-sec .elementor-icon-box-wrapper {
+justify-content:center;
+}
+#sen-home-social-sec .elementor-icon-box-content {
+flex-grow:0;
+}
+#sen-home-social-sec .elementor-icon-box-title {
+margin-bottom:6px;
+}
+
+/* -- Home mobile background overlay behind logo -- */
+@media (max-width: 767px) {
+#home-hdr>.elementor-container>.elementor-row>.elementor-column>.elementor-column-wrap>.elementor-background-overlay {
+background-color: transparent;
+ background-image: linear-gradient(180deg, #00000000 55%, #000000 95%) !important;
+}
+#home-menu-sec {
+		background-color: transparent;
+	background-image: linear-gradient(180deg, #ffffff8c 1%, #FFFFFF00 100%);
+	opacity:1;
+}
+}
+
+/* -- home newsletter sign up -- */
+@media (min-width: 641px) {
+.gform_wrapper.gravity-theme .gfield.home-newsletter-email {
+grid-column:span 8;
+}
+.gform_wrapper.gravity-theme .gfield.home-newsletter-zip {
+grid-column:span 4;
+}
+.gform_wrapper.gravity-theme .gfield.home-newsletter-zip .ginput_container_address span {
+flex:0 0 100%;
+}
+}
+
+
+/* -- home social buttons -- */
+#home-social-mid-page i.fab {
+	padding: 7px;
+	background: #005CB9;
+	color: white;
+	border-radius: 50%;
+	display: table;
+}
+#home-social-mid-page i.fa-facebook-f {padding: 7px 9.5px;}
+#home-social-mid-page a:hover i.fab {background: #3399FF;}
+#home-social-mid-page a:hover {font-weight: 600;}
+#home-social-mid-page a:hover::after {
+content: "→";
+color: #152251;
+font-size:1em;
+padding-top:5px;
+padding-left:4px;}
+
+/* -- home locations -- */
+#home-locations .elementor-heading-title {
+letter-spacing:0;
+}
+#home-locations p {
+margin-bottom:6px;
+}
+
+
+/* -- SCHEDULING REQUESTS -- */
+.big-button  a.elementor-toggle-title {border-bottom:2px solid #FFC400;padding-bottom:6px;}
+.big-button  .elementor-toggle-item:hover a.elementor-toggle-title {border-bottom-width:4px;padding-bottom:4px;}
+
+.big-button-navy  .elementor-toggle-item:hover .elementor-tab-title, .big-button-navy  .elementor-toggle-item:hover .elementor-tab-title a {background-color:#184762 !important;}
+.big-button-teal  .elementor-toggle-item:hover .elementor-tab-title, .big-button-teal  .elementor-toggle-item:hover .elementor-tab-title a {background-color:#00CCCC !important;}
+
+
+/* -- NEWS PAGE -- */
+/* -- see below under post archive pages for one rule on newsletter section of news page -- */
+
+.news-page-sections h4 a:hover {
+color:#005CB9 !important;
+text-decoration:underline;
+text-decoration-thickness:3px;
+}
+.news-page-sections h4 a:hover:after {
+content:" →";
+}
+.news-page-sections .jet-listing-grid__item .elementor-icon-list-item:hover {text-decoration-thickness:2px;}
+
+/* -- APPROPRIATIONS PAGE -- */
+.appropriations-page-content a.elementor-button {
+border-bottom:3px solid white;
+}
+.appropriations-page-content a.elementor-button:hover {
+border-bottom:3px solid #005cb9;
+}
+
+/* -- VOTING RECORD PAGE -- */
+#js-CongressGovSearch--main .Button {font-weight:600;padding:10px 25px;}
+
+
+
+
+
+
+/* -- SINGLE ISSUES PAGE -- */
+.issue-post-content p:first-child:first-letter {
+	float: left;
+	text-align: center;
+	line-height: 1;
+	font-size: 0.02rem;
+	font-family: "Lato", Sans-serif;
+	font-weight: 900;
+	color: #1B8383;
+	margin-right: 5px !important;
+}
+
+
+
+/* ------
+* SINGLE POST & ARCHIVE
+* ------ */
+
+
+/* -- MAP STYLES -- */
+
+.jet-map-box {
+background: #fff;
+padding: .5rem;
+}
+
+
+/* -- SEARCH RESULTS PAGE -- */
+
+body.search-results h1 {
+font-size: 3.5rem;
+margin-top: 40px;
+padding-bottom: 15px;
+}
+body.search-results h2 {
+font-size: 2.1rem;
+margin-top:35px;
+}
+body.search-results h2 a {
+color: #14394F;
+text-decoration:none;
+}
+body.search-results h2 a:hover {
+color: #1B8383;
+text-decoration:underline;
+text-decoration-color:#FFC400;
+}
+
+
+/* -- POST ARCHIVE PAGES --
+* News, Press Releases, Newsletter -- */
+
+.sen-news-item-title, .sen-news-item-excerpt {margin-bottom:0 !important;}
+
+.sen-listing-item-archive-page h3 a:hover {
+color: #3E68C1 !important;
+text-decoration: underline;
+text-decoration-thickness: 2px;
+text-decoration-color:#F3A712;
+}
+
+#sen-archive-newsletter-wrapper .fa-newspaper:before,
+#news-page-newsletter .fa-newspaper:before {
+content:"\f658";
+position:relative;
+top:-2px;
+}
+
+.filter-popup .elementor-icon-box-wrapper:hover .elementor-icon, .filter-popup .elementor-icon-box-wrapper:hover .elementor-icon-box-title
+{color:#005CB9 !important;font-weight:700;}
+
+.filter-popup .elementor-icon-box-wrapper:hover .elementor-icon-box-title:after {
+	content: " →";
+}
+
+.sen-listing-item-archive-page .sen-post-info-cont-read a {text-decoration:underline;}
+.sen-listing-item-archive-page .sen-post-info-cont-read a:hover {
+text-decoration-thickness:2px;
+text-decoration-color:#F3A712;
+}
+.sen-listing-item-archive-page .sen-post-info-cont-read a:hover .elementor-icon-list-text {}
+
+#sen-post-archive-pagination .jet-filters-pagination__link:hover {
+font-weight:700;
+text-decoration:underline;
+text-decoration-thickness:2px;
+} 
+
+
+
+/* -- SINGLE POST TEMPLATES -- */
+
+.sen-single-post-breadcrumbs a {
+color:#1C1F2A;
+}
+.sen-single-post-breadcrumbs a:hover {
+color:#003F93 !important;
+}
+
+/* -- social share buttons -- */
+.elementor-share-btn_twitter {background-color:#2aa3ef !important;}
+.elementor-share-btn_twitter:hover {background-color:#1F8CD0 !important;}
+
+.elementor-share-btn_facebook {background-color:#4268b2 !important;}
+.elementor-share-btn_facebook:hover {background-color:#2B529C !important;}
+
+.elementor-share-btn_email i,
+.elementor-share-btn_print i {color:#F54F4F !important;}
+
+.elementor-widget-share-buttons .elementor-widget-container .elementor-grid .elementor-grid-item:nth-child(n+3) .elementor-share-btn .elementor-share-btn__icon, .elementor-widget-share-buttons .elementor-widget-container .elementor-grid .elementor-grid-item:nth-child(n+3) .elementor-share-btn .elementor-share-btn__text {color:white;}
+
+
+/* -- Prev Next Arrow Buttons -- */
+.fa-long-arrow-left:before {content:"\f30a";}
+.fa-long-arrow-right:before {content:"\f30b";}
+
+.elementor-widget-post-navigation a {
+border-radius:100px;
+background: #F54F4F;
+-webkit-transition: all .3s;
+	-o-transition: all .3s;
+	transition: all .3s;
+}
+.elementor-widget-post-navigation a:hover {
+background: #F3A712;
+}
+
+.elementor-widget-post-navigation a .post-navigation__arrow-prev {
+padding-right:5px !important;
+}
+.elementor-widget-post-navigation a .post-navigation__arrow-next {
+padding-left:5px !important;
+}
+
+.post-navigation__next--label,
+.post-navigation__prev--label,
+.post-navigation__arrow-next,
+.post-navigation__arrow-prev {line-height:1em;}
+
+.sen-btn-arrow .elementor-post-navigation__prev a:not(:hover) {
+padding-left:12px !important;
+padding-right:26px !important;
+}
+
+.elementor-post-navigation {justify-content:space-between;}
+
+.elementor-post-navigation .elementor-post-navigation__link {width:initial;padding:0 5px;}
+
+/* -- NEWSLETTER SINGLE POST -- */
+.single-newsletter h1 {padding-top:25px;padding-bottom:5px;}
+
+.single-newsletter h1,
+.single-newsletter h1 span,
+.single-newsletter p,
+.single-newsletter p span {font-family:"Montserrat", Sans-serif !important;}
+
+
+/* ------
+* FOOTER
+* ------ */
+
+/* -- FOOTER -- */
+body[data-elementor-device-mode="mobile"] #sen-footer ul.elementor-nav-menu,
+body[data-elementor-device-mode="mobile"] #sen-footer ul.elementor-nav-menu li
+{
+	display:block;
+}
+body[data-elementor-device-mode="mobile"] #sen-footer ul.elementor-nav-menu li a
+{
+-webkit-box-pack: center;
+ -ms-flex-pack: center;
+ justify-content: center;
+margin:0 !important;
+padding-top:15px;
+padding-bottom:25px;
+}
+
+#footer-text p {
+	margin: 0;
+}
+#sen-moratorium p a {
+text-decoration: underline;
+text-decoration-skip-ink: auto;
+}
+#sen-moratorium p a:hover {
+ text-decoration-thickness:2px;
+text-decoration-color:#F3A712;
+}
+
+#sen-footer-menu a {
+border-bottom: 2px solid transparent;
+}
+#sen-footer-menu a:hover, #sen-footer-menu .current_page_item a, #sen-footer-menu .current-page-ancestor a {
+border-bottom: 2px solid #F3A712;
+}
+@media (max-width: 767px) {
+#sen-footer-menu a:hover, #sen-footer-menu .current_page_item a, #sen-footer-menu .current-page-ancestor a {
+border-bottom: 2px solid transparent;
+	text-decoration:underline;
+	text-decoration-color:#F3A712;
+	text-decoration-thickness:2px;
+}
+}
+
+
+
+/* ------
+* PRINT, PDF
+* ------ */
+.justprint { display: none; } 
+
+/* -- print styles -- */
+@media print { .noprint,#sen-moratorium { display: none; } 
+a:link:after, :visited:after {
+	content: none;
+}
+.justprint { display: block !important; margin: 0 auto; } 
+}
+
+/* -- PDF Form Rules -- */
+@media screen { .hide-form-show-pdf { display: none !important; } }
+
+
+
+
+
+
+
+
+/* ------
+* CARRY OVER
+* ------ */
+
+/* ------
+* PAGES
+* ------ */
+
+/* -- NEWSFEED PAGE -- */
+.eael-post-grid .eael-entry-wrapper>.eael-entry-meta span.eael-posted-on::before {display:none;}
+.eael-post-grid .eael-entry-wrapper>.eael-entry-meta span.eael-posted-on  {padding-left:0;}
+.eael-grid-post-excerpt {line-height:1.3em;}
+.eael-grid-post-excerpt p {display:inline;}
+.eael-grid-post-excerpt a {padding-left:2px;}
+.eael-grid-post-excerpt a:hover {}
+
+.jet-listing-grid__item .elementor-widget-post-info a:hover {}
+
+
+
+/* -- SINGLE POST TEMPLATES -- */
+
+/* -- Reveal Text Buttons -- */
+
+.elementor-widget-icon-box.reveal-text .elementor-icon-box-content {
+visibility: hidden;
+ opacity: 0;
+	transition: visibility 0s, opacity 0.5s linear;
+}
+
+
+.elementor-widget-icon-box.reveal-text:hover .elementor-icon-box-content {
+/*display:inline-block;*/
+opacity: 1;
+visibility: visible;
+}
+
+.elementor-widget-button.reveal-text .elementor-button-text{
+/*display:none;*/
+visibility: hidden;
+ opacity: 0;
+	transition: visibility 0s, opacity 0.5s linear;
+width: 0;
+height: 0;
+}
+
+.elementor-widget-button.reveal-text:hover .elementor-button-text {
+/*display:inline-block;*/
+opacity: 1;
+visibility: visible;
+width: auto;
+height: auto;
+}
+
+.elementor-widget-button.reveal-text .elementor-align-icon-right {
+	margin-right: 5px;
+	margin-left: 0;
+}
+
+.elementor-widget-button.reveal-text:hover .elementor-align-icon-right {
+margin-right: 0;
+	margin-left: 5px;
+}
+
+
+
+
+
+/* ------
+* OLD rules kept, not sure if in use
+* ------ */
+
+/* ------
+* HOMEPAGE
+* ------ */
+#page-intro p:last-of-type {
+margin-bottom: 0;
+}
+
+.sticky-header { display: none} .sticky-header.elementor-sticky--active { display: block !important}.hidden-styles {height: 0; overflow: hidden}		</style>
+		<noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript><style id="rocket-lazyrender-inline-css">[data-wpr-lazyrender] {content-visibility: auto;}</style><style id="wpr-lazyload-bg-container"></style><style id="wpr-lazyload-bg-exclusion">.elementor-67624 .elementor-element.elementor-element-a39893c:not(.elementor-motion-effects-element-type-background), .elementor-67624 .elementor-element.elementor-element-a39893c > .elementor-motion-effects-container > .elementor-motion-effects-layer{--wpr-bg-24c6ab49-337f-419b-b565-c439633c03e7: url('https://www.kelly.senate.gov/wp-content/uploads/Kelly_About_Banner.jpg');}</style>
+<noscript>
+<style id="wpr-lazyload-bg-nostyle">.sbi_lb-loader span{--wpr-bg-a8ef44a9-97a6-424d-a330-d9a67ac70256: url('https://www.kelly.senate.gov/wp-content/plugins/instagram-feed-pro/img/sbi-sprite.png');}.sbi_lb-nav span{--wpr-bg-3709befc-b5ad-4a03-8193-e0c47bc6b92c: url('https://www.kelly.senate.gov/wp-content/plugins/instagram-feed-pro/img/sbi-sprite.png');}.sb_instagram_header .sbi_header_img_hover i{--wpr-bg-f9f6c93c-b5bd-4c27-b70c-7c5281a78c54: url('https://www.kelly.senate.gov/wp-content/plugins/instagram-feed-pro/img/small-logo.png');}.sb_instagram_header.sbi_story .sbi_header_img_hover .sbi_new_logo{--wpr-bg-ff02f16c-d3f6-43f6-899b-bb46b434603b: url('https://www.kelly.senate.gov/wp-content/plugins/instagram-feed-pro/img/sbi-sprite.png');}body .sby_lb-outerContainer .sby_lb-close,body.et-db #et-boc .sby_lb-outerContainer .sby_lb-close{--wpr-bg-e4b35de6-5fd3-4558-8fef-5547b89f1720: url('https://www.kelly.senate.gov/wp-content/plugins/youtube-feed-pro/img/close.png');}body .sby_lb-nav span,body.et-db #et-boc .sby_lb-nav span{--wpr-bg-8bae74d4-8abe-4615-a1c6-21fdf9b67002: url('https://www.kelly.senate.gov/wp-content/plugins/youtube-feed-pro/img/sby-sprite.png');}body .sby_lb-data .sby_lb-close,body.et-db #et-boc .sby_lb-data .sby_lb-close{--wpr-bg-4787045e-aa3b-4ebb-9f84-7856b6c37cda: url('https://www.kelly.senate.gov/wp-content/plugins/youtube-feed-pro/img/close.png');}.single-jet-popup{--wpr-bg-6803cf9a-6ff4-4ecd-9c94-363f7a623451: url('https://www.kelly.senate.gov/wp-content/plugins/jet-popup/assets/image/transparent.jpg');}blockquote:before{--wpr-bg-a32702a0-ce5b-4689-bcde-ded92fc6b306: url('https://www.kelly.senate.gov/wp-content/uploads/gold-quote-kelly.png');}blockquote p:first-child:before{--wpr-bg-dd8d96ef-a1e7-480f-9ff3-0840ceb4caee: url('https://www.kelly.senate.gov/wp-content/uploads/quote-line-kelly.png');}#alert-content p:after{--wpr-bg-1d8dbc7f-4402-49e5-9a90-6349904eec7b: url('https://www.kelly.senate.gov/wp-content/uploads/alert-icon-kelly.png');}</style>
+</noscript>
+<script type="application/javascript">const rocket_pairs = [{"selector":".sbi_lb-loader span","style":".sbi_lb-loader span{--wpr-bg-a8ef44a9-97a6-424d-a330-d9a67ac70256: url('https:\/\/www.kelly.senate.gov\/wp-content\/plugins\/instagram-feed-pro\/img\/sbi-sprite.png');}","hash":"a8ef44a9-97a6-424d-a330-d9a67ac70256","url":"https:\/\/www.kelly.senate.gov\/wp-content\/plugins\/instagram-feed-pro\/img\/sbi-sprite.png"},{"selector":".sbi_lb-nav span","style":".sbi_lb-nav span{--wpr-bg-3709befc-b5ad-4a03-8193-e0c47bc6b92c: url('https:\/\/www.kelly.senate.gov\/wp-content\/plugins\/instagram-feed-pro\/img\/sbi-sprite.png');}","hash":"3709befc-b5ad-4a03-8193-e0c47bc6b92c","url":"https:\/\/www.kelly.senate.gov\/wp-content\/plugins\/instagram-feed-pro\/img\/sbi-sprite.png"},{"selector":".sb_instagram_header .sbi_header_img_hover i","style":".sb_instagram_header .sbi_header_img_hover i{--wpr-bg-f9f6c93c-b5bd-4c27-b70c-7c5281a78c54: url('https:\/\/www.kelly.senate.gov\/wp-content\/plugins\/instagram-feed-pro\/img\/small-logo.png');}","hash":"f9f6c93c-b5bd-4c27-b70c-7c5281a78c54","url":"https:\/\/www.kelly.senate.gov\/wp-content\/plugins\/instagram-feed-pro\/img\/small-logo.png"},{"selector":".sb_instagram_header.sbi_story .sbi_header_img_hover .sbi_new_logo","style":".sb_instagram_header.sbi_story .sbi_header_img_hover .sbi_new_logo{--wpr-bg-ff02f16c-d3f6-43f6-899b-bb46b434603b: url('https:\/\/www.kelly.senate.gov\/wp-content\/plugins\/instagram-feed-pro\/img\/sbi-sprite.png');}","hash":"ff02f16c-d3f6-43f6-899b-bb46b434603b","url":"https:\/\/www.kelly.senate.gov\/wp-content\/plugins\/instagram-feed-pro\/img\/sbi-sprite.png"},{"selector":"body .sby_lb-outerContainer .sby_lb-close,body.et-db #et-boc .sby_lb-outerContainer .sby_lb-close","style":"body .sby_lb-outerContainer .sby_lb-close,body.et-db #et-boc .sby_lb-outerContainer .sby_lb-close{--wpr-bg-e4b35de6-5fd3-4558-8fef-5547b89f1720: url('https:\/\/www.kelly.senate.gov\/wp-content\/plugins\/youtube-feed-pro\/img\/close.png');}","hash":"e4b35de6-5fd3-4558-8fef-5547b89f1720","url":"https:\/\/www.kelly.senate.gov\/wp-content\/plugins\/youtube-feed-pro\/img\/close.png"},{"selector":"body .sby_lb-nav span,body.et-db #et-boc .sby_lb-nav span","style":"body .sby_lb-nav span,body.et-db #et-boc .sby_lb-nav span{--wpr-bg-8bae74d4-8abe-4615-a1c6-21fdf9b67002: url('https:\/\/www.kelly.senate.gov\/wp-content\/plugins\/youtube-feed-pro\/img\/sby-sprite.png');}","hash":"8bae74d4-8abe-4615-a1c6-21fdf9b67002","url":"https:\/\/www.kelly.senate.gov\/wp-content\/plugins\/youtube-feed-pro\/img\/sby-sprite.png"},{"selector":"body .sby_lb-data .sby_lb-close,body.et-db #et-boc .sby_lb-data .sby_lb-close","style":"body .sby_lb-data .sby_lb-close,body.et-db #et-boc .sby_lb-data .sby_lb-close{--wpr-bg-4787045e-aa3b-4ebb-9f84-7856b6c37cda: url('https:\/\/www.kelly.senate.gov\/wp-content\/plugins\/youtube-feed-pro\/img\/close.png');}","hash":"4787045e-aa3b-4ebb-9f84-7856b6c37cda","url":"https:\/\/www.kelly.senate.gov\/wp-content\/plugins\/youtube-feed-pro\/img\/close.png"},{"selector":".single-jet-popup","style":".single-jet-popup{--wpr-bg-6803cf9a-6ff4-4ecd-9c94-363f7a623451: url('https:\/\/www.kelly.senate.gov\/wp-content\/plugins\/jet-popup\/assets\/image\/transparent.jpg');}","hash":"6803cf9a-6ff4-4ecd-9c94-363f7a623451","url":"https:\/\/www.kelly.senate.gov\/wp-content\/plugins\/jet-popup\/assets\/image\/transparent.jpg"},{"selector":"blockquote","style":"blockquote:before{--wpr-bg-a32702a0-ce5b-4689-bcde-ded92fc6b306: url('https:\/\/www.kelly.senate.gov\/wp-content\/uploads\/gold-quote-kelly.png');}","hash":"a32702a0-ce5b-4689-bcde-ded92fc6b306","url":"https:\/\/www.kelly.senate.gov\/wp-content\/uploads\/gold-quote-kelly.png"},{"selector":"blockquote p:first-child","style":"blockquote p:first-child:before{--wpr-bg-dd8d96ef-a1e7-480f-9ff3-0840ceb4caee: url('https:\/\/www.kelly.senate.gov\/wp-content\/uploads\/quote-line-kelly.png');}","hash":"dd8d96ef-a1e7-480f-9ff3-0840ceb4caee","url":"https:\/\/www.kelly.senate.gov\/wp-content\/uploads\/quote-line-kelly.png"},{"selector":"#alert-content p","style":"#alert-content p:after{--wpr-bg-1d8dbc7f-4402-49e5-9a90-6349904eec7b: url('https:\/\/www.kelly.senate.gov\/wp-content\/uploads\/alert-icon-kelly.png');}","hash":"1d8dbc7f-4402-49e5-9a90-6349904eec7b","url":"https:\/\/www.kelly.senate.gov\/wp-content\/uploads\/alert-icon-kelly.png"}]; const rocket_excluded_pairs = [{"selector":".elementor-67624 .elementor-element.elementor-element-a39893c:not(.elementor-motion-effects-element-type-background), .elementor-67624 .elementor-element.elementor-element-a39893c > .elementor-motion-effects-container > .elementor-motion-effects-layer","style":".elementor-67624 .elementor-element.elementor-element-a39893c:not(.elementor-motion-effects-element-type-background), .elementor-67624 .elementor-element.elementor-element-a39893c > .elementor-motion-effects-container > .elementor-motion-effects-layer{--wpr-bg-24c6ab49-337f-419b-b565-c439633c03e7: url('https:\/\/www.kelly.senate.gov\/wp-content\/uploads\/Kelly_About_Banner.jpg');}","hash":"24c6ab49-337f-419b-b565-c439633c03e7","url":"https:\/\/www.kelly.senate.gov\/wp-content\/uploads\/Kelly_About_Banner.jpg"}];</script><meta name="generator" content="WP Rocket 3.19.2.1" data-wpr-features="wpr_lazyload_css_bg_img wpr_delay_js wpr_minify_js wpr_lazyload_images wpr_lazyload_iframes wpr_automatic_lazy_rendering wpr_oci wpr_minify_css wpr_preload_links wpr_mobile" /></head>
+<body class="page-template page-template-elementor_header_footer page page-id-64445 page-parent wp-custom-logo wp-embed-responsive hello-elementor-default theme-hello-elementor elementor-default elementor-template-full-width elementor-kit-84170 elementor-page elementor-page-64445">
+
+
+<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+		<div  data-elementor-type="header" data-elementor-id="64542" class="elementor elementor-64542 elementor-location-header" data-elementor-post-type="elementor_library">
+					<section class="elementor-section elementor-top-section elementor-element elementor-element-91082a8 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="91082a8" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;none&quot;,&quot;sticky&quot;:&quot;top&quot;,&quot;sticky_effects_offset_mobile&quot;:100,&quot;sticky_on&quot;:[&quot;widescreen&quot;,&quot;desktop&quot;,&quot;laptop&quot;,&quot;tablet&quot;,&quot;mobile&quot;],&quot;sticky_offset&quot;:0,&quot;sticky_effects_offset&quot;:0,&quot;sticky_anchor_link_offset&quot;:0}">
+						<div  class="elementor-container elementor-column-gap-no">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-df1c06d" data-id="df1c06d" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-4047062 elementor-widget__width-inherit svg-site-logo elementor-widget elementor-widget-html" data-id="4047062" data-element_type="widget" data-widget_type="html.default">
+				<div class="elementor-widget-container">
+					<a href="/" aria-label="Return to Senator Mark Kelly's home page">
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" id="Layer_1" x="0" y="0" version="1.1" viewBox="0 0 1200 264" width="270" height="60">
+  <path fill="#1C1F2A" d="M99.26 208.67v-67.52h-.89l-32.62 54.34h-7.13L26 141.15h-.88v67.52H.32V92.33h24.43l38.15 63.78h.35l38-63.78h23.71v116.34h-25.7zm72.79 0h-26.92l54-116.34h20.68l54 116.34h-26.89L210 122.79h-1l-36.95 85.88zm121.95 0V92.33h64.53c16.58 0 27.46 4.81 34.95 12.65a34.72 34.72 0 0 1 9.63 24c0 15-9.28 26.55-23.54 32.78l27.28 46.86h-29.21l-23.53-42.76h-34.58v42.76l-25.53.05zm25.5-94.79v30.47h41.71c8.91 0 16.22-6.41 16.22-15.32.05-3.8-1.43-7.46-4.1-10.16-4.1-4.45-9.27-5-13.9-5l-39.93.01zm138.8 29.05 53.31-50.6h32.09l-48.49 45.43 57.23 70.91h-32.27L477 154.51l-18.7 17.64v36.52h-25.67V92.33h25.67v50.6zm188.89 0 53.31-50.6h32.09l-48.5 45.43 57.23 70.91h-32.26l-43.15-54.16-18.72 17.64v36.52h-25.67V92.33h25.67v50.6zM827.5 159h-43v27.8h75.59v21.91H759.05V92.33h97v22.09h-71.51v22.63h43L827.5 159zm84.91-66.67v94.43h68.46v21.91h-94V92.33h25.54zm114.06 0v94.43h68.46v21.91h-94V92.33h25.54zm173.53 0-46.17 63.25v53.09h-25.67v-53.09l-46.35-63.25h31.73l28.35 40.44 28.16-40.44H1200z"/>
+  <path fill="#F3A712" fill-rule="evenodd" d="M209.48 153.35c7.53 49.16 6.17 47.8 55.36 55.32-49.19 7.53-47.84 6.17-55.36 55.33-7.52-49.16-6.16-47.8-55.35-55.33 49.19-7.52 47.82-6.16 55.35-55.32z" clip-rule="evenodd"/>
+  <path fill="#261518" d="M0 21.99h304.9v3.5H0v-3.5zm894.75 0h304.9v3.5h-304.9v-3.5z"/>
+  <path fill="#1F448D" d="M349.7 35.25h-9.23l-2 9.69h-7.69L341.42 0h7.34l10.65 44.94h-7.69l-2.02-9.69zM348.22 28l-3.13-15.14L342 28h6.22zm25.15 16.94V0h19.41l3.67 3.67v20.1l-3.67 3.67 3.67 17.5h-7.4l-3.67-17.5h-4.49v17.5h-7.52zm14.74-24.77.82-.89V8.16l-.82-.83h-7.22v12.84h7.22zm23.72 24.77V0h7.52v44.94h-7.52zm45.03 0h-22.54v-7.27l14.61-30.4h-14.61V0h22.54v7.27l-14.61 30.4h14.61v7.27zm37.45-41.27v37.61l-3.66 3.66H475.5l-3.67-3.66V3.67L475.5 0h15.15l3.66 3.67zm-8.46 3.66h-5.68l-.82.83v28.68l.82.83h5.68l.89-.83V8.16l-.89-.83zm24.32 37.61V0h8.11L528 27.56V0h7.52v44.94h-8.11l-9.76-27.55v27.55h-7.48zm58.28-9.69h-9.23l-2 9.69h-7.69L560.17 0h7.34l10.65 44.94h-7.69l-2.02-9.69zM567 28l-3.14-15.14L560.7 28h6.3zm64.59-15V8.22l-.89-.89H625l-.89.89v9.34l.89.89h10.53l3.67 3.67v19.16l-3.67 3.66h-15.3l-3.67-3.66V32h7.51v4.79l.89.89h5.74l.89-.89V26.61l-.89-.89h-10.47l-3.67-3.66V3.67L620.23 0h15.26l3.67 3.67V13h-7.57zm23.01 31.94V0h21.54v7.27h-14v11.18h10.41v7.27h-10.43v12h14v7.27l-21.52-.05zm36.57 0V0h8.11L709 27.56V0h7.52v44.94h-8.11l-9.76-27.55v27.55h-7.48zm58.28-9.69h-9.23l-2 9.69h-7.69L741.17 0h7.34l10.65 44.94h-7.69l-2.02-9.69zM748 28l-3.14-15.14L741.7 28h6.3zm42.34-20.73h-8.11v37.67h-7.51V7.27h-8.11V0h23.73v7.27zM827 3.67v37.61l-3.67 3.66h-15.18l-3.67-3.66V3.67L808.15 0h15.15l3.7 3.67zm-8.46 3.66h-5.68l-.83.83v28.68l.83.83h5.68l.88-.83V8.16l-.88-.83zm24.28 37.61V0h19.41l3.67 3.67v20.1l-3.67 3.67 3.67 17.5h-7.4l-3.66-17.5h-4.5v17.5h-7.52zm14.74-24.77.83-.89V8.16l-.83-.83h-7.22v12.84h7.22z"/>
+</svg>
+
+</a>				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-5328283" data-id="5328283" data-element_type="column" data-settings="{&quot;animation&quot;:&quot;none&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-b66efce elementor-search-form--skin-full_screen elementor-widget__width-auto elementor-hidden-desktop elementor-hidden-tablet noprint elementor-widget-tablet__width-auto elementor-widget-mobile__width-auto elementor-hidden-widescreen elementor-hidden-laptop elementor-widget elementor-widget-search-form" data-id="b66efce" data-element_type="widget" data-settings="{&quot;skin&quot;:&quot;full_screen&quot;}" data-widget_type="search-form.default">
+				<div class="elementor-widget-container">
+							<search role="search">
+			<form class="elementor-search-form" action="https://www.kelly.senate.gov" method="get">
+												<div class="elementor-search-form__toggle" role="button" tabindex="0" aria-label="Search">
+					<i aria-hidden="true" class="fas fa-search"></i>				</div>
+								<div class="elementor-search-form__container">
+					<label class="elementor-screen-only" for="elementor-search-form-b66efce">Search</label>
+
+					
+					<input id="elementor-search-form-b66efce" placeholder="Search..." class="elementor-search-form__input" type="search" name="s" value="">
+					<input type='hidden' name='lang' value='en' />
+					
+										<div class="dialog-lightbox-close-button dialog-close-button" role="button" tabindex="0" aria-label="Close this search box.">
+						<i aria-hidden="true" class="eicon-close"></i>					</div>
+									</div>
+			</form>
+		</search>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-8cf752d elementor-nav-menu__align-end elementor-nav-menu--stretch elementor-widget__width-auto hdr-menu noprint elementor-nav-menu--dropdown-tablet elementor-nav-menu__text-align-aside elementor-nav-menu--toggle elementor-nav-menu--burger elementor-widget elementor-widget-nav-menu" data-id="8cf752d" data-element_type="widget" data-settings="{&quot;submenu_icon&quot;:{&quot;value&quot;:&quot;&lt;i class=\&quot;\&quot;&gt;&lt;\/i&gt;&quot;,&quot;library&quot;:&quot;&quot;},&quot;full_width&quot;:&quot;stretch&quot;,&quot;_animation&quot;:&quot;none&quot;,&quot;layout&quot;:&quot;horizontal&quot;,&quot;toggle&quot;:&quot;burger&quot;}" data-widget_type="nav-menu.default">
+				<div class="elementor-widget-container">
+								<nav aria-label="Menu" class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-horizontal e--pointer-underline e--animation-fade">
+				<ul id="menu-1-8cf752d" class="elementor-nav-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-64445 current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-64447"><a href="https://www.kelly.senate.gov/about/" aria-current="page" class="elementor-item elementor-item-active">About</a>
+<ul class="sub-menu elementor-nav-menu--dropdown">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-64445 current_page_item menu-item-65736"><a href="https://www.kelly.senate.gov/about/" aria-current="page" class="elementor-sub-item elementor-item-active">About Mark</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69059"><a href="https://www.kelly.senate.gov/about/committees/" class="elementor-sub-item">Committees</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69091"><a href="https://www.kelly.senate.gov/priorities/" class="elementor-sub-item">Priorities</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69536"><a href="https://www.kelly.senate.gov/about/advisory-groups/" class="elementor-sub-item">Advisory Groups</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-64549"><a href="https://www.kelly.senate.gov/newsroom/" class="elementor-item">News</a>
+<ul class="sub-menu elementor-nav-menu--dropdown">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65016"><a href="https://www.kelly.senate.gov/newsroom/press-releases/" class="elementor-sub-item">Press Releases</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65499"><a href="https://www.kelly.senate.gov/newsroom/in-the-news/" class="elementor-sub-item">In the News</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69507"><a href="https://www.kelly.senate.gov/schedule/" class="elementor-sub-item">Mark Around Arizona</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69474"><a href="https://www.kelly.senate.gov/newsroom/videos/" class="elementor-sub-item">Videos</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69393"><a href="https://www.kelly.senate.gov/newsroom/gallery/" class="elementor-sub-item">Photos</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-69334"><a href="/newsroom/#press-kit" class="elementor-sub-item elementor-item-anchor">Press Kit</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-64449"><a href="https://www.kelly.senate.gov/services/" class="elementor-item">Services</a>
+<ul class="sub-menu elementor-nav-menu--dropdown">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65701"><a href="https://www.kelly.senate.gov/services/casework/" class="elementor-sub-item">Help with a Federal Agency</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-67716"><a href="https://www.kelly.senate.gov/services/success-stories/" class="elementor-sub-item">Casework Successes</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65023"><a href="https://www.kelly.senate.gov/services/visiting/" class="elementor-sub-item">Visiting Washington, D.C.</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65021"><a href="https://www.kelly.senate.gov/services/academies/" class="elementor-sub-item">Service Academy Nominations</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69646"><a href="https://www.kelly.senate.gov/services/special-recognitions/" class="elementor-sub-item">Special Recognitions</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65695"><a href="https://www.kelly.senate.gov/services/internships/" class="elementor-sub-item">Internships</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-75256"><a href="https://www.kelly.senate.gov/services/page-program/" class="elementor-sub-item">U.S. Senate Page Program</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65022"><a href="https://www.kelly.senate.gov/services/flag-requests/" class="elementor-sub-item">Flag Requests</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69170"><a href="https://www.kelly.senate.gov/services/grants-assistance/" class="elementor-sub-item">Grants Assistance</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69090"><a href="https://www.kelly.senate.gov/appropriations-requests/" class="elementor-sub-item">Appropriations Requests</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-69585"><a href="/resources/wildfire-preparedness-and-prevention-resources" class="elementor-item">Resources</a>
+<ul class="sub-menu elementor-nav-menu--dropdown">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69589"><a href="https://www.kelly.senate.gov/resources/wildfire-preparedness-and-prevention-resources/" class="elementor-sub-item">Wildfire Preparedness and Prevention Resources</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69588"><a href="https://www.kelly.senate.gov/resources/tribal-resources/" class="elementor-sub-item">Tribal Resources</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-70457"><a href="https://www.kelly.senate.gov/resources/veteran-resources/" class="elementor-sub-item">Veteran Resources</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-64505"><a href="https://www.kelly.senate.gov/contact/" class="elementor-item">Contact</a>
+<ul class="sub-menu elementor-nav-menu--dropdown">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65691"><a href="https://www.kelly.senate.gov/contact/contact-form/" class="elementor-sub-item">Share Your Thoughts</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65697"><a href="https://www.kelly.senate.gov/services/scheduling-requests/" class="elementor-sub-item">Scheduling Requests</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-67996"><a href="https://www.kelly.senate.gov/contact/newsletter-signup/" class="elementor-sub-item">Newsletter Signup</a></li>
+</ul>
+</li>
+<li class="mobile-menu-btn menu-item menu-item-type-custom menu-item-object-custom menu-item-69440"><a href="/schedule/" class="elementor-item">See My Schedule</a></li>
+<li class="menu-item wpml-ls-slot-141 wpml-ls-item wpml-ls-item-es wpml-ls-menu-item wpml-ls-first-item wpml-ls-last-item menu-item-type-wpml_ls_menu_item menu-item-object-wpml_ls_menu_item menu-item-wpml-ls-141-es"><a href="https://www.kelly.senate.gov/acerca-de-mark/?lang=es" title="Switch to Español" class="elementor-item"><span class="wpml-ls-native" lang="es">Español</span></a></li>
+</ul>			</nav>
+					<div class="elementor-menu-toggle" role="button" tabindex="0" aria-label="Menu Toggle" aria-expanded="false">
+			<i aria-hidden="true" role="presentation" class="elementor-menu-toggle__icon--open eicon-menu-bar"></i><i aria-hidden="true" role="presentation" class="elementor-menu-toggle__icon--close eicon-close"></i>		</div>
+					<nav class="elementor-nav-menu--dropdown elementor-nav-menu__container" aria-hidden="true">
+				<ul id="menu-2-8cf752d" class="elementor-nav-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-64445 current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-64447"><a href="https://www.kelly.senate.gov/about/" aria-current="page" class="elementor-item elementor-item-active" tabindex="-1">About</a>
+<ul class="sub-menu elementor-nav-menu--dropdown">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-64445 current_page_item menu-item-65736"><a href="https://www.kelly.senate.gov/about/" aria-current="page" class="elementor-sub-item elementor-item-active" tabindex="-1">About Mark</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69059"><a href="https://www.kelly.senate.gov/about/committees/" class="elementor-sub-item" tabindex="-1">Committees</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69091"><a href="https://www.kelly.senate.gov/priorities/" class="elementor-sub-item" tabindex="-1">Priorities</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69536"><a href="https://www.kelly.senate.gov/about/advisory-groups/" class="elementor-sub-item" tabindex="-1">Advisory Groups</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-64549"><a href="https://www.kelly.senate.gov/newsroom/" class="elementor-item" tabindex="-1">News</a>
+<ul class="sub-menu elementor-nav-menu--dropdown">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65016"><a href="https://www.kelly.senate.gov/newsroom/press-releases/" class="elementor-sub-item" tabindex="-1">Press Releases</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65499"><a href="https://www.kelly.senate.gov/newsroom/in-the-news/" class="elementor-sub-item" tabindex="-1">In the News</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69507"><a href="https://www.kelly.senate.gov/schedule/" class="elementor-sub-item" tabindex="-1">Mark Around Arizona</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69474"><a href="https://www.kelly.senate.gov/newsroom/videos/" class="elementor-sub-item" tabindex="-1">Videos</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69393"><a href="https://www.kelly.senate.gov/newsroom/gallery/" class="elementor-sub-item" tabindex="-1">Photos</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-69334"><a href="/newsroom/#press-kit" class="elementor-sub-item elementor-item-anchor" tabindex="-1">Press Kit</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-64449"><a href="https://www.kelly.senate.gov/services/" class="elementor-item" tabindex="-1">Services</a>
+<ul class="sub-menu elementor-nav-menu--dropdown">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65701"><a href="https://www.kelly.senate.gov/services/casework/" class="elementor-sub-item" tabindex="-1">Help with a Federal Agency</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-67716"><a href="https://www.kelly.senate.gov/services/success-stories/" class="elementor-sub-item" tabindex="-1">Casework Successes</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65023"><a href="https://www.kelly.senate.gov/services/visiting/" class="elementor-sub-item" tabindex="-1">Visiting Washington, D.C.</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65021"><a href="https://www.kelly.senate.gov/services/academies/" class="elementor-sub-item" tabindex="-1">Service Academy Nominations</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69646"><a href="https://www.kelly.senate.gov/services/special-recognitions/" class="elementor-sub-item" tabindex="-1">Special Recognitions</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65695"><a href="https://www.kelly.senate.gov/services/internships/" class="elementor-sub-item" tabindex="-1">Internships</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-75256"><a href="https://www.kelly.senate.gov/services/page-program/" class="elementor-sub-item" tabindex="-1">U.S. Senate Page Program</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65022"><a href="https://www.kelly.senate.gov/services/flag-requests/" class="elementor-sub-item" tabindex="-1">Flag Requests</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69170"><a href="https://www.kelly.senate.gov/services/grants-assistance/" class="elementor-sub-item" tabindex="-1">Grants Assistance</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69090"><a href="https://www.kelly.senate.gov/appropriations-requests/" class="elementor-sub-item" tabindex="-1">Appropriations Requests</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-69585"><a href="/resources/wildfire-preparedness-and-prevention-resources" class="elementor-item" tabindex="-1">Resources</a>
+<ul class="sub-menu elementor-nav-menu--dropdown">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69589"><a href="https://www.kelly.senate.gov/resources/wildfire-preparedness-and-prevention-resources/" class="elementor-sub-item" tabindex="-1">Wildfire Preparedness and Prevention Resources</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69588"><a href="https://www.kelly.senate.gov/resources/tribal-resources/" class="elementor-sub-item" tabindex="-1">Tribal Resources</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-70457"><a href="https://www.kelly.senate.gov/resources/veteran-resources/" class="elementor-sub-item" tabindex="-1">Veteran Resources</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-64505"><a href="https://www.kelly.senate.gov/contact/" class="elementor-item" tabindex="-1">Contact</a>
+<ul class="sub-menu elementor-nav-menu--dropdown">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65691"><a href="https://www.kelly.senate.gov/contact/contact-form/" class="elementor-sub-item" tabindex="-1">Share Your Thoughts</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65697"><a href="https://www.kelly.senate.gov/services/scheduling-requests/" class="elementor-sub-item" tabindex="-1">Scheduling Requests</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-67996"><a href="https://www.kelly.senate.gov/contact/newsletter-signup/" class="elementor-sub-item" tabindex="-1">Newsletter Signup</a></li>
+</ul>
+</li>
+<li class="mobile-menu-btn menu-item menu-item-type-custom menu-item-object-custom menu-item-69440"><a href="/schedule/" class="elementor-item" tabindex="-1">See My Schedule</a></li>
+<li class="menu-item wpml-ls-slot-141 wpml-ls-item wpml-ls-item-es wpml-ls-menu-item wpml-ls-first-item wpml-ls-last-item menu-item-type-wpml_ls_menu_item menu-item-object-wpml_ls_menu_item menu-item-wpml-ls-141-es"><a href="https://www.kelly.senate.gov/acerca-de-mark/?lang=es" title="Switch to Español" class="elementor-item" tabindex="-1"><span class="wpml-ls-native" lang="es">Español</span></a></li>
+</ul>			</nav>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-4d4358e elementor-search-form--skin-full_screen elementor-widget__width-auto elementor-hidden-phone noprint elementor-widget elementor-widget-search-form" data-id="4d4358e" data-element_type="widget" data-settings="{&quot;skin&quot;:&quot;full_screen&quot;}" data-widget_type="search-form.default">
+				<div class="elementor-widget-container">
+							<search role="search">
+			<form class="elementor-search-form" action="https://www.kelly.senate.gov" method="get">
+												<div class="elementor-search-form__toggle" role="button" tabindex="0" aria-label="Search">
+					<i aria-hidden="true" class="fas fa-search"></i>				</div>
+								<div class="elementor-search-form__container">
+					<label class="elementor-screen-only" for="elementor-search-form-4d4358e">Search</label>
+
+					
+					<input id="elementor-search-form-4d4358e" placeholder="Search..." class="elementor-search-form__input" type="search" name="s" value="">
+					<input type='hidden' name='lang' value='en' />
+					
+										<div class="dialog-lightbox-close-button dialog-close-button" role="button" tabindex="0" aria-label="Close this search box.">
+						<i aria-hidden="true" class="eicon-close"></i>					</div>
+									</div>
+			</form>
+		</search>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-1fab23b elementor-widget__width-auto noprint sen-btn-arrow btn-schedule elementor-hidden-mobile elementor-widget elementor-widget-button" data-id="1fab23b" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-xs" href="https://www.kelly.senate.gov/schedule/">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-icon">
+				<i aria-hidden="true" class="fas fa-long-arrow-alt-right"></i>			</span>
+									<span class="elementor-button-text">See My Schedule</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-1142c57 justprint elementor-hidden-widescreen elementor-hidden-desktop elementor-hidden-laptop elementor-hidden-tablet elementor-hidden-mobile elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="1142c57" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;none&quot;}">
+						<div  class="elementor-container elementor-column-gap-no">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-8a76efa" data-id="8a76efa" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-b88a104 elementor-widget elementor-widget-theme-site-logo elementor-widget-image" data-id="b88a104" data-element_type="widget" data-widget_type="theme-site-logo.default">
+				<div class="elementor-widget-container">
+											<a href="https://www.kelly.senate.gov">
+			<img width="1" height="1" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201%201'%3E%3C/svg%3E" class="attachment-full size-full wp-image-68981" alt="Arizona Senator Mark Kelly Logo" data-lazy-src="https://www.kelly.senate.gov/wp-content/uploads/Kelly_Logo_Primary.svg" /><noscript><img width="1" height="1" src="https://www.kelly.senate.gov/wp-content/uploads/Kelly_Logo_Primary.svg" class="attachment-full size-full wp-image-68981" alt="Arizona Senator Mark Kelly Logo" /></noscript>				</a>
+											</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-55acda9" data-id="55acda9" data-element_type="column" data-settings="{&quot;animation&quot;:&quot;none&quot;}">
+			<div class="elementor-widget-wrap">
+							</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-6ba5b78 sticky-header noprint sticky-disabled elementor-hidden-desktop elementor-hidden-tablet elementor-hidden-mobile elementor-hidden-widescreen elementor-hidden-laptop elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="6ba5b78" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;none&quot;}">
+						<div  class="elementor-container elementor-column-gap-no">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-3c2ca73" data-id="3c2ca73" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-231e74e elementor-widget elementor-widget-theme-site-logo elementor-widget-image" data-id="231e74e" data-element_type="widget" data-widget_type="theme-site-logo.default">
+				<div class="elementor-widget-container">
+											<a href="https://www.kelly.senate.gov">
+			<img width="1" height="1" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201%201'%3E%3C/svg%3E" class="attachment-full size-full wp-image-68981" alt="Arizona Senator Mark Kelly Logo" data-lazy-src="https://www.kelly.senate.gov/wp-content/uploads/Kelly_Logo_Primary.svg" /><noscript><img width="1" height="1" src="https://www.kelly.senate.gov/wp-content/uploads/Kelly_Logo_Primary.svg" class="attachment-full size-full wp-image-68981" alt="Arizona Senator Mark Kelly Logo" /></noscript>				</a>
+											</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-1bb79e0" data-id="1bb79e0" data-element_type="column" data-settings="{&quot;animation&quot;:&quot;none&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-2f4ce42 elementor-search-form--skin-full_screen elementor-widget__width-auto elementor-hidden-desktop noprint elementor-widget-tablet__width-auto elementor-widget-mobile__width-auto elementor-widget elementor-widget-search-form" data-id="2f4ce42" data-element_type="widget" data-settings="{&quot;skin&quot;:&quot;full_screen&quot;}" data-widget_type="search-form.default">
+				<div class="elementor-widget-container">
+							<search role="search">
+			<form class="elementor-search-form" action="https://www.kelly.senate.gov" method="get">
+												<div class="elementor-search-form__toggle" role="button" tabindex="0" aria-label="Search">
+					<i aria-hidden="true" class="fas fa-search"></i>				</div>
+								<div class="elementor-search-form__container">
+					<label class="elementor-screen-only" for="elementor-search-form-2f4ce42">Search</label>
+
+					
+					<input id="elementor-search-form-2f4ce42" placeholder="Search..." class="elementor-search-form__input" type="search" name="s" value="">
+					<input type='hidden' name='lang' value='en' />
+					
+										<div class="dialog-lightbox-close-button dialog-close-button" role="button" tabindex="0" aria-label="Close this search box.">
+						<i aria-hidden="true" class="eicon-close"></i>					</div>
+									</div>
+			</form>
+		</search>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-229a382 elementor-nav-menu__align-end elementor-nav-menu--stretch elementor-widget__width-auto hdr-menu noprint elementor-nav-menu--dropdown-tablet elementor-nav-menu__text-align-aside elementor-nav-menu--toggle elementor-nav-menu--burger elementor-widget elementor-widget-nav-menu" data-id="229a382" data-element_type="widget" data-settings="{&quot;submenu_icon&quot;:{&quot;value&quot;:&quot;&lt;i class=\&quot;\&quot;&gt;&lt;\/i&gt;&quot;,&quot;library&quot;:&quot;&quot;},&quot;full_width&quot;:&quot;stretch&quot;,&quot;_animation&quot;:&quot;none&quot;,&quot;layout&quot;:&quot;horizontal&quot;,&quot;toggle&quot;:&quot;burger&quot;}" data-widget_type="nav-menu.default">
+				<div class="elementor-widget-container">
+								<nav aria-label="Menu" class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-horizontal e--pointer-underline e--animation-fade">
+				<ul id="menu-1-229a382" class="elementor-nav-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-64445 current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-64447"><a href="https://www.kelly.senate.gov/about/" aria-current="page" class="elementor-item elementor-item-active">About</a>
+<ul class="sub-menu elementor-nav-menu--dropdown">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-64445 current_page_item menu-item-65736"><a href="https://www.kelly.senate.gov/about/" aria-current="page" class="elementor-sub-item elementor-item-active">About Mark</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69059"><a href="https://www.kelly.senate.gov/about/committees/" class="elementor-sub-item">Committees</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69091"><a href="https://www.kelly.senate.gov/priorities/" class="elementor-sub-item">Priorities</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69536"><a href="https://www.kelly.senate.gov/about/advisory-groups/" class="elementor-sub-item">Advisory Groups</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-64549"><a href="https://www.kelly.senate.gov/newsroom/" class="elementor-item">News</a>
+<ul class="sub-menu elementor-nav-menu--dropdown">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65016"><a href="https://www.kelly.senate.gov/newsroom/press-releases/" class="elementor-sub-item">Press Releases</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65499"><a href="https://www.kelly.senate.gov/newsroom/in-the-news/" class="elementor-sub-item">In the News</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69507"><a href="https://www.kelly.senate.gov/schedule/" class="elementor-sub-item">Mark Around Arizona</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69474"><a href="https://www.kelly.senate.gov/newsroom/videos/" class="elementor-sub-item">Videos</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69393"><a href="https://www.kelly.senate.gov/newsroom/gallery/" class="elementor-sub-item">Photos</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-69334"><a href="/newsroom/#press-kit" class="elementor-sub-item elementor-item-anchor">Press Kit</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-64449"><a href="https://www.kelly.senate.gov/services/" class="elementor-item">Services</a>
+<ul class="sub-menu elementor-nav-menu--dropdown">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65701"><a href="https://www.kelly.senate.gov/services/casework/" class="elementor-sub-item">Help with a Federal Agency</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-67716"><a href="https://www.kelly.senate.gov/services/success-stories/" class="elementor-sub-item">Casework Successes</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65023"><a href="https://www.kelly.senate.gov/services/visiting/" class="elementor-sub-item">Visiting Washington, D.C.</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65021"><a href="https://www.kelly.senate.gov/services/academies/" class="elementor-sub-item">Service Academy Nominations</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69646"><a href="https://www.kelly.senate.gov/services/special-recognitions/" class="elementor-sub-item">Special Recognitions</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65695"><a href="https://www.kelly.senate.gov/services/internships/" class="elementor-sub-item">Internships</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-75256"><a href="https://www.kelly.senate.gov/services/page-program/" class="elementor-sub-item">U.S. Senate Page Program</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65022"><a href="https://www.kelly.senate.gov/services/flag-requests/" class="elementor-sub-item">Flag Requests</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69170"><a href="https://www.kelly.senate.gov/services/grants-assistance/" class="elementor-sub-item">Grants Assistance</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69090"><a href="https://www.kelly.senate.gov/appropriations-requests/" class="elementor-sub-item">Appropriations Requests</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-69585"><a href="/resources/wildfire-preparedness-and-prevention-resources" class="elementor-item">Resources</a>
+<ul class="sub-menu elementor-nav-menu--dropdown">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69589"><a href="https://www.kelly.senate.gov/resources/wildfire-preparedness-and-prevention-resources/" class="elementor-sub-item">Wildfire Preparedness and Prevention Resources</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69588"><a href="https://www.kelly.senate.gov/resources/tribal-resources/" class="elementor-sub-item">Tribal Resources</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-70457"><a href="https://www.kelly.senate.gov/resources/veteran-resources/" class="elementor-sub-item">Veteran Resources</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-64505"><a href="https://www.kelly.senate.gov/contact/" class="elementor-item">Contact</a>
+<ul class="sub-menu elementor-nav-menu--dropdown">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65691"><a href="https://www.kelly.senate.gov/contact/contact-form/" class="elementor-sub-item">Share Your Thoughts</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65697"><a href="https://www.kelly.senate.gov/services/scheduling-requests/" class="elementor-sub-item">Scheduling Requests</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-67996"><a href="https://www.kelly.senate.gov/contact/newsletter-signup/" class="elementor-sub-item">Newsletter Signup</a></li>
+</ul>
+</li>
+<li class="mobile-menu-btn menu-item menu-item-type-custom menu-item-object-custom menu-item-69440"><a href="/schedule/" class="elementor-item">See My Schedule</a></li>
+<li class="menu-item wpml-ls-slot-141 wpml-ls-item wpml-ls-item-es wpml-ls-menu-item wpml-ls-first-item wpml-ls-last-item menu-item-type-wpml_ls_menu_item menu-item-object-wpml_ls_menu_item menu-item-wpml-ls-141-es"><a href="https://www.kelly.senate.gov/acerca-de-mark/?lang=es" title="Switch to Español" class="elementor-item"><span class="wpml-ls-native" lang="es">Español</span></a></li>
+</ul>			</nav>
+					<div class="elementor-menu-toggle" role="button" tabindex="0" aria-label="Menu Toggle" aria-expanded="false">
+			<i aria-hidden="true" role="presentation" class="elementor-menu-toggle__icon--open eicon-menu-bar"></i><i aria-hidden="true" role="presentation" class="elementor-menu-toggle__icon--close eicon-close"></i>		</div>
+					<nav class="elementor-nav-menu--dropdown elementor-nav-menu__container" aria-hidden="true">
+				<ul id="menu-2-229a382" class="elementor-nav-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-64445 current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-64447"><a href="https://www.kelly.senate.gov/about/" aria-current="page" class="elementor-item elementor-item-active" tabindex="-1">About</a>
+<ul class="sub-menu elementor-nav-menu--dropdown">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-64445 current_page_item menu-item-65736"><a href="https://www.kelly.senate.gov/about/" aria-current="page" class="elementor-sub-item elementor-item-active" tabindex="-1">About Mark</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69059"><a href="https://www.kelly.senate.gov/about/committees/" class="elementor-sub-item" tabindex="-1">Committees</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69091"><a href="https://www.kelly.senate.gov/priorities/" class="elementor-sub-item" tabindex="-1">Priorities</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69536"><a href="https://www.kelly.senate.gov/about/advisory-groups/" class="elementor-sub-item" tabindex="-1">Advisory Groups</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-64549"><a href="https://www.kelly.senate.gov/newsroom/" class="elementor-item" tabindex="-1">News</a>
+<ul class="sub-menu elementor-nav-menu--dropdown">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65016"><a href="https://www.kelly.senate.gov/newsroom/press-releases/" class="elementor-sub-item" tabindex="-1">Press Releases</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65499"><a href="https://www.kelly.senate.gov/newsroom/in-the-news/" class="elementor-sub-item" tabindex="-1">In the News</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69507"><a href="https://www.kelly.senate.gov/schedule/" class="elementor-sub-item" tabindex="-1">Mark Around Arizona</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69474"><a href="https://www.kelly.senate.gov/newsroom/videos/" class="elementor-sub-item" tabindex="-1">Videos</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69393"><a href="https://www.kelly.senate.gov/newsroom/gallery/" class="elementor-sub-item" tabindex="-1">Photos</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-69334"><a href="/newsroom/#press-kit" class="elementor-sub-item elementor-item-anchor" tabindex="-1">Press Kit</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-64449"><a href="https://www.kelly.senate.gov/services/" class="elementor-item" tabindex="-1">Services</a>
+<ul class="sub-menu elementor-nav-menu--dropdown">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65701"><a href="https://www.kelly.senate.gov/services/casework/" class="elementor-sub-item" tabindex="-1">Help with a Federal Agency</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-67716"><a href="https://www.kelly.senate.gov/services/success-stories/" class="elementor-sub-item" tabindex="-1">Casework Successes</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65023"><a href="https://www.kelly.senate.gov/services/visiting/" class="elementor-sub-item" tabindex="-1">Visiting Washington, D.C.</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65021"><a href="https://www.kelly.senate.gov/services/academies/" class="elementor-sub-item" tabindex="-1">Service Academy Nominations</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69646"><a href="https://www.kelly.senate.gov/services/special-recognitions/" class="elementor-sub-item" tabindex="-1">Special Recognitions</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65695"><a href="https://www.kelly.senate.gov/services/internships/" class="elementor-sub-item" tabindex="-1">Internships</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-75256"><a href="https://www.kelly.senate.gov/services/page-program/" class="elementor-sub-item" tabindex="-1">U.S. Senate Page Program</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65022"><a href="https://www.kelly.senate.gov/services/flag-requests/" class="elementor-sub-item" tabindex="-1">Flag Requests</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69170"><a href="https://www.kelly.senate.gov/services/grants-assistance/" class="elementor-sub-item" tabindex="-1">Grants Assistance</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69090"><a href="https://www.kelly.senate.gov/appropriations-requests/" class="elementor-sub-item" tabindex="-1">Appropriations Requests</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-69585"><a href="/resources/wildfire-preparedness-and-prevention-resources" class="elementor-item" tabindex="-1">Resources</a>
+<ul class="sub-menu elementor-nav-menu--dropdown">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69589"><a href="https://www.kelly.senate.gov/resources/wildfire-preparedness-and-prevention-resources/" class="elementor-sub-item" tabindex="-1">Wildfire Preparedness and Prevention Resources</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69588"><a href="https://www.kelly.senate.gov/resources/tribal-resources/" class="elementor-sub-item" tabindex="-1">Tribal Resources</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-70457"><a href="https://www.kelly.senate.gov/resources/veteran-resources/" class="elementor-sub-item" tabindex="-1">Veteran Resources</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-64505"><a href="https://www.kelly.senate.gov/contact/" class="elementor-item" tabindex="-1">Contact</a>
+<ul class="sub-menu elementor-nav-menu--dropdown">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65691"><a href="https://www.kelly.senate.gov/contact/contact-form/" class="elementor-sub-item" tabindex="-1">Share Your Thoughts</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65697"><a href="https://www.kelly.senate.gov/services/scheduling-requests/" class="elementor-sub-item" tabindex="-1">Scheduling Requests</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-67996"><a href="https://www.kelly.senate.gov/contact/newsletter-signup/" class="elementor-sub-item" tabindex="-1">Newsletter Signup</a></li>
+</ul>
+</li>
+<li class="mobile-menu-btn menu-item menu-item-type-custom menu-item-object-custom menu-item-69440"><a href="/schedule/" class="elementor-item" tabindex="-1">See My Schedule</a></li>
+<li class="menu-item wpml-ls-slot-141 wpml-ls-item wpml-ls-item-es wpml-ls-menu-item wpml-ls-first-item wpml-ls-last-item menu-item-type-wpml_ls_menu_item menu-item-object-wpml_ls_menu_item menu-item-wpml-ls-141-es"><a href="https://www.kelly.senate.gov/acerca-de-mark/?lang=es" title="Switch to Español" class="elementor-item" tabindex="-1"><span class="wpml-ls-native" lang="es">Español</span></a></li>
+</ul>			</nav>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-97daef3 elementor-search-form--skin-full_screen elementor-widget__width-auto elementor-hidden-mobile noprint elementor-hidden-tablet elementor-widget elementor-widget-search-form" data-id="97daef3" data-element_type="widget" data-settings="{&quot;skin&quot;:&quot;full_screen&quot;}" data-widget_type="search-form.default">
+				<div class="elementor-widget-container">
+							<search role="search">
+			<form class="elementor-search-form" action="https://www.kelly.senate.gov" method="get">
+												<div class="elementor-search-form__toggle" role="button" tabindex="0" aria-label="Search">
+					<i aria-hidden="true" class="fas fa-search"></i>				</div>
+								<div class="elementor-search-form__container">
+					<label class="elementor-screen-only" for="elementor-search-form-97daef3">Search</label>
+
+					
+					<input id="elementor-search-form-97daef3" placeholder="Search..." class="elementor-search-form__input" type="search" name="s" value="">
+					<input type='hidden' name='lang' value='en' />
+					
+										<div class="dialog-lightbox-close-button dialog-close-button" role="button" tabindex="0" aria-label="Close this search box.">
+						<i aria-hidden="true" class="eicon-close"></i>					</div>
+									</div>
+			</form>
+		</search>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-f1bc9a8 elementor-widget__width-auto noprint sen-btn-arrow btn-schedule elementor-hidden-mobile elementor-widget elementor-widget-button" data-id="f1bc9a8" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-xs" href="https://www.kelly.senate.gov/schedule/">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-icon">
+				<i aria-hidden="true" class="fas fa-long-arrow-alt-right"></i>			</span>
+									<span class="elementor-button-text">See My Schedule</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-2bc29a2 justprint elementor-hidden-widescreen elementor-hidden-desktop elementor-hidden-laptop elementor-hidden-tablet elementor-hidden-mobile elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="2bc29a2" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;none&quot;}">
+						<div  class="elementor-container elementor-column-gap-no">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-8da1801" data-id="8da1801" data-element_type="column">
+			<div class="elementor-widget-wrap">
+							</div>
+		</div>
+					</div>
+		</section>
+		<div class="elementor-element elementor-element-e3346a6 elementor-hidden-widescreen elementor-hidden-desktop elementor-hidden-laptop elementor-hidden-tablet elementor-hidden-mobile e-flex e-con-boxed e-con e-parent" data-id="e3346a6" data-element_type="container" id="content" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;none&quot;}" tabindex="-1">
+					<div  class="e-con-inner">
+					</div>
+				</div>
+				</div>
+				<div  data-elementor-type="wp-page" data-elementor-id="64445" class="elementor elementor-64445" data-elementor-post-type="page">
+						<section  class="elementor-section elementor-top-section elementor-element elementor-element-3d9e480 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="3d9e480" data-element_type="section">
+						<div  class="elementor-container elementor-column-gap-no">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-ed4c04e" data-id="ed4c04e" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-9cf08d0 elementor-widget elementor-widget-template" data-id="9cf08d0" data-element_type="widget" data-widget_type="template.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-template">
+			<style id="elementor-post-dynamic-67624">.elementor-67624 .elementor-element.elementor-element-a39893c:not(.elementor-motion-effects-element-type-background), .elementor-67624 .elementor-element.elementor-element-a39893c > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-image:var(--wpr-bg-24c6ab49-337f-419b-b565-c439633c03e7);}</style>		<div data-elementor-type="section" data-elementor-id="67624" class="elementor elementor-67624" data-elementor-post-type="elementor_library">
+					<section class="elementor-section elementor-top-section elementor-element elementor-element-a39893c elementor-section-height-min-height elementor-section-items-bottom elementor-section-full_width elementor-section-height-default" data-id="a39893c" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+							<div class="elementor-background-overlay"></div>
+							<div  class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-e9c4d31" data-id="e9c4d31" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-53e9dc75 elementor-widget elementor-widget-heading" data-id="53e9dc75" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h1 class="elementor-heading-title elementor-size-default">About Mark</h1>				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				</div>
+				</div>
+						</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section  class="elementor-section elementor-top-section elementor-element elementor-element-59315a5 sen-box-section elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="59315a5" data-element_type="section">
+						<div  class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-ddefe4a" data-id="ddefe4a" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-0511cd6 sen-indented-text elementor-widget elementor-widget-text-editor" data-id="0511cd6" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<h2>Mark Kelly has served his country as a U.S. Navy combat pilot, a NASA astronaut, and now as a U.S. Senator for Arizona.</h2>								</div>
+				</div>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-93a01c1 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="93a01c1" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-no">
+					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-e331085" data-id="e331085" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-e5c63a5 elementor-widget elementor-widget-text-editor" data-id="e5c63a5" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>He is an independent leader who came to the Senate to serve Arizona’s working families, not corporate special interests.</p><p>As the son of two police officers, Senator Kelly learned the value of public service at an early age. He attended public schools from elementary school all the way through graduate school. Senator Kelly earned his B.S. degree in marine engineering and nautical science from the U.S. Merchant Marine Academy and later an M.S. degree in aeronautical engineering from the U.S. Naval Postgraduate School.</p>								</div>
+				</div>
+				<div class="elementor-element elementor-element-3b14df8 elementor-widget elementor-widget-image" data-id="3b14df8" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img decoding="async" width="49" height="42" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2049%2042'%3E%3C/svg%3E" class="attachment-full size-full wp-image-69004" alt="" data-lazy-src="https://www.kelly.senate.gov/wp-content/uploads/kelly-quote.png" /><noscript><img decoding="async" width="49" height="42" src="https://www.kelly.senate.gov/wp-content/uploads/kelly-quote.png" class="attachment-full size-full wp-image-69004" alt="" /></noscript>															</div>
+				</div>
+				<div class="elementor-element elementor-element-b1fd60b elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="b1fd60b" data-element_type="widget" data-widget_type="divider.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-divider">
+			<span class="elementor-divider-separator">
+						</span>
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-9400e22 elementor-widget elementor-widget-heading" data-id="9400e22" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<p class="elementor-heading-title elementor-size-default">Watching my mom break barriers to become one of the first women police officers in our town taught me a lot about facing challenges head on to achieve your goals. I continue to be inspired by her.</p>				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-01f69cd" data-id="01f69cd" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-0eda664 img-box-shadow-right elementor-widget elementor-widget-image" data-id="0eda664" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img fetchpriority="high" decoding="async" width="461" height="576" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20461%20576'%3E%3C/svg%3E" class="attachment-large size-large wp-image-68992" alt="" data-lazy-srcset="https://www.kelly.senate.gov/wp-content/uploads/Kelly_About_Image1.jpg 461w, https://www.kelly.senate.gov/wp-content/uploads/Kelly_About_Image1-240x300.jpg 240w" data-lazy-sizes="(max-width: 461px) 100vw, 461px" data-lazy-src="https://www.kelly.senate.gov/wp-content/uploads/Kelly_About_Image1.jpg" /><noscript><img fetchpriority="high" decoding="async" width="461" height="576" src="https://www.kelly.senate.gov/wp-content/uploads/Kelly_About_Image1.jpg" class="attachment-large size-large wp-image-68992" alt="" srcset="https://www.kelly.senate.gov/wp-content/uploads/Kelly_About_Image1.jpg 461w, https://www.kelly.senate.gov/wp-content/uploads/Kelly_About_Image1-240x300.jpg 240w" sizes="(max-width: 461px) 100vw, 461px" /></noscript>															</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<div class="elementor-element elementor-element-0856167 sen-indented-text elementor-widget elementor-widget-text-editor" data-id="0856167" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>As a Navy pilot, he made multiple deployments on the aircraft carrier USS Midway and flew 39 combat missions in Operation Desert Storm. Senator Kelly is the recipient of the Defense Superior Service Medal, Legion of Merit, two Distinguished Flying Crosses, and multiple Air Medals.</p>								</div>
+				</div>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-a6d000c elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="a6d000c" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-no">
+					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-4c803b6 elementor-hidden-mobile" data-id="4c803b6" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-3d8034a img-box-shadow-left elementor-hidden-mobile elementor-widget elementor-widget-image" data-id="3d8034a" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img decoding="async" width="459" height="318" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20459%20318'%3E%3C/svg%3E" class="attachment-full size-full wp-image-68994" alt="" data-lazy-srcset="https://www.kelly.senate.gov/wp-content/uploads/Kelly_About_Image2.jpg 459w, https://www.kelly.senate.gov/wp-content/uploads/Kelly_About_Image2-300x208.jpg 300w" data-lazy-sizes="(max-width: 459px) 100vw, 459px" data-lazy-src="https://www.kelly.senate.gov/wp-content/uploads/Kelly_About_Image2.jpg" /><noscript><img decoding="async" width="459" height="318" src="https://www.kelly.senate.gov/wp-content/uploads/Kelly_About_Image2.jpg" class="attachment-full size-full wp-image-68994" alt="" srcset="https://www.kelly.senate.gov/wp-content/uploads/Kelly_About_Image2.jpg 459w, https://www.kelly.senate.gov/wp-content/uploads/Kelly_About_Image2-300x208.jpg 300w" sizes="(max-width: 459px) 100vw, 459px" /></noscript>															</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-5b5d819" data-id="5b5d819" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-cdbd78a elementor-widget elementor-widget-text-editor" data-id="cdbd78a" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									He has logged more than 5,000 flight hours in more than 50 different aircraft and has over 375 carrier landings. Senator Kelly retired from the Navy with the rank of Captain.								</div>
+				</div>
+				<div class="elementor-element elementor-element-fe12b0a elementor-widget elementor-widget-image" data-id="fe12b0a" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img decoding="async" width="49" height="42" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2049%2042'%3E%3C/svg%3E" class="attachment-full size-full wp-image-69004" alt="" data-lazy-src="https://www.kelly.senate.gov/wp-content/uploads/kelly-quote.png" /><noscript><img decoding="async" width="49" height="42" src="https://www.kelly.senate.gov/wp-content/uploads/kelly-quote.png" class="attachment-full size-full wp-image-69004" alt="" /></noscript>															</div>
+				</div>
+				<div class="elementor-element elementor-element-d1cea6f elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="d1cea6f" data-element_type="widget" data-widget_type="divider.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-divider">
+			<span class="elementor-divider-separator">
+						</span>
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-9301137 elementor-widget elementor-widget-heading" data-id="9301137" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<p class="elementor-heading-title elementor-size-default">When I was 16, it was hard to believe that I would reach my dreams to become a Navy pilot and NASA astronaut. That’s why I am working to ensure every Arizonan gets a chance to achieve their own dreams.</p>				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<div class="elementor-element elementor-element-f76ce7a sen-indented-text elementor-widget elementor-widget-text-editor" data-id="f76ce7a" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>In 1996, he was selected as an astronaut in the same NASA class as his identical twin brother Scott. Senator Kelly&#8217;s first of four trips into space was as pilot of STS-108 in December 2001, during which he helped deliver equipment, supplies, and additional crew members to the International Space Station. </p>								</div>
+				</div>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-b52d7d0 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="b52d7d0" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-503d65b" data-id="503d65b" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-8d2576f elementor-widget elementor-widget-text-editor" data-id="8d2576f" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>All in all, Senator Kelly has spent more than 50 days in space — traveling over 20 million miles. He retired from NASA in 2011 after commanding Space Shuttle Endeavour on its final flight.</p>								</div>
+				</div>
+				<div class="elementor-element elementor-element-c21dc24 elementor-widget elementor-widget-image" data-id="c21dc24" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img decoding="async" width="49" height="42" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2049%2042'%3E%3C/svg%3E" class="attachment-full size-full wp-image-69004" alt="" data-lazy-src="https://www.kelly.senate.gov/wp-content/uploads/kelly-quote.png" /><noscript><img decoding="async" width="49" height="42" src="https://www.kelly.senate.gov/wp-content/uploads/kelly-quote.png" class="attachment-full size-full wp-image-69004" alt="" /></noscript>															</div>
+				</div>
+				<div class="elementor-element elementor-element-b8d15a5 elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="b8d15a5" data-element_type="widget" data-widget_type="divider.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-divider">
+			<span class="elementor-divider-separator">
+						</span>
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-73b8061 elementor-widget elementor-widget-heading" data-id="73b8061" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<p class="elementor-heading-title elementor-size-default">When you’re looking down from space at Earth, it really puts it into perspective that we’re all in this together.</p>				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-8475cf9" data-id="8475cf9" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-854ff5a img-box-shadow-right elementor-widget elementor-widget-image" data-id="854ff5a" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img decoding="async" width="459" height="318" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20459%20318'%3E%3C/svg%3E" class="attachment-large size-large wp-image-68996" alt="Mark Kelly" data-lazy-srcset="https://www.kelly.senate.gov/wp-content/uploads/Kelly_About_Image3.jpg 459w, https://www.kelly.senate.gov/wp-content/uploads/Kelly_About_Image3-300x208.jpg 300w" data-lazy-sizes="(max-width: 459px) 100vw, 459px" data-lazy-src="https://www.kelly.senate.gov/wp-content/uploads/Kelly_About_Image3.jpg" /><noscript><img loading="lazy" decoding="async" width="459" height="318" src="https://www.kelly.senate.gov/wp-content/uploads/Kelly_About_Image3.jpg" class="attachment-large size-large wp-image-68996" alt="Mark Kelly" srcset="https://www.kelly.senate.gov/wp-content/uploads/Kelly_About_Image3.jpg 459w, https://www.kelly.senate.gov/wp-content/uploads/Kelly_About_Image3-300x208.jpg 300w" sizes="(max-width: 459px) 100vw, 459px" /></noscript>															</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<div class="elementor-element elementor-element-3a415f0 sen-indented-text elementor-widget elementor-widget-text-editor" data-id="3a415f0" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Now, Senator Kelly has embarked on his next mission — serving as a U.S. Senator for Arizona, in the seat once held by Senator John McCain. After being sworn in on December 2, 2020, Senator Kelly went right to work helping Arizona get through the COVID-19 pandemic. He helped pass the American Rescue Plan, which put shots in arms and direct relief in the pockets of Arizonans. The Community Navigator Program, which Senator Kelly championed in the American Rescue Plan, is helping Arizona’s small businesses access the resources they need to keep their doors open and save local jobs.</p>								</div>
+				</div>
+				<div class="elementor-element elementor-element-600ded5 elementor-widget elementor-widget-spacer" data-id="600ded5" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+						</div>
+				</div>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-c66f86b elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="c66f86b" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-236e87e" data-id="236e87e" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-561af85 img-box-shadow-left elementor-widget elementor-widget-image" data-id="561af85" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img decoding="async" width="459" height="318" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20459%20318'%3E%3C/svg%3E" class="attachment-large size-large wp-image-68998" alt="Mark Kelly" data-lazy-srcset="https://www.kelly.senate.gov/wp-content/uploads/Kelly_About_Image4.jpg 459w, https://www.kelly.senate.gov/wp-content/uploads/Kelly_About_Image4-300x208.jpg 300w" data-lazy-sizes="(max-width: 459px) 100vw, 459px" data-lazy-src="https://www.kelly.senate.gov/wp-content/uploads/Kelly_About_Image4.jpg" /><noscript><img loading="lazy" decoding="async" width="459" height="318" src="https://www.kelly.senate.gov/wp-content/uploads/Kelly_About_Image4.jpg" class="attachment-large size-large wp-image-68998" alt="Mark Kelly" srcset="https://www.kelly.senate.gov/wp-content/uploads/Kelly_About_Image4.jpg 459w, https://www.kelly.senate.gov/wp-content/uploads/Kelly_About_Image4-300x208.jpg 300w" sizes="(max-width: 459px) 100vw, 459px" /></noscript>															</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-a333ddb" data-id="a333ddb" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-504958c elementor-widget elementor-widget-text-editor" data-id="504958c" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Senator Kelly has broken through Washington gridlock to deliver real results for Arizonans. In his first year, he played a key role in shaping and passing the historic bipartisan infrastructure law, which is improving Arizona’s roads, bridges, water systems, ports of entry, high-speed internet access, wildfire response, and much more.</p><p>He’s taking on Washington corruption by introducing bold proposals to ban stock trading by members of Congress and put an end to corporate PACs.</p>								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<div class="elementor-element elementor-element-5a5421a sen-indented-text elementor-widget elementor-widget-text-editor" data-id="5a5421a" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Senator Kelly has also introduced a resolution that would require all members of Congress to publicly post their official schedule online. He is leading the effort to bring more transparency and accountability to Washington.</p><p>Senator Kelly also worked on a bipartisan basis to secure the Senate passage of a $52 billion deal that’ll increase domestic microchip manufacturing to create high-paying Arizona jobs, strengthen supply chains to lower costs, and bolster national security. Additionally, he helped negotiate a landmark deal to drive down prescription drug prices and lower out-of-pocket costs for seniors.</p>								</div>
+				</div>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-244b67c elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="244b67c" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-391720a" data-id="391720a" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-43e61eb elementor-widget elementor-widget-spacer" data-id="43e61eb" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-92c96fd elementor-widget elementor-widget-image" data-id="92c96fd" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img decoding="async" width="49" height="42" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2049%2042'%3E%3C/svg%3E" class="attachment-full size-full wp-image-69004" alt="" data-lazy-src="https://www.kelly.senate.gov/wp-content/uploads/kelly-quote.png" /><noscript><img decoding="async" width="49" height="42" src="https://www.kelly.senate.gov/wp-content/uploads/kelly-quote.png" class="attachment-full size-full wp-image-69004" alt="" /></noscript>															</div>
+				</div>
+				<div class="elementor-element elementor-element-eb93387 elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="eb93387" data-element_type="widget" data-widget_type="divider.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-divider">
+			<span class="elementor-divider-separator">
+						</span>
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-be590d8 elementor-widget elementor-widget-heading" data-id="be590d8" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<p class="elementor-heading-title elementor-size-default">Whether it was in the Navy or at NASA, we were all about teamwork and accomplishing the mission. That’s how it should be in Washington, too.</p>				</div>
+				</div>
+				<div class="elementor-element elementor-element-a2fdb5e elementor-widget elementor-widget-text-editor" data-id="a2fdb5e" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Senator Kelly’s focus remains on working with both Republicans and Democrats to create good-paying jobs, cut taxes for middle-class families, and lower costs for Arizonans.</p>								</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-2f100a6" data-id="2f100a6" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-4760f39 img-box-shadow-right elementor-widget elementor-widget-image" data-id="4760f39" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img decoding="async" width="459" height="318" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20459%20318'%3E%3C/svg%3E" class="attachment-large size-large wp-image-69000" alt="Mark Kelly speaks about the Brandon Act" data-lazy-srcset="https://www.kelly.senate.gov/wp-content/uploads/Kelly_About_Image5.jpg 459w, https://www.kelly.senate.gov/wp-content/uploads/Kelly_About_Image5-300x208.jpg 300w" data-lazy-sizes="(max-width: 459px) 100vw, 459px" data-lazy-src="https://www.kelly.senate.gov/wp-content/uploads/Kelly_About_Image5.jpg" /><noscript><img loading="lazy" decoding="async" width="459" height="318" src="https://www.kelly.senate.gov/wp-content/uploads/Kelly_About_Image5.jpg" class="attachment-large size-large wp-image-69000" alt="Mark Kelly speaks about the Brandon Act" srcset="https://www.kelly.senate.gov/wp-content/uploads/Kelly_About_Image5.jpg 459w, https://www.kelly.senate.gov/wp-content/uploads/Kelly_About_Image5-300x208.jpg 300w" sizes="(max-width: 459px) 100vw, 459px" /></noscript>															</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<div class="elementor-element elementor-element-e7adfcc sen-indented-text elementor-widget elementor-widget-text-editor" data-id="e7adfcc" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Senator Kelly serves on the Armed Services, Environment and Public Works, Intelligence, Aging, and Joint Economic Committees. He is Ranking Member of the Senate Armed Services Airland Subcommittee, where he plays a leading role in getting our airmen and soldiers the tools they need to do their jobs, while also expanding Arizona’s role in our national defense.</p>								</div>
+				</div>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-91750b2 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="91750b2" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-no">
+					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-91642e8 elementor-hidden-mobile" data-id="91642e8" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-4df88a9 img-box-shadow-left elementor-hidden-mobile elementor-widget elementor-widget-image" data-id="4df88a9" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img decoding="async" width="461" height="576" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20461%20576'%3E%3C/svg%3E" class="attachment-full size-full wp-image-69002" alt="" data-lazy-srcset="https://www.kelly.senate.gov/wp-content/uploads/Kelly_About_Image6.jpg 461w, https://www.kelly.senate.gov/wp-content/uploads/Kelly_About_Image6-240x300.jpg 240w" data-lazy-sizes="(max-width: 461px) 100vw, 461px" data-lazy-src="https://www.kelly.senate.gov/wp-content/uploads/Kelly_About_Image6.jpg" /><noscript><img loading="lazy" decoding="async" width="461" height="576" src="https://www.kelly.senate.gov/wp-content/uploads/Kelly_About_Image6.jpg" class="attachment-full size-full wp-image-69002" alt="" srcset="https://www.kelly.senate.gov/wp-content/uploads/Kelly_About_Image6.jpg 461w, https://www.kelly.senate.gov/wp-content/uploads/Kelly_About_Image6-240x300.jpg 240w" sizes="(max-width: 461px) 100vw, 461px" /></noscript>															</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-613ca17" data-id="613ca17" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-b8848b2 elementor-widget elementor-widget-text-editor" data-id="b8848b2" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Senator Kelly is married to former Congresswoman Gabby Giffords and they live in Tucson.</p>								</div>
+				</div>
+				<div class="elementor-element elementor-element-c7f5a23 elementor-widget elementor-widget-image" data-id="c7f5a23" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img decoding="async" width="49" height="42" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2049%2042'%3E%3C/svg%3E" class="attachment-full size-full wp-image-69004" alt="" data-lazy-src="https://www.kelly.senate.gov/wp-content/uploads/kelly-quote.png" /><noscript><img decoding="async" width="49" height="42" src="https://www.kelly.senate.gov/wp-content/uploads/kelly-quote.png" class="attachment-full size-full wp-image-69004" alt="" /></noscript>															</div>
+				</div>
+				<div class="elementor-element elementor-element-a81317a elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="a81317a" data-element_type="widget" data-widget_type="divider.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-divider">
+			<span class="elementor-divider-separator">
+						</span>
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-84bad7d elementor-widget elementor-widget-heading" data-id="84bad7d" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<p class="elementor-heading-title elementor-size-default">I thought I knew a lot about public service. Then, I met Gabby, and she taught me how to use policy to improve people's lives.</p>				</div>
+				</div>
+				<div class="elementor-element elementor-element-abcc147 elementor-widget elementor-widget-text-editor" data-id="abcc147" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Senator Kelly has two daughters: Claire, a graduate of Arizona State University, and Claudia, who lives in Tucson and is a student at the University of Arizona. His favorite hobbies include spending time with family (especially his baby granddaughter Sage!), going to the gym, riding his bike around Tucson with Gabby, hiking, and exploring Arizona’s outdoors.</p>								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section data-wpr-lazyrender="1" class="elementor-section elementor-top-section elementor-element elementor-element-2b2b745 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="2b2b745" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-6d99fb8" data-id="6d99fb8" data-element_type="column">
+			<div class="elementor-widget-wrap">
+							</div>
+		</div>
+					</div>
+		</section>
+				</div>
+				<div data-elementor-type="footer" data-elementor-id="64461" class="elementor elementor-64461 elementor-location-footer" data-elementor-post-type="elementor_library">
+					<section class="elementor-section elementor-top-section elementor-element elementor-element-cfd317b noprint elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="cfd317b" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-9181fe4" data-id="9181fe4" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-bea55bc elementor-widget elementor-widget-spacer" data-id="bea55bc" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+						</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-cbfd928 elementor-reverse-mobile noprint elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="cbfd928" data-element_type="section" id="sen-footer" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-862f40b" data-id="862f40b" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-0fc0038 elementor-widget__width-auto elementor-widget elementor-widget-image" data-id="0fc0038" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img width="57" height="57" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2057%2057'%3E%3C/svg%3E" class="attachment-full size-full wp-image-68973" alt="" data-lazy-src="https://www.kelly.senate.gov/wp-content/uploads/Kelly-Star.png" /><noscript><img width="57" height="57" src="https://www.kelly.senate.gov/wp-content/uploads/Kelly-Star.png" class="attachment-full size-full wp-image-68973" alt="" /></noscript>															</div>
+				</div>
+				<div class="elementor-element elementor-element-5171f39 elementor-nav-menu__align-center elementor-nav-menu--dropdown-none elementor-widget elementor-widget-nav-menu" data-id="5171f39" data-element_type="widget" id="sen-footer-menu" data-settings="{&quot;layout&quot;:&quot;horizontal&quot;,&quot;submenu_icon&quot;:{&quot;value&quot;:&quot;&lt;i class=\&quot;fas fa-caret-down\&quot;&gt;&lt;\/i&gt;&quot;,&quot;library&quot;:&quot;fa-solid&quot;}}" data-widget_type="nav-menu.default">
+				<div class="elementor-widget-container">
+								<nav aria-label="Menu" class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-horizontal e--pointer-none">
+				<ul id="menu-1-5171f39" class="elementor-nav-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-64445 current_page_item menu-item-64453"><a href="https://www.kelly.senate.gov/about/" aria-current="page" class="elementor-item elementor-item-active">About</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-64991"><a href="https://www.kelly.senate.gov/newsroom/" class="elementor-item">News</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-64452"><a href="https://www.kelly.senate.gov/services/" class="elementor-item">Services</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-64503"><a href="https://www.kelly.senate.gov/contact/" class="elementor-item">Contact</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65515"><a href="https://www.kelly.senate.gov/privacy-policy/" class="elementor-item">Privacy Policy</a></li>
+</ul>			</nav>
+						<nav class="elementor-nav-menu--dropdown elementor-nav-menu__container" aria-hidden="true">
+				<ul id="menu-2-5171f39" class="elementor-nav-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-64445 current_page_item menu-item-64453"><a href="https://www.kelly.senate.gov/about/" aria-current="page" class="elementor-item elementor-item-active" tabindex="-1">About</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-64991"><a href="https://www.kelly.senate.gov/newsroom/" class="elementor-item" tabindex="-1">News</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-64452"><a href="https://www.kelly.senate.gov/services/" class="elementor-item" tabindex="-1">Services</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-64503"><a href="https://www.kelly.senate.gov/contact/" class="elementor-item" tabindex="-1">Contact</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65515"><a href="https://www.kelly.senate.gov/privacy-policy/" class="elementor-item" tabindex="-1">Privacy Policy</a></li>
+</ul>			</nav>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-17e817d elementor-shape-circle e-grid-align-tablet-center e-grid-align-mobile-center elementor-grid-0 e-grid-align-center elementor-widget elementor-widget-social-icons" data-id="17e817d" data-element_type="widget" data-widget_type="social-icons.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-social-icons-wrapper elementor-grid" role="list">
+							<span class="elementor-grid-item" role="listitem">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-facebook-f elementor-repeater-item-61379ef" href="https://www.facebook.com/SenMarkKelly" target="_blank">
+						<span class="elementor-screen-only">Facebook-f</span>
+						<i class="fab fa-facebook-f"></i>					</a>
+				</span>
+							<span class="elementor-grid-item" role="listitem">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-twitter elementor-repeater-item-b5cbdbc" href="https://twitter.com/SenMarkKelly" target="_blank">
+						<span class="elementor-screen-only">Twitter</span>
+						<i class="fab fa-twitter"></i>					</a>
+				</span>
+							<span class="elementor-grid-item" role="listitem">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-instagram elementor-repeater-item-7f223fa" href="https://www.instagram.com/senmarkkelly/" target="_blank">
+						<span class="elementor-screen-only">Instagram</span>
+						<i class="fab fa-instagram"></i>					</a>
+				</span>
+							<span class="elementor-grid-item" role="listitem">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-youtube elementor-repeater-item-3af56f3" href="https://www.youtube.com/SenMarkKelly" target="_blank">
+						<span class="elementor-screen-only">Youtube</span>
+						<i class="fab fa-youtube"></i>					</a>
+				</span>
+							<span class="elementor-grid-item" role="listitem">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-medium elementor-repeater-item-31f5a53" href="https://medium.com/@SenMarkKelly" target="_blank">
+						<span class="elementor-screen-only">Medium</span>
+						<i class="fab fa-medium"></i>					</a>
+				</span>
+					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-304dbee elementor-widget elementor-widget-html" data-id="304dbee" data-element_type="widget" data-widget_type="html.default">
+				<div class="elementor-widget-container">
+					<script type="rocketlazyloadscript" data-minify="1" data-rocket-src="https://www.kelly.senate.gov/wp-content/cache/min/1/566dc2d26e4f/f8d2f26c1eac/launch-3a705652822d.min.js?ver=1775161948" async></script>				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				</div>
+		
+<!-- YouTube Feeds JS -->
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript">
+
+</script>
+<!-- Custom Feeds for Instagram JS -->
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript">
+var sbiajaxurl = "https://www.kelly.senate.gov/wp-admin/admin-ajax.php";
+
+</script>
+			<script>
+				const lazyloadRunObserver = () => {
+					const lazyloadBackgrounds = document.querySelectorAll( `.e-con.e-parent:not(.e-lazyloaded)` );
+					const lazyloadBackgroundObserver = new IntersectionObserver( ( entries ) => {
+						entries.forEach( ( entry ) => {
+							if ( entry.isIntersecting ) {
+								let lazyloadBackground = entry.target;
+								if( lazyloadBackground ) {
+									lazyloadBackground.classList.add( 'e-lazyloaded' );
+								}
+								lazyloadBackgroundObserver.unobserve( entry.target );
+							}
+						});
+					}, { rootMargin: '200px 0px 200px 0px' } );
+					lazyloadBackgrounds.forEach( ( lazyloadBackground ) => {
+						lazyloadBackgroundObserver.observe( lazyloadBackground );
+					} );
+				};
+				const events = [
+					'DOMContentLoaded',
+					'elementor/lazyload/observe',
+				];
+				events.forEach( ( event ) => {
+					document.addEventListener( event, lazyloadRunObserver );
+				} );
+			</script>
+			<link rel='stylesheet' id='elementor-post-67624-css' href='https://www.kelly.senate.gov/wp-content/uploads/elementor/css/post-67624.css?ver=1775253285' media='all' />
+<script type="rocketlazyloadscript" id="rocket-browser-checker-js-after">
+"use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
+</script>
+<script id="rocket-preload-links-js-extra">
+var RocketPreloadLinksConfig = {"excludeUris":"\/(?:.+\/)?feed(?:\/(?:.+\/?)?)?$|\/(?:.+\/)?embed\/|\/(index.php\/)?(.*)wp-json(\/.*|$)|\/refer\/|\/go\/|\/recommend\/|\/recommends\/","usesTrailingSlash":"1","imageExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php","fileExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php|html|htm","siteUrl":"https:\/\/www.kelly.senate.gov","onHoverDelay":"100","rateThrottle":"3"};
+</script>
+<script type="rocketlazyloadscript" id="rocket-preload-links-js-after">
+(function() {
+"use strict";var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e=function(){function i(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(e,t,n){return t&&i(e.prototype,t),n&&i(e,n),e}}();function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function n(e,t){i(this,n),this.browser=e,this.config=t,this.options=this.browser.options,this.prefetched=new Set,this.eventTime=null,this.threshold=1111,this.numOnHover=0}return e(n,[{key:"init",value:function(){!this.browser.supportsLinkPrefetch()||this.browser.isDataSaverModeOn()||this.browser.isSlowConnection()||(this.regex={excludeUris:RegExp(this.config.excludeUris,"i"),images:RegExp(".("+this.config.imageExt+")$","i"),fileExt:RegExp(".("+this.config.fileExt+")$","i")},this._initListeners(this))}},{key:"_initListeners",value:function(e){-1<this.config.onHoverDelay&&document.addEventListener("mouseover",e.listener.bind(e),e.listenerOptions),document.addEventListener("mousedown",e.listener.bind(e),e.listenerOptions),document.addEventListener("touchstart",e.listener.bind(e),e.listenerOptions)}},{key:"listener",value:function(e){var t=e.target.closest("a"),n=this._prepareUrl(t);if(null!==n)switch(e.type){case"mousedown":case"touchstart":this._addPrefetchLink(n);break;case"mouseover":this._earlyPrefetch(t,n,"mouseout")}}},{key:"_earlyPrefetch",value:function(t,e,n){var i=this,r=setTimeout(function(){if(r=null,0===i.numOnHover)setTimeout(function(){return i.numOnHover=0},1e3);else if(i.numOnHover>i.config.rateThrottle)return;i.numOnHover++,i._addPrefetchLink(e)},this.config.onHoverDelay);t.addEventListener(n,function e(){t.removeEventListener(n,e,{passive:!0}),null!==r&&(clearTimeout(r),r=null)},{passive:!0})}},{key:"_addPrefetchLink",value:function(i){return this.prefetched.add(i.href),new Promise(function(e,t){var n=document.createElement("link");n.rel="prefetch",n.href=i.href,n.onload=e,n.onerror=t,document.head.appendChild(n)}).catch(function(){})}},{key:"_prepareUrl",value:function(e){if(null===e||"object"!==(void 0===e?"undefined":r(e))||!1 in e||-1===["http:","https:"].indexOf(e.protocol))return null;var t=e.href.substring(0,this.config.siteUrl.length),n=this._getPathname(e.href,t),i={original:e.href,protocol:e.protocol,origin:t,pathname:n,href:t+n};return this._isLinkOk(i)?i:null}},{key:"_getPathname",value:function(e,t){var n=t?e.substring(this.config.siteUrl.length):e;return n.startsWith("/")||(n="/"+n),this._shouldAddTrailingSlash(n)?n+"/":n}},{key:"_shouldAddTrailingSlash",value:function(e){return this.config.usesTrailingSlash&&!e.endsWith("/")&&!this.regex.fileExt.test(e)}},{key:"_isLinkOk",value:function(e){return null!==e&&"object"===(void 0===e?"undefined":r(e))&&(!this.prefetched.has(e.href)&&e.origin===this.config.siteUrl&&-1===e.href.indexOf("?")&&-1===e.href.indexOf("#")&&!this.regex.excludeUris.test(e.href)&&!this.regex.images.test(e.href))}}],[{key:"run",value:function(){"undefined"!=typeof RocketPreloadLinksConfig&&new n(new RocketBrowserCompatibilityChecker({capture:!0,passive:!0}),RocketPreloadLinksConfig).init()}}]),n}();t.run();
+}());
+</script>
+<script id="rocket_lazyload_css-js-extra">
+var rocket_lazyload_css_data = {"threshold":"300"};
+</script>
+<script id="rocket_lazyload_css-js-after">
+!function o(n,c,a){function u(t,e){if(!c[t]){if(!n[t]){var r="function"==typeof require&&require;if(!e&&r)return r(t,!0);if(s)return s(t,!0);throw(e=new Error("Cannot find module '"+t+"'")).code="MODULE_NOT_FOUND",e}r=c[t]={exports:{}},n[t][0].call(r.exports,function(e){return u(n[t][1][e]||e)},r,r.exports,o,n,c,a)}return c[t].exports}for(var s="function"==typeof require&&require,e=0;e<a.length;e++)u(a[e]);return u}({1:[function(e,t,r){"use strict";{const c="undefined"==typeof rocket_pairs?[]:rocket_pairs,a=(("undefined"==typeof rocket_excluded_pairs?[]:rocket_excluded_pairs).map(t=>{var e=t.selector;document.querySelectorAll(e).forEach(e=>{e.setAttribute("data-rocket-lazy-bg-"+t.hash,"excluded")})}),document.querySelector("#wpr-lazyload-bg-container"));var o=rocket_lazyload_css_data.threshold||300;const u=new IntersectionObserver(e=>{e.forEach(t=>{t.isIntersecting&&c.filter(e=>t.target.matches(e.selector)).map(t=>{var e;t&&((e=document.createElement("style")).textContent=t.style,a.insertAdjacentElement("afterend",e),t.elements.forEach(e=>{u.unobserve(e),e.setAttribute("data-rocket-lazy-bg-"+t.hash,"loaded")}))})})},{rootMargin:o+"px"});function n(){0<(0<arguments.length&&void 0!==arguments[0]?arguments[0]:[]).length&&c.forEach(t=>{try{document.querySelectorAll(t.selector).forEach(e=>{"loaded"!==e.getAttribute("data-rocket-lazy-bg-"+t.hash)&&"excluded"!==e.getAttribute("data-rocket-lazy-bg-"+t.hash)&&(u.observe(e),(t.elements||=[]).push(e))})}catch(e){console.error(e)}})}n(),function(){const r=window.MutationObserver;return function(e,t){if(e&&1===e.nodeType)return(t=new r(t)).observe(e,{attributes:!0,childList:!0,subtree:!0}),t}}()(document.querySelector("body"),n)}},{}]},{},[1]);
+</script>
+<script data-minify="1" src="https://www.kelly.senate.gov/wp-content/cache/min/1/wp-content/plugins/jet-engine/assets/lib/jet-plugins/jet-plugins.js?ver=1775161948" id="jet-plugins-js"></script>
+<script src="https://www.kelly.senate.gov/wp-content/plugins/jet-popup/assets/js/lib/anime-js/anime.min.js?ver=2.0.2" id="jet-anime-js-js"></script>
+<script id="jet-popup-frontend-js-extra">
+var jetPopupData = {"version":"2.0.17.1","ajax_url":"https:\/\/www.kelly.senate.gov\/wp-admin\/admin-ajax.php","isElementor":"true"};
+</script>
+<script data-minify="1" src="https://www.kelly.senate.gov/wp-content/cache/min/1/wp-content/plugins/jet-popup/assets/js/jet-popup-frontend.js?ver=1775161948" id="jet-popup-frontend-js"></script>
+<script src="https://www.kelly.senate.gov/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.30.3" id="elementor-webpack-runtime-js"></script>
+<script src="https://www.kelly.senate.gov/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.30.3" id="elementor-frontend-modules-js"></script>
+<script src="https://www.kelly.senate.gov/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3" id="jquery-ui-core-js"></script>
+<script id="elementor-frontend-js-before">
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close","a11yCarouselPrevSlideMessage":"Previous slide","a11yCarouselNextSlideMessage":"Next slide","a11yCarouselFirstSlideMessage":"This is the first slide","a11yCarouselLastSlideMessage":"This is the last slide","a11yCarouselPaginationBulletMessage":"Go to slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile Portrait","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Landscape","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Portrait","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Landscape","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1245,"default_value":1366,"direction":"max","is_enabled":true},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":true}},"hasCustomBreakpoints":true},"version":"3.30.3","is_static":false,"experimentalFeatures":{"additional_custom_breakpoints":true,"container":true,"theme_builder_v2":true,"nested-elements":true,"home_screen":true,"global_classes_should_enforce_capabilities":true,"cloud-library":true,"e_opt_in_v4_page":true},"urls":{"assets":"https:\/\/www.kelly.senate.gov\/wp-content\/plugins\/elementor\/assets\/","ajaxurl":"https:\/\/www.kelly.senate.gov\/wp-admin\/admin-ajax.php","uploadUrl":"https:\/\/www.kelly.senate.gov\/wp-content\/uploads"},"nonces":{"floatingButtonsClickTracking":"24b98ca57c"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"body_background_background":"classic","stretched_section_container":"#outer-wrap","active_breakpoints":["viewport_mobile","viewport_tablet","viewport_laptop","viewport_widescreen"],"viewport_laptop":1245,"lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes"},"post":{"id":64445,"title":"About%20Mark%20-%20Senator%20Mark%20Kelly","excerpt":"","featuredImage":"https:\/\/www.kelly.senate.gov\/wp-content\/uploads\/Kelly_About_Banner-1024x450.jpg"}};
+</script>
+<script src="https://www.kelly.senate.gov/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.30.3" id="elementor-frontend-js"></script>
+<script src="https://www.kelly.senate.gov/wp-content/plugins/elementor-pro/assets/lib/smartmenus/jquery.smartmenus.min.js?ver=1.2.1" id="smartmenus-js"></script>
+<script src="https://www.kelly.senate.gov/wp-content/plugins/elementor-pro/assets/lib/sticky/jquery.sticky.min.js?ver=3.30.1" id="e-sticky-js"></script>
+<script id="eael-general-js-extra">
+var localize = {"ajaxurl":"https:\/\/www.kelly.senate.gov\/wp-admin\/admin-ajax.php","nonce":"47ba79fe91","i18n":{"added":"Added ","compare":"Compare","loading":"Loading..."},"eael_translate_text":{"required_text":"is a required field","invalid_text":"Invalid","billing_text":"Billing","shipping_text":"Shipping","fg_mfp_counter_text":"of"},"page_permalink":"https:\/\/www.kelly.senate.gov\/about\/","cart_redirectition":"","cart_page_url":"","el_breakpoints":{"mobile":{"label":"Mobile Portrait","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Landscape","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Portrait","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Landscape","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1245,"default_value":1366,"direction":"max","is_enabled":true},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":true}}};
+</script>
+<script src="https://www.kelly.senate.gov/wp-content/plugins/essential-addons-for-elementor-lite/assets/front-end/js/view/general.min.js?ver=6.2.2" id="eael-general-js"></script>
+<script src="https://www.kelly.senate.gov/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?ver=3.30.1" id="elementor-pro-webpack-runtime-js"></script>
+<script src="https://www.kelly.senate.gov/wp-includes/js/dist/hooks.min.js?ver=4d63a3d491d11ffd8ac6" id="wp-hooks-js"></script>
+<script src="https://www.kelly.senate.gov/wp-includes/js/dist/i18n.min.js?ver=5e580eb46a90c2b997e6" id="wp-i18n-js"></script>
+<script type="rocketlazyloadscript" id="wp-i18n-js-after">
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+</script>
+<script id="elementor-pro-frontend-js-before">
+var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/www.kelly.senate.gov\/wp-admin\/admin-ajax.php","nonce":"1cb1a81d33","urls":{"assets":"https:\/\/www.kelly.senate.gov\/wp-content\/plugins\/elementor-pro\/assets\/","rest":"https:\/\/www.kelly.senate.gov\/wp-json\/"},"settings":{"lazy_load_background_images":true},"popup":{"hasPopUps":true},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"},"x-twitter":{"title":"X"},"threads":{"title":"Threads"}},"facebook_sdk":{"lang":"en_US","app_id":""},"lottie":{"defaultAnimationUrl":"https:\/\/www.kelly.senate.gov\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};
+</script>
+<script src="https://www.kelly.senate.gov/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.30.1" id="elementor-pro-frontend-js"></script>
+<script src="https://www.kelly.senate.gov/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js?ver=3.30.1" id="pro-elements-handlers-js"></script>
+<script data-minify="1" src="https://www.kelly.senate.gov/wp-content/cache/min/1/wp-content/plugins/jet-popup/includes/elementor/assets/js/jet-popup-elementor-frontend.js?ver=1775161948" id="jet-popup-elementor-frontend-js"></script>
+<script>window.lazyLoadOptions=[{elements_selector:"img[data-lazy-src],.rocket-lazyload,iframe[data-lazy-src]",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}},{elements_selector:".rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,}];window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(var i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async src="https://www.kelly.senate.gov/wp-content/plugins/wp-rocket/assets/js/lazyload/17.8.3/lazyload.min.js"></script>
+<script>var rocket_beacon_data = {"ajax_url":"https:\/\/www.kelly.senate.gov\/wp-admin\/admin-ajax.php","nonce":"ca56fd7ee2","url":"https:\/\/www.kelly.senate.gov\/about","is_mobile":true,"width_threshold":393,"height_threshold":830,"delay":500,"debug":null,"status":{"atf":true,"lrc":true,"preload_fonts":true,"preconnect_external_domain":true},"elements":"img, video, picture, p, main, div, li, svg, section, header, span","lrc_threshold":1800,"preload_fonts_exclusions":["api.fontshare.com","cdn.fontshare.com"],"processed_extensions":["woff2","woff","ttf"],"preconnect_external_domain_elements":["link","script","iframe"],"preconnect_external_domain_exclusions":["static.cloudflareinsights.com","rel=\"profile\"","rel=\"preconnect\"","rel=\"dns-prefetch\"","rel=\"icon\""]}</script><script data-name="wpr-wpr-beacon" src='https://www.kelly.senate.gov/wp-content/plugins/wp-rocket/assets/js/wpr-beacon.min.js' async></script><script>(()=>{class RocketElementorPreload{constructor(){this.deviceMode=document.createElement("span"),this.deviceMode.id="elementor-device-mode-wpr",this.deviceMode.setAttribute("class","elementor-screen-only"),document.body.appendChild(this.deviceMode)}t(){let t=getComputedStyle(this.deviceMode,":after").content.replace(/"/g,"");this.animationSettingKeys=this.i(t),document.querySelectorAll(".elementor-invisible[data-settings]").forEach((t=>{const e=t.getBoundingClientRect();if(e.bottom>=0&&e.top<=window.innerHeight)try{this.o(t)}catch(t){}}))}o(t){const e=JSON.parse(t.dataset.settings),i=e.m||e.animation_delay||0,n=e[this.animationSettingKeys.find((t=>e[t]))];if("none"===n)return void t.classList.remove("elementor-invisible");t.classList.remove(n),this.currentAnimation&&t.classList.remove(this.currentAnimation),this.currentAnimation=n;let o=setTimeout((()=>{t.classList.remove("elementor-invisible"),t.classList.add("animated",n),this.l(t,e)}),i);window.addEventListener("rocket-startLoading",(function(){clearTimeout(o)}))}i(t="mobile"){const e=[""];switch(t){case"mobile":e.unshift("_mobile");case"tablet":e.unshift("_tablet");case"desktop":e.unshift("_desktop")}const i=[];return["animation","_animation"].forEach((t=>{e.forEach((e=>{i.push(t+e)}))})),i}l(t,e){this.i().forEach((t=>delete e[t])),t.dataset.settings=JSON.stringify(e)}static run(){const t=new RocketElementorPreload;requestAnimationFrame(t.t.bind(t))}}document.addEventListener("DOMContentLoaded",RocketElementorPreload.run)})();</script></body>
+</html>

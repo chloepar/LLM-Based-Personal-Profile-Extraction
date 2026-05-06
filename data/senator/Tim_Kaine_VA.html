@@ -1,0 +1,2482 @@
+<!DOCTYPE html>
+<html lang="en" class='no-js template--block_editor'>
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+      <meta name="page-title" content="About">
+      <title>About | U.S. Senator Tim Kaine</title>
+      <link rel="canonical" href="https://www.kaine.senate.gov/about/">
+
+      <link rel="shortcut icon" href="/assets/images/favicon.ico">
+      <link href="/assets/images/favicon.ico" rel="Icon" type="image/x-icon"/>
+      <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
+      <link rel="manifest" href="/assets/images/site.webmanifest">
+      <link rel="mask-icon" href="/assets/images/safari-pinned-tab.svg" color="#2b5279">
+      <meta name="apple-mobile-web-app-title" content="Tim Kaine">
+      <meta name="application-name" content="Tim Kaine">
+      <meta name="msapplication-TileColor" content="#ffffff">
+      <meta name="msapplication-config" content="/assets/images/browserconfig.xml">
+      <meta name="theme-color" content="#ffffff">
+      <meta name="google-site-verification" content="16hXhRmzoT9TNlaQxPtiQuI8rnxp2fu8lOm261oN5Ag">
+
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:site" content="@timkaine"/>
+
+<meta name="twitter:title" content="About | U.S. Senator Tim Kaine of Virginia">
+
+<meta property="twitter:image" content="https://www.kaine.senate.gov/assets/images/sharelogo.jpg"/>
+
+<meta name="twitter:description" content="The Official U.S. Senate website of Senator Tim Kaine of Virginia"/>
+
+
+<meta property="og:url" content="https://www.kaine.senate.gov/about/"/>
+
+<meta property="og:title" content="About | U.S. Senator Tim Kaine of Virginia"/>
+
+<meta property="og:image" content="https://www.kaine.senate.gov/assets/images/sharelogo.jpg"/>
+
+<meta property="og:description" content="The Official U.S. Senate website of Senator Tim Kaine of Virginia"/>
+
+      
+
+
+<script>
+  if (!application) var application = {};
+  application = {
+    "config": {
+      "tinymce": {
+        "plugins": {
+          "selectvideo": {
+            "player": "jwplayer", // should be set to "legacy" or "jwplayer" currently
+            "youtube": true, // set to true to write the youtube tags for youtube videos
+            "width": "100%", // set width and height on the containing element
+            "height": "100%",
+            "tracking": true
+          }
+        }
+      }
+    },
+    "fn": { // deprecated mootools 1.2 stuff that we'll probably still use once we upgrade fully to 1.3
+      "defined": function (obj) {
+        return (obj != undefined);
+      },
+      "check": function (obj) {
+        return !!(obj || obj === 0);
+      }
+    },
+    "form": {
+      "processed": "null",
+    },
+    "friendly_urls": false,
+    "siteroot": "https://www.kaine.senate.gov/",
+    "theme": "",
+    "webroot": "https://www.kaine.senate.gov/",
+    "assetWebroot": "https://www.kaine.senate.gov/",
+  };
+</script>
+
+    
+      <link rel="stylesheet" type="text/css" href="https://www.kaine.senate.gov/styles/common.css?1775260550"/>
+
+      <script src="https://www.kaine.senate.gov/scripts/global.js?1775260550"></script>
+      <script src="https://www.kaine.senate.gov/scripts/gsap.js?1775260550"></script>
+
+      <script>
+        $.ajaxSetup({ cache: true });
+        function getScripts(scripts, callback) {
+          var progress = 0;
+          scripts.forEach(function(script) {
+              $.getScript(script, function () {
+                  if (++progress == scripts.length && typeof callback == 'function') callback();
+              });
+          });
+        }
+      </script>
+
+      <script>
+        var initForm = function() {
+          getScripts(['https://www.kaine.senate.gov/scripts/mootools.min.js?1775260550'], function() {
+            getScripts(['https://www.kaine.senate.gov/scripts/form/Forms_Builder.js?1775260550'], function() {
+              creativengine_forms_builder.init();
+
+              // fix for bootstrap tooltip hide/mootools hide collision
+              $$('form input,form select,form textarea, input, .nav-tabs li a').each(function (item) {
+                if (typeof item.hide == 'function') {
+                  item.hide = null;
+                }
+              });
+
+              Element.implement({
+                'slide': function (how, mode) {
+                  return this;
+                }
+              });
+            })
+          })
+        }
+      </script>
+
+
+      <script type="text/javascript">
+        var gRecaptchaReady = function () {
+          let textarea = document.getElementById("g-recaptcha-response");
+          if (!textarea)
+            return;
+          textarea.setAttribute("aria-hidden", "true");
+          textarea.setAttribute("aria-label", "do not use");
+          textarea.setAttribute("aria-readonly", "true");
+        }
+
+        window.getStuckHeaderHeight = function () {
+          var siteHeader = document.querySelector('.SiteHeader');
+          var siteHeaderHeight = (siteHeader)
+            ? siteHeader.offsetHeight
+            : 0;
+          var mobileHeader = document.querySelector('.MobileHeader');
+          var mobileHeaderHeight = (mobileHeader)
+            ? mobileHeader.offsetHeight
+            : 0;
+
+          // Returns the height of either desktop or mobile header because the hidden header will return 0
+          return siteHeaderHeight + mobileHeaderHeight;
+        }
+
+        window.requestAnimationFrame = window.requestAnimationFrame.bind(window);
+        //gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
+
+        window.refreshScrollTriggers = () => {
+          if (typeof ScrollTrigger !== 'undefined') {
+            ScrollTrigger.getAll().forEach(t => t.refresh());
+          }
+        };
+        window.killScrollTriggers = () => {
+          if (typeof ScrollTrigger !== 'undefined') {
+            ScrollTrigger.getAll().forEach(t => t.kill());
+          }
+        };
+      </script>
+
+      
+      
+      <script>
+        window.top['site_path'] = "771001B3-A6B3-2B09-6BEE-20F472470943";
+        window.top['SAM_META'] = {
+          jquery: "",
+          bootstrap: {
+            major: ""
+          }
+        };
+      </script>
+      
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+      <link rel="stylesheet" href="https://www.kaine.senate.gov/assets/styles/font-awesome.min.css"/>
+
+  </head>
+
+  
+
+  <body data-transition="wrapper"
+    class="body--internal body--block_editor hasAlert">
+    <!-- in sen-n -->
+    <!--stopindex-->
+      <div class="SiteLayout d-flex flex-column">
+  <a href="#aria-skip-nav" class="SkipNav sr-only sr-only-focusable">Skip to content</a>
+
+        <div class="SiteLayout__container d-flex flex-column flex-grow-1">
+    <div class='container SiteLayout__headerBtnContainer'>
+            <div class="SiteLayout__headerBtn">
+              <a class="Button Button--envelope" href="https://www.kaine.senate.gov/contact/newsletter">
+                  <span class="SiteLayout__headerBtn__label">Newsletter <br> Sign Up</span>
+              </a>
+            </div>
+
+      </div>
+
+              <div class="SiteLayout__navigation">
+                <div class="SiteLayout__siteHeader">
+<div class="SiteHeader">
+  <div  class="SiteHeader__layout">
+    <a
+      href="/"
+      class="SiteHeader__logoLink"
+      aria-label="U.S. Senator Tim Kaine Logo goes to Home Page">
+      <div class="SiteHeader__logo">
+        <img
+          width="300"
+          height="75"
+          src="https://www.kaine.senate.gov/assets/images/logo.svg?1775260550"
+          alt="U.S. Senator Tim Kaine Logo"/>
+      </div>
+    </a>
+
+    <div class="SiteHeader__nav h-100">
+      
+      <div class="SiteHeader__navItem">
+
+<div id="js-site-nav" class="SiteNav h-100">
+    
+      <nav aria-label="Site Navigation" class="SiteNav__layout d-flex align-items-center h-100">
+        <div class="SiteNav__main h-100">
+          <ul class="SiteNav__linkList h-100">
+
+                
+
+
+                <li class="SiteNav__item h-100 SiteNav__item--dropdown">
+                  <a class="SiteNav__link h-100 align-items-center"
+                    data-transition-selected-if="/contact"
+                    data-transition-selected-class="SiteNav__link--selected"
+                    href="https://www.kaine.senate.gov/contact"
+                    tabindex="0">Contact Tim</a>
+
+                    <ul class="SiteNav__dropdown">
+
+                          <li class="SiteNav__dropdownItem">
+                            <a class="SiteNav__dropdownLink"
+                              data-transition-selected-if="/contact/share-your-opinion"
+                              data-transition-selected-class="SiteNav__dropdownLink--selected"
+                              href="https://www.kaine.senate.gov/contact/share-your-opinion"
+                              tabindex="0">Share Your Opinion</a>
+                          </li>
+
+                          <li class="SiteNav__dropdownItem">
+                            <a class="SiteNav__dropdownLink"
+                              data-transition-selected-if="/services/help"
+                              data-transition-selected-class="SiteNav__dropdownLink--selected"
+                              href="https://www.kaine.senate.gov/services/help"
+                              tabindex="0">Help With a Federal Agency</a>
+                          </li>
+
+                          <li class="SiteNav__dropdownItem">
+                            <a class="SiteNav__dropdownLink"
+                              data-transition-selected-if="/contact/office-locations"
+                              data-transition-selected-class="SiteNav__dropdownLink--selected"
+                              href="https://www.kaine.senate.gov/contact/office-locations"
+                              tabindex="0">Office Locations</a>
+                          </li>
+
+                          <li class="SiteNav__dropdownItem">
+                            <a class="SiteNav__dropdownLink"
+                              data-transition-selected-if="/contact/newsletter"
+                              data-transition-selected-class="SiteNav__dropdownLink--selected"
+                              href="https://www.kaine.senate.gov/contact/newsletter"
+                              tabindex="0">Email Updates</a>
+                          </li>
+
+                          <li class="SiteNav__dropdownItem">
+                            <a class="SiteNav__dropdownLink"
+                              data-transition-selected-if="/contact/invite"
+                              data-transition-selected-class="SiteNav__dropdownLink--selected"
+                              href="https://www.kaine.senate.gov/contact/invite"
+                              tabindex="0">Scheduling Requests</a>
+                          </li>
+
+                          <li class="SiteNav__dropdownItem">
+                            <a class="SiteNav__dropdownLink"
+                              data-transition-selected-if="/contact/language-assistance"
+                              data-transition-selected-class="SiteNav__dropdownLink--selected"
+                              href="https://www.kaine.senate.gov/contact/language-assistance"
+                              tabindex="0">Language Assistance</a>
+                          </li>
+                    </ul>
+                </li>
+
+                
+
+
+                <li class="SiteNav__item h-100 SiteNav__item--dropdown">
+                  <a class="SiteNav__link h-100 align-items-center SiteNav__link--selected"
+                    data-transition-selected-if="/about"
+                    data-transition-selected-class="SiteNav__link--selected"
+                    href="https://www.kaine.senate.gov/about"
+                    tabindex="0">About Tim</a>
+
+                    <ul class="SiteNav__dropdown nomobile">
+
+                          <li class="SiteNav__dropdownItem">
+                            <a class="SiteNav__dropdownLink SiteNav__dropdownLink--selected"
+                              data-transition-selected-if="/about"
+                              data-transition-selected-class="SiteNav__dropdownLink--selected"
+                              href="https://www.kaine.senate.gov/about"
+                              tabindex="0">Biography</a>
+                          </li>
+
+                          <li class="SiteNav__dropdownItem">
+                            <a class="SiteNav__dropdownLink"
+                              data-transition-selected-if="/about/voting-record"
+                              data-transition-selected-class="SiteNav__dropdownLink--selected"
+                              href="https://www.kaine.senate.gov/about/voting-record"
+                              tabindex="0">Voting Record</a>
+                          </li>
+
+                          <li class="SiteNav__dropdownItem">
+                            <a class="SiteNav__dropdownLink"
+                              data-transition-selected-if="/about/legislation"
+                              data-transition-selected-class="SiteNav__dropdownLink--selected"
+                              href="https://www.kaine.senate.gov/about/legislation"
+                              tabindex="0">Legislation</a>
+                          </li>
+
+                          <li class="SiteNav__dropdownItem">
+                            <a class="SiteNav__dropdownLink"
+                              data-transition-selected-if="/about/committee-assignments"
+                              data-transition-selected-class="SiteNav__dropdownLink--selected"
+                              href="https://www.kaine.senate.gov/about/committee-assignments"
+                              tabindex="0">Committee Assignments</a>
+                          </li>
+                    </ul>
+                </li>
+
+                
+
+
+                <li class="SiteNav__item h-100 SiteNav__item--dropdown">
+                  <a class="SiteNav__link h-100 align-items-center"
+                    data-transition-selected-if="/news"
+                    data-transition-selected-class="SiteNav__link--selected"
+                    href="https://www.kaine.senate.gov/news"
+                    tabindex="0">News</a>
+
+                    <ul class="SiteNav__dropdown help">
+
+                          <li class="SiteNav__dropdownItem">
+                            <a class="SiteNav__dropdownLink"
+                              data-transition-selected-if="/news"
+                              data-transition-selected-class="SiteNav__dropdownLink--selected"
+                              href="https://www.kaine.senate.gov/news"
+                              tabindex="0">Press Releases</a>
+                          </li>
+
+                          <li class="SiteNav__dropdownItem">
+                            <a class="SiteNav__dropdownLink"
+                              data-transition-selected-if="/news/in-the-news"
+                              data-transition-selected-class="SiteNav__dropdownLink--selected"
+                              href="https://www.kaine.senate.gov/news/in-the-news"
+                              tabindex="0">In the News</a>
+                          </li>
+                    </ul>
+                </li>
+
+                
+
+
+                <li class="SiteNav__item h-100 SiteNav__item--dropdown">
+                  <a class="SiteNav__link h-100 align-items-center"
+                    data-transition-selected-if="/services"
+                    data-transition-selected-class="SiteNav__link--selected"
+                    href="https://www.kaine.senate.gov/services"
+                    tabindex="0">Services</a>
+
+                    <ul class="SiteNav__dropdown">
+
+                          <li class="SiteNav__dropdownItem">
+                            <a class="SiteNav__dropdownLink"
+                              data-transition-selected-if="/contact/share-your-opinion"
+                              data-transition-selected-class="SiteNav__dropdownLink--selected"
+                              href="https://www.kaine.senate.gov/contact/share-your-opinion"
+                              tabindex="0">Share Your Opinion</a>
+                          </li>
+
+                          <li class="SiteNav__dropdownItem">
+                            <a class="SiteNav__dropdownLink"
+                              data-transition-selected-if="/services/help"
+                              data-transition-selected-class="SiteNav__dropdownLink--selected"
+                              href="https://www.kaine.senate.gov/services/help"
+                              tabindex="0">Help With A Federal Agency</a>
+                          </li>
+
+                          <li class="SiteNav__dropdownItem">
+                            <a class="SiteNav__dropdownLink"
+                              data-transition-selected-if="/services/tours"
+                              data-transition-selected-class="SiteNav__dropdownLink--selected"
+                              href="https://www.kaine.senate.gov/services/tours"
+                              tabindex="0">Tours</a>
+                          </li>
+
+                          <li class="SiteNav__dropdownItem">
+                            <a class="SiteNav__dropdownLink"
+                              data-transition-selected-if="/services/flag-requests"
+                              data-transition-selected-class="SiteNav__dropdownLink--selected"
+                              href="https://www.kaine.senate.gov/services/flag-requests"
+                              tabindex="0">Flag Requests</a>
+                          </li>
+
+                          <li class="SiteNav__dropdownItem">
+                            <a class="SiteNav__dropdownLink"
+                              data-transition-selected-if="/services/special-recognitions"
+                              data-transition-selected-class="SiteNav__dropdownLink--selected"
+                              href="https://www.kaine.senate.gov/services/special-recognitions"
+                              tabindex="0">Special Recognitions</a>
+                          </li>
+
+                          <li class="SiteNav__dropdownItem">
+                            <a class="SiteNav__dropdownLink"
+                              data-transition-selected-if="/services/internships"
+                              data-transition-selected-class="SiteNav__dropdownLink--selected"
+                              href="https://www.kaine.senate.gov/services/internships"
+                              tabindex="0">Internship & Page Programs</a>
+                          </li>
+
+                          <li class="SiteNav__dropdownItem">
+                            <a class="SiteNav__dropdownLink"
+                              data-transition-selected-if="/services/academy-nominations"
+                              data-transition-selected-class="SiteNav__dropdownLink--selected"
+                              href="https://www.kaine.senate.gov/services/academy-nominations"
+                              tabindex="0">Academy Nominations</a>
+                          </li>
+
+                          <li class="SiteNav__dropdownItem">
+                            <a class="SiteNav__dropdownLink"
+                              data-transition-selected-if="/services/student-resources"
+                              data-transition-selected-class="SiteNav__dropdownLink--selected"
+                              href="https://www.kaine.senate.gov/services/student-resources"
+                              tabindex="0">Student Resources</a>
+                          </li>
+
+                          <li class="SiteNav__dropdownItem">
+                            <a class="SiteNav__dropdownLink"
+                              data-transition-selected-if="/services/grants"
+                              data-transition-selected-class="SiteNav__dropdownLink--selected"
+                              href="https://www.kaine.senate.gov/services/grants"
+                              tabindex="0">Grant Information</a>
+                          </li>
+
+                          <li class="SiteNav__dropdownItem">
+                            <a class="SiteNav__dropdownLink"
+                              data-transition-selected-if="/appropriations"
+                              data-transition-selected-class="SiteNav__dropdownLink--selected"
+                              href="https://www.kaine.senate.gov/appropriations"
+                              tabindex="0">Appropriations</a>
+                          </li>
+
+                          <li class="SiteNav__dropdownItem">
+                            <a class="SiteNav__dropdownLink"
+                              data-transition-selected-if="/national-defense-authorization-act-requests"
+                              data-transition-selected-class="SiteNav__dropdownLink--selected"
+                              href="https://www.kaine.senate.gov/national-defense-authorization-act-requests"
+                              tabindex="0">NDAA Requests</a>
+                          </li>
+
+                          <li class="SiteNav__dropdownItem">
+                            <a class="SiteNav__dropdownLink"
+                              data-transition-selected-if="/kaine-connects"
+                              data-transition-selected-class="SiteNav__dropdownLink--selected"
+                              href="https://www.kaine.senate.gov/kaine-connects"
+                              tabindex="0">Meet with my Staff</a>
+                          </li>
+
+                          <li class="SiteNav__dropdownItem">
+                            <a class="SiteNav__dropdownLink"
+                              data-transition-selected-if="/services/staff-directory"
+                              data-transition-selected-class="SiteNav__dropdownLink--selected"
+                              href="https://www.kaine.senate.gov/services/staff-directory"
+                              tabindex="0">Staff Directory</a>
+                          </li>
+                    </ul>
+                </li>
+
+                
+
+
+                <li class="SiteNav__item h-100 SiteNav__item--dropdown">
+                  <a class="SiteNav__link h-100 align-items-center"
+                    data-transition-selected-if="/issues"
+                    data-transition-selected-class="SiteNav__link--selected"
+                    href="https://www.kaine.senate.gov/issues"
+                    tabindex="0">Issues</a>
+
+                    <ul class="SiteNav__dropdown">
+
+                          <li class="SiteNav__dropdownItem">
+                            <a class="SiteNav__dropdownLink"
+                              data-transition-selected-if="//issues/agriculture"
+                              data-transition-selected-class="SiteNav__dropdownLink--selected"
+                              href="/issues/agriculture"
+                              tabindex="0">Agriculture</a>
+                          </li>
+
+                          <li class="SiteNav__dropdownItem">
+                            <a class="SiteNav__dropdownLink"
+                              data-transition-selected-if="//issues/budget"
+                              data-transition-selected-class="SiteNav__dropdownLink--selected"
+                              href="/issues/budget"
+                              tabindex="0">Budget</a>
+                          </li>
+
+                          <li class="SiteNav__dropdownItem">
+                            <a class="SiteNav__dropdownLink"
+                              data-transition-selected-if="//issues/civil-rights"
+                              data-transition-selected-class="SiteNav__dropdownLink--selected"
+                              href="/issues/civil-rights"
+                              tabindex="0">Civil Rights</a>
+                          </li>
+
+                          <li class="SiteNav__dropdownItem">
+                            <a class="SiteNav__dropdownLink"
+                              data-transition-selected-if="//issues/education"
+                              data-transition-selected-class="SiteNav__dropdownLink--selected"
+                              href="/issues/education"
+                              tabindex="0">Education</a>
+                          </li>
+
+                          <li class="SiteNav__dropdownItem">
+                            <a class="SiteNav__dropdownLink"
+                              data-transition-selected-if="//issues/environment-and-energy"
+                              data-transition-selected-class="SiteNav__dropdownLink--selected"
+                              href="/issues/environment-and-energy"
+                              tabindex="0">Environment & Energy</a>
+                          </li>
+
+                          <li class="SiteNav__dropdownItem">
+                            <a class="SiteNav__dropdownLink"
+                              data-transition-selected-if="//issues/gun-violence-prevention"
+                              data-transition-selected-class="SiteNav__dropdownLink--selected"
+                              href="/issues/gun-violence-prevention"
+                              tabindex="0">Gun Violence Prevention</a>
+                          </li>
+
+                          <li class="SiteNav__dropdownItem">
+                            <a class="SiteNav__dropdownLink"
+                              data-transition-selected-if="//issues/health-care"
+                              data-transition-selected-class="SiteNav__dropdownLink--selected"
+                              href="/issues/health-care"
+                              tabindex="0">Health Care</a>
+                          </li>
+
+                          <li class="SiteNav__dropdownItem">
+                            <a class="SiteNav__dropdownLink"
+                              data-transition-selected-if="//issues/immigration"
+                              data-transition-selected-class="SiteNav__dropdownLink--selected"
+                              href="/issues/immigration"
+                              tabindex="0">Immigration</a>
+                          </li>
+
+                          <li class="SiteNav__dropdownItem">
+                            <a class="SiteNav__dropdownLink"
+                              data-transition-selected-if="//issues/jobs-and-the-economy"
+                              data-transition-selected-class="SiteNav__dropdownLink--selected"
+                              href="/issues/jobs-and-the-economy"
+                              tabindex="0">Jobs & the Economy</a>
+                          </li>
+
+                          <li class="SiteNav__dropdownItem">
+                            <a class="SiteNav__dropdownLink"
+                              data-transition-selected-if="//issues/national-security-and-foreign-policy"
+                              data-transition-selected-class="SiteNav__dropdownLink--selected"
+                              href="/issues/national-security-and-foreign-policy"
+                              tabindex="0">National Security & Foreign Policy</a>
+                          </li>
+
+                          <li class="SiteNav__dropdownItem">
+                            <a class="SiteNav__dropdownLink"
+                              data-transition-selected-if="//issues/transportation-and-infrastructure"
+                              data-transition-selected-class="SiteNav__dropdownLink--selected"
+                              href="/issues/transportation-and-infrastructure"
+                              tabindex="0">Transportation & Infrastructure</a>
+                          </li>
+
+                          <li class="SiteNav__dropdownItem">
+                            <a class="SiteNav__dropdownLink"
+                              data-transition-selected-if="//issues/veterans-and-military-families"
+                              data-transition-selected-class="SiteNav__dropdownLink--selected"
+                              href="/issues/veterans-and-military-families"
+                              tabindex="0">Veterans & Military Families</a>
+                          </li>
+                    </ul>
+                </li>
+
+                
+
+
+                <li class="SiteNav__item h-100 SiteNav__item--dropdown">
+                  <a class="SiteNav__link h-100 align-items-center"
+                    data-transition-selected-if="/es"
+                    data-transition-selected-class="SiteNav__link--selected"
+                    href="https://www.kaine.senate.gov/es"
+                    tabindex="0">Español</a>
+
+                    <ul class="SiteNav__dropdown">
+
+                          <li class="SiteNav__dropdownItem">
+                            <a class="SiteNav__dropdownLink"
+                              data-transition-selected-if="/es/acerca-de-tim"
+                              data-transition-selected-class="SiteNav__dropdownLink--selected"
+                              href="https://www.kaine.senate.gov/es/acerca-de-tim"
+                              tabindex="0">Acerca de Tim</a>
+                          </li>
+
+                          <li class="SiteNav__dropdownItem">
+                            <a class="SiteNav__dropdownLink"
+                              data-transition-selected-if="/es/ayuda"
+                              data-transition-selected-class="SiteNav__dropdownLink--selected"
+                              href="https://www.kaine.senate.gov/es/ayuda"
+                              tabindex="0">Ayuda con las Agencias Federales</a>
+                          </li>
+
+                          <li class="SiteNav__dropdownItem">
+                            <a class="SiteNav__dropdownLink"
+                              data-transition-selected-if="/es/contacte-tim"
+                              data-transition-selected-class="SiteNav__dropdownLink--selected"
+                              href="https://www.kaine.senate.gov/es/contacte-tim"
+                              tabindex="0">Contacte a Tim</a>
+                          </li>
+                    </ul>
+                </li>
+
+
+          </ul>
+        </div>
+
+        <div class="SiteNav__searchToggle">
+          <button aria-label="search button" class="SiteNav__searchToggleButton" data-toggle-class="SiteNav--searchMode" data-target="#js-site-nav">
+            <span class="sr-only">Search Button</span>
+            <span class="SiteNav__searchToggleIcon fa fa-search" aria-hidden="true"></span>
+          </button>
+        </div>
+
+
+
+
+        <div class="SiteNav__searchOverlay SiteNav__layout">
+           <form class="SiteNav__searchForm row ml-3 mr-0 flex-nowrap" aria-label="search" role="search" method="get" action="/search">
+              <label class="sr-only" for="js-site-nav-search-input">Site Search</label>
+              <input name="q" id="js-site-nav-search-input" class="SiteNav__searchInput col" type="text" placeholder="Search">
+
+              <button aria-label="nav search submit" class="SiteNav__searchFormButton col-auto" type="submit">
+                <span class="sr-only">Nav Search Submit</span>
+                <span class="SiteNav__searchToggleIcon fa fa-search" aria-hidden="true"></span>
+              </button>
+            </form>
+
+          <div class="SiteNav__searchToggle">
+            <button aria-label="search close" class="SiteNav__searchToggleButton" data-toggle-class="SiteNav--searchMode" data-target="#js-site-nav">
+              <span class="sr-only">Search Close</span>
+              <span class="SiteNav__searchToggleIcon fa fa-close" aria-hidden="true"></span>
+            </button>
+          </div>
+        </div>
+
+
+
+      </nav>
+</div>
+
+<script>
+  var topLevelLinks = document.querySelectorAll('.SiteNav__link');
+
+    for (var i = 0; i < topLevelLinks.length; i++) {
+         topLevelLinks[i].addEventListener('mouseover', function () {
+          this.parentElement.classList.add('focus');
+        });
+          topLevelLinks[i].addEventListener('mouseleave', function () {
+          this.parentElement.classList.remove('focus');
+        });
+    }
+
+    $('[data-toggle-class]').click(this, function () {
+
+
+      var className = $(this).data('toggle-class');
+      var target = $(this).data('target');
+      var hasClass = $(target).hasClass(className);
+
+      $(target).toggleClass(className);
+
+      if (hasClass) {
+        $('#js-site-nav-search-input').val('');
+        return;
+      }
+
+      $('#js-site-nav-search-input').focus();
+    });
+
+
+</script>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+                </div>
+
+                <div class="SiteLayout__mobileHeader">
+<div class="MobileHeader">
+
+  <div class="MobileHeader__container container px-4 pt-1 mt-4 h-100">
+    <div class="row justify-content-between align-items-center no-gutters h-100">
+      <div class="MobileHeader__logo col-6">
+        <a href="/">
+          <img
+            width="330"
+            height="75"
+            src="https://www.kaine.senate.gov/assets/images/mobile_logo.svg?1775260550"
+            alt="U.S. Senator Tim Kaine Logo">
+        </a>
+      </div>
+
+      <div class="col align-self-stretch">
+        <div class="row no-gutters h-100 justify-content-end">
+          <button class="MobileHeader__icon MobileHeader__icon--search CustomIcon__after--search js-open-mobile-search h-100  col-auto" data-toggle="modal" data-target="#website-search">
+          <span class="sr-only">Search Icon</span>
+          </button>
+
+
+
+          <button class="js-open-mobile-nav MobileHeader__icon col-auto">
+            <span aria-hidden="true" class="MobileHeader__mobileNavIcon">
+              <span aria-hidden="true"></span>
+            </span>
+            <span class="sr-only">Mobile Menu</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+                </div>
+            </div>
+
+
+  <div class="SiteLayout__alert">
+<div class="NewsAlert NewsAlert--hasContent">
+  <div class="NewsAlert__container NewsAlert__container--absolute container">
+    <div class="NewsAlert__iconContainer">
+        <div id="news-alert-dots" class="NewsAlert__dots">
+            <div id="news-alert-dot-0" class="NewsAlert__dot selected"></div>
+            <div id="news-alert-dot-1" class="NewsAlert__dot"></div>
+            <div id="news-alert-dot-2" class="NewsAlert__dot"></div>
+        </div>
+        <div class="NewsAlert__icon" aria-hidden="true">
+          <svg class="NewsAlert__iconShape" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+            <path d="M50,5A45,45,0,1,0,95,50,45,45,0,0,0,50,5Zm4.3,70H45.7V66.4h8.6Zm3.17-43.6L54.25,61.9H45.75L42.53,31.4V25H57.47Z"/>
+          </svg>
+          <svg class="NewsAlert__iconProgressContainer" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="margin: auto; background: none; display: block; shape-rendering: auto;" width="201px" height="201px" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
+            <circle class="NewsAlert__iconProgress" cx="50" cy="50" stroke-width="5" r="46"></circle>
+          </svg>
+        </div>
+    </div>
+  </div>
+
+    <div id="news-alert-carousel" class="NewsAlert__linkContainer splide">
+      <div class="splide__track">
+        <ul class="splide__list">
+            <li class="splide__slide">
+              <a class="NewsAlert__link w-100 h-100" href="https://www.kaine.senate.gov/national-defense-authorization-act-requests">
+                <div class="NewsAlert__container container h-100">
+                  <div class="NewsAlert__row row no-gutters h-100">
+                    <div class="NewsAlert__content col d-none d-sm-block">
+                      <span class="sr-only">News Alert:</span>
+                      <span class="NewsAlert__contentLabel">
+                       Submit a FY27 NDAA Request
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="splide__slide">
+              <a class="NewsAlert__link w-100 h-100" href="https://www.kaine.senate.gov/middleeastresources">
+                <div class="NewsAlert__container container h-100">
+                  <div class="NewsAlert__row row no-gutters h-100">
+                    <div class="NewsAlert__content col d-none d-sm-block">
+                      <span class="sr-only">News Alert:</span>
+                      <span class="NewsAlert__contentLabel">
+                       Click Here for Information for Virginians in the Middle East
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="splide__slide">
+              <a class="NewsAlert__link w-100 h-100" href="https://www.kaine.senate.gov/federalworkers">
+                <div class="NewsAlert__container container h-100">
+                  <div class="NewsAlert__row row no-gutters h-100">
+                    <div class="NewsAlert__content col d-none d-sm-block">
+                      <span class="sr-only">News Alert:</span>
+                      <span class="NewsAlert__contentLabel">
+                       Click Here for Resources for Federal Workers
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+        </ul>
+      </div>
+    </div>
+
+    <script>
+      if (typeof initializeNewsAlert !== 'function') {
+        function initializeNewsAlert(containerQuery) {
+          var container = document.querySelector(containerQuery);
+          var splideContainer = container.querySelector('#news-alert-carousel');
+          var newsAlertSplide = new Splide(splideContainer, {
+            type: 'loop', // 'loop' or 'fade'
+            // rewind: true, // Combine with type: 'fade' to make last slide loop to first
+            direction: 'ttb', // 'ttb', 'ltr', 'rtl'
+            waitForTransition: false,
+            width: '100%',
+            height: '75px',
+            autoPlay: false,
+            drag: false,
+            arrows: false,
+            pagination: false,
+            speed: 1000
+          }).mount();
+
+          var slideDuration = 7; // in seconds
+          var newsAlertProgressAnimation = gsap.timeline({
+            scrollTrigger: {
+              trigger: ".NewsAlert",
+              start: "top top",
+              end: "bottom top",
+              toggleActions: "play pause resume none"
+            }
+          });
+
+          var newsAlertProgressElement = container.querySelector('.NewsAlert__iconProgress');
+          newsAlertProgressAnimation
+            .to(newsAlertProgressElement, {
+              opacity: 1,
+              duration: 1
+            })
+            .from(newsAlertProgressElement, {
+              strokeDashoffset: 0,
+              ease: 'none',
+              duration: slideDuration,
+              onComplete: function () {
+                if ($('.NewsAlert').find('#news-alert-carousel').length) {
+                  // Go to next slide
+                  newsAlertSplide.go('+1')
+                } else {
+                  newsAlertProgressAnimation.pause(0);
+                }
+              }
+            }, "<")
+            .to(newsAlertProgressElement, {
+              opacity: 0,
+              duration: 0.1
+            }, "-=0.1");
+
+          // Make dots interactive
+          $('.NewsAlert__dot').each(function (index, dot) {
+            $(dot).click(function () {
+              newsAlertSplide.go(index)
+            })
+          });
+
+          // Trigger alert icon animation restart on slide change
+          newsAlertSplide.on('move.newsAlert', function () {
+            newsAlertProgressAnimation.restart();
+            $('.NewsAlert__dot').removeClass('selected');
+            $('#news-alert-dot-' + newsAlertSplide.index).addClass('selected');
+          });
+
+          window.destroyNewsAlertSplide = function () {
+            newsAlertSplide.destroy(true);
+          }
+
+          setTimeout(function () {
+            newsAlertProgressAnimation.play(0);
+          }, 1000);
+        }
+      }
+
+      if (typeof Splide === 'undefined') {
+        getScripts([
+          'https://www.kaine.senate.gov/scripts/splide/splide.min.js?1775260550',
+        ], function () {
+          initializeNewsAlert('.NewsAlert')
+        });
+      } else {
+        initializeNewsAlert('.NewsAlert')
+      }
+    </script>
+</div>
+  </div>
+
+          <div id="aria-skip-nav" tabindex="-1"></div>
+          <div class="SiteLayout__transitionContainer d-flex flex-column flex-grow-1" data-transition="container" data-transition-namespace="internal" data-nav="site">
+            
+
+            
+<script>
+  if (!application) var application = {};
+  application = {
+    "config": {
+      "tinymce": {
+        "plugins": {
+          "selectvideo": {
+            "player": "jwplayer", // should be set to "legacy" or "jwplayer" currently
+            "youtube": true, // set to true to write the youtube tags for youtube videos
+            "width": "100%", // set width and height on the containing element
+            "height": "100%",
+            "tracking": true
+          }
+        }
+      }
+    },
+    "fn": { // deprecated mootools 1.2 stuff that we'll probably still use once we upgrade fully to 1.3
+      "defined": function (obj) {
+        return (obj != undefined);
+      },
+      "check": function (obj) {
+        return !!(obj || obj === 0);
+      }
+    },
+    "form": {
+      "processed": "null",
+    },
+    "friendly_urls": false,
+    "siteroot": "https://www.kaine.senate.gov/",
+    "theme": "",
+    "webroot": "https://www.kaine.senate.gov/",
+    "assetWebroot": "https://www.kaine.senate.gov/",
+  };
+</script>
+
+              <div class="SiteLayout__main">
+
+
+   
+
+  <div class="Breadcrumbs Breadcrumbs--noBlockBanner ">
+    <div class="container Breadcrumbs__layout">
+      <ol class='Breadcrumbs__list'>
+              <li class="Breadcrumbs__item">
+                <a class="Breadcrumbs__link" href="https://www.kaine.senate.gov/about">About Tim </a>
+              </li>
+      </ol>
+    </div>
+  </div>
+
+
+
+                  <!--startindex-->
+
+
+
+
+
+<div class="Blocks">
+            
+
+
+
+  <div class="Block Block--static--bioBanner Block--width--wide Block--backgroundColor--default Block--textColor--default Block--textFamily--default mb-5">
+    <div class="Block__content">
+      
+<div class="Banner Banner--bio d-flex justify-content-center align-items-center">
+  <div class="Banner__shadow"></div>
+  <div class="Banner__backgroundColor"></div>
+
+    <div class="Banner__backgroundSize"></div>
+    <div class="Banner__background"
+      data-editor-background="background"
+      style="background-image: url('https://www.kaine.senate.gov/imo/media/image/biobanner_reduced1.jpg')">
+    </div>
+
+  <div class="Banner__content d-none d-lg-flex w-100">
+    <div class="row">
+      <div class="col-12 col-sm-6">
+        <h1 class="Banner__heading Heading--sectionTitle Heading--h1"
+          data-editor-text="title"
+          data-placeholder="Banner Heading">
+          About
+        </h1>
+
+        <div data-editor-column="main" data-editor-focus>
+
+
+
+  <div class="Block Block--paragraph Block--width--normal Block--backgroundColor--default Block--textColor--white Block--textFamily--default">
+    <div class="Block__content">
+      <div class="Paragraph Paragraph--variant--default Paragraph--textAlign--left RawHTML">
+  <p><b>Hometown:</b>&nbsp;Richmond, VA</p>
+</div>
+
+    </div>
+  </div>
+
+
+
+
+  <div class="Block Block--paragraph Block--width--normal Block--backgroundColor--default Block--textColor--white Block--textFamily--default">
+    <div class="Block__content">
+      <div class="Paragraph Paragraph--variant--default Paragraph--textAlign--left RawHTML">
+  <p><b>Born:</b>&nbsp; February 26, 1958</p>
+</div>
+
+    </div>
+  </div>
+
+
+
+
+  <div class="Block Block--paragraph Block--width--normal Block--backgroundColor--default Block--textColor--white Block--textFamily--default">
+    <div class="Block__content">
+      <div class="Paragraph Paragraph--variant--default Paragraph--textAlign--left RawHTML">
+  <p><b>Wife:</b>&nbsp;Anne</p>
+</div>
+
+    </div>
+  </div>
+
+
+
+
+  <div class="Block Block--paragraph Block--width--normal Block--backgroundColor--default Block--textColor--white Block--textFamily--default">
+    <div class="Block__content">
+      <div class="Paragraph Paragraph--variant--default Paragraph--textAlign--left RawHTML">
+  <p><b>Children:</b>&nbsp;Nat, Woody, Annella</p>
+</div>
+
+    </div>
+  </div>
+
+
+
+
+  <div class="Block Block--paragraph Block--width--normal Block--backgroundColor--default Block--textColor--white Block--textFamily--default">
+    <div class="Block__content">
+      <div class="Paragraph Paragraph--variant--default Paragraph--textAlign--left RawHTML">
+  <p><b>Education:</b></p>
+</div>
+
+    </div>
+  </div>
+
+
+
+
+  <div class="Block Block--paragraph Block--width--normal Block--backgroundColor--default Block--textColor--white Block--textFamily--default">
+    <div class="Block__content">
+      <div class="Paragraph Paragraph--variant--default Paragraph--textAlign--left RawHTML">
+  <p>University of Missouri&nbsp;</p>
+</div>
+
+    </div>
+  </div>
+
+
+
+
+  <div class="Block Block--paragraph Block--width--normal Block--backgroundColor--default Block--textColor--white Block--textFamily--default">
+    <div class="Block__content">
+      <div class="Paragraph Paragraph--variant--default Paragraph--textAlign--left RawHTML">
+  <p>Harvard Law School</p>
+</div>
+
+    </div>
+  </div>
+
+
+
+
+  <div class="Block Block--paragraph Block--width--normal Block--backgroundColor--default Block--textColor--white Block--textFamily--default mb-4">
+    <div class="Block__content">
+      <div class="Paragraph Paragraph--variant--default Paragraph--textAlign--left RawHTML">
+  <p><b>Sworn In:&nbsp;</b>January 3, 2013</p>
+</div>
+
+    </div>
+  </div>
+</div>
+
+          <ol class="row flex-column mb-3 mb-md-5">
+              <li class="col-sm-6 Banner__content__biolinks" data-editor-repeat="biolinks"
+                    data-editor-repeat-label="Link">
+                <a
+                  data-editor-link="link"
+                  data-editor-repeat-var
+                  href="https://www.kaine.senate.gov/download/1325-tim-kaine_-long-official-biography"
+                  class="Button Button--gradientFeatured"
+                  target="_self"
+                  rel="">
+                  OFFICIAL BIO
+                </a>
+              </li>
+              <li class="col-sm-6 Banner__content__biolinks" data-editor-repeat="biolinks"
+                    data-editor-repeat-label="Link">
+                <a
+                  data-editor-link="link"
+                  data-editor-repeat-var
+                  href="https://www.kaine.senate.gov/download/us-senator-tim-kaine_-short-bio"
+                  class="Button Button--gradientFeatured"
+                  target="_self"
+                  rel="">
+                  Shorter Official Bio
+                </a>
+              </li>
+              <li class="col-sm-6 Banner__content__biolinks" data-editor-repeat="biolinks"
+                    data-editor-repeat-label="Link">
+                <a
+                  data-editor-link="link"
+                  data-editor-repeat-var
+                  href="https://www.kaine.senate.gov/imo/media/image/20250206-pineda-044.jpg"
+                  class="Button Button--gradientFeatured"
+                  target="_self"
+                  rel="">
+                  Official Photo
+                </a>
+              </li>
+          </ol>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+   
+
+  <div class="Breadcrumbs Breadcrumbs--noBlockBanner ">
+    <div class="container Breadcrumbs__layout">
+      <ol class='Breadcrumbs__list'>
+              <li class="Breadcrumbs__item">
+                <a class="Breadcrumbs__link" href="https://www.kaine.senate.gov/about">About Tim </a>
+              </li>
+      </ol>
+    </div>
+  </div>
+
+    </div>
+  </div>
+
+            
+
+
+
+  <div class="Block Block--heading Block--width--normal Block--backgroundColor--default Block--textColor--default Block--textFamily--default mt-4 pb-2">
+    <div class="Block__content">
+      <div id="tim-kaine-has-helped-people-throughout-his-life-as-a-missionary-civil-rights-lawyer-teacher-and-elected-official-he-is-one-of-a-few-dozen-people-in-american-history-to-have-served-as-a-mayor-governor-and-united-states-senator" class="Heading Heading--h2"><h2 class="Heading">Tim Kaine has helped people throughout his life as a missionary, civil rights lawyer, teacher, and elected official. He is one of a few dozen people in American history to have served as a Mayor, Governor and United States Senator.</h2></div>
+
+    </div>
+  </div>
+
+            
+
+
+
+  <div class="Block Block--static--timeline Block--width--full Block--backgroundColor--default Block--textColor--default Block--textFamily--default mt-5">
+    <div class="Block__content">
+      
+<div data-editor-modifier="right,left" class="js-timeline-block Timeline Timeline--right">
+  <div class="row mx-0 Timeline__layout">
+
+    <div class="Timeline__photo col-12 col-lg-auto"
+      data-editor-background="background" 
+      style="background-image: url('https://www.kaine.senate.gov/imo/media/image/publicService.jpg')"></div>
+
+    <div class="Timeline__info col">
+      <p class="Timeline__section Heading--sectionTitle" data-editor-text="title">Early Commitment to Public Service</p>
+      <p class="Timeline__description" data-editor-text="description">Tim grew up working in his father’s ironworking shop in Kansas City. His parents taught him the value of hard work and showed him how small businesses and technical skills strengthen this country every day. After graduating from the University of Missouri, Tim started his public service career by running a technical school founded by Jesuit missionaries in Honduras. He trained teenagers to become carpenters and welders, equipping them with skills to lift up themselves and their communities. As Tim says, his work in Honduras was “a North Star” that led to his commitment to advance job opportunities for everyone. His time there reinforced three core values that are still a central part of his life today: “Fè, familia, y trabajo” – “Faith, family, and work.”
+        <p>
+          <div data-editor-column="additional" data-editor-focus></div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      if (typeof initTimelineBlock === 'undefined') {
+        var initTimelineBlock = function (container) {
+          // Get all blocks on page
+
+          gsap.utils.toArray(container).forEach(function (block, idx) {
+
+              gsap.fromTo(block.querySelector(".Timeline__photo"), {
+              "opacity": 0,
+              }, {
+               "opacity": 1,
+                duration: 0.8,
+                scrollTrigger: {
+                //markers: true,
+                id: 'photo',
+                trigger: block,
+                start: "top 75%"
+             
+                }
+              });
+
+              gsap.fromTo(block.querySelector(".Timeline__layout"), {
+                "--timelineHeight": '0%',
+             
+              }, {
+                "--timelineHeight": '100%',
+                  scrollTrigger: {
+                  //markers: true,
+                  id: 'line',
+                  trigger:block.querySelector(".Timeline__photo"),
+                  start: "top 75%",
+                 onEnter: function(self) {
+                 block.querySelector(".Timeline__layout").classList.add('animate');
+                  },
+                }
+              });
+
+            })
+
+          var lastTimeline = $(container).last();
+          lastTimeline.addClass('Timeline__removeAfterElement');
+
+        }
+      }
+
+      $(document).ready(function () {
+        initTimelineBlock('.js-timeline-block');
+      });
+    </script>
+    </div>
+  </div>
+
+            
+
+
+
+  <div class="Block Block--static--timeline Block--width--full Block--backgroundColor--default Block--textColor--default Block--textFamily--default">
+    <div class="Block__content">
+      
+<div data-editor-modifier="right,left" class="js-timeline-block Timeline Timeline--right">
+  <div class="row mx-0 Timeline__layout">
+
+    <div class="Timeline__photo col-12 col-lg-auto"
+      data-editor-background="background" 
+      style="background-image: url('https://www.kaine.senate.gov/imo/media/image/familylife.jpg')"></div>
+
+    <div class="Timeline__info col">
+      <p class="Timeline__section Heading--sectionTitle" data-editor-text="title">Family Life</p>
+      <p class="Timeline__description" data-editor-text="description">Tim met Virginian Anne Holton at Harvard Law School and they married in 1984 in the same church in Richmond they attend to this day. They have three adult children. Anne, a former legal aid lawyer and juvenile court judge, served as Virginia Secretary of Education from 2014 until 2016. Before that, Anne ran Great Expectations, a program that offers tutoring, career coaching, and other services to help young adults aging out of foster care and attending Virginia community colleges transition to successful, independent adulthood. She now teaches education policy at George Mason University after having served as its interim President in 2019-2020 – Tim calls her the best public servant he knows. Anne’s father Linwood Holton, a former Republican Governor of Virginia, was critical to integrating Virginia’s public schools, putting the Commonwealth on the path to progress we see today.
+        <p>
+          <div data-editor-column="additional" data-editor-focus></div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      if (typeof initTimelineBlock === 'undefined') {
+        var initTimelineBlock = function (container) {
+          // Get all blocks on page
+
+          gsap.utils.toArray(container).forEach(function (block, idx) {
+
+              gsap.fromTo(block.querySelector(".Timeline__photo"), {
+              "opacity": 0,
+              }, {
+               "opacity": 1,
+                duration: 0.8,
+                scrollTrigger: {
+                //markers: true,
+                id: 'photo',
+                trigger: block,
+                start: "top 75%"
+             
+                }
+              });
+
+              gsap.fromTo(block.querySelector(".Timeline__layout"), {
+                "--timelineHeight": '0%',
+             
+              }, {
+                "--timelineHeight": '100%',
+                  scrollTrigger: {
+                  //markers: true,
+                  id: 'line',
+                  trigger:block.querySelector(".Timeline__photo"),
+                  start: "top 75%",
+                 onEnter: function(self) {
+                 block.querySelector(".Timeline__layout").classList.add('animate');
+                  },
+                }
+              });
+
+            })
+
+          var lastTimeline = $(container).last();
+          lastTimeline.addClass('Timeline__removeAfterElement');
+
+        }
+      }
+
+      $(document).ready(function () {
+        initTimelineBlock('.js-timeline-block');
+      });
+    </script>
+    </div>
+  </div>
+
+            
+
+
+
+  <div class="Block Block--static--timeline Block--width--full Block--backgroundColor--default Block--textColor--default Block--textFamily--default">
+    <div class="Block__content">
+      
+<div data-editor-modifier="right,left" class="js-timeline-block Timeline Timeline--right">
+  <div class="row mx-0 Timeline__layout">
+
+    <div class="Timeline__photo col-12 col-lg-auto"
+      data-editor-background="background" 
+      style="background-image: url('https://www.kaine.senate.gov/imo/media/image/earlycareer.jpg')"></div>
+
+    <div class="Timeline__info col">
+      <p class="Timeline__section Heading--sectionTitle" data-editor-text="title">Early Career</p>
+      <p class="Timeline__description" data-editor-text="description">After law school, Tim practiced law in Richmond for 17 years, specializing in the representation of people who had been denied housing due to their race, disability, or family status. In 1998, Tim helped win one of the largest civil rights jury verdicts ever in a case involving discrimination against minority neighborhoods by an insurance company. He also began teaching law part-time at the University of Richmond in 1987.
+        <p>
+          <div data-editor-column="additional" data-editor-focus></div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      if (typeof initTimelineBlock === 'undefined') {
+        var initTimelineBlock = function (container) {
+          // Get all blocks on page
+
+          gsap.utils.toArray(container).forEach(function (block, idx) {
+
+              gsap.fromTo(block.querySelector(".Timeline__photo"), {
+              "opacity": 0,
+              }, {
+               "opacity": 1,
+                duration: 0.8,
+                scrollTrigger: {
+                //markers: true,
+                id: 'photo',
+                trigger: block,
+                start: "top 75%"
+             
+                }
+              });
+
+              gsap.fromTo(block.querySelector(".Timeline__layout"), {
+                "--timelineHeight": '0%',
+             
+              }, {
+                "--timelineHeight": '100%',
+                  scrollTrigger: {
+                  //markers: true,
+                  id: 'line',
+                  trigger:block.querySelector(".Timeline__photo"),
+                  start: "top 75%",
+                 onEnter: function(self) {
+                 block.querySelector(".Timeline__layout").classList.add('animate');
+                  },
+                }
+              });
+
+            })
+
+          var lastTimeline = $(container).last();
+          lastTimeline.addClass('Timeline__removeAfterElement');
+
+        }
+      }
+
+      $(document).ready(function () {
+        initTimelineBlock('.js-timeline-block');
+      });
+    </script>
+    </div>
+  </div>
+
+            
+
+
+
+  <div class="Block Block--static--timeline Block--width--full Block--backgroundColor--default Block--textColor--default Block--textFamily--default">
+    <div class="Block__content">
+      
+<div data-editor-modifier="right,left" class="js-timeline-block Timeline Timeline--right">
+  <div class="row mx-0 Timeline__layout">
+
+    <div class="Timeline__photo col-12 col-lg-auto"
+      data-editor-background="background" 
+      style="background-image: url('https://www.kaine.senate.gov/imo/media/image/elected.jpg')"></div>
+
+    <div class="Timeline__info col">
+      <p class="Timeline__section Heading--sectionTitle" data-editor-text="title">Elected Office</p>
+      <p class="Timeline__description" data-editor-text="description">Tim was first elected to office in 1994, serving as a city council member and four years later, Mayor of Richmond. When he was first elected to City Council in Richmond, the city had one of the highest homicide rates in America, and he worked with law enforcement and the community to find solutions that brought down the rate of violent crime. He became Lieutenant Governor of Virginia in 2002 and was inaugurated as Virginia’s 70th Governor in 2006. While serving as Governor, Tim improved the education and health care systems, and by the end of his term, leading publications ranked Virginia the best state to raise a child and the best state for business. He visited a school in every county and city in the Commonwealth and helped Virginia make it through the worst recession since the Great Depression. He also responded to the tragic shooting at Virginia Tech by strengthening Virginia’s background check system and pushing his legislature to do more to make communities safer. At the request of President Obama, Kaine served as Chairman of the Democratic National Committee from 2009 through 2011 where he rallied Democrats around the nation to support passage of the Affordable Care Act.
+        <p>
+          <div data-editor-column="additional" data-editor-focus></div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      if (typeof initTimelineBlock === 'undefined') {
+        var initTimelineBlock = function (container) {
+          // Get all blocks on page
+
+          gsap.utils.toArray(container).forEach(function (block, idx) {
+
+              gsap.fromTo(block.querySelector(".Timeline__photo"), {
+              "opacity": 0,
+              }, {
+               "opacity": 1,
+                duration: 0.8,
+                scrollTrigger: {
+                //markers: true,
+                id: 'photo',
+                trigger: block,
+                start: "top 75%"
+             
+                }
+              });
+
+              gsap.fromTo(block.querySelector(".Timeline__layout"), {
+                "--timelineHeight": '0%',
+             
+              }, {
+                "--timelineHeight": '100%',
+                  scrollTrigger: {
+                  //markers: true,
+                  id: 'line',
+                  trigger:block.querySelector(".Timeline__photo"),
+                  start: "top 75%",
+                 onEnter: function(self) {
+                 block.querySelector(".Timeline__layout").classList.add('animate');
+                  },
+                }
+              });
+
+            })
+
+          var lastTimeline = $(container).last();
+          lastTimeline.addClass('Timeline__removeAfterElement');
+
+        }
+      }
+
+      $(document).ready(function () {
+        initTimelineBlock('.js-timeline-block');
+      });
+    </script>
+    </div>
+  </div>
+
+            
+
+
+
+  <div class="Block Block--static--timeline Block--width--full Block--backgroundColor--default Block--textColor--default Block--textFamily--default mb-4">
+    <div class="Block__content">
+      
+<div data-editor-modifier="right,left" class="js-timeline-block Timeline Timeline--right">
+  <div class="row mx-0 Timeline__layout">
+
+    <div class="Timeline__photo col-12 col-lg-auto"
+      data-editor-background="background" 
+      style="background-image: url('https://www.kaine.senate.gov/imo/media/image/senate.jpg')"></div>
+
+    <div class="Timeline__info col">
+      <p class="Timeline__section Heading--sectionTitle" data-editor-text="title">In the Senate</p>
+      <p class="Timeline__description" data-editor-text="description">Tim was elected to the Senate in 2012 as a can-do optimist skilled in bringing people together across old lines of party, race, or region.<br><br>Tim has spent his time in the Senate focused on improving the lives of Virginians. He has made boosting job opportunities for everyone a top priority. As co-chair of the bipartisan Career and Technical Education (CTE) Caucus, Tim focuses on expanding access to job-training programs to ensure that students of all ages are prepared with the skills they need for the jobs of the modern economy. Tim has helped lead efforts in the Senate to reduce unemployment for military families and veterans.<br><br>As a member of the Armed Services Committee, a Senator from one of the states most closely connected to the military, and the father of a former Marine, Tim is focused on crafting smart defense strategy and reducing the risk of unnecessary war. He works to ensure that the military has the resources it needs to keep the country safe and that servicemembers and veterans receive the benefits and care they have earned. He has also been the leading voice against Presidents starting wars without a vote by Congress.<br><br>Tim believes that health care is a right, not something reserved just for those who can afford it. He has introduced legislation to expand access to quality, affordable health care and lower health care costs for Americans. He has led the fight to protect young people from harmful tobacco products and successfully passed legislation raising the federal tobacco purchase age from 18 to 21. He introduced and successfully pushed for passage of the <i>Dr. Lorna Breen Health Care Provider Protection Act, </i>legislation to prevent burnout, suicide, and mental and behavioral health issues among health care workers, which was signed into law in March 2022. He's also introduced legislation to give Americans more options for affordable health insurance, to lower the cost of prescription drugs, and to combat the opioid epidemic.&nbsp;&nbsp;<br><br>Tim works on those priorities every day for Virginians as a member of the Senate Armed Services; Budget; Foreign Relations; and Health, Education, Labor and Pensions (HELP) Committees. He is Ranking Member of the Armed Services Subcommittee on Seapower and the Foreign Relations Subcommittee on Western Hemisphere, Transnational Crime, Civilian Security, Democracy, Human Rights, And Global Women's Issues.<br>
+        <p>
+          <div data-editor-column="additional" data-editor-focus>
+
+
+
+  <div class="Block Block--html Block--width--normal Block--backgroundColor--default Block--textColor--default Block--textFamily--default pt-2 pb-2">
+    <div class="Block__content">
+      <div class="BlockHTML">
+  <!-- Buttons at bottom of the page on mobile  -->
+
+<div class="d-block d-lg-none">
+  <div class="row flex-column align-items-center justify-content-start">
+  
+    <div class="col-10 col-sm-7 my-3">
+      <a class="ButtonBlock__button Button Button--lg Button--gradientFeatured  h-100 w-100" data-transition-selected-if="//about/voting-record" data-transition-selected-class="selected" 
+      href="/download/official-biography-of-senator-tim-kaine" target="_self" rel="">
+       Official Bio
+      </a>
+    </div>
+    
+    <div class="col-10 col-sm-7 my-3">
+      <a class="ButtonBlock__button Button Button--lg Button--gradientFeatured  h-100 w-100" data-transition-selected-if="//about/voting-record" data-transition-selected-class="selected" 
+      href="/imo/media/image/kaine_official.jpg" target="_self" rel="">
+        Official Photo
+      </a>
+    </div>
+  
+      <div class="col-10 col-sm-7 my-3">
+        <a class="ButtonBlock__button Button Button--lg Button--gradientFeatured  h-100 w-100" data-transition-selected-if="//about/voting-record" data-transition-selected-class="selected" 
+        href="/about/voting-record" target="_self" rel="">
+          Voting Record
+        </a>
+      </div>
+  
+      <div class="col-10 col-sm-7 my-3">
+        <a class="ButtonBlock__button Button Button--lg Button--gradientFeatured  h-100 w-100" data-transition-selected-if="//about/legislation" data-transition-selected-class="selected" 
+        href="/about/legislation" target="_self" rel="">
+        Legislation
+        </a>
+      </div>
+   
+      <div class="col-10 col-sm-7 my-3">
+        <a class="ButtonBlock__button Button Button--lg Button--gradientFeatured h-100 w-100" data-transition-selected-if="//about/committee-assignments" data-transition-selected-class="selected" 
+        href="/about/committee-assignments" target="_self" rel="">
+        Committee Assignments
+        </a>
+      </div>
+    </div>
+  </div>
+ 
+</div>
+
+    </div>
+  </div>
+
+
+
+
+  <div class="Block Block--html Block--width--normal Block--backgroundColor--default Block--textColor--default Block--textFamily--default pt-2 pb-2">
+    <div class="Block__content">
+      <div class="BlockHTML">
+   <!-- Buttons at bottom of the page on desktop  -->
+
+<div class="d-none d-lg-block">
+  <div class="row  align-items-start justify-content-start">
+      <div class="col-4 my-1">
+        <a class="ButtonBlock__button Button Button--lg Button--gradientFeatured  h-100 w-100" data-transition-selected-if="//about/voting-record" data-transition-selected-class="selected" 
+        href="/about/voting-record" target="_self" rel="">
+          Voting Record
+        </a>
+      </div>
+  
+      <div class="col-4 my-1">
+        <a class="ButtonBlock__button Button Button--lg Button--gradientFeatured  h-100 w-100" data-transition-selected-if="//about/legislation" data-transition-selected-class="selected" 
+        href="/about/legislation" target="_self" rel="">
+        Legislation
+        </a>
+      </div>
+   
+      <div class="col-4 my-1">
+        <a class="ButtonBlock__button Button Button--lg Button--gradientFeatured h-100 w-100" data-transition-selected-if="//about/committee-assignments" data-transition-selected-class="selected" 
+        href="/about/committee-assignments" target="_self" rel="">
+        Committee Assignments
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </div>
+  </div>
+</div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      if (typeof initTimelineBlock === 'undefined') {
+        var initTimelineBlock = function (container) {
+          // Get all blocks on page
+
+          gsap.utils.toArray(container).forEach(function (block, idx) {
+
+              gsap.fromTo(block.querySelector(".Timeline__photo"), {
+              "opacity": 0,
+              }, {
+               "opacity": 1,
+                duration: 0.8,
+                scrollTrigger: {
+                //markers: true,
+                id: 'photo',
+                trigger: block,
+                start: "top 75%"
+             
+                }
+              });
+
+              gsap.fromTo(block.querySelector(".Timeline__layout"), {
+                "--timelineHeight": '0%',
+             
+              }, {
+                "--timelineHeight": '100%',
+                  scrollTrigger: {
+                  //markers: true,
+                  id: 'line',
+                  trigger:block.querySelector(".Timeline__photo"),
+                  start: "top 75%",
+                 onEnter: function(self) {
+                 block.querySelector(".Timeline__layout").classList.add('animate');
+                  },
+                }
+              });
+
+            })
+
+          var lastTimeline = $(container).last();
+          lastTimeline.addClass('Timeline__removeAfterElement');
+
+        }
+      }
+
+      $(document).ready(function () {
+        initTimelineBlock('.js-timeline-block');
+      });
+    </script>
+    </div>
+  </div>
+
+</div>
+                  <!--stopindex-->
+
+              </div>
+
+            
+                <!-- Custom Footer Code: Google Analytics -->
+                <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QC3CQFWQVY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QC3CQFWQVY');
+</script>
+                <!-- Custom Footer Code: Adobe -->
+                <script src="https://assets.adobedtm.com/566dc2d26e4f/f8d2f26c1eac/launch-3a705652822d.min.js"></script>
+
+
+<script>
+  if (typeof window.setupAnimations !== 'function') {
+    window.setupAnimations = function () {
+      window.animationsSet = true;
+      var animations = document.querySelectorAll('[data-animate]');
+      animations.forEach(function(animationEl, i) {
+        var animationClass = "";
+        var animationTriggerName = "";
+
+        if (animationEl.dataset.animate) {
+          animationClass = "animate-" + animationEl.dataset.animate;
+          animationTriggerName = "js-trigger-" + i;
+        } else if (animationEl.dataset.animatechild) {
+          animationClass = "animate-" + animationEl.dataset.animatechild;
+          animationTriggerName = "js-trigger-" + i;
+        } else {
+          return;
+        }
+
+        animationEl.classList.add(animationClass);
+        animationEl.classList.add(animationTriggerName);
+
+        // removed the toggleClass
+        ScrollTrigger.create({
+          id: animationTriggerName,
+          trigger: '.' + animationTriggerName,
+          start: 'top 90%',
+          onEnter: function(self) {
+            self.trigger.classList.add('visible');
+          },
+        });
+      })
+    }
+  }
+
+  $(function() {
+    if (!window.animationsSet) setupAnimations();
+  });
+</script>
+
+<script>
+  if (typeof window.internalLink !== 'function') {
+    window.isInternalLink = function (href) {
+      var isInternal =
+        Boolean(href.match(new RegExp('^' + window.location.origin))) // 1: If same site domain
+        || Boolean(href.match(/^\/[^\/]/)); // 2: If starts with a single / and not a double //
+
+      return isInternal;
+    }
+  }
+
+  if (typeof window.getParameterByName !== 'function') {
+    window.getParameterByName = function (name, url = window.location.href) {
+      name = name.replace(/[\[\]]/g, '\\$&');
+      var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+          results = regex.exec(url);
+      if (!results) return null;
+      if (!results[2]) return '';
+      return decodeURIComponent(results[2].replace(/\+/g, ' '));
+    }
+  }
+
+  if (typeof window.onLinkClick !== 'function') {
+    window.onLinkClick = function () {
+      $(function () {
+        $('a').each(function () {
+          var $this = $(this);
+
+          if ($this.hasLinkClickEvent) return;
+
+          var newWin = $this.hasClass('new-win');
+          var senExit = $this.hasClass('sen-exit');
+          var href = $this.attr('href');
+          var target = getParameterByName('target', href);
+
+          if (href && target == '_blank') {
+            $this.on('click', function(event) {
+              event.preventDefault();
+              window.open(href, target);
+            })
+          } else if (href && href.charAt(0) == '#') {
+            $this.click(function (e) {
+              e.preventDefault();
+              var targetName = this.getAttribute('href').replace('#', '');
+              var targetElement = document.getElementById(targetName) || document.querySelector('[name="' + targetName + '"]');
+
+              if (!targetElement) {
+                return;
+              }
+
+              var offsetHeight = window.getStuckHeaderHeight() || 0;
+              gsap.to(window, {duration: 1, scrollTo: {y: targetElement, offsetY: offsetHeight}, ease: 'power3'})
+              targetElement.focus();
+            });
+
+            $this.hasLinkClickEvent = true;
+          } else if (href) {
+            if (isInternalLink(href)) {
+              if (transitions) {
+                $this.on('click', function(event) {
+                  if (event.currentTarget.hasAttribute('data-modal-template')) return;
+                  if (event.currentTarget.hasAttribute('data-no-transition')) return;
+                  // If user help down modifier key during click they are opening in new tab/window
+                  if (2 === event.which || event.metaKey || event.ctrlKey) return;
+                  $('body').addClass('wait');
+                })
+              }
+            }
+          }
+        });
+      });
+    }
+  }
+
+  $(function(){
+    onLinkClick();
+  });
+
+</script>
+
+
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v10.0" nonce="7qGTTSrW"></script>
+
+              <script>
+                $('.RawHTML')
+                  .find('iframe#player, iframe[src*="youtu.be"], iframe[src*="youtube.com"]')
+                  .wrap('<div class="video-width"><div class="embedded-video"></div></div>');
+                $('.js-press-release')
+                  .find('table')
+                  .addClass('Table Table--striped')
+                  .wrap('<div class="ReadingWidthBreakout overflow-x-auto overflow-scroll-x-shadow"><div class="container"></div></div>');
+
+                // Clear focus state off of button 0.5s after clicking it
+                $('.Button').click(function () {
+                  var button = this;
+                  setTimeout(function () {
+                    button.blur();
+                  }, 500);
+                });
+              </script>
+
+              <div class="js-footer SiteLayout__footer">
+<footer class="SiteFooter">
+  <div class="SiteFooter__layout">
+      
+<nav class="FooterNav" aria-label="Footer Navigation">
+  <ul class="FooterNav__linkList">
+
+
+
+
+        <li class="FooterNav__item ">
+          <a data-transition-selected-if="/contact"
+            data-transition-selected-class="FooterNav__link--selected"
+
+          class="FooterNav__link " href="https://www.kaine.senate.gov/contact">
+            Contact Tim
+          </a>
+        </li>
+
+
+
+
+
+
+
+        <li class="FooterNav__item ">
+          <a data-transition-selected-if="/about"
+            data-transition-selected-class="FooterNav__link--selected"
+
+          class="FooterNav__link FooterNav__link--selected " href="https://www.kaine.senate.gov/about">
+            About Tim
+          </a>
+        </li>
+
+
+
+
+
+
+
+        <li class="FooterNav__item ">
+          <a data-transition-selected-if="/news"
+            data-transition-selected-class="FooterNav__link--selected"
+
+          class="FooterNav__link " href="https://www.kaine.senate.gov/news">
+            News
+          </a>
+        </li>
+
+
+
+
+
+
+
+        <li class="FooterNav__item ">
+          <a data-transition-selected-if="/services"
+            data-transition-selected-class="FooterNav__link--selected"
+
+          class="FooterNav__link " href="https://www.kaine.senate.gov/services">
+            Services
+          </a>
+        </li>
+
+
+
+
+
+
+
+        <li class="FooterNav__item ">
+          <a data-transition-selected-if="/issues"
+            data-transition-selected-class="FooterNav__link--selected"
+
+          class="FooterNav__link " href="https://www.kaine.senate.gov/issues">
+            Issues
+          </a>
+        </li>
+
+
+
+
+
+
+
+        <li class="FooterNav__item ">
+          <a data-transition-selected-if="/es"
+            data-transition-selected-class="FooterNav__link--selected"
+
+          class="FooterNav__link " href="https://www.kaine.senate.gov/es">
+            Español
+          </a>
+        </li>
+
+
+
+
+  </ul>
+</nav>
+  </div>
+</footer>
+              </div>
+
+          </div>
+
+<div class="MobileNav">
+    <nav aria-label="Mobile Navigation" class="MobileNav__links container">
+
+          <div class="MobileNav__item">
+
+
+            <a class="MobileNav__link" href="https://www.kaine.senate.gov/contact">
+              Contact Tim
+            </a>
+
+            
+          </div>
+          <div class="MobileNav__item">
+
+
+            <a class="MobileNav__link MobileNav__link--selected" href="https://www.kaine.senate.gov/about">
+              About Tim
+            </a>
+
+            
+          </div>
+          <div class="MobileNav__item">
+
+
+            <a class="MobileNav__link" href="https://www.kaine.senate.gov/news">
+              News
+            </a>
+
+            
+          </div>
+          <div class="MobileNav__item">
+
+
+            <a class="MobileNav__link" href="https://www.kaine.senate.gov/services">
+              Services
+            </a>
+
+            
+          </div>
+          <div class="MobileNav__item">
+
+
+            <a class="MobileNav__link" href="https://www.kaine.senate.gov/issues">
+              Issues
+            </a>
+
+            
+          </div>
+          <div class="MobileNav__item">
+
+
+            <a class="MobileNav__link" href="https://www.kaine.senate.gov/es">
+              Español
+            </a>
+
+            
+          </div>
+          <div class="MobileNav__item">
+
+
+            <a class="MobileNav__link" href="https://www.kaine.senate.gov/contact/newsletter">
+              Newsletter <br> Sign Up
+            </a>
+
+            
+          </div>
+    </nav>
+</div>
+
+<script>
+  window.animatedMobileNavIn = gsap
+    .timeline({paused: true})
+    .set('.MobileNav__links', {overflowY: 'hidden'})
+    .from('.MobileNav__item', {
+      duration: 0.5,
+      opacity: 0,
+      translateY: 50,
+      stagger: 0.1,
+      ease: 'power3',
+      clearProps: true
+    }, '+=0.25')
+    .set('.MobileNav__links', {overflowY: ''});
+
+  window.animatedMobileNavOut = gsap
+    .timeline({paused: true})
+    .to('.MobileNav__item', {
+      duration: 0.5,
+      opacity: 0,
+      translateY: -50,
+      stagger: 0.05,
+      ease: 'power3'
+    });
+
+  $(function () {
+    // Control logic/animations of opening and closing of mobile nav
+    var toggleMobileNav = function (state) {
+      var navOverflowElement = document.querySelector('.MobileNav__links');
+
+      if (state === 'open') {
+        window.disableBodyScroll(navOverflowElement);
+        window
+          .animatedMobileNavIn
+          .play(0);
+        document
+          .body
+          .classList
+          .add('mobile-nav-open');
+        gsap.to(window, {
+          duration: 0.5,
+          scrollTo: '.SiteHeader',
+          ease: 'power3'
+        });
+      } else if (state === 'close') {
+        window.enableBodyScroll(navOverflowElement);
+        window.animatedMobileNavOut.play(0);
+        document.body.classList.remove('mobile-nav-open');
+   
+      }
+    };
+
+    // Click handling for open/close of mobile nav
+    $('.js-open-mobile-nav').click(function () {
+      if (document.body.classList.contains('mobile-nav-open')) {
+        toggleMobileNav('close')
+      } else {
+        toggleMobileNav('open')
+      }
+    });  
+    
+  });
+  
+  
+</script>
+
+          <div class="SiteLayout__loading">
+            <div class="Loading">
+              <div class="Loading__spinner">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  
+
+
+
+  <div class="BootstrapModal BootstrapModal--search modal fade" id="website-search" tabindex="-1" role="dialog" aria-labelledby="website-search-title">
+    <div class="BootstrapModal__container modal-dialog" role="document">
+      <div class="BootstrapModal__content modal-content">
+        <div class="BootstrapModal__header align-items-center modal-header">
+          <h2 id="website-search-title" class="BootstrapModal__headerTitle modal-title sr-only">website-search</h2>
+
+        </div>
+
+        <div class="BootstrapModal__body modal-body">
+            <form aria-label="search" id="sitesearch" role="search" method="get" action="/search">
+    <div class="MobileSearch">
+      <div class="MobileSearch__layout">
+        <label class="sr-only" for="q" >Site Mobile Search</label>
+        <input class="MobileSearch__input" type="search" name="q" id="q" placeholder="Search" autofocus>
+        <button class="MobileSearch__button" aria-label="submit search query" type="submit">
+          <span class="fa fa-search" aria-hidden="true"></span>
+        </button>
+      </div>
+      <button type="button" class="BootstrapModal__closeIcon" data-dismiss="modal" aria-label="Close search">
+        <span class="fa fa-times" aria-hidden="true"></span>
+      </button>
+    </div>
+  </form>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script>
+    $('#website-search').on('shown.bs.modal', function () {
+      $('[autofocus]').trigger('focus')
+    })
+  </script>
+
+<script type="text/javascript">
+  if (typeof window.makeStickyHeader !== 'function') {
+    window.getStuckHeaderHeight = function () {
+      var siteHeader = document.querySelector('.SiteHeader');
+      var siteHeaderHeight = (siteHeader) ? siteHeader.offsetHeight : 0;
+      var mobileHeader = document.querySelector('.MobileHeader');
+      var mobileHeaderHeight = (mobileHeader) ? mobileHeader.offsetHeight : 0;
+
+      // Get height of either desktop or mobile header, the not shown header will return 0
+      return siteHeaderHeight + mobileHeaderHeight;
+    }
+
+    window.makeStickyHeader = function (containerProp) {
+      window.madeStickyHeader = true;
+      var container = containerProp || document;
+      var siteHeader = document.querySelector('.SiteHeader');
+      var mobileHeader = document.querySelector('.MobileHeader');
+/*
+      ScrollTrigger.defaults({
+        // uncomment to see debug markers
+        //markers: true
+      });
+
+      // Pin SiteHeader when it hits the top of the viewport
+      if (siteHeader) {
+        ScrollTrigger.create({
+          id: 'SiteHeader', // creates .pin-spacer-SiteHeader which we target in _SiteHeader.scss
+          trigger: siteHeader,
+          endTrigger: ".SiteLayout__footer",
+          start: "top top",
+          end: "bottom top",
+          pin: true,
+          pinSpacing: false,
+        })
+      }
+*/
+      var offsetHeight = window.getStuckHeaderHeight() || 0;
+      
+      /*
+      var bannerBackground = container.querySelector('.Banner__background');
+      if (bannerBackground) {
+        gsap.fromTo(bannerBackground, {
+          translateY: '0',
+        }, {
+          translateY: '50%',
+          clearProps: 'transform',
+          ease: 'none',
+          scrollTrigger: {
+            id: 'BannerAnimation',
+            trigger: '.SiteLayout__main',
+            endTrigger: ".Banner",
+            start: "top top",
+            end: "bottom top",
+            scrub: true,
+            pinSpacing: false,
+          }
+        });
+      }
+
+      // Pin MobileHeader when it hits the top of the viewport
+      if (mobileHeader) {
+        ScrollTrigger.create({
+          id: 'MobileHeader', // creates .pin-spacer-MobileHeader which we target in _MobileHeader.scss
+          trigger: mobileHeader,
+          endTrigger: ".SiteLayout__footer",
+          start: "top top",
+          pin: true,
+          pinSpacing: false
+        })
+      }
+
+      var mobileHeaderBgColor = document.querySelector('.MobileHeader__bgColor')
+      if (mobileHeaderBgColor) {
+        gsap.from(mobileHeaderBgColor, {
+          //opacity: 0,
+          clearProps: true,
+          scrollTrigger: {
+            id: 'MobileHeaderBackground',
+            trigger: '.SiteLayout__navigation',
+            start: "+=10px",
+            end: "+=1px",
+            scrub: 1,
+          }
+        });
+      }
+        */
+    }
+  
+  }
+
+
+  var prevBodyHeight = 0;
+  var resizeObserver = new window.polyfills.ResizeObserver(function(entries) {
+    var newHeight = (entries[0].contentRect) ? entries[0].contentRect.height : 0;
+    if (newHeight === prevBodyHeight) return;
+
+    // If the height changed save it
+    prevBodyHeight = newHeight;
+
+    // If we have any scrollTriggers on window loop through and refresh them
+    window.refreshScrollTriggers();
+  })
+
+  // start observing a DOM node
+  $(function () {
+    if (!window.madeStickyHeader) window.makeStickyHeader();
+    resizeObserver.observe(document.body);
+  });
+</script>
+
+        <script type="text/javascript">
+          $(function () {
+            $("script.deferred-script").each(function () {
+              var text = $(this).text();
+              eval(
+                text == ''
+                ? this.innerHTML
+                : text);
+            });
+          });
+          sen = true;
+        </script>
+
+
+    <script>
+    
+    var arrayify = function(list) {
+      return Array.prototype.slice.call(list)
+    };
+
+    
+    var runScript = function(originalElement) {
+      var element = document.createElement('script');
+
+      if (originalElement.attributes.length) {
+        var attributes = arrayify(originalElement.attributes);
+
+        attributes.forEach(function(attr) {
+          element.setAttribute(attr.name, attr.value);
+        });
+      }
+      element.textContent = originalElement.textContent;
+      element.setAttribute('async', 'false');
+
+      originalElement.replaceWith(element);
+      return element;
+    };
+
+    var shouldPrevent = function(data) {
+      if (data.el.hasAttribute('data-no-transition') || data.el.hasAttribute('data-modal-template')) return true;
+      var targetUrl = data.href.replace(window.location.origin, '');
+      var regex = new RegExp(/^(?:\/?assets)|(?:\/?imo)/);
+      if (targetUrl && regex.test(targetUrl)) return true;
+
+      return false;
+    }
+
+    
+    
+    var transitionFormHandler = function(container) {
+      var forms = container.querySelectorAll('form[method="get"]');
+      if (forms.length) forms.forEach(function(form) {
+        if ($(form).attr('data-no-transition') !== undefined) return;
+        $(form).on('submit', function(event) {
+          event.preventDefault();
+          $('body').addClass('wait');
+          var targetUrl = event.target.action;
+          var targetQuery = $(this).serialize();
+          $('.BootstrapModal').modal('hide');
+          transitions.go(targetUrl + '?' + targetQuery);
+        })
+      })
+    }
+
+    var isIE = document.body.style.msTouchAction !== undefined;
+    if (!isIE && transitions) {
+      // Grab the prefers reduced media query.
+      var mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
+
+      // Check if the media query matches or is not available.
+      if (!mediaQuery || mediaQuery.matches) {
+        transitionsReducedMotion();
+      } else {
+        transitionsFullMotion();
+      }
+
+      // Adds an event listener to check for changes in the media query's value.
+      mediaQuery.addEventListener("change", function() {
+        if (mediaQuery.matches) {
+          transitions.destroy();
+          transitionsReducedMotion();
+        } else {
+          transitions.destroy();
+          transitionsFullMotion();
+        }
+      });
+
+      // When user has 'prefers-reduced-motion' turned on in their OS
+      function transitionsReducedMotion() {
+        transitions.init({
+          preventRunning: true,
+          timeout: 20000,
+          schema: {
+            prefix: 'data-transition'
+          },
+          prevent: shouldPrevent,
+          transitions: [{
+            name: 'default-transition',
+            leave: function(data) {
+              return gsap.timeline()
+                .to(data.current.container, {
+                  opacity: 0,
+                  duration: 0.2,
+                }, '<')
+                .set('.SiteFooter', { opacity: 0 })
+            },
+            beforeLeave: function(data) {
+              gsap.to(window, { duration: 1, scrollTo: {y: 0}, ease: 'power3'});
+              return;
+            },
+            enter: function(data) {
+              return gsap.timeline()
+                .set(data.current.container, {position: 'absolute', opacity: 0})
+                .from(data.next.container, {
+                  opacity: 0,
+                  duration: 0.2,
+                }, '<')
+                .to('.SiteFooter', {
+                  opacity: 1,
+                  duration: 0.1,
+                }, '<')
+                .set('.SiteFooter', { opacity: '' })
+            },
+          }],
+        });
+
+        transitionsGlobalHooks();
+      };
+      // For regular motion users
+      function transitionsFullMotion() {
+        // Remove below line and write custom transitions here
+        transitionsReducedMotion();
+      };
+
+      function transitionsGlobalHooks() {
+        transitions.hooks.before(function(data) {
+          $('body').addClass('wait');
+          $('.fc-tbx').remove(); // Clear Forms Builder validation errors
+
+          // Allow Google Recaptcha script include to reinitialize
+          if (typeof grecaptcha !== 'undefined') delete grecaptcha;
+          if (typeof ___grecaptcha_cfg !== 'undefined') delete ___grecaptcha_cfg;
+
+          $('.SiteHeader--searchMode').removeClass('SiteHeader--searchMode');
+          $('.SiteNavSearch--searchMode').removeClass('SiteNavSearch--searchMode');
+          $('.SiteNavSearch input').val('');
+        });
+
+        transitions.hooks.afterLeave(function(data) {
+          var currentNav = data.current.container.dataset.nav
+          var nextNav = data.next.container.dataset.nav
+          var nextUrl = data.next.url.href;
+          if (currentNav !== nextNav && nextUrl) window.location = nextUrl;
+
+          var nextPage = new DOMParser().parseFromString(data.next.html, "text/html");
+
+          // Sync body tags
+          var newBodyClasses = nextPage.querySelector('body').classList;
+          if (newBodyClasses) document.body.className = newBodyClasses;
+
+          $('[data-transition-selected-if]').each(function (link) {
+            var linkCondition = $(this).attr('data-transition-selected-if');
+            var selectedClass = $(this).attr('data-transition-selected-class') || 'selected';
+
+            $(this).removeClass(selectedClass);
+            if (new RegExp('^' + linkCondition).test(window.location.pathname)) {
+              var secondaryCondition = $(this).attr('data-transition-selected-nestedIf'),
+                pathArr = window.location.pathname.split('/'),
+                linkPathArr = secondaryCondition ? secondaryCondition.split('/') : " ";
+
+              $(this).addClass(selectedClass);
+
+              if (secondaryCondition && pathArr.length < 4 && window.location.pathname !== secondaryCondition) {
+                $(this).removeClass(selectedClass);
+              } else if (secondaryCondition && pathArr.length >= 4 && linkPathArr.length < 3) {
+                $(this).removeClass(selectedClass);
+              }
+            }
+          });
+
+          // Sync NewsAlert content
+          var newDocument = document.createRange().createContextualFragment(data.next.html);
+          var nextNewsAlert = newDocument.querySelector('.NewsAlert');
+          var prevNewsAlert = document.querySelector('.NewsAlert');
+
+
+          // Clean up any existing nextNewsAlert Splide instance
+          if (typeof window.destroyNewsAlertSplide === 'function') window.destroyNewsAlertSplide();
+
+          if (nextNewsAlert) {
+            var prevNewsAlertHasContent = prevNewsAlert.classList.contains('NewsAlert--hasContent');
+            var nextNewsAlertHasContent = nextNewsAlert.classList.contains('NewsAlert--hasContent');
+
+            // If previous page NewsAlert doesn't have items and next page does animate open container
+            if (!prevNewsAlertHasContent && nextNewsAlertHasContent) {
+              prevNewsAlert.className = nextNewsAlert.className || prevNewsAlert.className;
+              prevNewsAlert.innerHTML = nextNewsAlert.innerHTML || '';
+
+              var newHeight = $(nextNewsAlert).height();
+              gsap.timeline()
+                .from('.NewsAlert', {
+                  height: 0,
+                  duration: 0.5
+                })
+                .set('.NewsAlert', { height: '' })
+            }
+            // If previous page NewsAlert has items and next page doesn't animate closed the container
+            else if (prevNewsAlertHasContent && !nextNewsAlertHasContent) {
+              var currentHeight = $(prevNewsAlert).height();
+              gsap.timeline()
+                .to('.NewsAlert', {
+                  height: 0,
+                  duration: 0.5
+                })
+                .call(function() {
+                  prevNewsAlert.className = nextNewsAlert.className || prevNewsAlert.className;
+                  prevNewsAlert.innerHTML = nextNewsAlert.innerHTML || '';
+                })
+                .set('.NewsAlert', { height: '' })
+
+            }
+            // If previous and next page NewsAlert didn't change don't animate container
+            else {
+              prevNewsAlert.className = nextNewsAlert.className || prevNewsAlert.className;
+              prevNewsAlert.innerHTML = nextNewsAlert.innerHTML || '';
+            }
+
+            // Rerun script tag within NewsAlert to reactivate animations if next page NewsAlert has content
+            if (nextNewsAlertHasContent) {
+              var scripts = prevNewsAlert.querySelectorAll('script');
+              if (scripts && scripts.length) scripts.forEach(function(script) {runScript(script)});
+            }
+          }
+        });
+
+        transitions.hooks.after(function(data) {
+          $('body').removeClass('wait');
+
+          // Recalculate ScrollTrigger values
+          window.killScrollTriggers();
+          window.madeStickyHeader = false;
+          window.makeStickyHeader(data.next.container);
+          window.animationsSet = false;
+          window.setupAnimations(data.next.container);
+
+          // Force load any scripts after page transition
+          // Borrowed idea from swup.js:
+          // https://github.com/swup/scripts-plugin/blob/master/src/index.js
+          var scripts = data.next.container.querySelectorAll('script');
+          if (scripts && scripts.length) scripts.forEach(function(script) {runScript(script)});
+
+          transitionFormHandler(data.next.container);
+
+          if (typeof ga !== 'undefined') {
+            ga('set', 'page', window.location.pathname);
+            ga('send', 'pageview');
+          }
+          if (typeof FB !== 'undefined') FB.XFBML.parse();
+        });
+
+        // Prefetching the top level pages after a couple seconds for faster response time on click
+setTimeout(function() {
+                  transitions.prefetch('https://www.kaine.senate.gov/contact');
+                }, 2000);setTimeout(function() {
+                  transitions.prefetch('https://www.kaine.senate.gov/about');
+                }, 3000);setTimeout(function() {
+                  transitions.prefetch('https://www.kaine.senate.gov/news');
+                }, 4000);setTimeout(function() {
+                  transitions.prefetch('https://www.kaine.senate.gov/services');
+                }, 5000);setTimeout(function() {
+                  transitions.prefetch('https://www.kaine.senate.gov/issues');
+                }, 6000);setTimeout(function() {
+                  transitions.prefetch('https://www.kaine.senate.gov/es');
+                }, 7000);setTimeout(function() {
+                  transitions.prefetch('https://www.kaine.senate.gov/contact/newsletter');
+                }, 8000);
+        transitionFormHandler(document);
+      }
+    }
+  </script>
+
+  <script>
+    transitions.hooks.before(function(data) {
+      $('.SiteNav--searchMode').removeClass('SiteNav--searchMode');
+    });
+  </script>
+  </body>
+</html>
+<!-- Build #1775260550 -->
