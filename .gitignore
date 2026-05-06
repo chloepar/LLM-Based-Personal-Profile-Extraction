@@ -1,5 +1,6 @@
 **/.DS_Store
 .env
+configs/model_configs/groq_config.json
 /external_data
 /data/senator
 
