@@ -1,6 +1,5 @@
 **/.DS_Store
 .env
-/configs/model_configs
 /external_data
 /data/senator
 
@@ -11,3 +10,8 @@
 extraction_checkpoint.json
 extraction_results.json
 results_summary.csv
+results_table.md
+results_table.tex
+results_table_combined.md
+baseline_results.csv
+baseline_results\ format.csv

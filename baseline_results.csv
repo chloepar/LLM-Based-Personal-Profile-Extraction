@@ -1,8 +1,0 @@
-attribute,regex,keyword,spacy,bert
-name,0.4987,0.4953,0.6757,0.6663
-birthdate,0.0,0.0,0.0,0.0
-gender,0.85,0.85,0.85,0.85
-race_ethnicity,0.08,0.08,0.08,0.08
-committee_roles,0.1409,0.1429,0.1403,0.1396
-religion,0.09,0.09,0.09,0.09
-education,0.2272,0.1869,0.2597,0.2411
